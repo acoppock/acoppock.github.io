@@ -1,0 +1,46 @@
+---
+title: "Gallery"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+<!--html_preserve-->
+
+<div class="band full">
+  <div class="bandContent pageTitle">Gallery</div>
+  <div class="bandContent pageIntro">Check out the range of outputs and formats you can create using R Markdown.</div>
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle">Documents</div>
+    <div class="galleryIntro">With R Markdown, you write a single .Rmd file and then use it to render finished output in a variety of formats.</div>
+    <div class="galleryItems">
+      <div class="galleryItem">
+        <a href="http://timelyportfolio.github.io/rCharts_nyt_home_price/"><img class="galleryItemImage" src="galleryImages/html.png"/></a>
+        <a href="http://timelyportfolio.github.io/rCharts_nyt_home_price/" class="galleryItemLabel">HTML</a>
+        <div class="galleryItemDescription">HTML documents for web publishing.</div>
+      </div>
+      <div class="galleryItem">
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-rmarkdown-article-example.pdf"><img class="galleryItemImage" src="galleryImages/pdf.png"/></a>
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-rmarkdown-article-example.pdf" class="galleryItemLabel">PDF</a>
+        <div class="galleryItemDescription">PDF documents for printing. <a href="https://raw.githubusercontent.com/svmiller/svm-r-markdown-templates/master/svm-rmarkdown-article-example.Rmd">Example Code</a></div>
+      </div>
+      <div class="galleryItem">
+        <img class="galleryItemImage" src="galleryImages/word.png"/>
+        <a class="galleryItemLabel">Microsoft Word</a>
+        <div class="galleryItemDescription">Microsoft Word documents for Office workflows.</div>
+      </div>
+      <div class="galleryItem">
+        <a href="https://rstudio.github.io/tufte/"><img class="galleryItemImage" src="galleryImages/tufte.png"/></a>
+        <a href="https://rstudio.github.io/tufte/" class="galleryItemLabel">Handouts</a>
+        <div class="galleryItemDescription">Tufte styled documents for handouts. <a href="https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_html/skeleton/skeleton.Rmd">Example Code</a></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<!--/html_preserve-->

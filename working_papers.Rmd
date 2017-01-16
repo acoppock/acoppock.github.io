@@ -1,0 +1,64 @@
+---
+title: "Working Papers"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+<!--html_preserve-->
+
+<div class="band full">
+  <div class="bandContent pageTitle">Published Papers</div>
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
+    <div class="galleryItems">
+    
+      <div class="galleryItem">
+        <a href="project_pages/Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.pdf"/></a>
+        <a href="project_pages/Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
+      
+      <div class="galleryItem">
+        <a href="project_pages/Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.pdf"/></a>
+        <a href="project_pages/Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
+      
+      
+      
+    
+  </div>
+</div>
+
+
+
+Nonparitisan
+Newspaper Op-Eds
+Effects of Spansich
+Persistence
+Backlash
+Dynamic Constraint
+
+DeclareDesign
+Generalizability
+
+
+<div class="bandContent gallerySection">
+    <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
+    <div class="galleryItems">
+    
+      <div class="galleryItem">
+        <a href="project_pages/CGGK_attrition.html"><img class="galleryItemImage" src="papers/CGGK_attrition_preproof.pdf"/></a>
+        <a href="project_pages/CGGK_attrition.html" class="galleryItemLabel">Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments</a>
+        <div class="galleryItemDescription">Political Analysis, 2017, with Alan S. Gerber, Donald P. Green, and Holger L. Kern.</div>
+      </div>
+    
+  </div>
+</div>
+
+<!--/html_preserve-->

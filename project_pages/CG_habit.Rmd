@@ -1,0 +1,51 @@
+---
+title: "Voter Habit"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, and Donald P. Green. 2016. "Is Voting Habit Forming? New Evidence Suggests that Habit-Formation Varies by Election Type." American Journal of Political Science. 60(4): 1044–1062
+
+- [Journal site](http://onlinelibrary.wiley.com/doi/10.1111/ajps.12210/abstract)
+- [PDF](../papers/CG_habit.pdf)
+- [Online Appendix](../papers/CG_habit_appendix.pdf)
+- [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ALZVAW)
+- [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
+- [AJPS Blog post](https://ajps.org/2015/09/28/measuring-the-habit-forming-effects-of-voting/)
+- [USAPP Blog post](http://blogs.lse.ac.uk/usappblog/2015/10/07/experiments-and-eligibility-cutoffs-show-that-voting-is-habit-forming/) 
+
+## Abstract
+
+Field experiments and regression discontinuity designs test whether voting is habit forming by examining whether a random shock to turnout in one election affects participation in subsequent elections. We contribute to this literature by offering a vast amount of new statistical evidence on the long-term consequences of random and quasi-random inducements to vote. The behavior of millions of voters confirms the persistence of voter turnout and calls attention to theoretically meaningful nuances in the development and expression of voting habits. We suggest that individuals become habituated to voting in particular types of elections. The degree of persistence appears to vary by electoral context and by the attributes of those who comply with an initial inducement to vote.
+
+## Figure
+
+This figure shows the effects of eligibility on voting in the Florida 2008 and 2012 elections.  We use birthday cohort vote totals (rather than means) to address the measurement problem that the unregistered are not present on voter rolls. Our 2008 estimate of the effect of eligibility is approximately 250 votes; our 2012 estimate (using either the raw totals, or totals differenced by one year) is approximately 25 votes, yielding a habit effect in Florida of 25/250 = 10%.
+
+<center><img src="../Images/RD_blog_fig.png" alt="what image shows" width="600"></center>
+
+## Bibtex Citation
+
+```
+@article {coppock2016habit,
+author = {Coppock, Alexander and Green, Donald P.},
+title = {Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities},
+journal = {American Journal of Political Science},
+volume = {60},
+number = {4},
+issn = {1540-5907},
+url = {http://dx.doi.org/10.1111/ajps.12210},
+doi = {10.1111/ajps.12210},
+pages = {1044--1062},
+year = {2016}
+}
+
+```
