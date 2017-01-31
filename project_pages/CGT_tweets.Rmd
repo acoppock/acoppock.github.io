@@ -6,6 +6,8 @@ output:
     toc: true
     toc_float:
       collapsed: false
+    includes:
+      before_body: [../include_header.html, ../include_header_navpage.html]  
 ---
 
 ```{r setup, include=FALSE}
