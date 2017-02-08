@@ -42,8 +42,19 @@ Corrected figure from corrigendum, comparing estimates as originally reported an
 ## Bibtex citation
 
 ```
-Article Bibtex
-
-Corrigendum Bibtex
+@article{coppock2016,
+title = "“Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness”—CORRIGENDUM",
+doi = "10.1017/XPS.2016.8",
+publisher = "Cambridge University Press",
+address = "New York, USA",
+author = "Alexander Coppock",
+volume = "3",
+number = "2",
+pages = "206-208",
+year = "2016",
+month = "001",
+day = "001",
+journal = "Journal of Experimental Political Science"
+}
 
 ```
