@@ -10,7 +10,7 @@ output:
 <!--html_preserve-->
 
 <div class="band full">
-  <div class="bandContent pageTitle">Published Papers</div>
+  <div class="bandContent pageTitle">Working Papers</div>
   <div class="bandContent gallerySection">
     <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
     <div class="galleryItems">
