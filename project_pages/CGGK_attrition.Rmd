@@ -38,7 +38,7 @@ write example
 
 ## Bibtex citation
 ```
-@article{aronow2015combining,
+@article{aronow2017combining,
   title={Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments},
   author={Coppock, Alexander, and Alan S. Gerber, Donald P. Green, and Holger L. Kern},
   year={2017}
