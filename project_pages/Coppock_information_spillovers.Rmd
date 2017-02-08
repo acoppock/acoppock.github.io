@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander (2014). Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness. Journal of Experimental Political Science, 1, pp 159-169 doi:10.1017/xps.2014.9
 
-ADD CORRIGENDUM CITATAION
+Coppock, A. (2016) ‘“Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness”—CORRIGENDUM’, Journal of Experimental Political Science, 3(2), pp. 206–208. doi: 10.1017/XPS.2016.8
 
 
 - [Journal site](http://journals.cambridge.org/abstract_S2052263014000098)
