@@ -23,14 +23,35 @@ output:
       
       
       <div class="galleryItem">
-        <a href="project_pages/Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.pdf"/></a>
-        <a href="project_pages/Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
+        <a href="project_pages/CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.pdf"/></a>
+        <a href="project_pages/CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
         <div class="galleryItemDescription">Working Paper.</div>
       </div>
       
+      <div class="galleryItem">
+        <a href="project_pages/CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.pdf"/></a>
+        <a href="project_pages/CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
       
+      <div class="galleryItem">
+        <a href="project_pages/FC_spanish.html"><img class="galleryItemImage" src="papers/FC_spanish.pdf"/></a>
+        <a href="project_pages/FC_spanish.html" class="galleryItemLabel">Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
       
-      
+      <div class="galleryItem">
+        <a href="project_pages/GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_prevalence.pdf"/></a>
+        <a href="project_pages/GC_prevalence.html" class="galleryItemLabel">The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
+      <div class="galleryItem">
+        <a href="project_pages/Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.pdf"/></a>
+        <a href="project_pages/Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
     
   </div>
 </div>
@@ -38,11 +59,7 @@ output:
 
 
 Nonparitisan
-Newspaper Op-Eds
-Effects of Spansich
-Persistence
 Backlash
-Dynamic Constraint
 
 DeclareDesign
 Generalizability

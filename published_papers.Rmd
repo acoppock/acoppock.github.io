@@ -72,6 +72,11 @@ output:
         <div class="galleryItemDescription">Journal of Survey Statistics and Methodology, 2016, with Peter M. Aronow, Forrest W. Crawford, and Donald P. Green.</div>
       </div>
     
+      <div class="galleryItem">
+        <a href="project_pages/CG_labfield.html"><img class="galleryItemImage" src="papers/CG_labfield.pdf"/></a>
+        <a href="project_pages/CG_labfield.html" class="galleryItemLabel">Assessing the Correspondence between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</a>
+        <div class="galleryItemDescription">JPolitical Science Research and Methods, 3, pp 113-131, 2015, with Donald P. Green.</div>
+      </div>
     
     
     
