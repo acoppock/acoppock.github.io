@@ -15,8 +15,8 @@ knitr::opts_chunk$set(echo = TRUE)
 - [PDF](../papers/Coppock_shytrump.pdf)
 - Replication Archive in production
 - Press
-    - [Politico]()
-    - [Huffington Post]()
+    - [Washington Post Monkey Cage](https://www.washingtonpost.com/news/monkey-cage/wp/2016/10/25/shy-trump-supporters-this-new-evidence-says-no/)
+    - [Huffington Post](http://www.huffingtonpost.com/entry/trump-losing-polls_us_580a4211e4b02444efa30cc2)
     
 
 ## Citation
