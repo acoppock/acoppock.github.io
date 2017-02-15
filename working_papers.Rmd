@@ -23,12 +23,6 @@ output:
       
       
       <div class="galleryItem">
-        <a href="project_pages/CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.pdf"/></a>
-        <a href="project_pages/CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
-        <div class="galleryItemDescription">Working Paper.</div>
-      </div>
-      
-      <div class="galleryItem">
         <a href="project_pages/CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.pdf"/></a>
         <a href="project_pages/CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
         <div class="galleryItemDescription">Working Paper.</div>
@@ -47,22 +41,26 @@ output:
       </div>      
 
       <div class="galleryItem">
-        <a href="project_pages/Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.pdf"/></a>
-        <a href="project_pages/Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
+        <a href="project_pages/KC_nonpartisan.html"><img class="galleryItemImage" src="papers/KC_nonpartisan.pdf"/></a>
+        <a href="project_pages/KC_nonpartisan.html" class="galleryItemLabel">Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments</a>
         <div class="galleryItemDescription">Working Paper.</div>
       </div>      
 
-    
+
   </div>
 </div>
 
 
 
-Nonparitisan
-Backlash
+
 
 DeclareDesign
-Generalizability
+Coppock, Alexander, Donald P. Green, and Oliver A. McClellan. “Validating the
+
+Demographic, Political, Psychological, and Experimental Results Obtained from
+
+a New Source of Online Survey Respondents”
+
 
 
 <div class="bandContent gallerySection">
@@ -74,6 +72,19 @@ Generalizability
         <a href="project_pages/CGGK_attrition.html" class="galleryItemLabel">Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments</a>
         <div class="galleryItemDescription">Political Analysis, 2017, with Alan S. Gerber, Donald P. Green, and Holger L. Kern.</div>
       </div>
+
+      <div class="galleryItem">
+        <a href="project_pages/Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.pdf"/></a>
+        <a href="project_pages/Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
+      <div class="galleryItem">
+        <a href="project_pages/CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.pdf"/></a>
+        <a href="project_pages/CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
     
   </div>
 </div>

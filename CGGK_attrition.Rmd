@@ -1,0 +1,51 @@
+---
+title: "Double Sampling for Attrition"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, and Alan S. Gerber, Donald P. Green, and Holger L. Kern. 2017. "Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments." Political Analysis.
+
+- [Journal site]()
+- [PDF](../papers/CGGK_attrition_preproof.pdf)
+- [Online Appendix](../papers/CGGK_attrition_appendix.pdf)
+- [Replication Archive]()
+- [R package "attrition"]()
+- [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
+
+## Abstract
+
+Missing outcome data plague many randomized experiments. Common solutions rely on ignorability assumptions that may not be credible in all applications. We propose a method for confronting missing outcome data that makes fairly weak assumptions but can still yield informative bounds on the average treatment effect. Our approach is based on a combination of the double sampling design and non-parametric worst-case bounds. We derive a worst-case bounds estimator under double sampling and provide analytic expressions for variance estimators and confidence intervals. We also propose a method for covariate adjustment using post-stratification and a sensitivity analysis for non-ignorable missingness. Finally, we illustrate the utility of our approach using Monte Carlo simulations and a placebo-controlled randomized field experiment on the effects of persuasion on social attitudes with survey-based outcome measures.
+
+## Figure
+
+Figure 1 from paper, showing the width of confidence intervals and identification regions as a function of second-round response rate:
+
+<center><img src="../Images/CGGK_attrition_fig.pdf" alt="Coppock et al. 2017 Figure 1" width="600"></center>
+
+## Example using attrition package in R
+
+write example
+
+
+## Bibtex citation
+```
+@article{aronow2017combining,
+  title={Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments},
+  author={Coppock, Alexander, and Alan S. Gerber, Donald P. Green, and Holger L. Kern},
+  year={2017}
+}
+```
+
+
+
+
+
