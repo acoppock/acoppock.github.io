@@ -131,16 +131,16 @@ $(document).ready(function () {
 <div id="rStudioHeader" class="alwaysShrunk">
   <div class="innards bandContent">
     <div>
-      <a class="productName" href="index.html">Alexander Coppock</a>
+      <a class="productName" href="/index.html">Alexander Coppock</a>
     </div>
 
     <div id="menu">
       <div id="menuToggler"></div>
       <div id="menuItems">
-        <a class="menuItem" href="published_papers.html">Published Articles</a>
-        <a class="menuItem" href="working_papers.html">Working Papers</a>
-        <a class="menuItem" href="statistical_tools.html">Statistical Tools</a>
-        <a class="menuItem" href="teaching.html">Teaching</a>
+        <a class="menuItem" href="menu_published_papers.html">Published Articles</a>
+        <a class="menuItem" href="menu_working_papers.html">Working Papers</a>
+        <a class="menuItem" href="menu_statistical_tools.html">Statistical Tools</a>
+        <a class="menuItem" href="menu_teaching.html">Teaching</a>
       </div>
     </div>
   </div>
@@ -161,6 +161,15 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div id="pageContent" class="standardPadding">
   <div class="articleBandContent">
 
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
 <div class="fluid-row" id="header">
 
 
@@ -173,80 +182,38 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 <div class="band full">
-  <div class="bandContent pageTitle">Published Papers</div>
+  <div class="bandContent pageTitle">Gallery</div>
+  <div class="bandContent pageIntro">Check out the range of outputs and formats you can create using R Markdown.</div>
   <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
+    <div class="gallerySectionTitle">Documents</div>
+    <div class="galleryIntro">With R Markdown, you write a single .Rmd file and then use it to render finished output in a variety of formats.</div>
     <div class="galleryItems">
-    
       <div class="galleryItem">
-        <a href="project_pages/CGT_tweets.html"><img class="galleryItemImage" src="papers/CGT_tweets.pdf"/></a>
-        <a href="project_pages/CGT_tweets.html" class="galleryItemLabel">When Treatments Are Tweets: A Network Mobilization Experiment Over Twitter</a>
-        <div class="galleryItemDescription">Political Behavior, 2015, with Andrew Guess and John Ternovski.</div>
+        <a href="http://timelyportfolio.github.io/rCharts_nyt_home_price/"><img class="galleryItemImage" src="galleryImages/html.png"/></a>
+        <a href="http://timelyportfolio.github.io/rCharts_nyt_home_price/" class="galleryItemLabel">HTML</a>
+        <div class="galleryItemDescription">HTML documents for web publishing.</div>
       </div>
-      
       <div class="galleryItem">
-        <a href="project_pages/CG_habit.html"><img class="galleryItemImage" src="papers/CG_habit.pdf"/></a>
-        <a href="project_pages/CG_habit.html" class="galleryItemLabel">Is Voting Habit Forming? New Evidence Suggests that Habit-Formation Varies by Election Type.</a>
-        <div class="galleryItemDescription">American Journal of Political Science, 2016, with Donald P. Green.</div>
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-rmarkdown-article-example.pdf"><img class="galleryItemImage" src="galleryImages/pdf.png"/></a>
+        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-rmarkdown-article-example.pdf" class="galleryItemLabel">PDF</a>
+        <div class="galleryItemDescription">PDF documents for printing. <a href="https://raw.githubusercontent.com/svmiller/svm-r-markdown-templates/master/svm-rmarkdown-article-example.Rmd">Example Code</a></div>
       </div>
-      
-
       <div class="galleryItem">
-        <a href="project_pages/GKCFLZ_lawnsigns.html"><img class="galleryItemImage" src="papers/GKCFLZ_lawnsigns.pdf"/></a>
-        <a href="project_pages/GKCFLZ_lawnsigns.html" class="galleryItemLabel">The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments.</a>
-        <div class="galleryItemDescription"> Electoral Studies, 2016, with Donald P. Green, Jonathan S. Krasno, Brandon Lenoir, Benjamin D. Farrer, and Josh Zingher</div>
+        <img class="galleryItemImage" src="galleryImages/word.png"/>
+        <a class="galleryItemLabel">Microsoft Word</a>
+        <div class="galleryItemDescription">Microsoft Word documents for Office workflows.</div>
       </div>
-    
-          <div class="galleryItem">
-        <a href="project_pages/Coppock_information_spillovers.html"><img class="galleryItemImage" src="papers/Coppock_informationspillovers.pdf"/></a>
-        <a href="project_pages/Coppock_information_spillovers.html" class="galleryItemLabel">Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness.</a>
-        <div class="galleryItemDescription"> Journal of Experimental Political Science, 2014.</div>
+      <div class="galleryItem">
+        <a href="https://rstudio.github.io/tufte/"><img class="galleryItemImage" src="galleryImages/tufte.png"/></a>
+        <a href="https://rstudio.github.io/tufte/" class="galleryItemLabel">Handouts</a>
+        <div class="galleryItemDescription">Tufte styled documents for handouts. <a href="https://raw.githubusercontent.com/rstudio/tufte/master/inst/rmarkdown/templates/tufte_html/skeleton/skeleton.Rmd">Example Code</a></div>
       </div>
-    
-    
-    
-    
+    </div>
   </div>
 
 
 </div>
 
-
-<div class="bandContent gallerySection">
-    <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
-    <div class="galleryItems">
-    
-      <div class="galleryItem">
-        <a href="project_pages/CGGK_attrition.html"><img class="galleryItemImage" src="papers/CGGK_attrition_preproof.pdf"/></a>
-        <a href="project_pages/CGGK_attrition.html" class="galleryItemLabel">Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments</a>
-        <div class="galleryItemDescription">Political Analysis, 2017, with Alan S. Gerber, Donald P. Green, and Holger L. Kern.</div>
-      </div>
-      
-      <div class="galleryItem">
-        <a href="project_pages/CG_labfield.html"><img class="galleryItemImage" src="papers/CG_labfield.pdf"/></a>
-        <a href="project_pages/CG_labfield.html" class="galleryItemLabel">Assessing the Correspondence between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</a>
-               <div class="galleryItemDescription"> Political Science Research and Methods, 2015, with Donald P. Green.</div>
-      </div>
-      
-
-      <div class="galleryItem">
-        <a href="project_pages/ACCG_list.html"><img class="galleryItemImage" src="papers/ACCG_list.pdf"/></a>
-        <a href="project_pages/ACCG_list.html" class="galleryItemLabel">Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence</a>
-        <div class="galleryItemDescription">Journal of Survey Statistics and Methodology, 2016, with Peter M. Aronow, Forrest W. Crawford, and Donald P. Green.</div>
-      </div>
-    
-      <div class="galleryItem">
-        <a href="project_pages/CG_labfield.html"><img class="galleryItemImage" src="papers/CG_labfield.pdf"/></a>
-        <a href="project_pages/CG_labfield.html" class="galleryItemLabel">Assessing the Correspondence between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</a>
-        <div class="galleryItemDescription">JPolitical Science Research and Methods, 3, pp 113-131, 2015, with Donald P. Green.</div>
-      </div>
-    
-    
-    
-  </div>
-
-
-</div>
 
 
 

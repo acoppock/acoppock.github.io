@@ -6,9 +6,6 @@ output:
     toc: true
     toc_float:
       collapsed: false
-    includes:
-      before_body: [../include_header.html, ../include_header_navpage.html]
-
 ---
 
 ```{r setup, include=FALSE}
@@ -17,8 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Kirkland, Patricia and Alexander Coppock. 2016. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Working Paper.
 
-- [PDF](../papers/KC_nonpartisan.pdf)
-- [Appendix](../papers/KC_nonpartisan_appendix.pdf)
+- [PDF](papers/KC_nonpartisan.pdf)
+- [Appendix](papers/KC_nonpartisan_appendix.pdf)
 
 
 
@@ -31,7 +28,7 @@ In the absence of party labels, voters must use other information to infer candi
 
 Figure 2 from paper, showing the results of a conjoint experiment conducted on YouGov.
 
-<center><img src="../Images/KC_nonpartisan_fig.png" alt="Kirkland and Coppock Figure 2" width="600"></center>
+<center><img src="Images/KC_nonpartisan_fig.png" alt="Kirkland and Coppock Figure 2" width="600"></center>
 
 ## Bibtex citation
 

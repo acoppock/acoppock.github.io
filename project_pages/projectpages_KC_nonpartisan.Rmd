@@ -1,0 +1,39 @@
+---
+title: "Nonpartisan Elections"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Kirkland, Patricia and Alexander Coppock. 2016. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Working Paper.
+
+- [PDF](../papers/KC_nonpartisan.pdf)
+- [Appendix](../papers/KC_nonpartisan_appendix.pdf)
+
+
+
+## Abstract
+
+In the absence of party labels, voters must use other information to infer candidates’ ideology and competence. The institution of nonpartisan elections, therefore, may impact voter choice by increasing the weight that voters place on other dimensions of candidate quality. We hypothesize that in nonpartisan elections, voters will exhibit a stronger preference for more competent candidates, as measured by both their career and political experience. The existing evidence in favor of this hypothesis mainly comes from a handful of observational studies; to date, few if any experimental studies have rigorously evaluated this claim. We conducted conjoint survey experiments on both nationally representative and convenience samples. The results of these experiments indicate that when subjects cannot rely on party labels to infer ideological positions, they give greater weight to candidate competence. We find that this process unfolds differently for respondents of different partisan affiliations: Republicans give greater weight to job experience while Democrats give greater weight to political experience. We explore the generalizability of results obtained with online convenience samples by showing a strong correlation with results obtained on a nationally representative sample.
+
+
+## Figure
+
+Figure 2 from paper, showing the results of a conjoint experiment conducted on YouGov.
+
+<center><img src="../Images/KC_nonpartisan_fig.png" alt="Kirkland and Coppock Figure 2" width="600"></center>
+
+## Bibtex citation
+
+```
+@article{Coppock2015,
+	Author = {Kirkland, Patricia and Alexander Coppock},
+	Title = {{Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments}},
+```

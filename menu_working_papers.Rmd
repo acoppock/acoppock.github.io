@@ -1,0 +1,92 @@
+---
+title: "Working Papers"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+<!--html_preserve-->
+
+<div class="band full">
+  <div class="bandContent pageTitle">Working Papers</div>
+  <div class="bandContent gallerySection">
+    <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
+    <div class="galleryItems">
+    
+      <div class="galleryItem">
+        <a href="projectpages_Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.pdf"/></a>
+        <a href="projectpages_Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
+      
+      <div class="galleryItem">
+        <a href="projectpages_CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.pdf"/></a>
+        <a href="projectpages_CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
+      <div class="galleryItem">
+        <a href="projectpages_FC_spanish.html"><img class="galleryItemImage" src="papers/FC_spanish.pdf"/></a>
+        <a href="projectpages_FC_spanish.html" class="galleryItemLabel">Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+      
+      <div class="galleryItem">
+        <a href="projectpages_GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_prevalence.pdf"/></a>
+        <a href="projectpages_GC_prevalence.html" class="galleryItemLabel">The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
+      <div class="galleryItem">
+        <a href="projectpages_KC_nonpartisan.html"><img class="galleryItemImage" src="papers/KC_nonpartisan.pdf"/></a>
+        <a href="projectpages_KC_nonpartisan.html" class="galleryItemLabel">Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
+
+  </div>
+</div>
+
+
+
+
+
+DeclareDesign
+Coppock, Alexander, Donald P. Green, and Oliver A. McClellan. “Validating the
+
+Demographic, Political, Psychological, and Experimental Results Obtained from
+
+a New Source of Online Survey Respondents”
+
+
+
+<div class="bandContent gallerySection">
+    <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
+    <div class="galleryItems">
+    
+      <div class="galleryItem">
+        <a href="projectpages_CGGK_attrition.html"><img class="galleryItemImage" src="papers/CGGK_attrition_preproof.pdf"/></a>
+        <a href="projectpages_CGGK_attrition.html" class="galleryItemLabel">Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments</a>
+        <div class="galleryItemDescription">Political Analysis, 2017, with Alan S. Gerber, Donald P. Green, and Holger L. Kern.</div>
+      </div>
+
+      <div class="galleryItem">
+        <a href="projectpages_Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.pdf"/></a>
+        <a href="projectpages_Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+
+      <div class="galleryItem">
+        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.pdf"/></a>
+        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+      
+    
+  </div>
+</div>
+
+<!--/html_preserve-->
