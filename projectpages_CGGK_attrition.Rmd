@@ -29,7 +29,7 @@ Missing outcome data plague many randomized experiments. Common solutions rely o
 
 Figure 1 from paper, showing the width of confidence intervals and identification regions as a function of second-round response rate:
 
-<center><img src="images/CGGK_attrition_fig.pdf" alt="Coppock et al. 2017 Figure 1" width="600"></center>
+<center><img src="images/CGGK_attrition_fig.jpg" alt="Coppock et al. 2017 Figure 1" width="600"></center>
 
 ## Example using attrition package in R
 

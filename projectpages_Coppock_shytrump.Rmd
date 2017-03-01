@@ -30,7 +30,7 @@ Explanations for the failure to predict Donald Trump's win in the 2016 President
 
 Figure 1 from paper, showing direct and list experimental estimates of Trump support.
 
-<center><img src="Images/Coppock_shytrump_fig.pdf" alt="Coppock 2017 Figure 1" width="600"></center>
+<center><img src="Images/Coppock_shytrump_fig.jpg" alt="Coppock 2017 Figure 1" width="600"></center>
 
 ## Bibtex citation
 

@@ -32,7 +32,7 @@ Survey respondents may give untruthful answers to sensitive questions when asked
 
 Figure 1 from paper, showing the increase in precision of the combined estimator:
 
-<center><img src="Images/Combined-List-StudyA.pdf" alt="what image shows" width="600"></center>
+<center><img src="Images/Combined-List-StudyA.jpg" alt="what image shows" width="600"></center>
 
 ## Example using list package in R
 
