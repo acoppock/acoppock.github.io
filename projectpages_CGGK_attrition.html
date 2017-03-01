@@ -41,6 +41,49 @@
 </script>
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -281,7 +324,54 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 <div id="example-using-attrition-package-in-r" class="section level2">
 <h2>Example using attrition package in R</h2>
-<p>write example</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># If not installed:</span>
+<span class="co"># install.packages(&quot;devtools&quot;)</span>
+<span class="co"># devtools::install_github(&quot;acoppock/attrition&quot;)</span>
+<span class="kw">library</span>(attrition)
+<span class="kw">set.seed</span>(<span class="dv">343</span>) <span class="co"># For reproducibility</span>
+N &lt;-<span class="st"> </span><span class="dv">1000</span>
+
+<span class="co"># Potential Outcomes</span>
+Y_0 &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.3</span>, <span class="fl">0.3</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>))
+Y_1 &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.1</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>))
+
+R1_0 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.7</span>)
+R1_1 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.8</span>)
+
+R2_0 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.9</span>)
+R2_1 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.95</span>)
+
+<span class="co"># Covariate</span>
+strata &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(Y_0 &gt;<span class="st"> </span><span class="dv">2</span>)
+
+<span class="co"># Random Assignment</span>
+Z &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, .<span class="dv">5</span>)
+
+<span class="co"># Reveal Initial Sample Outcomes</span>
+R1 &lt;-<span class="st"> </span>Z*R1_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*R1_0 <span class="co"># Initial sample response</span>
+Y_star &lt;-<span class="st"> </span>Z*Y_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*Y_0 <span class="co"># True outcomes</span>
+Y &lt;-<span class="st"> </span>Y_star
+Y[R1==<span class="dv">0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co"># Mask outcome of non-responders</span>
+
+<span class="co"># Conduct Double Sampling</span>
+Attempt &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>, N)
+Attempt[<span class="kw">is.na</span>(Y)] &lt;-<span class="st"> </span><span class="kw">rbinom</span>(<span class="kw">sum</span>(<span class="kw">is.na</span>(Y)), <span class="dv">1</span>, .<span class="dv">5</span>)
+
+R2 &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>, N)
+R2[Attempt==<span class="dv">1</span>] &lt;-<span class="st">  </span>(Z*R2_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*R2_0)[Attempt==<span class="dv">1</span>]
+
+Y[R2==<span class="dv">1</span> &amp;<span class="st"> </span>Attempt==<span class="dv">1</span>] &lt;-<span class="st"> </span>Y_star[R2==<span class="dv">1</span> &amp;<span class="st"> </span>Attempt==<span class="dv">1</span>]
+
+df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Y, Z, R1, Attempt, R2, strata)
+
+<span class="co"># Without post-stratification</span>
+<span class="kw">estimator_ds</span>(Y, Z, R1, Attempt, R2, <span class="dt">minY=</span><span class="dv">1</span>, <span class="dt">maxY=</span><span class="dv">5</span>, <span class="dt">data=</span>df)</code></pre></div>
+<pre><code>##    ci_lower    ci_upper     low_est     upp_est     low_var     upp_var 
+## 0.048650401 0.437209790 0.181568350 0.304099481 0.006471977 0.006490723</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># With post-stratification</span>
+<span class="kw">estimator_ds</span>(Y, Z, R1, Attempt, R2, <span class="dt">minY=</span><span class="dv">1</span>, <span class="dt">maxY=</span><span class="dv">5</span>, <span class="dt">strata=</span>strata, <span class="dt">data=</span>df)</code></pre></div>
+<pre><code>##    ci_lower    ci_upper     low_est     upp_est     low_var     upp_var 
+## 0.134213533 0.482968974 0.246987534 0.375801359 0.004689110 0.004234475</code></pre>
 </div>
 <div id="bibtex-citation" class="section level2">
 <h2>Bibtex citation</h2>
