@@ -12,10 +12,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- [Journal site]()
+- [Journal site](http://www.sciencedirect.com/science/article/pii/S0261379415002310)
 - [PDF](../papers/GKCFLZ_lawnsigns.pdf)
 - [Online Appendix](../papers/GKCFLZ_lawnsigns_appendix.pdf)
-- [Replication Archive]()
+- [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K2TLDB)
 - Coauthors' personal websites
     - [Donald P. Green](https://sites.google.com/site/donaldpgreen/)
     - [Jonathan S. Krasno](https://sites.google.com/site/donaldpgreen/)
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
     - [Brandon Lenoir](https://sites.google.com/site/donaldpgreen/)
     - [Joshua N. Zingher](https://sites.google.com/site/donaldpgreen/)
 - Press
-    - [Politico]()
+    - [Politico](http://www.politico.com/story/2015/12/campaign-lawn-signs-little-effect-217166)
     - [Huffington Post]()
     
 

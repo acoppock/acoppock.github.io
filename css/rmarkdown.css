@@ -125,7 +125,7 @@ p {
 }
 
 #rStudioHeader .productName {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 40px;
   color: inherit;
@@ -183,7 +183,7 @@ p {
 #rStudioHeader #menu {
   text-align: right;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 20px;
   white-space: nowrap;
 }

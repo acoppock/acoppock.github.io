@@ -15,12 +15,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, Andrew Guess, and John Ternovski. 2015. "When Treatments are Tweets: A Network Mobilization Experiment over Twitter." Political Behavior. 
 
-- [Journal site]()
+- [Journal site](https://link.springer.com/article/10.1007%2Fs11109-015-9308-6?wt_mc=Affiliate.CommissionJunction.3.EPR1089.DeepLink&utm_medium=affiliate&utm_source=commission_junction&utm_campaign=3_nsn6445_deeplink&utm_content=deeplink)
 - [PDF](papers/CGT_tweets.pdf)
 - [Online Appendix](papers/CGT_tweets_appendix.pdf)
-- [Replication Archive]()
-- [Andrew Guess's personal website]()
-- [John Ternovski's personal website]()
+- [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/29548)
+- [Andrew Guess's personal website](https://andyguess.com/)
+- [John Ternovski's personal website](http://www.jter.co/)
 
 ## Abstract
 
