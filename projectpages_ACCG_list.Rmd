@@ -21,7 +21,7 @@ Aronow, Peter M., Alexander Coppock, Forrest W. Crawford, and Donald P. Green. 2
 - [R package "list"](https://cran.r-project.org/web/packages/list/index.html)
 - Coauthors' personal websites
     - [Peter M. Aronow](http://aronow.research.yale.edu/)
-    - [Forrest W. Crawford](http://crawford.research.yale.edu/)
+    - [Forrest W. Crawford](http://www.crawfordlab.io/)
     - [Donald P. Green](https://sites.google.com/site/donaldpgreen/)
 
 ## Abstract

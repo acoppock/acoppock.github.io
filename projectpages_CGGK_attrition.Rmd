@@ -19,7 +19,9 @@ Coppock, Alexander, and Alan S. Gerber, Donald P. Green, and Holger L. Kern. 201
 - [Online Appendix](papers/CGGK_attrition_appendix.pdf)
 - [Replication Archive]()
 - [R package "attrition"]()
+- [Alan S. Gerber's personal website](http://campuspress.yale.edu/alangerber/)
 - [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
+- [Holger L. Kern's personal website](http://www.holgerkern.com/)
 
 ## Abstract
 

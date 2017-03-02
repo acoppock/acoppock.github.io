@@ -18,13 +18,12 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K2TLDB)
 - Coauthors' personal websites
     - [Donald P. Green](https://sites.google.com/site/donaldpgreen/)
-    - [Jonathan S. Krasno](https://sites.google.com/site/donaldpgreen/)
-    - [Benjamin D. Farrer](https://sites.google.com/site/donaldpgreen/)
-    - [Brandon Lenoir](https://sites.google.com/site/donaldpgreen/)
-    - [Joshua N. Zingher](https://sites.google.com/site/donaldpgreen/)
+    - [Jonathan S. Krasno](https://www.binghamton.edu/political-science/people/faculty/jonathan-krasno.html)
+    - [Benjamin D. Farrer](https://sites.google.com/a/binghamton.edu/benfarrer/home)
+    - [Brandon Lenoir](http://www.polisci.pitt.edu/person/brandon-lenoir)
+    - [Joshua N. Zingher](https://fs.wp.odu.edu/jzingher/)
 - Press
     - [Politico](http://www.politico.com/story/2015/12/campaign-lawn-signs-little-effect-217166)
-    - [Huffington Post]()
     
 
 ## Citation

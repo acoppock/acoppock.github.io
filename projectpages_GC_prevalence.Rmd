@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Guess, Andrew and Alexander Coppock: “The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information” 2016. Working Paper.
 
 - [PDF](papers/GC_prevalence.pdf)
+- [Andrew Guess's Personal Website](https://andyguess.com/)
 
 
 ## Abstract
