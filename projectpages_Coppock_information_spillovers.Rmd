@@ -12,16 +12,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander (2014). Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness. Journal of Experimental Political Science, 1, pp 159-169 doi:10.1017/xps.2014.9
+Coppock, Alexander (2014). Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness. Journal of Experimental Political Science, 1, pp 159-169. [doi: 10.1017/xps.2014.9](https://doi.org/10.1017/xps.2014.9)
 
-Coppock, A. (2016) ‘“Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness”—CORRIGENDUM’, Journal of Experimental Political Science, 3(2), pp. 206–208. doi: 10.1017/XPS.2016.8
+Coppock, A. (2016) ‘“Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness”—CORRIGENDUM’, Journal of Experimental Political Science, 3(2), pp. 206–208. [doi: 10.1017/XPS.2016.8](https://doi.org/10.1017/XPS.2016.8)
 
 
-- [Journal site](http://journals.cambridge.org/abstract_S2052263014000098)
-- [PDF](papers/Coppock_informationspillovers.pdf)
+- [Journal site (original paper)](http://journals.cambridge.org/abstract_S2052263014000098)
+- [Journal site (corrigendum)](https://doi.org/10.1017/XPS.2016.8)
+- [Original paper](papers/Coppock_informationspillovers.pdf)
+- [Corrigendum](papers/Coppock_informationspillovers_corrigendum2.pdf)
 - [Online Appendix](papers/ACCG_list_appendix.pdf)
 - [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/29984)
-- [Corrigendum](papers/Coppock_informationspillovers_corrigendum.pdf)
 
 ## Corrigendum
 
@@ -42,7 +43,7 @@ Corrected figure from corrigendum, comparing estimates as originally reported an
 ## Bibtex citation
 
 ```
-@article{coppock2016,
+@article{coppock2016informationspillovers,
 title = "“Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness”—CORRIGENDUM",
 doi = "10.1017/XPS.2016.8",
 publisher = "Cambridge University Press",

@@ -44,7 +44,14 @@ output:
         <a href="projectpages_KC_nonpartisan.html"><img class="galleryItemImage" src="papers/KC_nonpartisan.jpg"/></a>
         <a href="projectpages_KC_nonpartisan.html" class="galleryItemLabel">Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments</a>
         <div class="galleryItemDescription">Working Paper.</div>
-      </div>      
+      </div>  
+      
+      <div class="galleryItem">
+        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.jpg"/></a>
+        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+
 
 
   </div>
@@ -74,11 +81,6 @@ a New Source of Online Survey Respondents”
         <div class="galleryItemDescription">Working Paper.</div>
       </div>      
 
-      <div class="galleryItem">
-        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.jpg"/></a>
-        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
-        <div class="galleryItemDescription">Working Paper.</div>
-      </div>
       
     
   </div>

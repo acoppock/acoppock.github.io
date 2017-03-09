@@ -32,7 +32,8 @@ Figure 2 from paper, showing over time effects of five treatments in two studies
 ## Bibtex citation
 
 ```
-@article{Coppock2015,
+@article{Coppock2015opeds,
 	Author = {Coppock, Alexander, Emily Ekins, and David Kirby},
-	Title = {{The Long-lasting Effects of Newspaper Op-Eds on Public Opinion}},
+	Title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
+	Journal = {Unpublished manuscript}
 ```

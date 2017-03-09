@@ -35,7 +35,7 @@ Figure 3 from paper, showing the heterogeneous effects of treatment by account t
 ## Bibtex citation
 
 ```
-@Article{Coppock2016,
+@Article{Coppock2016tweets,
 author="Coppock, Alexander and Guess, Andrew and Ternovski, John",
 title="When Treatments are Tweets: A Network Mobilization Experiment over Twitter",
 journal="Political Behavior",

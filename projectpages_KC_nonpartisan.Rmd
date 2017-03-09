@@ -34,7 +34,8 @@ Figure 2 from paper, showing the results of a conjoint experiment conducted on Y
 ## Bibtex citation
 
 ```
-@article{Coppock2015,
+@article{KirklandCoppock2016nonpartisan,
 	Author = {Kirkland, Patricia and Alexander Coppock},
-	Title = {{Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments}},
+	Title = {Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments},
+	Journal = {Unpublished manuscript}
 ```

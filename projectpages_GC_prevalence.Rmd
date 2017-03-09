@@ -26,8 +26,9 @@ Several prominent theoretical perspectives suggest that when individuals are exp
 ## Bibtex citation
 
 ```
-@article{FloresCoppock,
+@article{GuessCoppock2016prevalence,
 	Author = {Guess, Andrew and Alexander Coppock},
 	Title = {The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information},
 	Year = {2016}
+	Journal = {Unpublished manuscript}
 ```

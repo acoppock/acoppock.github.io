@@ -35,9 +35,10 @@ Figure 1 from paper, showing direct and list experimental estimates of Trump sup
 ## Bibtex citation
 
 ```
-@article{aronow2017shytrump,
+@article{Coppock2017shytrump,
   title={Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment},
   author={Coppock, Alexander},
   year={2017}
+  journal={Unpublished manuscript}
 }
 ```
