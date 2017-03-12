@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Flores, Alejandro and Alexander Coppock. “Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?” Working Paper.
 
-- [PDF](papers/FC_spanish.pdf)
+- [Working paper (August 2016)](papers/FC_spanish.pdf)
 - [Alejandro Flores's Personal Website](https://political-science.uchicago.edu/directory/alejandro-flores)
 
 ## Abstract

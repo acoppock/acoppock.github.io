@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander. “Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach” Working Paper.
 
-- [PDF](papers/Coppock_generalizability.pdf)
+- [Working paper (March 2016)](papers/Coppock_generalizability.pdf)
 
 
 ## Abstract

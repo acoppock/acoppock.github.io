@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander and Donald P. Green. “Do Belief Systems Exhibit Dynamic Constraint?” Working Paper.
 
-- [Preliminary Draft](papers/CG_dynamicconstraint.pdf)
+- [Working paper (August 2016)](papers/CG_dynamicconstraint.pdf)
 - [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
 
 ## Abstract

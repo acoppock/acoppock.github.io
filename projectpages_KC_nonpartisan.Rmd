@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Kirkland, Patricia and Alexander Coppock. 2016. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Working Paper.
 
-- [PDF](papers/KC_nonpartisan.pdf)
+- [Working paper (June 2016)](papers/KC_nonpartisan.pdf)
 - [Appendix](papers/KC_nonpartisan_appendix.pdf)
 - [Patricia Kirkland's Personal Website](https://patriciakirkland.com/)
 

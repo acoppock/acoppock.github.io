@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, Emily Ekins, and David Kirby. “The Long-lasting Effects of Newspaper Op-Eds on Public Opinion” Working Paper.
 
-- [Preliminary Draft](papers/CEK_opeds.pdf)
+- [Working paper (August 2016)](papers/CEK_opeds.pdf)
+- [Online Appendix](papers/CEK_opeds_appendix.pdf)
 - [Emily Ekins's Personal Website](https://www.cato.org/people/emily-ekins)
 - [David Kirby's Personal Website](https://www.cato.org/people/david-kirby)
 

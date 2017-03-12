@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>randomizr</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+#TOC {
+  display: none !important;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">randomizr</h1>
+
+</div>
+
+
+<p>randomizr is a small r package that contains easy functions for common forms of random assignment: simple, complete, blocked, and clustered. Version 0.3.0 is now available on CRAN. (Development version <a href="https://github.com/DeclareDesign/randomizr">available on github</a>.) Execute the following code to install it. Please email me with questions, bugs, or requests.</p>
+<pre class="r"><code># If not installed:
+# install.packages(&quot;devtools&quot;)
+# devtools::install_github(&quot;acoppock/randomizr&quot;)
+library(randomizr)</code></pre>
+<p>The vignette shows how to make the most of randomizr. <a href="http://www.columbia.edu/~ac3242/randomizr_vignette.html">Check out the vignette here</a>. (<a href="/statistical/randomizr_vignette">pdf version</a>)</p>
+<div id="whats-new-in-version-0.3.0" class="section level2">
+<h2>What’s new in Version 0.3.0</h2>
+<p>The biggest change in version 0.3.0 is the declare_ra() functionality. The declare_ra function is used in three ways:</p>
+<ol style="list-style-type: decimal">
+<li>To obtain some basic facts about a randomization:</li>
+</ol>
+<pre class="r"><code>declaration &lt;- declare_ra(N=100, m_each=c(30, 30, 40))
+declaration</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>To conduct a random assignment:</li>
+</ol>
+<pre class="r"><code>Z &lt;- conduct_ra(declaration)
+table(Z)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>To obtain observed condition probabilities:</li>
+</ol>
+<pre class="r"><code>probs &lt;- obtain_condition_probabilities(declaration, Z)
+table(probs, Z)</code></pre>
+</div>
+<div id="complete-random-assignment" class="section level2">
+<h2>Complete random assignment</h2>
+<p>This is the workhorse random assignment function in randomizr. complete_ra() assigns a specific number of units to each treatment condition.</p>
+<pre class="r"><code>Z &lt;- complete_ra(N=100, m=50)
+table(Z)
+ 
+Z &lt;- complete_ra(N=100, m_each=c(30, 30, 40),
+condition_names=c(&quot;control&quot;, &quot;placebo&quot;, &quot;treatment&quot;))
+table(Z)</code></pre>
+</div>
+<div id="block-random-assignment" class="section level2">
+<h2>Block random assignment</h2>
+<p>This function takes a vector that is of length N and indicates which block each unit belongs to. It performs complete random assignment within each block. There are a couple of ways to specify how many units in each block should be assigned to each treatment condition.</p>
+<pre class="r"><code>block_var &lt;- rep(c(&quot;A&quot;, &quot;B&quot;,&quot;C&quot;), times=c(50, 100, 200))
+Z &lt;- block_ra(block_var=block_var)
+table(block_var, Z)
+ 
+block_m &lt;- rbind(c(10, 20, 20),
+c(30, 50, 20),
+c(50, 75, 75))
+Z &lt;- block_ra(block_var=block_var, block_m=block_m )
+table(block_var, Z)
+ 
+Z &lt;- block_ra(block_var=block_var, block_prob=c(.1, .1, .8))
+table(block_var, Z)</code></pre>
+</div>
+<div id="clustered-random-assignment" class="section level2">
+<h2>Clustered random assignment</h2>
+<p>If your experiment needs to assign groups of units together (students in classrooms, voters in media markets, citizens in towns), you have to use clustered random assignment. Typically, clustered designs yield larger standard errors than the equivalently sized experiment randomized at the individual level.</p>
+<pre class="r"><code>clust_var &lt;- rep(letters, times=1:26)
+ 
+Z &lt;- cluster_ra(clust_var=clust_var)
+table(Z, clust_var)
+ 
+Z &lt;- cluster_ra(clust_var=clust_var, m_each=c(7, 7, 12))
+table(Z, clust_var)</code></pre>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

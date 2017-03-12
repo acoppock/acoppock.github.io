@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- [PDF](papers/Coppock_shytrump.pdf)
+- [Working paper (December 2016)](papers/Coppock_shytrump.pdf)
 - Replication Archive in production
 - Press
     - [Washington Post Monkey Cage](https://www.washingtonpost.com/news/monkey-cage/wp/2016/10/25/shy-trump-supporters-this-new-evidence-says-no/)

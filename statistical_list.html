@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>list</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+#TOC {
+  display: none !important;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">list</h1>
+
+</div>
+
+
+<p>Allows researchers to conduct multivariate statistical analyses of survey data with list experiments. This survey methodology is also known as the item count technique or the unmatched count technique and is an alternative to the commonly used randomized response method. The package implements the methods developed by Imai (2011) &lt;<a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">doi:10.1198/jasa.2011.ap10415</a>&gt;, Blair and Imai (2012) &lt;<a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">doi:10.1093/pan/mpr048</a>&gt;, Blair, Imai, and Lyall (2013) &lt;<a href="http://dx.doi.org/10.1111/ajps.12086">doi:10.1111/ajps.12086</a>&gt;, Imai, Park, and Greene (2014) &lt;<a href="https://doi.org/10.1093/pan/mpu017">doi:10.1093/pan/mpu017</a>&gt;, Aronow, Coppock, Crawford, and Green (2015) &lt;<a href="https://doi.org/10.1093/jssam/smu023">doi:10.1093/jssam/smu023</a>&gt;, and Chou, Imai, and Rosenfeld (2016) &lt;<a href="http://imai.princeton.edu/research/files/auxiliary.pdf" class="uri">http://imai.princeton.edu/research/files/auxiliary.pdf</a>&gt;. This includes a Bayesian MCMC implementation of regression for the standard and multiple sensitive item list experiment designs and a random effects setup, a Bayesian MCMC hierarchical regression model with up to three hierarchical groups, the combined list experiment and endorsement experiment regression model, a joint model of the list experiment that enables the analysis of the list experiment as a predictor in outcome regression models, and a method for combining list experiments with direct questions. In addition, the package implements the statistical test that is designed to detect certain failures of list experiments, and a placebo test for the list experiment using data from direct questions.</p>
+<div id="example-using-list-package-in-r" class="section level2">
+<h2>Example using list package in R</h2>
+<p>The <code>combinedListDirect()</code> function in the <code>list</code> package for R will return point estimates and standard error estimates for the direct estimate, the conventional list estimate, and the proposed combined estimator. The <code>summary</code> command will also return the results of Placebo Test I and II.</p>
+<pre class="r"><code># uncomment if list package not installed
+# install.packages(&quot;list&quot;&quot;) 
+
+library(list)
+# Load data from Aronow, Coppock, Crawford, and Green (2015)
+data(&quot;combinedListExps&quot;)
+
+# complete case analysis
+combinedListExps &lt;- na.omit(combinedListExps)
+# Conduct estimation without covariate adjustment
+out.1 &lt;- combinedListDirect(list1N ~ list1treat, 
+                            data = subset(combinedListExps, directsfirst==1), 
+                            treat = &quot;list1treat&quot;, direct = &quot;direct1&quot;)
+summary(out.1)</code></pre>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -12,23 +12,28 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Guess, Andrew and Alexander Coppock: “The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information” 2016. Working Paper.
+Guess, Andrew and Alexander Coppock: “Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments” 2017. Working Paper.
 
-- [PDF](papers/GC_prevalence.pdf)
+- [Working paper (January 2017)](papers/GC_prevalence1.pdf)
 - [Andrew Guess's Personal Website](https://andyguess.com/)
 
 
 ## Abstract
 
-Several prominent theoretical perspectives suggest that when individuals are exposed to counter-attitudinal evidence or arguments, their preexisting opinions and beliefs are reinforced, resulting in a phenomenon known as “backlash,” “backfire,” or “boomerang.” We investigate the prevalence of this effect. Should we expect that all attempts to persuade those who disagree will backfire? First, we formalize the concept of backlash and specify how it can be measured. We then present results from three survey experiments – two on Mechanical Turk and one on a nationally representative sample – in which we find no evidence of backlash, even under theoretically favorable conditions. While a casual reading of the literature on partisan information processing would lead one to conclude that backlash is rampant, we suspect that it is much rarer than commonly supposed. Researchers should continue to design well-powered randomized studies in order to better understand the specific conditions under which backlash is most likely to occur.
+Several prominent theoretical perspectives suggest that when individuals are exposed to counterattitudinal evidence or arguments, their preexisting opinions and beliefs are reinforced, resulting in a phenomenon known as “backlash,” “backfire,” or “boomerang.” We investigate the prevalence of this effect. Should we expect that all attempts to persuade those who disagree will backfire? First, we formalize the concept of backlash and specify how it can be measured. We then present results from three survey experiments—two on Mechanical Turk and one on a nationally representative sample—in which we find no evidence of backlash, even under theoretically favorable conditions. While a casual
+reading of the literature on partisan information processing would lead one to conclude that backlash
+is rampant, we suspect that it is much rarer than commonly supposed. Researchers should continue
+to design well-powered randomized studies in order to better understand the specific conditions under
+which backlash is most likely to occur.
 
 
 ## Bibtex citation
 
 ```
-@article{GuessCoppock2016prevalence,
+@article{GuessCoppock2017prevalence,
 	Author = {Guess, Andrew and Alexander Coppock},
-	Title = {The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information},
-	Year = {2016}
+	Title = {Does Counter-Attitudinal Information Cause Backlash?
+Results from Three Large Survey Experiments},
+	Year = {2017}
 	Journal = {Unpublished manuscript}
 ```
