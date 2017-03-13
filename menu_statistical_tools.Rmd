@@ -71,7 +71,7 @@ output:
       
       <div class="galleryItem">
         <a href="statistical_comparisons.html"><img class="galleryItemImage" src="statistical_images/comparisons.png"/></a>
-        <a href="statistical_comparison.html" class="galleryItemLabel">Multiple Comparisons Calculator</a>
+        <a href="statistical_comparisons.html" class="galleryItemLabel">Multiple Comparisons Calculator</a>
         <div class="galleryItemDescription"></div>
       </div>
       

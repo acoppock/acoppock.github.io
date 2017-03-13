@@ -1,0 +1,20 @@
+---
+title: "Central Limit Theorem in Action"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Shows 
+1. How fast (or slow!) the sample mean converges to the population mean and 
+2. How fast (or slow!) the sampling distribution of the sample mean becomes approximately normal.
+
+<iframe src="https://acoppock.shinyapps.io/CLT-app/" height="550" width="720"></iframe>
+  

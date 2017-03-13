@@ -11,7 +11,7 @@
 
 
 
-<title>list</title>
+<title>Geographic Spillover</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,49 +41,6 @@
 </script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code > span.dt { color: #204a87; } /* DataType */
-code > span.dv { color: #0000cf; } /* DecVal */
-code > span.bn { color: #0000cf; } /* BaseN */
-code > span.fl { color: #0000cf; } /* Float */
-code > span.ch { color: #4e9a06; } /* Char */
-code > span.st { color: #4e9a06; } /* String */
-code > span.co { color: #8f5902; font-style: italic; } /* Comment */
-code > span.ot { color: #8f5902; } /* Other */
-code > span.al { color: #ef2929; } /* Alert */
-code > span.fu { color: #000000; } /* Function */
-code > span.er { color: #a40000; font-weight: bold; } /* Error */
-code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #000000; } /* Constant */
-code > span.sc { color: #000000; } /* SpecialChar */
-code > span.vs { color: #4e9a06; } /* VerbatimString */
-code > span.ss { color: #4e9a06; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #000000; } /* Variable */
-code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code > span.ex { } /* Extension */
-code > span.at { color: #c4a000; } /* Attribute */
-code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -297,30 +254,14 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">list</h1>
+<h1 class="title toc-ignore">Geographic Spillover</h1>
 
 </div>
 
 
-<p>Allows researchers to conduct multivariate statistical analyses of survey data with list experiments. This survey methodology is also known as the item count technique or the unmatched count technique and is an alternative to the commonly used randomized response method. The package implements the methods developed by Imai (2011) &lt;<a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">doi:10.1198/jasa.2011.ap10415</a>&gt;, Blair and Imai (2012) &lt;<a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">doi:10.1093/pan/mpr048</a>&gt;, Blair, Imai, and Lyall (2013) &lt;<a href="http://dx.doi.org/10.1111/ajps.12086">doi:10.1111/ajps.12086</a>&gt;, Imai, Park, and Greene (2014) &lt;<a href="https://doi.org/10.1093/pan/mpu017">doi:10.1093/pan/mpu017</a>&gt;, Aronow, Coppock, Crawford, and Green (2015) &lt;<a href="https://doi.org/10.1093/jssam/smu023">doi:10.1093/jssam/smu023</a>&gt;, and Chou, Imai, and Rosenfeld (2016) &lt;<a href="http://imai.princeton.edu/research/files/auxiliary.pdf" class="uri">http://imai.princeton.edu/research/files/auxiliary.pdf</a>&gt;. This includes a Bayesian MCMC implementation of regression for the standard and multiple sensitive item list experiment designs and a random effects setup, a Bayesian MCMC hierarchical regression model with up to three hierarchical groups, the combined list experiment and endorsement experiment regression model, a joint model of the list experiment that enables the analysis of the list experiment as a predictor in outcome regression models, and a method for combining list experiments with direct questions. In addition, the package implements the statistical test that is designed to detect certain failures of list experiments, and a placebo test for the list experiment using data from direct questions.</p>
-<div id="example-using-list-package-in-r" class="section level2">
-<h2>Example using list package in R</h2>
-<p>The <code>combinedListDirect()</code> function in the <code>list</code> package for R will return point estimates and standard error estimates for the direct estimate, the conventional list estimate, and the proposed combined estimator. The <code>summary</code> command will also return the results of Placebo Test I and II.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># uncomment if list package not installed</span>
-<span class="co"># install.packages(&quot;list&quot;&quot;) </span>
-
-<span class="kw">library</span>(list)
-<span class="co"># Load data from Aronow, Coppock, Crawford, and Green (2015)</span>
-<span class="kw">data</span>(<span class="st">&quot;combinedListExps&quot;</span>)
-
-<span class="co"># complete case analysis</span>
-combinedListExps &lt;-<span class="st"> </span><span class="kw">na.omit</span>(combinedListExps)
-<span class="co"># Conduct estimation without covariate adjustment</span>
-out<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">combinedListDirect</span>(list1N ~<span class="st"> </span>list1treat, 
-                            <span class="dt">data =</span> <span class="kw">subset</span>(combinedListExps, directsfirst==<span class="dv">1</span>), 
-                            <span class="dt">treat =</span> <span class="st">&quot;list1treat&quot;</span>, <span class="dt">direct =</span> <span class="st">&quot;direct1&quot;</span>)
-<span class="kw">summary</span>(out<span class="fl">.1</span>)</code></pre></div>
-</div>
+<p>Demonstrates how estimates of spillover effects depend on the assumed spillover structure. Accompanies this EGAP Methods Guide on <a href="http://egap.org/resources/guides/spillovers/">spillovers</a>.</p>
+<iframe src="https://egap.shinyapps.io/spillover-app/" height="550" width="720">
+</iframe>
 
   </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->

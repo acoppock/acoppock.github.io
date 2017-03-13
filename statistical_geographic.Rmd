@@ -1,0 +1,18 @@
+---
+title: "Geographic Spillover"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Demonstrates how estimates of spillover effects depend on the assumed spillover structure.  Accompanies this EGAP Methods Guide on [spillovers](http://egap.org/resources/guides/spillovers/).
+
+<iframe src="https://egap.shinyapps.io/spillover-app/" height="550" width="720"></iframe>
+  
