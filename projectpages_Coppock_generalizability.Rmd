@@ -35,4 +35,5 @@ Figure 3 from paper, showing original coefficient estimates versus estimates obt
 	Author = {Coppock, Alexander},
 	Title = {Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach},
 	Journal = {Unpublished manuscript}
+}
 ```
