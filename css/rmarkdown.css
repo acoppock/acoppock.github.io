@@ -867,3 +867,31 @@ iframe.scale65 {
   padding-right: 5px;
   padding-bottom: 5px;
 }
+
+#textSpace {
+    height: 100%;
+    width: 33.333%;
+    float: left;
+    text-align: justify;
+    padding: 5px;
+}
+
+#findMe {
+    height: 70px;
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    border-color: #75aadb;
+    background-color: #ffffff;
+    color: #404040;
+    border-radius: 10px;
+}
+
+.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}

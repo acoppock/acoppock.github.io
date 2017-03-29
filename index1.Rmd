@@ -1,0 +1,36 @@
+---
+title: "Alexander Coppock"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+
+```{js}
+$("#rStudioHeader").removeClass("alwaysShrunk");
+$("#pageContent").removeClass("standardPadding");
+```
+
+
+<!--html_preserve-->
+
+<div id="homeContent">
+  <div class="band full blue first rightText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div> I am an Assistant Professor of Political Science at Yale University. I study how individuals incorporate new political information and the reproducibility of social science research. You can find me on <a href="https://scholar.google.com/citations?user=00ZskrIAAAAJ">Google Scholar</a>, <a href="http://orcid.org/0000-0002-5733-2386">ORCID</a>, <a href="http://www.researcherid.com/rid/A-9585-2015">ResearcherID</a>, <a href="https://dataverse.harvard.edu/dataverse/alexandercoppock">Dataverse</a>, <a href="https://github.com/acoppock">GitHub</a>, and <a href="https://twitter.com/aecoppock">Twitter</a>. 
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--/html_preserve-->
+
+<!--
+<img class="imageOne" src="images/bad_headshot.jpg"/>
+-->
+
