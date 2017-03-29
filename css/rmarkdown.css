@@ -334,7 +334,6 @@ p {
 
 .gallerySection .galleryItems .galleryItem {
   width: 24%;
-
   border: 1px solid #f0f0f0;
   margin-bottom: 20px;
 }
@@ -352,7 +351,7 @@ p {
 
 .gallerySection .galleryItems .galleryItem .galleryItemImage {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .gallerySection .galleryItems .galleryItem .galleryItemDescription {

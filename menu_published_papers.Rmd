@@ -13,7 +13,7 @@ output:
     <div class="galleryItems">
     
       <div class="galleryItem">
-        <a href="projectpages_CGT_tweets.html"><img class="galleryItemImage" src="papers/CGT_tweets.jpg"/></a>
+        <a href="projectpages_CGT_tweets.html"><img class="galleryItemImage" src="papers/CGT_tweets.jpg"></a>
         <a href="projectpages_CGT_tweets.html" class="galleryItemLabel">When Treatments Are Tweets: A Network Mobilization Experiment Over Twitter</a>
         <div class="galleryItemDescription">Political Behavior, 2015, with Andrew Guess and John Ternovski.</div>
       </div>
