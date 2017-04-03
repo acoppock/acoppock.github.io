@@ -14,12 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Flores, Alejandro and Alexander Coppock. “Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?” Working Paper.
 
-- [Working paper (August 2016)](papers/FC_spanish.pdf)
+- [Working paper (MPSA 2017 Draft)](papers/FC_spanish.pdf)
 - [Alejandro Flores's Personal Website](https://political-science.uchicago.edu/directory/alejandro-flores)
 
 ## Abstract
 
-Candidates for political office can appeal to bilingual Americans in either English or in Spanish. We investigate the consequences of this choice by exploiting a unique opportunity afforded by the 2016 Republican presidential primary. Jeb Bush, who is fluent in Spanish and English, produced otherwise identical versions of an advertisement in both languages. We find that bilinguals who were assigned to view the Spanish-language version increased their support for Bush by 6 percentage points in the primary and by 5 percentage points in a hypothetical matchup against Hillary Clinton in the general. We explain our results in a social identity framework. Bilinguals appear to increase their support for Bush because they infer that by virtue of publicly speaking Spanish well, Bush displays an affinity with the Latino in-group. Because our design holds constant the candidate’s policy positions, we can attribute the effects on vote choice directly to the choice of language over and above other candidate attributes.
+Candidates for political office in the United States can appeal to constituents in either English or in Spanish. We investigate the consequences of this choice in a series of survey experiments conducted on large, diverse samples of both monolingual and bilingual Americans. We take advantage of parallel advertisements produced in both English and Spanish by real candidates for national office - one presidential and two congressional. Because our design holds constant candidates' policy positions, we can attribute the effects on vote choice directly to the choice of language over and above other candidate attributes. In two of our three experiments, the Spanish-language advertisements increased candidates' electoral support by 5 percentage points among bilinguals. We find the opposite pattern of results among English-speaking monolingual Americans, who respond very negatively to Spanish language advertisements. Our results shed light on the strategic calculus of candidates who must appeal to multiple linguistic communities at once.
 
 ## Figure
 

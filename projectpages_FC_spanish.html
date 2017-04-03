@@ -22,7 +22,6 @@
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 <meta name="description" content="Turn your analyses into high quality documents, reports, presentations and dashboards with R Markdown. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL. R Markdown supports a reproducible workflow for dozens of static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides, Tufte-style handouts, books, dashboards, shiny applications, scientific articles, websites, and more." />
 
@@ -103,6 +102,7 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -128,7 +128,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
@@ -187,9 +187,8 @@ div.tocify {
 }
 
 .tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
+  font-size: 0.9em;
+  padding-left: 5px;
 }
 
 .tocify .list-group-item {
@@ -201,6 +200,7 @@ div.tocify {
 }
 .tocify-subheader .tocify-item {
   font-size: 0.95em;
+  padding-left: 10px;
 }
 
 </style>
@@ -261,12 +261,12 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 <p>Flores, Alejandro and Alexander Coppock. “Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?” Working Paper.</p>
 <ul>
-<li><a href="papers/FC_spanish.pdf">Working paper (August 2016)</a></li>
+<li><a href="papers/FC_spanish.pdf">Working paper (MPSA 2017 Draft)</a></li>
 <li><a href="https://political-science.uchicago.edu/directory/alejandro-flores">Alejandro Flores’s Personal Website</a></li>
 </ul>
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
-<p>Candidates for political office can appeal to bilingual Americans in either English or in Spanish. We investigate the consequences of this choice by exploiting a unique opportunity afforded by the 2016 Republican presidential primary. Jeb Bush, who is fluent in Spanish and English, produced otherwise identical versions of an advertisement in both languages. We find that bilinguals who were assigned to view the Spanish-language version increased their support for Bush by 6 percentage points in the primary and by 5 percentage points in a hypothetical matchup against Hillary Clinton in the general. We explain our results in a social identity framework. Bilinguals appear to increase their support for Bush because they infer that by virtue of publicly speaking Spanish well, Bush displays an affinity with the Latino in-group. Because our design holds constant the candidate’s policy positions, we can attribute the effects on vote choice directly to the choice of language over and above other candidate attributes.</p>
+<p>Candidates for political office in the United States can appeal to constituents in either English or in Spanish. We investigate the consequences of this choice in a series of survey experiments conducted on large, diverse samples of both monolingual and bilingual Americans. We take advantage of parallel advertisements produced in both English and Spanish by real candidates for national office - one presidential and two congressional. Because our design holds constant candidates’ policy positions, we can attribute the effects on vote choice directly to the choice of language over and above other candidate attributes. In two of our three experiments, the Spanish-language advertisements increased candidates’ electoral support by 5 percentage points among bilinguals. We find the opposite pattern of results among English-speaking monolingual Americans, who respond very negatively to Spanish language advertisements. Our results shed light on the strategic calculus of candidates who must appeal to multiple linguistic communities at once.</p>
 </div>
 <div id="figure" class="section level2">
 <h2>Figure</h2>
@@ -305,11 +305,8 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <script>
 
 // add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
 $(document).ready(function () {
-  bootstrapStylePandocTables();
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
 
 
