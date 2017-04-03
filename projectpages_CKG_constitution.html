@@ -11,7 +11,7 @@
 
 
 
-<title>Alexander Coppock</title>
+<title>Dynamic Constraint</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 
 <meta name="description" content="Turn your analyses into high quality documents, reports, presentations and dashboards with R Markdown. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL. R Markdown supports a reproducible workflow for dozens of static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides, Tufte-style handouts, books, dashboards, shiny applications, scientific articles, websites, and more." />
 
@@ -36,23 +39,6 @@
   ga('send', 'pageview');
 </script>
 
-<style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
 
 
 
@@ -128,6 +114,107 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.9em;
+  padding-left: 5px;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+  padding-left: 10px;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div id="rStudioHeader" class="alwaysShrunk">
@@ -163,91 +250,32 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div id="pageContent" class="standardPadding">
   <div class="articleBandContent">
 
-<style type="text/css">
-.title {
-  display: none;
-}
-#disqus_thread {
-  display: none;
-}
-</style>
-
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">Alexander Coppock</h1>
+<h1 class="title toc-ignore">Dynamic Constraint</h1>
 
 </div>
 
 
-<script type="text/javascript">
-$("#rStudioHeader").removeClass("alwaysShrunk");
-$("#pageContent").removeClass("standardPadding");
-</script>
-
-
-<div id="homeContent">
-  <div class="band full blue first rightText">
-    <div class="bandContent vCenter">
-      <div class="blueBar">
-        <div id="textSpace">
-        <br>
-        I am an Assistant Professor of Political Science at Yale University. I study how individuals incorporate new political information and the reproducibility of social science research.
-        </div>
-        <div id="textSpace">
-          <div id="findMe">
-            <a href="https://scholar.google.com/citations?user=00ZskrIAAAAJ" class="fill-div">
-              Google Scholar
-             <img name="Google Scholar" src="images/gscholar.png" height="30" width="30">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="http://www.researcherid.com/rid/A-9585-2015" class="fill-div">          
-              ResearcherID
-              <img name="ResearcherID" src="images/researcherid.png">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://dataverse.harvard.edu/dataverse/alexandercoppock" class="fill-div">          
-              Dataverse
-              <img name="Dataverse" src="images/dataverse.png">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="http://orcid.org/0000-0002-5733-2386" class="fill-div">          
-              ORCID
-              <br>
-              <img name="ORCID" src="images/orcid.png" height="30" width="30">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://github.com/acoppock" class="fill-div">    
-              GitHub
-              <img name="GitHub" src="images/github.png" height="30" width="57">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://twitter.com/aecoppock" class="fill-div"> 
-              Twitter
-              <br>
-              <img name="Twitter" src="images/Twitter.png" height="30" width="30">
-            </a>
-          </div>
-        </div>
-        <div id="textSpace">
-        My CV
-        </div>
-      </div>
-    </div>
-    
-  </div>
+<p>Coppock, Alexander, David Kirby, and Donald P. Green. “A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?” Working Paper.</p>
+<ul>
+<li><a href="papers/CKG_constituion.pdf">Working paper (MPSA 2017)</a></li>
+<li><a href="https://www.cato.org/people/david-kirby">David Kirby’s personal website</a></li>
+<li><a href="https://sites.google.com/site/donaldpgreen/">Donald P. Green’s personal website</a></li>
+</ul>
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>Existing theory and evidence on the effects of subtle primes suggests that even small manipulations can have large and long-lasting political consequences. We conduct a massive field experiment in which 4 million Americans living in 6,057 voting precincts in six nonbattleground states were randomly assigned to be mailed either nothing or a pocket edition of the Declaration of Independence and US Constitution in advance of the 2016 presidential election. Because we doubt that subjects actually read the constitution when it is unexpectedly delivered to them, we imagine that any effects would be due to priming patriotism and shared national values. We find that, despite the enormous historical and political importance of these documents and the larger-than-usual role that pocket Constitutions played in the 2016 election, receiving the Constitution in the mail does not appear to affect subjects’ values, vote choice, or turnout.</p>
 </div>
-
-
-<!--
-<img class="imageOne" src="images/bad_headshot.jpg"/>
--->
+<div id="bibtex-citation" class="section level2">
+<h2>Bibtex citation</h2>
+<pre><code>@article{Coppock2017constitution,
+    Author = {Coppock, Alexander and Kirby, David and Green, Donald P.},
+    Title = {A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?},
+    Journal = {Unpublished manuscript}</code></pre>
+</div>
 
   </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->
@@ -263,6 +291,8 @@ $("#pageContent").removeClass("standardPadding");
 </div>
 
 
+</div>
+</div>
 
 </div>
 

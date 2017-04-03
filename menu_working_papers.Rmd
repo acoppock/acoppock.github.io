@@ -15,24 +15,38 @@ output:
     <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
     <div class="galleryItems">
     
+          <div class="galleryItem">
+        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.jpg"/></a>
+        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
+    
+    
+          <div class="galleryItem">
+        <a href="projectpages_FC_spanish.html"><img class="galleryItemImage" src="papers/FC_spanish.jpg"/></a>
+        <a href="projectpages_FC_spanish.html" class="galleryItemLabel">Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>      
+      
+            <div class="galleryItem">
+        <a href="projectpages_CKG_constitution.html"><img class="galleryItemImage" src="papers/CKG_constitution.jpg"/></a>
+        <a href="projectpages_CKG_constitution.html" class="galleryItemLabel">A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>    
+      
       <div class="galleryItem">
         <a href="projectpages_Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.jpg"/></a>
         <a href="projectpages_Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
         <div class="galleryItemDescription">Working Paper.</div>
       </div>
       
+  
       
-      <div class="galleryItem">
+            <div class="galleryItem">
         <a href="projectpages_CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.jpg"/></a>
         <a href="projectpages_CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
         <div class="galleryItemDescription">Working Paper.</div>
       </div>
-      
-      <div class="galleryItem">
-        <a href="projectpages_FC_spanish.html"><img class="galleryItemImage" src="papers/FC_spanish.jpg"/></a>
-        <a href="projectpages_FC_spanish.html" class="galleryItemLabel">Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?</a>
-        <div class="galleryItemDescription">Working Paper.</div>
-      </div>      
       
       <div class="galleryItem">
         <a href="projectpages_GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_backlash.jpg"/></a>
@@ -46,26 +60,8 @@ output:
         <div class="galleryItemDescription">Working Paper.</div>
       </div>  
       
-      <div class="galleryItem">
-        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.jpg"/></a>
-        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
-        <div class="galleryItemDescription">Working Paper.</div>
-      </div>
-
-      <div class="galleryItem">
-        <a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.jpg"/></a>
-        <a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
-        <div class="galleryItemDescription">Working Paper.</div>
-      </div>
-
-
   </div>
 </div>
-
-
-
-
-
 
 
 
@@ -80,7 +76,11 @@ output:
         <div class="galleryItemDescription">Working Paper.</div>
       </div>      
 
-      
+            <div class="galleryItem">
+        <a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.jpg"/></a>
+        <a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
+        <div class="galleryItemDescription">Working Paper.</div>
+      </div>
     
   </div>
 </div>
