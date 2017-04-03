@@ -12,14 +12,14 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander and Donald P. Green. “Do Belief Systems Exhibit Dynamic Constraint?” Working Paper.
+Coppock, Alexander and Donald P. Green. "Do Belief Systems Exhibit Dynamic Constraint?" Working Paper.
 
-- [Working paper (August 2016)](papers/CG_dynamicconstraint.pdf)
+- [Working paper (MPSA 2017)](papers/CG_dynamicconstraint.pdf)
 - [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
 
 ## Abstract
 
-As described in Converse (1964), belief systems are dynamically constrained if a change in one idea-element causes a concomitant change in a related idea-element. While an enormous literature is dedicated to the study of static constraint (the extent to which individuals hold political views that “go together”), very little theoretical or empirical work has developed the concept of dynamic constraint since Converse’s original formulation. We fill this gap with a new formalization of the theoretical argument and evidence from survey experiments conducted variously on online convenience samples, a nationally representative sample, and a convenience sample of political elites. Our results indicate that even among subjects whose belief systems are manifestly constrained in the static sense, a change in one attitude does not necessitate changes in related attitudes. We conclude that on the whole, weak levels of dynamic constraint underscore Converse’s thesis about the limited extent of ideological thinking in the mass public.
+As described in Converse (1964), belief systems are dynamically constrained if a change in one idea-element causes a concomitant change in a related idea-element. While an enormous literature is dedicated to the study of static constraint (the extent to which individuals hold political views that ``go together''), very little theoretical or empirical work has developed the concept of dynamic constraint since Converse's original formulation. We fill this gap with a new formalization of the theoretical argument and evidence from survey experiments conducted variously on online convenience samples, a nationally representative sample, and a convenience sample of political elites. Our results indicate that even among subjects whose belief systems are highly constrained in the static sense, a change in one attitude does not necessitate changes in related attitudes. Even direct encouragement of consistency generates effects that dissipate quickly. These experimental results and aggregate patterns of policy mood change affirm and extend Converse's thesis about the limited extent of dynamically constrained ideological thinking in the mass public.
 
 ## Figure
 
@@ -30,7 +30,7 @@ Figure 5 from paper, showing strong effects of treatments on target issues and v
 ## Bibtex citation
 
 ```
-@article{Coppock2015dynamicconstraint,
+@article{Coppock2017dynamicconstraint,
 	Author = {Coppock, Alexander and Green, Donald P.},
 	Title = {Do Belief Systems Exhibit Dynamic Constraint?},
 	Journal = {Unpublished manuscript}
