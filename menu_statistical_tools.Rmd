@@ -18,7 +18,7 @@ output:
     <div class="galleryItems">
     
       <div class="galleryItem">
-        <a href="statistical_randomizr.html"><img class="galleryItemImage" src="images/list.png"/></a>
+        <a href="statistical_randomizr.html"><img class="galleryItemImage" src="images/randomizr.png"/></a>
         <a href="statistical_randomizr.html" class="galleryItemLabel">randomizr</a>
         <div class="galleryItemDescription"></div>
       </div>
