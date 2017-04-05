@@ -18,31 +18,31 @@ output:
     <div class="galleryItems">
     
       <div class="galleryItem">
-        <a href="statistical_randomizr.html"><img class="galleryItemImage" src="statistical_images/randomizr.png"/></a>
+        <a href="statistical_randomizr.html"><img class="galleryItemImage" src="images/randomizr.png"/></a>
         <a href="statistical_randomizr.html" class="galleryItemLabel">randomizr</a>
         <div class="galleryItemDescription"></div>
       </div>
       
       <div class="galleryItem">
-        <a href="statistical_list.html"><img class="galleryItemImage" src="statistical_images/list.png"/></a>
+        <a href="statistical_list.html"><img class="galleryItemImage" src="images/list.png"/></a>
         <a href="statistical_list.html" class="galleryItemLabel">list</a>
         <div class="galleryItemDescription">Statistical Methods for the Item Count Technique and List Experiment</div>
       </div>
       
       <div class="galleryItem">
-        <a href="https://declaredesign.org/"><img class="galleryItemImage" src="statistical_images/declaredesign.png"/></a>
+        <a href="https://declaredesign.org/"><img class="galleryItemImage" src="images/declaredesign.png"/></a>
         <a href="https://declaredesign.org/" class="galleryItemLabel">DeclareDesign</a>
         <div class="galleryItemDescription"></div>
       </div>
 
       <div class="galleryItem">
-        <a href="statistical_comma.html"><img class="galleryItemImage" src="statistical_images/comma.png"/></a>
+        <a href="statistical_comma.html"><img class="galleryItemImage" src="images/comma.png"/></a>
         <a href="statistical_comma.html" class="galleryItemLabel">commarobust</a>
         <div class="galleryItemDescription"></div>
       </div>
 
       <div class="galleryItem">
-        <a href="statistical_attrition.html"><img class="galleryItemImage" src="statistical_images/attrition.png"/></a>
+        <a href="statistical_attrition.html"><img class="galleryItemImage" src="images/attrition.png"/></a>
         <a href="statistical_attrition.html" class="galleryItemLabel">attrition</a>
         <div class="galleryItemDescription"></div>
       </div>
@@ -57,32 +57,32 @@ output:
     <div class="galleryItems">
     
       <div class="galleryItem">
-        <a href="statistical_powercalculator.html"><img class="galleryItemImage" src="statistical_images/powercalculator.png"/></a>
+        <a href="statistical_powercalculator.html"><img class="galleryItemImage" src="images/powercalculator.png"/></a>
         <a href="statistical_powercalculator.html" class="galleryItemLabel">Power Calculator</a>
         <div class="galleryItemDescription"></div>
       </div>
       
       <div class="galleryItem">
-        <a href="statistical_field.html"><img class="galleryItemImage" src="statistical_images/field.png"/></a>
+        <a href="statistical_field.html"><img class="galleryItemImage" src="images/field.png"/></a>
         <a href="statistical_field.html" class="galleryItemLabel">Analysis of Field Experiments</a>
         <div class="galleryItemDescription"></div>
       </div>
       
       <div class="galleryItem">
-        <a href="statistical_comparisons.html"><img class="galleryItemImage" src="statistical_images/comparisons.png"/></a>
+        <a href="statistical_comparisons.html"><img class="galleryItemImage" src="images/comparisons.png"/></a>
         <a href="statistical_comparisons.html" class="galleryItemLabel">Multiple Comparisons Calculator</a>
         <div class="galleryItemDescription"></div>
       </div>
       
 
       <div class="galleryItem">
-        <a href="statistical_geographic.html"><img class="galleryItemImage" src="statistical_images/geographic.png"/></a>
+        <a href="statistical_geographic.html"><img class="galleryItemImage" src="images/geographic.png"/></a>
         <a href="statistical_geographic.html" class="galleryItemLabel">Geographic Spillover</a>
         <div class="galleryItemDescription"></div>
       </div>
 
       <div class="galleryItem">
-        <a href="statistical_limit.html"><img class="galleryItemImage" src="statistical_images/limit.png"/></a>
+        <a href="statistical_limit.html"><img class="galleryItemImage" src="images/limit.png"/></a>
         <a href="statistical_limit.html" class="galleryItemLabel">Central Limit Theorem in Action </a>
         <div class="galleryItemDescription"></div>
       </div>
