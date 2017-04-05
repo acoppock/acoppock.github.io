@@ -82,7 +82,7 @@ output:
       </div>
 
       <div class="galleryItem">
-        <a href="statistical_limit.html"><img class="galleryItemImage" src="images/limit.png"/></a>
+        <a href="statistical_limit.html"><img class="galleryItemImage" src="images/centrallimit.png"/></a>
         <a href="statistical_limit.html" class="galleryItemLabel">Central Limit Theorem in Action </a>
         <div class="galleryItemDescription"></div>
       </div>
