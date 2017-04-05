@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <meta name="description" content="Turn your analyses into high quality documents, reports, presentations and dashboards with R Markdown. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL. R Markdown supports a reproducible workflow for dozens of static and dynamic output formats including HTML, PDF, MS Word, Beamer, HTML5 slides, Tufte-style handouts, books, dashboards, shiny applications, scientific articles, websites, and more." />
 
@@ -37,10 +40,6 @@
 </script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -116,7 +115,6 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -191,52 +189,26 @@ $("#pageContent").removeClass("standardPadding");
   <div class="band full blue first rightText">
     <div class="bandContent vCenter">
       <div class="blueBar">
+        
         <div id="textSpace">
-        <br>
-        I am an Assistant Professor of Political Science at Yale University. I study how individuals incorporate new political information and the reproducibility of social science research.
+          <a href="menu_published_papers.html">    
+            <img name="Published Articles" src="images/front_page/published_articles.png" height="700" width="700">
+          </a>
         </div>
         <div id="textSpace">
-          <div id="findMe">
-            <a href="https://scholar.google.com/citations?user=00ZskrIAAAAJ" class="fill-div">
-              Google Scholar
-             <img name="Google Scholar" src="images/gscholar.png" height="30" width="30">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="http://www.researcherid.com/rid/A-9585-2015" class="fill-div">          
-              ResearcherID
-              <img name="ResearcherID" src="images/researcherid.png">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://dataverse.harvard.edu/dataverse/alexandercoppock" class="fill-div">          
-              Dataverse
-              <img name="Dataverse" src="images/dataverse.png">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="http://orcid.org/0000-0002-5733-2386" class="fill-div">          
-              ORCID
-              <br>
-              <img name="ORCID" src="images/orcid.png" height="30" width="30">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://github.com/acoppock" class="fill-div">    
-              GitHub
-              <img name="GitHub" src="images/github.png" height="30" width="57">
-            </a>
-          </div>
-          <div id="findMe">
-            <a href="https://twitter.com/aecoppock" class="fill-div"> 
-              Twitter
-              <br>
-              <img name="Twitter" src="images/Twitter.png" height="30" width="30">
-            </a>
-          </div>
+          <a href="menu_working_papers.html">    
+            <img name="Working Papers" src="images/front_page/working_papers.png" height="700" width="700">
+          </a>
         </div>
         <div id="textSpace">
-        My CV
+          <a href="menu_statistical_tools.html">    
+            <img name="Statistical Tools" src="images/front_page/statistical_tools.png" height="700" width="700">
+          </a>
+        </div>
+        <div id="textSpace">
+          <a href="menu_teaching.html">    
+            <img name="Teaching" src="images/front_page/teaching.png" height="700" width="700">
+          </a>
         </div>
       </div>
     </div>
@@ -269,8 +241,11 @@ $("#pageContent").removeClass("standardPadding");
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 

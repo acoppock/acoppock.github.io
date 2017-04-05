@@ -350,8 +350,12 @@ p {
 }
 
 .gallerySection .galleryItems .galleryItem .galleryItemImage {
+<<<<<<< Updated upstream
   max-height: 100%;
     width: auto;
+=======
+  width: 100%;
+>>>>>>> Stashed changes
   overflow: hidden;
 }
 
@@ -870,7 +874,7 @@ iframe.scale65 {
 
 #textSpace {
     height: 100%;
-    width: 33.333%;
+    width: 25%;
     float: left;
     text-align: justify;
     padding: 5px;
