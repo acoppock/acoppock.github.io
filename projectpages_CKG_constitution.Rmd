@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, David Kirby, and Donald P. Green. "A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?" Working Paper.
 
-- [Working paper (MPSA 2017)](papers/CKG_constituion.pdf)
+- [Working paper (MPSA 2017)](papers/CKG_constitution.pdf)
 - [David Kirby's personal website](https://www.cato.org/people/david-kirby)
 - [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
 
