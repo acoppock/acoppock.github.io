@@ -874,10 +874,11 @@ iframe.scale65 {
 
 #textSpace {
     height: 100%;
-    width: 25%;
+    width: 50%;
     float: left;
     text-align: justify;
     padding: 5px;
+    
 }
 
 #findMe {
