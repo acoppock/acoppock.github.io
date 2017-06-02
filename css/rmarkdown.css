@@ -53,21 +53,23 @@ p {
 }
 
 .band .imageOne {
+
   position: absolute;
-  left: 0px;
-  bottom: -120px;
-  width: 630px;
-  height: auto;
+  right: 0px;
+  top: 250px;
+  width: 490px;
+  height: 490px;
 
   z-index: 5;
 }
 
 .band .imageTwo {
   position: absolute;
-  top: 10%;
+  top: 150px;
   right: 10px;
-  width: 45%;
+  width: 35%;
   height: auto;
+
 }
 
 .band .imageThree {
@@ -421,7 +423,8 @@ p {
 
 #homeContent a {
   text-decoration: none;
-  color: #2780e3;
+  color: #fcbf49;
+  /* color: #2780e3; */
 }
 
 #homeContent .blue a {
@@ -439,6 +442,7 @@ p {
 
 #homeContent .band.gray1 {
   background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 #homeContent .band.blue {
@@ -772,11 +776,20 @@ table.table td a:only-child:active {
   }
 
   .band .imageTwo {
+position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 100px;
+
+
+    /*
     position: relative;
     top: 0;
     right: 0;
     width: 100%;
     margin-bottom: 100px;
+    */
   }
 
   .band .imageThree {
