@@ -14,19 +14,19 @@ output:
     <div class="gallerySectionTitle">Courses Taught</div>
         <div class="galleryItems">
       <div class="galleryItem">
-        <a href="papers/PLSC_500_syllabus.pdf"><img class="galleryItemImage" src="Images/PLSC_500.png"/></a>
+        <a href="papers/PLSC_500_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_500_syllabus.png"/></a>
         <a href="papers/PLSC_500_syllabus.pdf" class="galleryItemLabel">PLSC 500</a>
         <div class="galleryItemDescription">Statistics</div>
       </div>
       
       <div class="galleryItem">
-               <a href="papers/PLSC_341_syllabus.pdf"><img class="galleryItemImage" src="Images/PLSC_341.png"/></a>
+               <a href="papers/PLSC_341_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_341_syllabus.png"/></a>
         <a href="papers/PLSC_341_syllabus.pdf" class="galleryItemLabel">PLSC 341</a>
         <div class="galleryItemDescription">Logic of Randomized Experiments</div>
       </div>
       
       <div class="galleryItem">
-               <a href="papers/PLSC_512_syllabus.pdf"><img class="galleryItemImage" src="Images/PLSC_512.png"/></a>
+               <a href="papers/PLSC_512_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_512_syllabus.png"/></a>
         <a href="papers/PLSC_512_syllabus.pdf" class="galleryItemLabel">PLSC 512</a>
         <div class="galleryItemDescription">Randomized Experiments in Political Science</div>
       </div>

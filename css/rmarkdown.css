@@ -352,12 +352,8 @@ p {
 }
 
 .gallerySection .galleryItems .galleryItem .galleryItemImage {
-<<<<<<< Updated upstream
   max-height: 100%;
-    width: auto;
-=======
-  width: 100%;
->>>>>>> Stashed changes
+  width: auto;
   overflow: hidden;
 }
 
