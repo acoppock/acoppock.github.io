@@ -578,7 +578,9 @@ p {
 #rStudioFooter .bandContent .footerLogo.yale {
   background-image: url(../images/yaleLogo.svg);
 }
-
+#rStudioFooter .bandContent .footerLogo.dataverse {
+  background-image: url(../images/dataverseLogo.svg);
+}
 
 .screenshot {
   border: 1px solid #ccc;
