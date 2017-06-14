@@ -4,6 +4,47 @@ library(magick)
 library(magrittr)
 
 
+# For logos
+
+twitter <- image_read("images/twitterLogo.svg", density = 1000)
+github <- image_read("images/gitHubLogo2.svg", density = 1000)
+dataverse <- image_read("images/dataverseLogo.png")
+
+dataverse %>% 
+  image_convert(format = "svg") %>%
+  image_write(path = "images/dataverseLogo.svg")
+
+
+
+orcid <- image_read("images/orcidLogo.png")
+
+orcid %>% 
+  image_convert(format = "svg") %>%
+  image_write(path = "images/orcidLogo.svg")
+
+
+yale <- image_read("images/yaleLogo.png")
+
+yale %>% 
+  image_convert(format = "svg") %>%
+  image_write(path = "images/yaleLogo.svg")
+
+
+
+gscholar <- image_read("images/gscholarLogo.png")
+
+gscholar %>% 
+  image_convert(format = "svg") %>%
+  image_write(path = "images/gscholarLogo.svg")
+
+
+
+twitter
+
+
+
+
+
 # For papers
 files <- list.files(path = "papers/", pattern = ".pdf")
 files <- files[files != "CG_habit.pdf"]

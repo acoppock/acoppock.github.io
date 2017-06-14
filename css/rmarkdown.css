@@ -547,6 +547,7 @@ p {
   margin: 0 8px;
 }
 
+
 #rStudioFooter .bandContent #logos .footerLogo:last-child {
   margin-right: 0px;
 }
@@ -566,6 +567,18 @@ p {
 #rStudioFooter .bandContent .footerLogo.facebook {
   background-image: url(../images/facebookLogo.svg);
 }
+
+#rStudioFooter .bandContent .footerLogo.orcid {
+  background-image: url(../images/orcidLogo.svg);
+}
+
+#rStudioFooter .bandContent .footerLogo.gscholar {
+  background-image: url(../images/gscholarLogo.svg);
+}
+#rStudioFooter .bandContent .footerLogo.yale {
+  background-image: url(../images/yaleLogo.svg);
+}
+
 
 .screenshot {
   border: 1px solid #ccc;

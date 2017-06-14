@@ -12,13 +12,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Kirkland, Patricia and Alexander Coppock. 2016. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Working Paper.
+Kirkland, Patricia and Alexander Coppock. 2017. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Political Behavior. Forthcoming.
 
 - [Working paper (June 2016)](papers/KC_nonpartisan.pdf)
 - [Appendix](papers/KC_nonpartisan_appendix.pdf)
 - [Patricia Kirkland's Personal Website](https://patriciakirkland.com/)
-
-
 
 ## Abstract
 
@@ -34,8 +32,10 @@ Figure 2 from paper, showing the results of a conjoint experiment conducted on Y
 ## Bibtex citation
 
 ```
-@article{KirklandCoppock2016nonpartisan,
+@article{KirklandCoppock2017nonpartisan,
 	Author = {Kirkland, Patricia and Alexander Coppock},
 	Title = {Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments},
-	Journal = {Unpublished manuscript}
+	Journal = {Political Behavior},
+	Year = {forthcoming}
+}
 ```
