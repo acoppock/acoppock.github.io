@@ -38,7 +38,7 @@ Figure 1 from paper, showing the increase in precision of the combined estimator
 
 The `combinedListDirect()` function in the `list` package for R will return point estimates and standard error estimates for the direct estimate, the conventional list estimate, and the proposed combined estimator. The `summary` command will also return the results of Placebo Test I and II.
 
-```{r, echo=TRUE, message=FALSE, eval=FALSE}
+```{r, echo=TRUE, message=FALSE, eval=TRUE}
 # uncomment if list package not installed
 # install.packages("list"") 
 

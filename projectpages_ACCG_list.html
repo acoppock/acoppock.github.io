@@ -344,6 +344,32 @@ out<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">com
                             <span class="dt">data =</span> <span class="kw">subset</span>(combinedListExps, directsfirst==<span class="dv">1</span>), 
                             <span class="dt">treat =</span> <span class="st">&quot;list1treat&quot;</span>, <span class="dt">direct =</span> <span class="st">&quot;direct1&quot;</span>)
 <span class="kw">summary</span>(out<span class="fl">.1</span>)</code></pre></div>
+<pre><code>## 
+##  Combined List Estimates 
+## 
+## Call: combinedListDirect(formula = list1N ~ list1treat, data = subset(combinedListExps, 
+##     directsfirst == 1), treat = &quot;list1treat&quot;, direct = &quot;direct1&quot;)
+## 
+##  Prevalence estimates
+##                  Combined     Direct Conventional
+## Estimate       0.66561842 0.65600000    0.7477391
+## Standard Error 0.04840343 0.02126576    0.0844101
+## 
+##  Placebo Test I
+##        Beta is the conventional list experiment estimate among those who answer &#39;Yes&#39; to the direct question.
+##        Ho: beta = 1
+##        Ha: beta != 1
+##       
+##       Estimate         SE         p   n
+## beta 1.053962 0.09452734 0.5680971 328
+## 
+##  Placebo Test II
+##        Delta is the average effect of the receiving the treatment list on the direct question response.
+##        Ho: delta = 0
+##        Ha: delta != 0
+##       
+##          Estimate         SE         p   n
+## delta 0.06626651 0.04243975 0.1184234 500</code></pre>
 </div>
 <div id="bibtex-citation" class="section level2">
 <h2>Bibtex Citation</h2>
