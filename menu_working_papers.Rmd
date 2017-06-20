@@ -92,11 +92,15 @@ output:
 The Effectiveness of Online Ads: A Field Experiment</a>
         <div class="galleryItemDescription">Research Note.</div>
       </div>
+
+            <div class="galleryItem">
+        <a href="subpages/Random_Assignment_Subject_To_Constraints.html"><img class="galleryItemImage" src="papers/Random_Assignment_Subject_To_Constraints.png"/></a>
+        <a href="subpages/Random_Assignment_Subject_To_Constraints.html" class="galleryItemLabel">Random Assignment Subject to Constraints</a>
+        <div class="galleryItemDescription">Research Note.</div>
+      </div>
     
   </div>
 </div>
-
-
 
 
 <!--/html_preserve-->
