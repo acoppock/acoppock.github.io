@@ -12,7 +12,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- [Working paper (December 2016)](papers/Coppock_shytrump.pdf)
+- [Paper](papers/Coppock_shytrump.pdf)
+- [Link to Journal](https://doi.org/10.1515/spp-2016-0005)
 - Replication Archive in production
 - Press
     - [Washington Post Monkey Cage](https://www.washingtonpost.com/news/monkey-cage/wp/2016/10/25/shy-trump-supporters-this-new-evidence-says-no/)
