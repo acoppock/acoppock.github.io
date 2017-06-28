@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 - [Paper](papers/Coppock_shytrump.pdf)
-- [Link to Journal](https://doi.org/10.1515/spp-2016-0005)
+- [Link to Journal](https://www.degruyter.com/view/j/spp.ahead-of-print/spp-2016-0005/spp-2016-0005.xml)
 - Replication Archive in production
 - Press
     - [Washington Post Monkey Cage](https://www.washingtonpost.com/news/monkey-cage/wp/2016/10/25/shy-trump-supporters-this-new-evidence-says-no/)

@@ -6,6 +6,7 @@ library(magrittr)
 # For papers
 files <- list.files(path = "papers/", pattern = ".pdf")
 files <- files[files != "CG_habit.pdf"]
+files <- files[files != "Coppock_shytrump.pdf"]
 
 file_names <- gsub(pattern = ".pdf",
                    replacement = "",
@@ -25,6 +26,12 @@ image_read("papers/CG_habit_test_Page_01.png") %>%
   image_scale("1000") %>%
   image_crop("1000x1000") %>%
   image_write("papers/CG_habit.png")
+
+# Fix shytrymp
+image_read("papers/Coppock_shytrump_Page_01.png") %>%
+  image_scale("1000") %>%
+  image_crop("1000x1000") %>%
+  image_write("papers/Coppock_shytrump.png")
 
 
 # For logos
