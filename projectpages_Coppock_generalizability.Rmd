@@ -13,9 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Coppock, Alexander. “Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach” Working Paper.
+Coppock, Alexander. “Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach” Political Science Research and Methods, forthcoming
 
-- [Working paper (March 2016)](papers/Coppock_generalizability.pdf)
+- [Pre-production Draft](papers/Coppock_generalizability.pdf)
+- [Appendix](papers/Coppock_generalizability_appendix.pdf)
 
 
 ## Abstract
@@ -26,7 +27,7 @@ Abstract: To what extent do survey experimental treatment effect estimates gener
 
 Figure 3 from paper, showing original coefficient estimates versus estimates obtained on Mechanical Turk.
 
-<center><img src="Images/Coppock_generalizability_fig.png" alt="Coppock 2016 Figure 3" width="600"></center>
+<center><img src="Images/Coppock_generalizability_fig.png" alt="Coppock 2017 Figure 3" width="600"></center>
 
 ## Bibtex citation
 
@@ -34,6 +35,7 @@ Figure 3 from paper, showing original coefficient estimates versus estimates obt
 @article{Coppockgeneralizability,
 	Author = {Coppock, Alexander},
 	Title = {Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach},
-	Journal = {Unpublished manuscript}
+	Journal = {Political Science Research and Methods}.
+	Date = {forthcoming}
 }
 ```

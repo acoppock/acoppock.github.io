@@ -34,6 +34,15 @@ image_read("papers/Coppock_shytrump_Page_01.png") %>%
   image_write("papers/Coppock_shytrump.png")
 
 
+# project pages images ----------------------------------------------------
+
+image_read("~/Dropbox/Work with me/Sensitive Trump/drafts/SPP_production_docs/results_fig.pdf", density = 500) %>%
+  image_convert(format = "jpg") %>%
+  image_write("images/Coppock_shytrump_fig.jpg")
+
+
+
+
 # For logos
 
 # image_read("images/dataverseLogo.png") %>%
