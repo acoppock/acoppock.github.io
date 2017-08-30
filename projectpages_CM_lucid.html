@@ -11,7 +11,7 @@
 
 
 
-<title>list</title>
+<title>Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,49 +38,6 @@
 </script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code > span.dt { color: #204a87; } /* DataType */
-code > span.dv { color: #0000cf; } /* DecVal */
-code > span.bn { color: #0000cf; } /* BaseN */
-code > span.fl { color: #0000cf; } /* Float */
-code > span.ch { color: #4e9a06; } /* Char */
-code > span.st { color: #4e9a06; } /* String */
-code > span.co { color: #8f5902; font-style: italic; } /* Comment */
-code > span.ot { color: #8f5902; } /* Other */
-code > span.al { color: #ef2929; } /* Alert */
-code > span.fu { color: #000000; } /* Function */
-code > span.er { color: #a40000; font-weight: bold; } /* Error */
-code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #000000; } /* Constant */
-code > span.sc { color: #000000; } /* SpecialChar */
-code > span.vs { color: #4e9a06; } /* VerbatimString */
-code > span.ss { color: #4e9a06; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #000000; } /* Variable */
-code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code > span.ex { } /* Extension */
-code > span.at { color: #c4a000; } /* Attribute */
-code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -294,30 +251,35 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">list</h1>
+<h1 class="title toc-ignore">Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</h1>
 
 </div>
 
 
-<p>Allows researchers to conduct multivariate statistical analyses of survey data with list experiments. This survey methodology is also known as the item count technique or the unmatched count technique and is an alternative to the commonly used randomized response method. The package implements the methods developed by <a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">Imai (2011)</a>, <a href="http://dx.doi.org/10.1198/jasa.2011.ap10415">Blair and Imai (2012)</a>, <a href="http://dx.doi.org/10.1111/ajps.12086">Blair, Imai, and Lyall (2013)</a>, <a href="https://doi.org/10.1093/pan/mpu017">Imai, Park, and Greene (2014)</a>&gt;, <a href="https://doi.org/10.1093/jssam/smu023">Aronow, Coppock, Crawford, and Green (2015)</a>, and <a href="http://imai.princeton.edu/research/files/auxiliary.pdf">Chou, Imai, and Rosenfeld (2016)</a>. This includes a Bayesian MCMC implementation of regression for the standard and multiple sensitive item list experiment designs and a random effects setup, a Bayesian MCMC hierarchical regression model with up to three hierarchical groups, the combined list experiment and endorsement experiment regression model, a joint model of the list experiment that enables the analysis of the list experiment as a predictor in outcome regression models, and a method for combining list experiments with direct questions. In addition, the package implements the statistical test that is designed to detect certain failures of list experiments, and a placebo test for the list experiment using data from direct questions.</p>
-<p>For more on sensitive questions, see Graeme Blair’s <a href="https://graemeblair.com/sensitive/">website</a>.</p>
-<div id="example-of-combined-estimator-using-list-package-in-r" class="section level2">
-<h2>Example of Combined Estimator using list package in R</h2>
-<p>The <code>combinedListDirect()</code> function in the <code>list</code> package for R will return point estimates and standard error estimates for the direct estimate, the conventional list estimate, and the proposed combined estimator. The <code>summary</code> command will also return the results of Placebo Test I and II.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># uncomment if list package not installed</span>
-<span class="co"># install.packages(&quot;list&quot;&quot;) </span>
-
-<span class="kw">library</span>(list)
-<span class="co"># Load data from Aronow, Coppock, Crawford, and Green (2015)</span>
-<span class="kw">data</span>(<span class="st">&quot;combinedListExps&quot;</span>)
-
-<span class="co"># complete case analysis</span>
-combinedListExps &lt;-<span class="st"> </span><span class="kw">na.omit</span>(combinedListExps)
-<span class="co"># Conduct estimation without covariate adjustment</span>
-out.<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">combinedListDirect</span>(list1N <span class="op">~</span><span class="st"> </span>list1treat, 
-                            <span class="dt">data =</span> <span class="kw">subset</span>(combinedListExps, directsfirst<span class="op">==</span><span class="dv">1</span>), 
-                            <span class="dt">treat =</span> <span class="st">&quot;list1treat&quot;</span>, <span class="dt">direct =</span> <span class="st">&quot;direct1&quot;</span>)
-<span class="kw">summary</span>(out.<span class="dv">1</span>)</code></pre></div>
+<p>Coppock, Alexander, and Oliver A. McClellan. Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents” Working Paper.</p>
+<ul>
+<li><a href="papers/CM_lucid.pdf">Working paper (August 2017)</a></li>
+<li><a href="https://polisci.columbia.edu/content/oliver-ahlstrom-mcclellan">Oliver McClellan’s personal website</a></li>
+</ul>
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>Researchers have increasingly turned to online convenience samples as sources of survey responses that are easy and inexpensive to collect. As reliance on these sources has grown, so too have concerns that they have become “overfished” in the sense that many participants on these platforms have become professional survey takers. We explore an alternative source of online convenience samples, the Lucid Fulcrum Exchange, and assess its suitability for online survey experimental research. Our point of departure is Berinsky et al. (2012), which compares Amazon’s Mechanical Turk to national probability samples in terms of respondent characteristics and treatment effect estimates. We replicate these same analyses using a large sample of survey responses on the Lucid platform. Our results indicate that demographic and experimental findings on Lucid track well with national benchmarks, with the exception of experimental treatments that aim to dispel the “death panel” rumor regarding the Affordable Care Act. This exception points to the possibly time-bound nature of some survey experimental effects. We conclude that Lucid can serve as a drop-in replacement for many scholars currently conducting research on Mechanical Turk or other similar platforms.</p>
+</div>
+<div id="figure" class="section level2">
+<h2>Figure</h2>
+<p>Figure 1 from paper, showing relative performance of MTurk and Lucid in hitting national probability targets for averages of baseline characteristics.</p>
+<center>
+<img src="images/demos_standardized.png" alt="Coppock and McClellan 2017 Figure 1" width="600">
+</center>
+</div>
+<div id="bibtex-citation" class="section level2">
+<h2>Bibtex citation</h2>
+<pre><code>@article{Coppockgeneralizability,
+    Author = {Coppock, Alexander and McClellan, Oliver A.},
+    Title = {Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents},
+    Year = {2017},
+    Journal = {Unpublished manuscript}
+}</code></pre>
 </div>
 
   </div> <!-- articleBandContent -->

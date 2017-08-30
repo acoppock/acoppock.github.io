@@ -1,0 +1,41 @@
+---
+title: "Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Coppock, Alexander, and Oliver A. McClellan. Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents” Working Paper.
+
+- [Working paper (August 2017)](papers/CM_lucid.pdf)
+- [Oliver McClellan's personal website](https://polisci.columbia.edu/content/oliver-ahlstrom-mcclellan)
+
+
+## Abstract
+
+Researchers have increasingly turned to online convenience samples as sources of survey responses that are easy and inexpensive to collect. As reliance on these sources has grown, so too have concerns that they have become "overfished" in the sense that many participants on these platforms have become professional survey takers. We explore an alternative source of online convenience samples, the Lucid Fulcrum Exchange, and assess its suitability for online survey experimental research. Our point of departure is Berinsky et al. (2012), which compares Amazon's Mechanical Turk to national probability samples in terms of respondent characteristics and treatment effect estimates. We replicate these same analyses using a large sample of survey responses on the Lucid platform. Our results indicate that demographic and experimental findings on Lucid track well with national benchmarks, with the exception of experimental treatments that aim to dispel the "death panel" rumor regarding the Affordable Care Act. This exception points to the possibly time-bound nature of some survey experimental effects. We conclude that Lucid can serve as a drop-in replacement for many scholars currently conducting research on Mechanical Turk or other similar platforms.
+
+## Figure
+
+Figure 1 from paper, showing relative performance of MTurk and Lucid in hitting national probability targets for averages of baseline characteristics.
+
+<center><img src="Images/demos_standardized.png" alt="Coppock and McClellan 2017 Figure 1" width="600"></center>
+
+## Bibtex citation
+
+```
+@article{Coppockgeneralizability,
+	Author = {Coppock, Alexander and McClellan, Oliver A.},
+	Title = {Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents},
+	Year = {2017},
+	Journal = {Unpublished manuscript}
+}
+```

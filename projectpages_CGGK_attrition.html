@@ -331,35 +331,35 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 N &lt;-<span class="st"> </span><span class="dv">1000</span>
 
 <span class="co"># Potential Outcomes</span>
-Y_0 &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.3</span>, <span class="fl">0.3</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>))
-Y_1 &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.1</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>))
+Y_<span class="dv">0</span> &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.3</span>, <span class="fl">0.3</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>))
+Y_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, N, <span class="dt">replace=</span><span class="ot">TRUE</span>, <span class="dt">prob =</span> <span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.1</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>))
 
-R1_0 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.7</span>)
-R1_1 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.8</span>)
+R1_<span class="dv">0</span> &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.7</span>)
+R1_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.8</span>)
 
-R2_0 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.9</span>)
-R2_1 &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.95</span>)
+R2_<span class="dv">0</span> &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.9</span>)
+R2_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, <span class="dt">prob =</span> <span class="fl">0.95</span>)
 
 <span class="co"># Covariate</span>
-strata &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(Y_0 &gt;<span class="st"> </span><span class="dv">2</span>)
+strata &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(Y_<span class="dv">0</span> <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span>)
 
 <span class="co"># Random Assignment</span>
 Z &lt;-<span class="st"> </span><span class="kw">rbinom</span>(N, <span class="dv">1</span>, .<span class="dv">5</span>)
 
 <span class="co"># Reveal Initial Sample Outcomes</span>
-R1 &lt;-<span class="st"> </span>Z*R1_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*R1_0 <span class="co"># Initial sample response</span>
-Y_star &lt;-<span class="st"> </span>Z*Y_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*Y_0 <span class="co"># True outcomes</span>
+R1 &lt;-<span class="st"> </span>Z<span class="op">*</span>R1_<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">-</span>Z)<span class="op">*</span>R1_<span class="dv">0</span> <span class="co"># Initial sample response</span>
+Y_star &lt;-<span class="st"> </span>Z<span class="op">*</span>Y_<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">-</span>Z)<span class="op">*</span>Y_<span class="dv">0</span> <span class="co"># True outcomes</span>
 Y &lt;-<span class="st"> </span>Y_star
-Y[R1==<span class="dv">0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co"># Mask outcome of non-responders</span>
+Y[R1<span class="op">==</span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co"># Mask outcome of non-responders</span>
 
 <span class="co"># Conduct Double Sampling</span>
 Attempt &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>, N)
 Attempt[<span class="kw">is.na</span>(Y)] &lt;-<span class="st"> </span><span class="kw">rbinom</span>(<span class="kw">sum</span>(<span class="kw">is.na</span>(Y)), <span class="dv">1</span>, .<span class="dv">5</span>)
 
 R2 &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>, N)
-R2[Attempt==<span class="dv">1</span>] &lt;-<span class="st">  </span>(Z*R2_1 +<span class="st"> </span>(<span class="dv">1</span>-Z)*R2_0)[Attempt==<span class="dv">1</span>]
+R2[Attempt<span class="op">==</span><span class="dv">1</span>] &lt;-<span class="st">  </span>(Z<span class="op">*</span>R2_<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">-</span>Z)<span class="op">*</span>R2_<span class="dv">0</span>)[Attempt<span class="op">==</span><span class="dv">1</span>]
 
-Y[R2==<span class="dv">1</span> &amp;<span class="st"> </span>Attempt==<span class="dv">1</span>] &lt;-<span class="st"> </span>Y_star[R2==<span class="dv">1</span> &amp;<span class="st"> </span>Attempt==<span class="dv">1</span>]
+Y[R2<span class="op">==</span><span class="dv">1</span> <span class="op">&amp;</span><span class="st"> </span>Attempt<span class="op">==</span><span class="dv">1</span>] &lt;-<span class="st"> </span>Y_star[R2<span class="op">==</span><span class="dv">1</span> <span class="op">&amp;</span><span class="st"> </span>Attempt<span class="op">==</span><span class="dv">1</span>]
 
 df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Y, Z, R1, Attempt, R2, strata)
 

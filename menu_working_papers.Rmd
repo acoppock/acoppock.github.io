@@ -64,6 +64,14 @@ output:
         <div class="galleryItemDescription">Working Paper. With Thomas J. Leeper and Kevin J. Mullinix.</div>
       </div>
     
+    
+                <div class="galleryItem">
+        <a href="projectpages_CM_lucid.html"><img class="galleryItemImage" src="papers/CM_lucid.png"/></a>
+        <a href="projectpages_CM_lucid.html" class="galleryItemLabel">Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</a>
+        <div class="galleryItemDescription">Working Paper. With Oliver A. McClellan.</div>
+      </div>
+    
+    
             <div class="galleryItem">
         <a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.png"/></a>
         <a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>

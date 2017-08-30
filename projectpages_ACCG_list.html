@@ -338,10 +338,10 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <span class="co"># complete case analysis</span>
 combinedListExps &lt;-<span class="st"> </span><span class="kw">na.omit</span>(combinedListExps)
 <span class="co"># Conduct estimation without covariate adjustment</span>
-out<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">combinedListDirect</span>(list1N ~<span class="st"> </span>list1treat, 
-                            <span class="dt">data =</span> <span class="kw">subset</span>(combinedListExps, directsfirst==<span class="dv">1</span>), 
+out.<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">combinedListDirect</span>(list1N <span class="op">~</span><span class="st"> </span>list1treat, 
+                            <span class="dt">data =</span> <span class="kw">subset</span>(combinedListExps, directsfirst<span class="op">==</span><span class="dv">1</span>), 
                             <span class="dt">treat =</span> <span class="st">&quot;list1treat&quot;</span>, <span class="dt">direct =</span> <span class="st">&quot;direct1&quot;</span>)
-<span class="kw">summary</span>(out<span class="fl">.1</span>)</code></pre></div>
+<span class="kw">summary</span>(out.<span class="dv">1</span>)</code></pre></div>
 <pre><code>## 
 ##  Combined List Estimates 
 ## 
