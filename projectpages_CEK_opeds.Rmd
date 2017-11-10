@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Emily Ekins, and David Kirby. “The Long-lasting Effects of Newspaper Op-Eds on Public Opinion” Working Paper.
+Coppock, Alexander, Emily Ekins, and David Kirby. “The Long-lasting Effects of Newspaper Op-Eds on Public Opinion” Quarterly Journal of Political Science, forthcoming.
 
 - [Working paper (August 2016)](papers/CEK_opeds.pdf)
 - [Online Appendix](papers/CEK_opeds_appendix.pdf)
@@ -33,8 +33,10 @@ Figure 2 from paper, showing over time effects of five treatments in two studies
 ## Bibtex citation
 
 ```
-@article{Coppock2015opeds,
+@article{Coppock2017opeds,
 	Author = {Coppock, Alexander, Emily Ekins, and David Kirby},
 	Title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
-	Journal = {Unpublished manuscript}
+	Journal = {Quarterly Journal of Political Science},
+	Year = {2017},
+	Notes = {Forthcoming.}
 ```
