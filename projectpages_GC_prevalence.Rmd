@@ -16,16 +16,14 @@ Guess, Andrew and Alexander Coppock: “Does Counter-Attitudinal Information Cau
 
 - [Working paper (January 2017)](papers/GC_backlash.pdf)
 - [Andrew Guess's Personal Website](https://andyguess.com/)
+- Press:
+    - Slate: [LOL Something Matters](https://slate.com/health-and-science/2018/01/weve-been-told-were-living-in-a-post-truth-age-dont-believe-it.html)
 
 
 ## Abstract
 
-Several prominent theoretical perspectives suggest that when individuals are exposed to counterattitudinal evidence or arguments, their preexisting opinions and beliefs are reinforced, resulting in a phenomenon known as “backlash,” “backfire,” or “boomerang.” We investigate the prevalence of this effect. Should we expect that all attempts to persuade those who disagree will backfire? First, we formalize the concept of backlash and specify how it can be measured. We then present results from three survey experiments—two on Mechanical Turk and one on a nationally representative sample—in which we find no evidence of backlash, even under theoretically favorable conditions. While a casual
-reading of the literature on partisan information processing would lead one to conclude that backlash
-is rampant, we suspect that it is much rarer than commonly supposed. Researchers should continue
-to design well-powered randomized studies in order to better understand the specific conditions under
+Several prominent theoretical perspectives suggest that when individuals are exposed to counterattitudinal evidence or arguments, their preexisting opinions and beliefs are reinforced, resulting in a phenomenon known as “backlash,” “backfire,” or “boomerang.” We investigate the prevalence of this effect. Should we expect that all attempts to persuade those who disagree will backfire? First, we formalize the concept of backlash and specify how it can be measured. We then present results from three survey experiments—two on Mechanical Turk and one on a nationally representative sample—in which we find no evidence of backlash, even under theoretically favorable conditions. While a casual reading of the literature on partisan information processing would lead one to conclude that backlash is rampant, we suspect that it is much rarer than commonly supposed. Researchers should continue to design well-powered randomized studies in order to better understand the specific conditions under
 which backlash is most likely to occur.
-
 
 ## Bibtex citation
 
