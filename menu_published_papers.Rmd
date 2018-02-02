@@ -75,6 +75,15 @@ output:
     <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
     <div class="galleryItems">
     
+    
+    
+              <div class="galleryItem">
+        <a href="projectpages_Coppock_audit_experiments.html"><img class="galleryItemImage" src="papers/Coppock_audit_experiments.png"/></a>
+        <a href="projectpages_Coppock_audit_experiments.html" class="galleryItemLabel">Avoiding Post-Treatment Bias in Audit Experiments</a>
+        <div class="galleryItemDescription">Journal of Experimental Political Science, forthcoming</div>
+      </div>      
+    
+    
           <div class="galleryItem">
         <a href="projectpages_Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.png"/></a>
         <a href="projectpages_Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>

@@ -11,7 +11,7 @@
 
 
 
-<title>Gallery</title>
+<title>Avoiding Post-Treatment Bias in Audit Experiments</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,10 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 
@@ -38,21 +39,6 @@
 
 </script>
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
 
 
 
@@ -127,6 +113,107 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div id="rStudioHeader" class="alwaysShrunk">
@@ -162,56 +249,31 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div id="pageContent" class="standardPadding">
   <div class="articleBandContent">
 
-<style type="text/css">
-.title {
-  display: none;
-}
-#disqus_thread {
-  display: none;
-}
-</style>
-
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">Gallery</h1>
+<h1 class="title toc-ignore">Avoiding Post-Treatment Bias in Audit Experiments</h1>
 
 </div>
 
 
-
-
-<div class="band full">
-  <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">Courses Taught</div>
-        <div class="galleryItems">
-      <div class="galleryItem">
-        <a href="papers/PLSC_500_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_500_syllabus.png"/></a>
-        <a href="papers/PLSC_500_syllabus.pdf" class="galleryItemLabel">PLSC 500</a>
-        <div class="galleryItemDescription">Statistics</div>
-      </div>
-      
-      <div class="galleryItem">
-               <a href="papers/PLSC_341_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_341_syllabus.png"/></a>
-        <a href="papers/PLSC_341_syllabus.pdf" class="galleryItemLabel">PLSC 341</a>
-        <div class="galleryItemDescription">Logic of Randomized Experiments</div>
-      </div>
-      
-      <div class="galleryItem">
-               <a href="papers/PLSC_512_syllabus.pdf"><img class="galleryItemImage" src="papers/PLSC_512_syllabus.png"/></a>
-        <a href="papers/PLSC_512_syllabus.pdf" class="galleryItemLabel">PLSC 512</a>
-        <div class="galleryItemDescription">Randomized Experiments in Political Science</div>
-      </div>
-      
-    </div>
-  </div>
-
-
+<p>Coppock, Alexander. “Avoiding Post-Treatment Bias in Audit Experiments” Journal of Experimental Political Science, forthcoming</p>
+<ul>
+<li><a href="papers/Coppock_audit_experiments.pdf">Pre-production Draft</a></li>
+</ul>
+<p>Audit experiments are used to measure discrimination in a large number of domains (Employment: Bertrand and Mullainathan (2004); Legislator responsiveness: Butler and Broockman (2011); Housing: Fang et al. (2018)). Audit studies all have in common that they estimate the average difference in response rates depending on randomly varied characteristics (such as the race or gender) of a requester. Scholars conducting audit experiments often seek to extend their analyses beyond the effect on response to the effects on the  of the response. Response is a consequence of treatment; answering these important questions well is complicated by post-treatment bias (Montgomery et al., 2018). In this note, I consider a common form of post-treatment bias that occurs in audit experiments.</p>
+<div id="bibtex-citation" class="section level2">
+<h2>Bibtex citation</h2>
+<pre><code>
+@article{Coppockauditexperiments,
+    Author = {Coppock, Alexander},
+    Year = {2018},
+    Journal = {Journal of Experimental Political Science},
+    Note = {Forthcoming},
+    Title = {Avoiding Post-Treatment Bias in Audit Experiments}
+}</code></pre>
 </div>
-
-
-
 
   </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->
@@ -233,6 +295,8 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 
 
+</div>
+</div>
 
 </div>
 

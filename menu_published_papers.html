@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 
@@ -45,10 +45,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -238,6 +240,15 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div class="bandContent gallerySection">
     <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
     <div class="galleryItems">
+    
+    
+    
+              <div class="galleryItem">
+        <a href="projectpages_Coppock_audit_experiments.html"><img class="galleryItemImage" src="papers/Coppock_audit_experiments.png"/></a>
+        <a href="projectpages_Coppock_audit_experiments.html" class="galleryItemLabel">Avoiding Post-Treatment Bias in Audit Experiments</a>
+        <div class="galleryItemDescription">Journal of Experimental Political Science, forthcoming</div>
+      </div>      
+    
     
           <div class="galleryItem">
         <a href="projectpages_Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.png"/></a>

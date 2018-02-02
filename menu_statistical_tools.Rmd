@@ -17,6 +17,13 @@ output:
     <div class="gallerySectionTitle">R Packages (authored or contributed to)</div>
     <div class="galleryItems">
     
+          <div class="galleryItem">
+        <a href="http://alexandercoppock.com/ri2"><img class="galleryItemImage" src="images/ri2.png"/></a>
+        <a href="http://alexandercoppock.com/ri2" class="galleryItemLabel">ri2</a>
+        <div class="galleryItemDescription">Randomization Inference for Randomized Experiments</div>
+      </div>
+    
+    
       <div class="galleryItem">
         <a href="http://randomizr.declaredesign.org"><img class="galleryItemImage" src="images/randomizr.png"/></a>
         <a href="http://randomizr.declaredesign.org" class="galleryItemLabel">randomizr</a>
