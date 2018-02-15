@@ -14,7 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Flores, Alejandro and Alexander Coppock. “Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?” Political Commuication, Forthcoming.
 
-- [Working paper (MPSA 2017 Draft)](papers/FC_spanish.pdf)
+- [Link to Journal](http://www.tandfonline.com/doi/full/10.1080/10584609.2018.1426663)
+- [Prepublication Draft](papers/FC_spanish_preprint.pdf)
+- [Supplementary Appendix](papers/FC_spanish_appendix.pdf)
+- Replication Archive to be posted soon
 
 ## Abstract
 
@@ -29,8 +32,13 @@ Figure 1, showing the effects of the Spanish-language ad on Bush preference by s
 ## Bibtex citation
 
 ```
+
 @article{FloresCoppockspanish,
-	Author = {Flores, Alejandro and Alexander Coppock},
+	Author = {Alejandro Flores and Alexander Coppock},
 	Title = {Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?},
-	Journal = {Unpublished manuscript}
+	Journal = {Political Communication},
+	Year = {2018},
+	Notes = {Forthcoming}
+	}
+
 ```
