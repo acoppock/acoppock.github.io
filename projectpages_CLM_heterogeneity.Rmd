@@ -15,7 +15,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. “The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples” Working Paper.
 
-- [Working paper (February 2018)](papers/CLM_heterogeneity.pdf)
+- [Working paper (March 2018)](papers/CLM_heterogeneity.pdf)
+- [Appendix (March 2018)](papers/CLM_heterogeneity_appendix.pdf)
 - [Thomas Leeper's personal website](http://thomasleeper.com/)
 - [Kevin Mullinix's personal website](http://www.kevinmullinix.com/)
 

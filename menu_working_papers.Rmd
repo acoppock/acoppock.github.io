@@ -15,10 +15,16 @@ output:
     <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
     <div class="galleryItems">
     
+        <div class="galleryItem">
+        <a href="projectpages_SHC_gender.html"><img class="galleryItemImage" src="papers/SHC_gender.png"/></a>
+        <a href="projectpages_SHC_gender.html" class="galleryItemLabel">What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 30 Factorial Survey Experiments</a>
+        <div class="galleryItemDescription">Working Paper, with Susanne Schwartz and William Hunt</div>
+    </div>
+    
     <div class="galleryItem">
-        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.png"/></a>
-        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
-        <div class="galleryItemDescription">Working Paper, with Donald P. Green</div>
+        <a href="projectpages_Coppock_trumptraders.html"><img class="galleryItemImage" src="papers/Coppock_trumptraders.png"/></a>
+        <a href="projectpages_Coppock_trumptraders.html" class="galleryItemLabel">A Field Experimental Test of Vote Swapping</a>
+        <div class="galleryItemDescription">Working Paper</div>
     </div>
       
     <div class="galleryItem">
@@ -27,6 +33,11 @@ output:
         <div class="galleryItemDescription">Working Paper, with David Yokum and Anita Ravishankar.</div>
     </div>  
       
+    <div class="galleryItem">
+        <a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.png"/></a>
+        <a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
+        <div class="galleryItemDescription">Working Paper, with Donald P. Green</div>
+    </div>
 
             <div class="galleryItem">
         <a href="projectpages_CKG_constitution.html"><img class="galleryItemImage" src="papers/CKG_constitution.png"/></a>
@@ -37,7 +48,7 @@ output:
       
       <div class="galleryItem">
         <a href="projectpages_GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_backlash.png"/></a>
-        <a href="projectpages_GC_prevalence.html" class="galleryItemLabel">The Exception, Not the Rule? The Rarely Polarizing Effect of Challenging Information</a>
+        <a href="projectpages_GC_prevalence.html" class="galleryItemLabel">Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments</a>
         <div class="galleryItemDescription">Working Paper, with Andrew Guess.</div>
       </div>      
 
