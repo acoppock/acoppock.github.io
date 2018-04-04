@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Blair, Graeme, Jasper Cooper, Alexander Coppock, and Macartan Humphreys. “Declaring and Diagnosing Research Designs.” Working Paper.
 
 - [Project website](https://declaredesign.org/)
-- [Working paper (August 2016)](papers/BCCH_declaredesign.pdf)
+- [Working paper (August 2016)](https://osf.io/preprints/bitss/m6ws3)
 - Coauthors' personal websites
     - [Graeme Blair](https://graemeblair.com/)
     - [Jasper Cooper](http://jasper-cooper.com/)
