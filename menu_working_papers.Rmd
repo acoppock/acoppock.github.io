@@ -60,9 +60,6 @@ output:
         <div class="galleryItemDescription">Working Paper</div>
       </div>      
 
-
-
-      
   </div>
 </div>
 
