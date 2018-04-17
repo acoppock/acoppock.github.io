@@ -12,9 +12,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Emily Ekins, and David Kirby. “The Long-lasting Effects of Newspaper Op-Eds on Public Opinion” Quarterly Journal of Political Science, forthcoming.
+Alexander Coppock, Emily Ekins and David Kirby (2018), "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion", Quarterly Journal of Political Science: Vol. 13: No. 1, pp 59-87.
 
-- [Working paper (August 2016)](papers/CEK_opeds.pdf)
+- [Link to Journal](https://www.nowpublishers.com/article/Details/QJPS-16112)
+- [Article](papers/CEK_opeds.pdf)
 - [Online Appendix](papers/CEK_opeds_appendix.pdf)
 - [Emily Ekins's Personal Website](https://www.cato.org/people/emily-ekins)
 - [David Kirby's Personal Website](https://www.cato.org/people/david-kirby)
@@ -33,10 +34,16 @@ Figure 2 from paper, showing over time effects of five treatments in two studies
 ## Bibtex citation
 
 ```
-@article{Coppock2017opeds,
-	Author = {Coppock, Alexander, Emily Ekins, and David Kirby},
-	Title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
-	Journal = {Quarterly Journal of Political Science},
-	Year = {2017},
-	Notes = {Forthcoming.}
+@article{QJPS-16112,
+url = {http://dx.doi.org/10.1561/100.00016112},
+year = {2018},
+volume = {13},
+journal = {Quarterly Journal of Political Science},
+title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
+doi = {10.1561/100.00016112},
+issn = {1554-0626},
+number = {1},
+pages = {59-87},
+author = {Alexander Coppock and Emily Ekins and David Kirby}
+}
 ```

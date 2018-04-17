@@ -32,6 +32,24 @@ output:
       </div>
       
     </div>
+    
+    
+    <div class="gallerySectionTitle">Memos</div>
+        <div class="galleryItems">
+      <div class="galleryItem">
+        <a href="papers/how_to_write_up_an_experiment.pdf"><img class="galleryItemImage" src="papers/how_to_write_up_an_experiment.png"/></a>
+        <a href="papers/how_to_write_up_an_experiment.pdf" class="galleryItemLabel">Guidelines for writing up an experiment</a>
+        
+      </div>
+      
+      <div class="galleryItem">
+               <a href="papers/how_do_I_learn_R.pdf"><img class="galleryItemImage" src="papers/how_do_I_learn_R.png"/></a>
+        <a href="papers/how_do_I_learn_R.pdf" class="galleryItemLabel">How do I learn R ?</a>
+        
+      </div>
+      
+    </div>
+    
   </div>
 
 
