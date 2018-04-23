@@ -14,4 +14,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Calculates statistical power for simple and clustered experimental designs. Accompanies this EGAP Methods Guide on [power analysis](http://egap.org/methods-guides/10-things-you-need-know-about-statistical-power).
 
-<iframe src="https://egap.shinyapps.io/Power_Calculator/" height="550" width="720"></iframe>
+<iframe src="https://egap.shinyapps.io/power-app/" height="550" width="720"></iframe>
