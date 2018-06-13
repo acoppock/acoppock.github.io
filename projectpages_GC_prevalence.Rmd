@@ -12,9 +12,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Guess, Andrew and Alexander Coppock: “Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments” 2017. Working Paper.
+Guess, Andrew and Alexander Coppock: “Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments.” Forthcoming. British Journal of Political Science.
 
-- [Working paper (January 2017)](papers/GC_backlash.pdf)
+- [Pre-production Draft (June 2018)](papers/GC_backlash.pdf)
+- [Online Appendix](papers/GC_backlash_appendix.pdf)
 - [Andrew Guess's Personal Website](https://andyguess.com/)
 - Press:
     - Slate: [LOL Something Matters](https://slate.com/health-and-science/2018/01/weve-been-told-were-living-in-a-post-truth-age-dont-believe-it.html)
@@ -28,10 +29,10 @@ which backlash is most likely to occur.
 ## Bibtex citation
 
 ```
-@article{GuessCoppock2017prevalence,
+@article{GuessCoppock2018,
 	Author = {Guess, Andrew and Alexander Coppock},
 	Title = {Does Counter-Attitudinal Information Cause Backlash?
 Results from Three Large Survey Experiments},
-	Year = {2017}
-	Journal = {Unpublished manuscript}
+	Year = {2018}
+	Journal = {British Journal of Political Science}
 ```

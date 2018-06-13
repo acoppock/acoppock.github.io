@@ -12,6 +12,12 @@ output:
     <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
     <div class="galleryItems">
     
+          <div class="galleryItem">
+        <a href="projectpages_GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_backlash.png"/></a>
+        <a href="projectpages_GC_prevalence.html" class="galleryItemLabel">Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments</a>
+        <div class="galleryItemDescription">British Journal of Political Science, forthcoming, with Andrew Guess.</div>
+      </div>   
+    
       <div class="galleryItem">
         <a href="projectpages_CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.png"/></a>
         <a href="projectpages_CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
