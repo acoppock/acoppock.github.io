@@ -21,7 +21,7 @@ output:
       <div class="galleryItem">
         <a href="projectpages_CEK_opeds.html"><img class="galleryItemImage" src="papers/CEK_opeds.png"/></a>
         <a href="projectpages_CEK_opeds.html" class="galleryItemLabel">The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</a>
-        <div class="galleryItemDescription">Quarterly Journal of Political Science, forthcoming, with Emily Ekins and David Kirby.</div>
+        <div class="galleryItemDescription">Quarterly Journal of Political Science, 2018, with Emily Ekins and David Kirby.</div>
       </div>
       
 <div class="galleryItem">
@@ -40,7 +40,7 @@ output:
       <div class="galleryItem">
         <a href="projectpages_Coppock_shytrump.html"><img class="galleryItemImage" src="papers/Coppock_shytrump.png"/></a>
         <a href="projectpages_Coppock_shytrump.html" class="galleryItemLabel">Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment</a>
-        <div class="galleryItemDescription">Statistics, Politics, and Policy, forthcoming.</div>
+        <div class="galleryItemDescription">Statistics, Politics, and Policy, 2017.</div>
       </div>
     
       <div class="galleryItem">
