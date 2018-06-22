@@ -19,6 +19,8 @@ Coppock, Alexander. “Generalizing from Survey Experiments Conducted on Mechani
 - [Appendix](papers/Coppock_generalizability_appendix.pdf)
 - [Link to Journal](https://doi.org/10.1017/psrm.2018.10)
 - [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/F1CFFM)
+- Press
+    - [Washington Post Monkey Cage](https://www.washingtonpost.com/news/monkey-cage/wp/2016/03/09/does-social-science-have-a-replication-crisis/?utm_term=.207f82629e49)
 
 
 ## Abstract
