@@ -21,6 +21,8 @@ for (i in 1:length(files)) {
   print(i)
 }
 
+
+
 # Fix habit
 image_read("papers/CG_habit_test_Page_01.png") %>%
   image_scale("1000") %>%
