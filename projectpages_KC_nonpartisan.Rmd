@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Kirkland, Patricia and Alexander Coppock. 2017. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Political Behavior. Forthcoming.
+Kirkland, Patricia and Alexander Coppock. 2018. “Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments” Political Behavior 40(3):571--591.
 
 - [Paper](papers/KC_nonpartisan.pdf)
 - [Link to Journal](https://link.springer.com/article/10.1007/s11109-017-9414-8)
@@ -33,10 +33,15 @@ Figure 2 from paper, showing the results of a conjoint experiment conducted on Y
 ## Bibtex citation
 
 ```
-@article{KirklandCoppock2017nonpartisan,
-	Author = {Kirkland, Patricia and Alexander Coppock},
-	Title = {Candidate Choice without Party Labels: New Insights from U.S. Mayoral Elections 1945-2007 and Conjoint Survey Experiments},
-	Journal = {Political Behavior},
-	Year = {forthcoming}
+@Article{Kirkland2018,
+author="Kirkland, Patricia A. and Coppock, Alexander",
+title="Candidate Choice Without Party Labels:",
+journal="Political Behavior",
+year="2018",
+month="Sep",
+day="01",
+volume="40",
+number="3",
+pages="571--591"
 }
 ```
