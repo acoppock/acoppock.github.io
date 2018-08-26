@@ -13,11 +13,11 @@ file_names <- gsub(pattern = ".pdf",
                    x = files)
 
 for (i in 1:length(files)) {
-  image_read(paste0("papers/", files[i], "[0]"), density = 500) %>%
+  try(image_read(paste0("papers/", files[i], "[0]"), density = 500) %>%
     image_scale("1000") %>%
     image_crop("1000x1000") %>%
     image_convert(format = "png") %>%
-    image_write(paste0("papers/", file_names[i], ".png"))
+    image_write(paste0("papers/", file_names[i], ".png")))
   print(i)
 }
 

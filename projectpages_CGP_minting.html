@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Minting Partisans</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<meta name="description" content="Alexander Coppock" />
+
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101327191-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="/index.html">Alexander Coppock</a>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="menu_published_papers.html">Published Articles</a>
+        <a class="menuItem" href="menu_working_papers.html">Working Papers</a>
+        <a class="menuItem" href="menu_statistical_tools.html">Statistical Tools</a>
+        <a class="menuItem" href="menu_teaching.html">Teaching</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Minting Partisans</h1>
+
+</div>
+
+
+<p>Alexander Coppock, Donald P. Green, and Ethan Porter (2018), “Minting Partisans: Experimental Interventions to Test Theories of Partisan Change.” Working paper.</p>
+<ul>
+<li><a href="papers/CGP_minting.pdf">Working paper (September 2018)</a></li>
+<li><a href="papers/CGP_minting_appendix.pdf">Online Appendix</a></li>
+<li><a href="https://sites.google.com/site/donaldpgreen/">Donald P. Green’s personal website</a></li>
+<li><a href="http://www.ethanporter.com/">Ethan Porters’s personal website</a></li>
+</ul>
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>For more than a half-century, scholars have characterized party attachments and evaluations as causes of vote choice. Because partisan attitudes have rarely been altered via experimental manipulation, this interpretation is the subject of extensive and ongoing debate, with skeptics charging that the putative causal effect of partisanship is properly attributed to policy views, retrospective evaluations, or feelings about party leaders. We attempt to break this deadlock by conducting a series of experiments designed to exogenously shift subjects’ partisan affinities through the use of short videos that dramatize performance evaluations, party platforms, political personae, and social group cues. Our experiments have thus far produced only short-lived shifts in partisan attitudes, in keeping with the vast literature emphasizing the stability of party attachments. We conclude by laying out our agenda for further research.</p>
+</div>
+<div id="figure" class="section level2">
+<h2>Figure</h2>
+Figure 2 from paper, showing the effects of the videos on seven-point party ID.
+<center>
+<img src="images/pid_7_post.png" alt="Coppock, Green, and Porter Figure 2" width="600">
+</center>
+</div>
+<div id="bibtex-citation" class="section level2">
+<h2>Bibtex citation</h2>
+<pre><code>@article{coppockgreenporter2018,
+  author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
+  title = {Minting Partisans: Experimental Interventions to Test Theories of Partisan Change},
+  year = 2018,
+  journal = {Unpublished manuscript}
+}</code></pre>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2017 Alexander Coppock</div>
+  <div id="logos">
+    <a href="https://twitter.com/aecoppock" class="footerLogo twitter"></a>
+    <a href="https://github.com/acoppock" class="footerLogo gitHub"></a>
+    <a href="http://orcid.org/0000-0002-5733-2386" class="footerLogo orcid"></a>
+    <a href="https://scholar.google.com/citations?user=00ZskrIAAAAJ" class="footerLogo gscholar"></a>
+    <a href="http://thedata.harvard.edu/dvn/dv/alexandercoppock" class="footerLogo dataverse"></a>
+
+
+        <a href="https://politicalscience.yale.edu/people/alexander-coppock" class="footerLogo yale"></a>
+  </div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

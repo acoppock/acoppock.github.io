@@ -13,9 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Coppock, Alexander, and Oliver A. McClellan. Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents” Working Paper.
+Coppock, Alexander, and Oliver A. McClellan. Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents” Revision requested at Research \& Politics.
 
-- [Working paper (August 2017)](papers/CM_lucid.pdf)
+- [Working paper (August 2018)](papers/CM_lucid.pdf)
+- [Online Appendix](papers/CM_lucid_appendix.pdf)
 - [Oliver McClellan's personal website](https://polisci.columbia.edu/content/oliver-ahlstrom-mcclellan)
 
 

@@ -1,0 +1,40 @@
+---
+title: "QUIMPO: Qualitative Imputation of Missing Potential Outcomes"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Alexander Coppock and Dipin Kaur (2018), "QUIMPO: Qualitative Imputation of Missing Potential Outcomes." Working paper.
+
+- [Working paper (September 2018)](papers/CK_QUIMPO.pdf)
+- [Dipin Kaur's personal website](https://politicalscience.yale.edu/people/dipin-kaur)
+
+## Abstract
+
+We propose a framework for summarizing beliefs and uncertainty about average causal effects using qualitative information. Our approach synthesizes counterfactual qualitative inquiry with an insight from the quantitative causal inference literature, extreme value bounds. Under the Neyman-Rubin model, units are endowed with potential outcomes, or responses units would express depending on the level of some treatment. The goal of qualtitative counterfactual analysis is to use the expressed outcome and auxilliary information to infer what would have happened had the treatment been set to a different level. Essentially, qualitative researchers engaged in counterfactual analysis impute missing potential outcomes. When we cannot impute some counterfactuals, we can fill in the missing potential outcomes with best- and worst-case scenarios. We show how the resulting extreme value bounds represent fundamental uncertainty and how the imputation of missing potential outcomes can shrink that uncertainty in a structured way. We provide an application of QUIMPO to 122 cases that could have experienced transitional truth commissions, 16 of which did. Before the application of QUIMPO, the extreme value bounds are 100 percentage points wide; incorporating qualitative beliefs about counterfactuals shrinks these bounds to approximately 40 points.
+
+
+## Figure
+
+Figure 2 from paper, showing an application of QUIMPO to transitional truth commissions.
+
+<center><img src="images/figure_TTC.png" alt="Coppock and Kaur (2018) Figure 2" width="600"></center>
+
+## Bibtex citation
+
+```
+@article{coppockkaur2018,
+  author = {Alexander Coppock and Dipin Kaur},
+  title = {QUIMPO: Qualitative Imputation of Missing Potential Outcomes},
+  year = 2018,
+  journal = {Unpublished manuscript}
+}
+```
