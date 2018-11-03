@@ -30,10 +30,9 @@ Figure 5 from paper, showing the posterior probability of each arm being best af
 ## Bibtex citation
 
 ```
-@article{coppockgreenporter2018,
-  author = {Offer-Westort, Molly and Alexander Coppock and Donald P. Green},
-  title = {Adaptive Experimental Design: Prospects and Applications in Political Science},
-  year = 2018,
-  journal = {Unpublished manuscript}
-}
+@article{offerwestort2018adaptive,
+	Author = {Offer-Westort, Molly and Alexander Coppock and Donald P. Green},
+	Journal = {Unpublished manuscript},
+	Title = {Adaptive Experimental Design: Prospects and Applications in Political Science},
+	Year = 2018}
 ```

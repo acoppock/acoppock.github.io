@@ -26,8 +26,9 @@ Existing theory and evidence on the effects of subtle primes suggests that even 
 ## Bibtex citation
 
 ```
-@article{Coppock2017constitution,
-	Author = {Coppock, Alexander and Kirby, David and Green, Donald P.},
+@article{coppock2017constitution,
+	Author = {Coppock, Alexander and David Kirby and Donald P. Green},
+	Journal = {Unpublished manuscript},
 	Title = {A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?},
-	Journal = {Unpublished manuscript}
+	Year = {2017}}
 ```

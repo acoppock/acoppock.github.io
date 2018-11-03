@@ -31,10 +31,9 @@ Figure 2 from paper, showing an application of QUIMPO to transitional truth comm
 ## Bibtex citation
 
 ```
-@article{coppockkaur2018,
-  author = {Alexander Coppock and Dipin Kaur},
-  title = {QUIMPO: Qualitative Imputation of Missing Potential Outcomes},
-  year = 2018,
-  journal = {Unpublished manuscript}
-}
+@article{coppock2018QUIMPO,
+	Author = {Coppock, Alexander and Dipin Kaur},
+	Journal = {Unpublished manuscript},
+	Title = {QUIMPO: Qualitative Imputation of Missing Potential Outcomes},
+	Year = 2018}
 ```

@@ -33,10 +33,9 @@ Figure 1 from paper, showing correlations of conditional average treatment effec
 ## Bibtex citation
 
 ```
-@article{Coppockgeneralizability,
+@article{coppock2018heterogeneous,
 	Author = {Coppock, Alexander and Leeper, Thomas J. and Mullinix, Kevin J.},
+	Journal = {Proceedings of the National Academy of Sciences},
 	Title = {The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples},
-	Year = {2017},
-	Journal = {Unpublished manuscript}
-}
+	Year = {2018}}
 ```

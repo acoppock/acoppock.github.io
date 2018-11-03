@@ -30,10 +30,9 @@ Figure 1 from paper, showing direct and list experimental estimates of Trump sup
 ## Bibtex citation
 
 ```
-@article{Coppock2018trumptraders,
-  title={A Field Experimental Test of Vote Swapping},
-  author={Coppock, Alexander},
-  year={2018}
-  journal={Working Paper}
-}
+@article{coppock2018trumptraders,
+	Author = {Coppock, Alexander},
+	Journal = {Unpublished manuscript},
+	Title = {A Field Experimental Test of Vote Swapping},
+	Year = {2018}}
 ```

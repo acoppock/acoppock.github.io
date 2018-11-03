@@ -29,9 +29,9 @@ which backlash is most likely to occur.
 ## Bibtex citation
 
 ```
-@article{GuessCoppock2018,
-    Author = {Guess, Andrew and Alexander Coppock},
-    Title = {Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments},
-    Year = {2018},
-    Journal = {British Journal of Political Science}}
+@article{guess2018backlash,
+	Author = {Guess, Andrew and Alexander Coppock},
+	Journal = {British Journal of Political Science},
+	Title = {Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments},
+	Year = {2018}}
 ```

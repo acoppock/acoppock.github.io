@@ -36,16 +36,12 @@ Figure 2 from paper, showing over time effects of five treatments in two studies
 ## Bibtex citation
 
 ```
-@article{QJPS-16112,
-url = {http://dx.doi.org/10.1561/100.00016112},
-year = {2018},
-volume = {13},
-journal = {Quarterly Journal of Political Science},
-title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
-doi = {10.1561/100.00016112},
-issn = {1554-0626},
-number = {1},
-pages = {59-87},
-author = {Alexander Coppock and Emily Ekins and David Kirby}
-}
+@article{coppock2018newspapers,
+	Author = {Coppock, Alexander and Emily Ekins and David Kirby},
+	Journal = {Quarterly Journal of Political Science},
+	Number = {1},
+	Pages = {59-87},
+	Title = {The Long-lasting Effects of Newspaper Op-Eds on Public Opinion},
+	Volume = {13},
+	Year = {2018}}
 ```

@@ -30,8 +30,9 @@ Figure 5 from paper, showing strong effects of treatments on target issues and v
 ## Bibtex citation
 
 ```
-@article{Coppock2017dynamicconstraint,
-	Author = {Coppock, Alexander and Green, Donald P.},
+@article{coppock2017dynamic,
+	Author = {Coppock, Alexander and Donald P. Green},
+	Journal = {Unpublished manuscript},
 	Title = {Do Belief Systems Exhibit Dynamic Constraint?},
-	Journal = {Unpublished manuscript}
+	Year = {2017}}
 ```

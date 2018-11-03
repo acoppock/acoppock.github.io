@@ -60,12 +60,12 @@ summary(out.1)
 ## Bibtex Citation
 
 ```
-@article{aronow201list,
-  title={Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence},
-  author={Aronow, Peter M. and Coppock, Alexander and Crawford, Forrest W. and Green, Donald P.},
-  journal={Journal of Survey Statistics and Methodology},
-  pages={smu023},
-  year={2015},
-  publisher={Oxford University Press}
-}
+@article{aronow2015list,
+	Author = {Aronow, Peter M. and Coppock, Alexander and Crawford, Forrest W. and Green, Donald P.},
+	Journal = {Journal of Survey Statistics and Methodology},
+	Number = {1},
+	Pages = {43-66},
+	Title = {Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence},
+	Volume = {3},
+	Year = {2015}}
 ```

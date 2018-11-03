@@ -31,10 +31,9 @@ Figure 2 from paper, showing the effect of alternative question formats on repor
 ## Bibtex citation
 
 ```
-@article{grahamcoppock2018,
-  author = {Matthew Graham and Alexander Coppock},
-  title = {The Perils of Self-Assessed Attitude Change},
-  year = 2018,
-  journal = {Unpublished manuscript}
-}
+@article{graham2018perils,
+	Author = {Graham, Matthew and Alexander Coppock},
+	Journal = {Unpublished manuscript},
+	Title = {The Perils of Self-Assessed Attitude Change},
+	Year = 2018}
 ```

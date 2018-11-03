@@ -33,10 +33,9 @@ Figure 1 from paper, showing relative performance of MTurk and Lucid in hitting 
 ## Bibtex citation
 
 ```
-@article{Coppockgeneralizability,
-	Author = {Coppock, Alexander and McClellan, Oliver A.},
+@article{coppock2018lucid,
+	Author = {Coppock, Alexander and Oliver A. McClellan},
+	Journal = {Unpublished manuscript},
 	Title = {Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents},
-	Year = {2017},
-	Journal = {Unpublished manuscript}
-}
+	Year = {2018}}
 ```

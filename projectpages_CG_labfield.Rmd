@@ -32,13 +32,12 @@ Figure 2 from paper, showing a scatterplot of effects obtained in the lab and in
 ## Bibtex citation
 
 ```
-@article{Coppock2015labfield,
-	Author = {Coppock, Alexander and Green, Donald P.},
+@article{coppock2015labfield,
+	Author = {Coppock, Alexander and Donald P. Green},
 	Journal = {Political Science Research and Methods},
 	Number = {1},
 	Pages = {113--131},
 	Title = {{Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research}},
 	Volume = {3},
-	Year = {2015},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1017/psrm.2014.10}}
+	Year = {2015}}
 ```

@@ -42,10 +42,9 @@ Figure 2 from paper, showing how people with three different priors about the ef
 ## Bibtex citation
 
 ```
-@article{Green2016lawnsigns,
-	Author = {Donald P. Green and Jonathan S. Krasno and Alexander Coppock and Benjamin D. Farrer and Brandon Lenoir and Joshua N. Zingher},
+@article{green2016lawnsigns,
+	Author = {Green, Donald P. and Jonathan S. Krasno and Alexander Coppock and Benjamin D. Farrer and Brandon Lenoir and Joshua N. Zingher},
 	Journal = {Electoral Studies},
-	Keywords = {Voting},
 	Pages = {143 - 150},
 	Title = {The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments},
 	Volume = {41},

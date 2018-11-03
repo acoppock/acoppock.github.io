@@ -33,15 +33,12 @@ Figure 2 from paper, showing the results of a conjoint experiment conducted on Y
 ## Bibtex citation
 
 ```
-@Article{Kirkland2018,
-author="Kirkland, Patricia A. and Coppock, Alexander",
-title="Candidate Choice Without Party Labels:",
-journal="Political Behavior",
-year="2018",
-month="Sep",
-day="01",
-volume="40",
-number="3",
-pages="571--591"
-}
+@article{kirkland2018conjoint,
+	Author = {Kirkland, Patricia A. and Alexander Coppock},
+	Journal = {Political Behavior},
+	Number = {3},
+	Pages = {571--591},
+	Title = {Candidate Choice Without Party Labels:},
+	Volume = {40},
+	Year = {2018}}
 ```

@@ -29,10 +29,9 @@ Figure 1 from paper, showing the results of 30 estimates of the effect of gender
 ## Bibtex citation
 
 ```
-@article{schwarz2018
+@article{schwarz2018gender,
 	Author = {Schwarz, Susanne and William Hunt and Alexander Coppock},
+	Journal = {Unpublished manuscript},
 	Title = {What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 30 Factorial Survey Experiments},
-	Journal = {Unpublished Manuscript},
-	Year = {2018}
-}
+	Year = {2018}}
 ```

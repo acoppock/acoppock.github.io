@@ -87,17 +87,14 @@ estimator_ds(Y, Z, R1, Attempt, R2, minY=1, maxY=5, strata=strata, data=df)
 
 ## Bibtex citation
 ```
-@article{coppock_gerber_green_kern_2017, 
-  title = {Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized   Experiments}, 
-  author = {Coppock, Alexander and Gerber, Alan S. and Green, Donald P. and Kern, Holger L.}, 
-  year = {2017}, 
-  journal = {Political Analysis}, 
-  volume = {25}, 
-  number = {2}, 
-  pages = {188–206},
-  DOI = {10.1017/pan.2016.6}, 
-  publisher = {Cambridge University Press}
-}
+@article{coppock2017double,
+	Author = {Coppock, Alexander and Alan S. Gerber and Donald P. Green and Holger L. Kern},
+	Journal = {Political Analysis},
+	Number = {2},
+	Pages = {188--206},
+	Title = {Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments},
+	Volume = {25},
+	Year = {2017}}
 ```
 
 
