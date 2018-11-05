@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Guess, Andrew and Alexander Coppock: “Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments.” Forthcoming. British Journal of Political Science.
 
+- [Link to Journal](https://doi.org/10.1017/S0007123418000327)
 - [Pre-production Draft (June 2018)](papers/GC_backlash.pdf)
 - [Online Appendix](papers/GC_backlash_appendix.pdf)
 - [Andrew Guess's Personal Website](https://andyguess.com/)
