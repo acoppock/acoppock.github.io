@@ -13,22 +13,23 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. “The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples” Working Paper.
+Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. "The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples" Proceedings of the National Academy of Science, Forthcoming.
 
-- [Working paper (March 2018)](papers/CLM_heterogeneity.pdf)
-- [Appendix (March 2018)](papers/CLM_heterogeneity_appendix.pdf)
+- [Link to journal](https://doi.org/10.1073/pnas.1808083115)
+- [Pre-print (November 2018)](papers/CLM_heterogeneity_preprint.pdf)
+- [Appendix (November 2018)](papers/CLM_heterogeneity_appendix.pdf)
 - [Thomas Leeper's personal website](http://thomasleeper.com/)
 - [Kevin Mullinix's personal website](http://www.kevinmullinix.com/)
 
 ## Abstract
 
-Abstract: The extent to which studies conducted with non-representative convenience samples are generalizable to broader populations depends critically on the level of treatment effect heterogeneity. Recent inquiries (e.g., Mullinix et al. 2015; Coppock forthcoming) have found a strong correspondence between average treatment effects estimated in nationally-representative experiments and in replication studies conducted with convenience samples. In this paper, we consider three possible explanations: low levels of effect heterogeneity, high levels of effect heterogeneity that are unrelated to selection into the convenience sample, or just good luck. We reanalyze 26 original-replication study pairs (encompassing 98,425 individual survey responses) to assess the extent to which a model of heterogeneity in treatment response estimated on the original dataset predicts the heterogeneity in the replication experiment, and vice-versa. While there are exceptions, the overwhelming pattern that emerges is one of treatment effect homogeneity, providing a partial explanation for strong correspondence across both unconditional and conditional average treatment effect estimates.
+The extent to which survey experiments conducted with non-representative convenience samples are generalizable to target populations depends critically on the degree of treatment effect heterogeneity. Recent inquiries have found a strong correspondence between *sample average treatment effects* estimated in nationally-representative experiments and in replication studies conducted with convenience samples. We consider here two possible explanations: low levels of effect heterogeneity or high levels of effect heterogeneity that are unrelated to selection into the convenience sample. We analyze subgroup *conditional average treatment effects* using 27 original-replication study pairs (encompassing 101,745 individual survey responses) to assess the extent to which subgroup effect estimates generalize. While there are exceptions, the overwhelming pattern that emerges is one of treatment effect homogeneity, providing a partial explanation for strong correspondence across both unconditional and conditional average treatment effect estimates.
 
 ## Figure
 
 Figure 1 from paper, showing correlations of conditional average treatment effect estimates across original and MTurk replications.
 
-<center><img src="Images/generalizability_fig_scatter_group.png" alt="Coppock, Leeper, and Mullinix 2017 Figure 1" width="600"></center>
+<center><img src="Images/CLM_PNAS_FINAL_FIGURE1.png" alt="Coppock, Leeper, and Mullinix 2017 Figure 1" width="600"></center>
 
 ## Bibtex citation
 
