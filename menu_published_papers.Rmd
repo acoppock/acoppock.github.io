@@ -58,33 +58,53 @@ output:
    </div>
 </div>
 <div class="bandContent gallerySection">
-   <div class="gallerySectionTitle"> Statistical Methods and Generalizability</div>
+   <div class="gallerySectionTitle"> Generalizability and External Validity </div>
    <div class="galleryItems">
      <div class="galleryItem">
   <a href="projectpages_CLM_heterogeneity.html"><img class="galleryItemImage" src="papers/CLM_heterogeneity.png"/></a>
     <a href="projectpages_CLM_heterogeneity.html" class="galleryItemLabel">The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples</a>
       <div class="galleryItemDescription">Proceedings of the National Academy of Sciences, Forthcoming, with Thomas J. Leeper, and Kevin J. Mullinix</div>
         </div>
+        
+		<div class="galleryItem">
+			<a href="projectpages_CM_lucid.html"><img class="galleryItemImage" src="papers/CM_lucid.png"/></a>
+			<a href="projectpages_CM_lucid.html" class="galleryItemLabel">Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</a>
+			<div class="galleryItemDescription">Research & Politics, Forthcoming, with Oliver A. McClellan.</div>
+		</div>
+        
+              <div class="galleryItem">
+         <a href="projectpages_Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.png"/></a>
+         <a href="projectpages_Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
+         <div class="galleryItemDescription">Political Science Research and Methods, forthcoming</div>
+      </div>
+        
+        <div class="galleryItem">
+         <a href="projectpages_CG_labfield.html"><img class="galleryItemImage" src="papers/CG_labfield.png"/></a>
+         <a href="projectpages_CG_labfield.html" class="galleryItemLabel">Assessing the Correspondence between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</a>
+         <div class="galleryItemDescription"> Political Science Research and Methods, 2015, with Donald P. Green.</div>
+      </div>
+        </div>
+        
+        
+        <div class="gallerySectionTitle"> Statistical Methods</div>
+   <div class="galleryItems">
+
+        
       <div class="galleryItem">
          <a href="projectpages_Coppock_audit_experiments.html"><img class="galleryItemImage" src="papers/Coppock_audit_experiments.png"/></a>
          <a href="projectpages_Coppock_audit_experiments.html" class="galleryItemLabel">Avoiding Post-Treatment Bias in Audit Experiments</a>
          <div class="galleryItemDescription">Journal of Experimental Political Science, forthcoming</div>
       </div>
-      <div class="galleryItem">
-         <a href="projectpages_Coppock_generalizability.html"><img class="galleryItemImage" src="papers/Coppock_generalizability.png"/></a>
-         <a href="projectpages_Coppock_generalizability.html" class="galleryItemLabel">Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach</a>
-         <div class="galleryItemDescription">Political Science Research and Methods, forthcoming</div>
-      </div>
+
       <div class="galleryItem">
          <a href="projectpages_CGGK_attrition.html"><img class="galleryItemImage" src="papers/CGGK_attrition.png"/></a>
          <a href="projectpages_CGGK_attrition.html" class="galleryItemLabel">Combining Double Sampling and Bounds to Address Non-ignorable Missing Outcomes in Randomized Experiments</a>
          <div class="galleryItemDescription">Political Analysis, 2017, with Alan S. Gerber, Donald P. Green, and Holger L. Kern.</div>
       </div>
-      <div class="galleryItem">
-         <a href="projectpages_CG_labfield.html"><img class="galleryItemImage" src="papers/CG_labfield.png"/></a>
-         <a href="projectpages_CG_labfield.html" class="galleryItemLabel">Assessing the Correspondence between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</a>
-         <div class="galleryItemDescription"> Political Science Research and Methods, 2015, with Donald P. Green.</div>
-      </div>
+      
+      
+      
+      
       <div class="galleryItem">
          <a href="projectpages_ACCG_list.html"><img class="galleryItemImage" src="papers/ACCG_list.png"/></a>
          <a href="projectpages_ACCG_list.html" class="galleryItemLabel">Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence</a>

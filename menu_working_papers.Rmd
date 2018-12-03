@@ -73,19 +73,6 @@ output:
 			<a href="projectpages_OCG_adaptive.html" class="galleryItemLabel">Adaptive Experimental Design: Prospects and Applications in Political Science</a>
 			<div class="galleryItemDescription">Working Paper, with Molly Offer-Westort and Donald P. Green</div>
 		</div>
-		
-		<!---
-		<div class="galleryItem">
-			<a href="projectpages_CLM_heterogeneity.html"><img class="galleryItemImage" src="papers/CLM_heterogeneity.png"/></a>
-			<a href="projectpages_CLM_heterogeneity.html" class="galleryItemLabel">Generalizability of Heterogeneous Treatment Effect Estimates</a>
-			<div class="galleryItemDescription">Working Paper, with Thomas J. Leeper and Kevin J. Mullinix.</div>
-		</div>
-		---> 
-		<div class="galleryItem">
-			<a href="projectpages_CM_lucid.html"><img class="galleryItemImage" src="papers/CM_lucid.png"/></a>
-			<a href="projectpages_CM_lucid.html" class="galleryItemLabel">Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</a>
-			<div class="galleryItemDescription">Working Paper, with Oliver A. McClellan.</div>
-		</div>
 		<div class="galleryItem">
 			<a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.png"/></a>
 			<a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
