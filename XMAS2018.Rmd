@@ -1,0 +1,90 @@
+---
+title: "VeeGee Christmas eXtravaganza 2018"
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+
+We can't wait to see you all for our Christmas Celebration! We've got an action-packed day ahead. There are a LOT of details we need to share with you, so please read carefully -- but of course the most important thing is for us to be together!
+
+# Schedule-at-a-glance
+
+- 10:30 arrive at <a href="https://goo.gl/maps/ysMRBPcfv2K2" target="_blank">Grandma's House</a>
+- 11:00 - 1:00 Scandiavian Desserts Workshop
+- 1:30 - 3:30 Mall Madness at the <a href="https://goo.gl/maps/2ud9bUCBdu42" target="_blank">Mall of America</a>
+- 4:00 - 6:00 Bowling at <a href="https://goo.gl/maps/q7JSkrzdrsT2" target="_blank">Bowlero Lakeville</a>
+- 7:00 - 11:00 Italian Christmas Dinner and Gift Exchange at <a href="https://goo.gl/maps/ysMRBPcfv2K2" target="_blank">Grandma's House</a>
+
+# Detailed Schedule
+
+## Scandiavian Desserts Workshop @ 10:30
+
+Grandma Diane will lead a Desserts Workshop in the Legends Great Room. Learn about our Scandianvian Van Grinsven heritage! We'll also learn to make Krumkake and Rosettes. Yum!
+
+<img src="lefse.jpeg" alt="Lefse" style="width:300px">
+<img src="krumkake.jpeg" alt="Krumkake" style="width:300px">
+<img src="rosettes.jpeg" alt="Rosettes" style="width:300px">
+
+## Mall Madness @ 1:30
+
+This year, we're playing Mall Madness! After we arrive at the mall, everyone will fill out a short questionnaire about their sizes, interests, and Christmas wishes. Then we'll fold up all the questionnaires and put them in a hat and mix them up! Each person then draws a questionnaire **at random** -- You have to find the **perfect gift** for \$20 or less SOMEWHERE IN THE MALL OF AMERICA! Grandma Diane will be handing out crisp \$20 bills to each participant. 
+
+Important: You'll need to bring supplies to wrap your gift **before** you get back to Grandmas! Gift bags are probably easiest...
+
+- We'll meet on the **3rd level south food court** on the balcony overlooking the Lego Store at the Mall of America. 
+- A nearby landmark is <a href="https://www.mallofamerica.com/directory/burger-burger" target="_blank">Burger Burger</a>. 
+- Here's a video of the location!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qe_ELS4pdFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Bowlero @ 4:00
+
+- We're meeting at Bowlero Lakeville (there are multiple locations, so make sure to come to Lakeville)
+- Shoes, Lanes, and Games have been taken care of, thanks to Grandma Diane!
+
+<img src="bowling.jpeg" alt="Bowling" style="width:560px">
+
+
+## Italian Christmas Dinner
+
+- Come to Grandma's House right after bowling
+- Hors d'oeuvres from 6:00 - 7:00
+- Grand Family Staircase Photo to be taken **promptly** at 7:15
+- The dress code for the Italian Christmas Dinner is "moderately fancy"
+- The Mall Madness Gift Exchange will take place after dinner!
+- We'll have food, dinner, and drinks all ready for everyone. We're avoiding any non-clear beverages so that any spills are easy to clean up!
+
+<img src="lasagna.jpeg" alt="Lasagna" style="width:560px">
+
+# Locations
+
+## Grandma's House
+
+14050 Granite Ave, Apple Valley, MN 55124
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.751607210921!2d-93.22101108446648!3d44.745084179099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f630df5b05bca3%3A0x4a7fe11d43aa764d!2s14050+Granite+Ave%2C+Apple+Valley%2C+MN+55124!5e0!3m2!1sen!2sus!4v1546025404667" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+## Mall of America
+
+60 E Broadway, Bloomington, MN 55425.  Third Level, South Food Court, on the balcony overlooking the Lego Store. A nearby restaurant is Burger Burger.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.364932641266!2d-93.24440348429557!3d44.854865079098374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f62f6c393c612d%3A0xb3c6f1806e78286b!2sMall+of+America%C2%AE!5e0!3m2!1sen!2sus!4v1546025482892" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+## Bowlero Lakeville
+
+11129 162nd St W, Lakeville, MN 55044
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362263.3192170263!2d-93.49183229635658!3d44.815723540701185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecf91efe0b93da66!2sBowlero+Lakeville!5e0!3m2!1sen!2sus!4v1546025510962" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+# GET EXCITED
+
+<iframe src="https://giphy.com/embed/vFqzsTUL2HYQg" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rachel-mcadams-mean-girls-sweden-vFqzsTUL2HYQg">via GIPHY</a></p>
+
+<iframe src="https://giphy.com/embed/xTk9ZLRMhW9wrSUf4c" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/christmas-xmas-santa-claus-xTk9ZLRMhW9wrSUf4c"></a></p>
+
+<iframe src="https://giphy.com/embed/KnGDQNvaqSv2o" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bowling-professional-KnGDQNvaqSv2o"></a></p>
+
+<iframe src="https://giphy.com/embed/mnsrLVomCvdWaqF0oF" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mnsrLVomCvdWaqF0oF"></a></p>
+
+<iframe src="https://giphy.com/embed/xTiN0kB7Cytg4XCKEo" width="480" height="246" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/oscars-academy-awards-oscars-2017-xTiN0kB7Cytg4XCKEo"></a></p>
