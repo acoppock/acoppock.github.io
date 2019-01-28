@@ -98,6 +98,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -105,14 +108,74 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -263,6 +326,7 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 <p>Coppock, Alexander, and Oliver A. McClellan. “Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents” Research &amp; Politics, Forthcoming.</p>
 <ul>
+<li><a href="https://journals.sagepub.com/doi/10.1177/2053168018822174">Link to Journal</a></li>
 <li><a href="papers/CM_lucid.pdf">Preprint (December 2018)</a></li>
 <li><a href="papers/CM_lucid_appendix.pdf">Online Appendix</a></li>
 <li><a href="https://polisci.columbia.edu/content/oliver-ahlstrom-mcclellan">Oliver McClellan’s personal website</a></li>
