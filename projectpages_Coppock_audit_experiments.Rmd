@@ -8,7 +8,7 @@ output:
       collapsed: false
 ---
 
-Coppock, Alexander. “Avoiding Post-Treatment Bias in Audit Experiments” Journal of Experimental Political Science, forthcoming.
+Coppock, Alexander. 2019. “Avoiding Post-Treatment Bias in Audit Experiments” Journal of Experimental Political Science, 6(1), 1-4.
 
 - [Pre-production Draft](papers/Coppock_audit_experiments.pdf)
 - [Link to Journal](https://doi.org/10.1017/XPS.2018.9)
@@ -19,9 +19,14 @@ Audit experiments are used to easure discrimination in a large number of domains
 ## Bibtex citation
 
 ```
-@article{coppock2018audit,
+
+@article{coppock2019audit,
 	Author = {Coppock, Alexander},
 	Journal = {Journal of Experimental Political Science},
+	Number = {1},
+	Pages = {1--4},
 	Title = {Avoiding Post-Treatment Bias in Audit Experiments},
-	Year = {2018}}
+	Volume = {6},
+	Year = {2019}}
+
 ```
