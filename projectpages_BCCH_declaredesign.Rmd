@@ -27,11 +27,10 @@ Researchers need to select high quality research designs and communicate those d
 ## Bibtex Citation
 
 ```
-
-@article{blair2018declaredesign,
+@article{blair2019declaredesign,
 	Author = {Blair, Graeme and Jasper Cooper and Alexander Coppock and Macartan Humphreys},
-	Journal = {Unpublished manuscript},
+	Journal = {American Political Science Review},
 	Title = {Declaring and Diagnosing Research Designs},
-	Year = {2018}}
-
+	Year = {2019},
+	Note = {Forthcoming}}
 ```
