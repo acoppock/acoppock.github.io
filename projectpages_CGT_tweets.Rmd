@@ -31,16 +31,3 @@ This study rigorously compares the effectiveness of online mobilization appeals 
 Figure 3 from paper, showing the heterogeneous effects of treatment by account type, study, and dependent variable:
 
 <center><img src="Images/CGT_twitter_fig.png" alt="Coppock, Guess, and Ternovksi (2015) Figure 3" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{coppock2016tweets,
-	Author = {Coppock, Alexander and Andrew Guess and John Ternovski},
-	Journal = {Political Behavior},
-	Number = {1},
-	Pages = {105--128},
-	Title = {When Treatments are Tweets: A Network Mobilization Experiment over Twitter},
-	Volume = {38},
-	Year = {2016}}
-```

@@ -28,13 +28,3 @@ Do treatments deployed in survey experiments have persistent effects? The protot
 Figure 3 from paper, showing original coefficient estimates versus estimates obtained on Mechanical Turk.
 
 <center><img src="Images/Coppock_persistence_fig.png" alt="Figure 2" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{coppock2017persistence,
-	Author = {Coppock, Alexander},
-	Journal = {Unpublished manuscript},
-	Title = {The Persistence of Survey Experimental Treatment Effects},
-	Year = {2017}}
-```

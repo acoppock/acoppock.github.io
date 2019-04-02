@@ -27,13 +27,3 @@ For more than a half-century, scholars have characterized party attachments and 
 
 Figure 2 from paper, showing the effects of the videos on seven-point party ID.
 <center><img src="images/pid_7_post.png" alt="Coppock, Green, and Porter Figure 2" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{coppock2018minting,
-	Author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
-	Journal = {Unpublished manuscript},
-	Title = {Minting Partisans: Experimental Interventions to Test Theories of Partisan Change},
-	Year = 2018}
-```

@@ -20,8 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
     - [Huffington Post](http://www.huffingtonpost.com/entry/trump-losing-polls_us_580a4211e4b02444efa30cc2)
     
 
-## Citation
-
 Coppock, Alexander. 2017. "Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment" Statistics, Politics, and Policy. 8(1):29-40
 
 ## Abstract
@@ -33,15 +31,3 @@ Figure 1 from paper, showing direct and list experimental estimates of Trump sup
 
 <center><img src="Images/Coppock_shytrump_fig.jpg" alt="Coppock 2017 Figure 1" width="600"></center>
 
-## Bibtex citation
-
-```
-@article{coppock2017did,
-	Author = {Coppock, Alexander},
-	Journal = {Statistics, Politics and Policy},
-	Number = {1},
-	Pages = {29--40},
-	Title = {Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment},
-	Volume = {8},
-	Year = {2017}}
-```

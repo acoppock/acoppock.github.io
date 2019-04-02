@@ -31,16 +31,3 @@ Field experiments and regression discontinuity designs test whether voting is ha
 This figure shows the effects of eligibility on voting in the Florida 2008 and 2012 elections.  We use birthday cohort vote totals (rather than means) to address the measurement problem that the unregistered are not present on voter rolls. Our 2008 estimate of the effect of eligibility is approximately 250 votes; our 2012 estimate (using either the raw totals, or totals differenced by one year) is approximately 25 votes, yielding a habit effect in Florida of 25/250 = 10%.
 
 <center><img src="Images/RD_blog_fig.png" alt="what image shows" width="600"></center>
-
-## Bibtex Citation
-
-```
-@article{coppock2016habit,
-	Author = {Coppock, Alexander and Green, Donald P.},
-	Journal = {American Journal of Political Science},
-	Number = {4},
-	Pages = {1044--1062},
-	Title = {Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities},
-	Volume = {60},
-	Year = {2016}}
-```

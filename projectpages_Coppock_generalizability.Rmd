@@ -33,12 +33,3 @@ Figure 3 from paper, showing original coefficient estimates versus estimates obt
 
 <center><img src="Images/Coppock_generalizability_fig.png" alt="Coppock 2017 Figure 3" width="600"></center>
 
-## Bibtex citation
-
-```
-@article{coppock2018generalizing,
-	Author = {Coppock, Alexander},
-	Journal = {Political Science Research and Methods},
-	Title = {Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach},
-	Year = {2018}}
-```

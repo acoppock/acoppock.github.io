@@ -26,13 +26,3 @@ As described in Converse (1964), belief systems are dynamically constrained if a
 Figure 5 from paper, showing strong effects of treatments on target issues and virtually no effects of treatments on nontarget issues.
 
 <center><img src="Images/CG_dynamicconstraint_fig.png" alt="Coppock and Green Figure 5" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{coppock2017dynamic,
-	Author = {Coppock, Alexander and Donald P. Green},
-	Journal = {Unpublished manuscript},
-	Title = {Do Belief Systems Exhibit Dynamic Constraint?},
-	Year = {2017}}
-```

@@ -30,12 +30,3 @@ Figure 2 from paper, showing correspondence of experimental estimates across pla
 
 <center><img src="Images/StandardizedExperiments.png" alt="Coppock and McClellan 2018 Figure 2" width="600"></center>
 
-## Bibtex citation
-
-```
-@article{coppock2018lucid,
-	Author = {Coppock, Alexander and Oliver A. McClellan},
-	Journal = {Research \& Politics},
-	Title = {Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents},
-	Year = {2018}}
-```

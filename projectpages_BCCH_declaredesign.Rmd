@@ -23,14 +23,3 @@ Blair, Graeme, Jasper Cooper, Alexander Coppock, and Macartan Humphreys. “Decl
 
 ## Abstract
 Researchers need to select high quality research designs and communicate those designs to readers. Both tasks are difficult. We provide a framework for formally characterizing the analytically relevant features of a research design, with applications to qualititative, quantitative, and mixed methods research. The approach to design declaration that we describe requires defining a model of the world (M), an inquiry (I), a data strategy (D), and an answer strategy (A). Declaration of these features in code provides sufficient information for researchers and readers to use Monte Carlo techniques to diagnose properties such as power, bias, correct identification of causal conditions, and other "diagnosands." Ex ante design declarations can be used to improve designs and facilitate preregistration, analysis, and reconciliation of intended and actual analyses. Ex post design declarations are also useful for describing, sharing, reanalyzing, and critiquing existing designs. We provide open-source software, DeclareDesign, to implement the proposed approach.
-
-## Bibtex Citation
-
-```
-@article{blair2019declaredesign,
-	Author = {Blair, Graeme and Jasper Cooper and Alexander Coppock and Macartan Humphreys},
-	Journal = {American Political Science Review},
-	Title = {Declaring and Diagnosing Research Designs},
-	Year = {2019},
-	Note = {Forthcoming}}
-```

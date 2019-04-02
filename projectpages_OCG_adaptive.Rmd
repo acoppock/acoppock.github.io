@@ -26,13 +26,3 @@ Experimental researchers in political science frequently face the following infe
 
 Figure 5 from paper, showing the posterior probability of each arm being best after each batch of subjects.
 <center><img src="images/over_time.png" alt="Offer-Westort, Coppock and Green Figure 2" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{offerwestort2018adaptive,
-	Author = {Offer-Westort, Molly and Alexander Coppock and Donald P. Green},
-	Journal = {Unpublished manuscript},
-	Title = {Adaptive Experimental Design: Prospects and Applications in Political Science},
-	Year = 2018}
-```

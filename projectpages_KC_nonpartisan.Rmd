@@ -29,16 +29,3 @@ In the absence of party labels, voters must use other information to infer candi
 Figure 2 from paper, showing the results of a conjoint experiment conducted on YouGov.
 
 <center><img src="Images/KC_nonpartisan_fig.png" alt="Kirkland and Coppock Figure 2" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{kirkland2018conjoint,
-	Author = {Kirkland, Patricia A. and Alexander Coppock},
-	Journal = {Political Behavior},
-	Number = {3},
-	Pages = {571--591},
-	Title = {Candidate Choice Without Party Labels:},
-	Volume = {40},
-	Year = {2018}}
-```

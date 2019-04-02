@@ -26,8 +26,6 @@ knitr::opts_chunk$set(echo = TRUE)
     - [Politico](http://www.politico.com/story/2015/12/campaign-lawn-signs-little-effect-217166)
     
 
-## Citation
-
 Donald P. Green, Jonathan S. Krasno, Alexander Coppock, Benjamin D. Farrer, Brandon Lenoir, Joshua N. Zingher. 2016. "The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments." Electoral Studies. 41: 143-150. 
 
 ## Abstract
@@ -38,15 +36,3 @@ Although lawn signs rank among the most widely used campaign tactics, little sch
 Figure 2 from paper, showing how people with three different priors about the effects of lawn signs would interpret our evidence.
 
 <center><img src="images/GKCFLZ_lawnsigns_fig.png" alt="Green et al. 2016 Figure 2" width="600"></center>
-
-## Bibtex citation
-
-```
-@article{green2016lawnsigns,
-	Author = {Green, Donald P. and Jonathan S. Krasno and Alexander Coppock and Benjamin D. Farrer and Brandon Lenoir and Joshua N. Zingher},
-	Journal = {Electoral Studies},
-	Pages = {143 - 150},
-	Title = {The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments},
-	Volume = {41},
-	Year = {2016}}
-```
