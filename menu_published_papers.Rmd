@@ -10,6 +10,13 @@ output:
 <div class="bandContent gallerySection">
    <div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
    <div class="galleryItems">
+   
+   <div class="galleryItem">
+			<a href="http://bwc.thelab.dc.gov/"><img class="galleryItemImage" src="papers/YRC_BWC.png"/></a>
+			<a href="http://bwc.thelab.dc.gov/" class="galleryItemLabel">Evaluating the Effects of Police Body-Worn Cameras: A Randomized Controlled Trial</a>
+			<div class="galleryItemDescription">Proceedings of the National Academy of Sciences, forthcoming, with David Yokum and Anita Ravishankar.</div>
+		</div>
+		
       <div class="galleryItem">
          <a href="projectpages_GC_prevalence.html"><img class="galleryItemImage" src="papers/GC_backlash.png"/></a>
          <a href="projectpages_GC_prevalence.html" class="galleryItemLabel">Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments</a>
@@ -89,6 +96,11 @@ output:
         <div class="gallerySectionTitle"> Statistical Methods</div>
    <div class="galleryItems">
 
+<div class="galleryItem">
+			<a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.png"/></a>
+			<a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
+			<div class="galleryItemDescription">Working Paper, with Graeme Blair, Jasper Cooper, and Macartan Humphreys.</div>
+		</div>
         
       <div class="galleryItem">
          <a href="projectpages_Coppock_audit_experiments.html"><img class="galleryItemImage" src="papers/Coppock_audit_experiments.png"/></a>

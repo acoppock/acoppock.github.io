@@ -28,11 +28,7 @@ output:
 			<a href="projectpages_Coppock_trumptraders.html" class="galleryItemLabel">A Field Experimental Test of Vote Swapping</a>
 			<div class="galleryItemDescription">Working Paper</div>
 		</div>
-		<div class="galleryItem">
-			<a href="http://bwc.thelab.dc.gov/"><img class="galleryItemImage" src="papers/YRC_BWC.png"/></a>
-			<a href="http://bwc.thelab.dc.gov/" class="galleryItemLabel">Evaluating the Effects of Police Body-Worn Cameras: A Randomized Controlled Trial</a>
-			<div class="galleryItemDescription">Working Paper, with David Yokum and Anita Ravishankar.</div>
-		</div>
+		
 		<div class="galleryItem">
 			<a href="projectpages_CG_dynamicconstraint.html"><img class="galleryItemImage" src="papers/CG_dynamicconstraint.png"/></a>
 			<a href="projectpages_CG_dynamicconstraint.html" class="galleryItemLabel">Do Belief Systems Exhibit Dynamic Constraint?</a>
@@ -72,11 +68,6 @@ output:
 			<a href="projectpages_OCG_adaptive.html"><img class="galleryItemImage" src="papers/OCG_adaptive.png"/></a>
 			<a href="projectpages_OCG_adaptive.html" class="galleryItemLabel">Adaptive Experimental Design: Prospects and Applications in Political Science</a>
 			<div class="galleryItemDescription">Working Paper, with Molly Offer-Westort and Donald P. Green</div>
-		</div>
-		<div class="galleryItem">
-			<a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.png"/></a>
-			<a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
-			<div class="galleryItemDescription">Working Paper, with Graeme Blair, Jasper Cooper, and Macartan Humphreys.</div>
 		</div>
 	</div>
 </div>
