@@ -99,7 +99,7 @@ output:
 <div class="galleryItem">
 			<a href="projectpages_BCCH_declaredesign.html"><img class="galleryItemImage" src="papers/BCCH_declaredesign.png"/></a>
 			<a href="projectpages_BCCH_declaredesign.html" class="galleryItemLabel">Declaring and Diagnosing Research Designs</a>
-			<div class="galleryItemDescription">Working Paper, with Graeme Blair, Jasper Cooper, and Macartan Humphreys.</div>
+			<div class="galleryItemDescription">American Political Science Review, Forthcoming, with Graeme Blair, Jasper Cooper, and Macartan Humphreys.</div>
 		</div>
         
       <div class="galleryItem">

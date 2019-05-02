@@ -17,6 +17,7 @@ Alexander Coppock, Emily Ekins and David Kirby (2018), "The Long-lasting Effects
 - [Link to Journal](https://www.nowpublishers.com/article/Details/QJPS-16112)
 - [Article](papers/CEK_opeds.pdf)
 - [Online Appendix](papers/CEK_opeds_appendix.pdf)
+- [Replication Archive](https://doi.org/10.7910/DVN/3KBCJF)
 - [Emily Ekins's Personal Website](https://www.cato.org/people/emily-ekins)
 - [David Kirby's Personal Website](https://www.cato.org/people/david-kirby)
 - Press

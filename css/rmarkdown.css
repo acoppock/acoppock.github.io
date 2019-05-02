@@ -20,14 +20,12 @@ p {
 }
 
 .band.full.first {
-  height: 550px;
+  height: 600px;
 }
 
 .band.full.second {
   height: 480px;
-
   overflow: hidden;
-  border-bottom: 1px solid #f8f8f8;
 }
 
 .band.full.third {
@@ -66,8 +64,8 @@ p {
 .band .imageTwo {
   position: absolute;
   top: 150px;
-  right: 10px;
-  width: 35%;
+  right: 5%;
+  width: 45%;
   height: auto;
 
 }

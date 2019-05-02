@@ -13,12 +13,8 @@ $("#rStudioHeader").removeClass("alwaysShrunk");
 $("#pageContent").removeClass("standardPadding");
 ```
 
-
 <!--html_preserve-->
-
 <div id="homeContent">
-  
-
   <div class="band full blue first leftText">
     <div class="bandContent vCenter">
       <div class="blurb">
@@ -27,52 +23,5 @@ $("#pageContent").removeClass("standardPadding");
     </div>
     <img class="imageTwo" src="images/front_page.png"/>
   </div>
-
 </div>
-
 <!--/html_preserve-->
-
-
-<!--html_preserve-->
-<!--
-<div id="homeContent">
-  <div class="band full blue first rightText">
-    <div class="bandContent vCenter">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <div class="blurb">
-        <div class="tagline"> I am an Assistant Professor of Political Science at Yale University. I study how individuals incorporate new political information and the reproducibility of social science research. You can find my most current CV <a href="paper/coppockcv.pdf">here</a>.</div>
-          </div>
-          </div>
-          <img class="imageOne" src="images/front_page1.png"/>
-            </div>
-            
-                      
-                                    </div>
-
-=======
-=======
->>>>>>> origin/master
-      <div class="blueBar">
-              <div id="textSpace">
-        .
-              </div>
-              </br></br></br>
-                <div>
-                        <img src="images/front_page.png" height="300px" width="300px">        
-               </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
-<!--<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-<!--/html_preserve-->
-
-<!--
-<img class="imageOne" src="images/bad_headshot.jpg"/>
--->
-
