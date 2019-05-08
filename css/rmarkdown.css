@@ -163,7 +163,7 @@ p {
   display: inline-block;
   width: 70px;
   height: 25px;
-  background-image:url(../images/logoRStudio.png);
+ /*  background-image:url(../images/logoRStudio.png); 8*/
   background-size: 100% auto;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -226,7 +226,7 @@ p {
   padding: 0px;
   margin: 0px 0px 0px 10px;
 
-  background-image: url(../images/gitHubLogo.svg);
+  /* background-image: url(../images/gitHubLogo.svg); */
   background-repeat: no-repeat;
   background-size: 20px auto;
   background-position: center center;
@@ -297,7 +297,7 @@ p {
   background-repeat: no-repeat;
   background-position: left 8px;
   background-size: 8px 8px;
-  background-image: url(../images/link-icon.png);
+ /* background-image: url(../images/link-icon.png);*/
 }
 
 #pageContent .linkSection .articleBlurb {
@@ -555,14 +555,6 @@ p {
 
 #rStudioFooter .bandContent .footerLogo.gitHub {
   background-image: url(../images/gitHubLogo2.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.linkedIn {
-  background-image: url(../images/linkedInLogo.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.facebook {
-  background-image: url(../images/facebookLogo.svg);
 }
 
 #rStudioFooter .bandContent .footerLogo.orcid {
