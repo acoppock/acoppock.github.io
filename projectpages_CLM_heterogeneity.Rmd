@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. "The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples" Proceedings of the National Academy of Science, Forthcoming.
+Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. 2018. "The Generalizability of Heterogeneous Treatment Effect Estimates Across Samples" Proceedings of the National Academy of Science, 115(49) 12441-12446
 
 - [Link to journal](https://doi.org/10.1073/pnas.1808083115)
 - [Pre-print (November 2018)](papers/CLM_heterogeneity_preprint.pdf)
