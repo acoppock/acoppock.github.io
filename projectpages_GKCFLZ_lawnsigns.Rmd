@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
     - [Donald P. Green](https://sites.google.com/site/donaldpgreen/)
     - [Jonathan S. Krasno](https://www.binghamton.edu/political-science/people/faculty/jonathan-krasno.html)
     - [Benjamin D. Farrer](https://sites.google.com/a/binghamton.edu/benfarrer/home)
-    - [Brandon Lenoir](http://www.polisci.pitt.edu/person/brandon-lenoir)
+    - [Brandon Lenoir](http://www.highpoint.edu/presskit/2015/06/18/dr-brandon-lenoir-political-science-and-communication/)
     - [Joshua N. Zingher](https://fs.wp.odu.edu/jzingher/)
 - Press
     - [Politico](http://www.politico.com/story/2015/12/campaign-lawn-signs-little-effect-217166)

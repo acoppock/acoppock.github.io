@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Blair, Graeme, Jasper Cooper, Alexander Coppock, and Macartan Humphreys. "Declaring and Diagnosing Research Designs." American Political Science Review. Forthcoming.
 
 - [Project website](https://declaredesign.org/)
-- [Preprint (April 2019)](https://paper.declaredesign.org/paper.pdf)
+- [Preprint (April 2019)](https://declaredesign.org/declare.pdf)
 - Coauthors' personal websites
     - [Graeme Blair](https://graemeblair.com/)
     - [Jasper Cooper](http://jasper-cooper.com/)
