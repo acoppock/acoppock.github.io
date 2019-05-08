@@ -7,66 +7,27 @@ output:
       before_body: [include_header.html, include_header_navpage.html]
 ---
 
+Software packages for R that I've authored or contributed to:
+
+- [DeclareDesign](https://declaredesign.org)
+- [randomizr](https://declaredesign.org/r/randomizr/)
+- [estimatr](https://declaredesign.org/r/estimatr/)
+- [fabricatr](https://declaredesign.org/r/fabricatr/)
+- [list](https://list.sensitivequestions.org)
+- [ri2](http://alexandercoppock.com/ri2/)
+
+Here are some handy cheatsheets:
+
+- [cheatsheet for DeclareDesign](https://github.com/rstudio/cheatsheets/raw/master/declaredesign.pdf)
+- [cheatsheet for randomizr](https://github.com/rstudio/cheatsheets/raw/master/randomizr.pdf)
+- [cheatsheet for estimatr](https://github.com/rstudio/cheatsheets/raw/master/estimatr.pdf)
+
 <!--html_preserve-->
 
 <div class="band full">
-  <div class="bandContent pageTitle">Statistical Tools</div>
-
-  
-  <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">R Packages (authored or contributed to)</div>
-    <div class="galleryItems">
-    
-          <div class="galleryItem">
-        <a href="http://alexandercoppock.com/ri2"><img class="galleryItemImage" src="images/ri2.png"/></a>
-        <a href="http://alexandercoppock.com/ri2" class="galleryItemLabel">ri2</a>
-        <div class="galleryItemDescription">Randomization Inference for Randomized Experiments</div>
-      </div>
-    
-    
-      <div class="galleryItem">
-        <a href="http://randomizr.declaredesign.org"><img class="galleryItemImage" src="images/randomizr.png"/></a>
-        <a href="http://randomizr.declaredesign.org" class="galleryItemLabel">randomizr</a>
-        <div class="galleryItemDescription">Easy to Use Tools for Common Forms of Random Assignment and Sampling</div>
-      </div>
-      
-      <div class="galleryItem">
-        <a href="papers/randomizr_cheatsheet.pdf"><img class="galleryItemImage" src="papers/randomizr_cheatsheet.png"/></a>
-        <a href="papers/randomizr_cheatsheet.pdf" class="galleryItemLabel">randomizr</a>
-        <div class="galleryItemDescription">randomizr cheatsheet</div>
-      </div>
-      
-      
-      <div class="galleryItem">
-        <a href="statistical_list.html"><img class="galleryItemImage" src="images/list.png"/></a>
-        <a href="statistical_list.html" class="galleryItemLabel">list</a>
-        <div class="galleryItemDescription">Statistical Methods for the Item Count Technique and List Experiment</div>
-      </div>
-      
-      <div class="galleryItem">
-        <a href="https://declaredesign.org/"><img class="galleryItemImage" src="images/declaredesign.png"/></a>
-        <a href="https://declaredesign.org/" class="galleryItemLabel">DeclareDesign</a>
-        <div class="galleryItemDescription">Tools for Improving Research Designs in the Social Sciences</div>
-      </div>
-
-      <div class="galleryItem">
-        <a href="commarobust"><img class="galleryItemImage" src="images/commarobust.png"/></a>
-        <a href="commarobust" class="galleryItemLabel">commarobust</a>
-        <div class="galleryItemDescription">Robust Standard Errors in R</div>
-      </div>
-
-      <div class="galleryItem">
-        <a href="attrition"><img class="galleryItemImage" src="images/attrition.png"/></a>
-        <a href="attrition" class="galleryItemLabel">attrition</a>
-        <div class="galleryItemDescription">Statistical Methods for Randomized Experiments Facing Attrition</div>
-      </div>
-      
-    </div>
-  </div>
-
+  <div class="bandContent pageTitle">Shiny Apps</div>
 
   <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">Shiny Apps</div>
     <div class="galleryIntro">Apps that help with experimental design and analysis</div>
     <div class="galleryItems">
     

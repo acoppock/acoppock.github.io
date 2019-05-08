@@ -20,7 +20,7 @@ Coppock, A. (2016) ‘“Information Spillovers: Another Look at Experimental Es
 - [Journal site (original paper)](http://journals.cambridge.org/abstract_S2052263014000098)
 - [Journal site (corrigendum)](https://doi.org/10.1017/XPS.2016.8)
 - [Original paper](papers/Coppock_informationspillovers.pdf)
-- [Corrigendum](papers/Coppock_informationspillovers_corrigendum2.pdf)
+- [Corrigendum](papers/Coppock_informationspillovers_corrigendum.pdf)
 - [Online Appendix](papers/ACCG_list_appendix.pdf)
 - [Replication Archive](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/29984)
 
