@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Molly Offer-Westort, Alexander Coppock, and Donald P. Green (2018), "Adaptive Experimental Design: Prospects and Applications in Political Science." Working paper.
 
-- [Working paper (September 2018)](papers/OCG_adaptive.pdf)
+- [Working paper (Feburary 2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3364402)
 - [Molly Offer-Westort's personal website](https://mollyow.github.io/)
 - [Donald P. Green's personal website](https://sites.google.com/site/donaldpgreen/)
 
