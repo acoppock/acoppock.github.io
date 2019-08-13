@@ -19,9 +19,9 @@ output:
 			<div class="galleryItemDescription">Working Paper, with Donald P. Green and Ethan Porter</div>
 		</div>
 		<div class="galleryItem">
-			<a href="projectpages_SHC_gender.html"><img class="galleryItemImage" src="papers/SHC_gender.png"/></a>
-			<a href="projectpages_SHC_gender.html" class="galleryItemLabel">What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 30 Factorial Survey Experiments</a>
-			<div class="galleryItemDescription">Working Paper, with Susanne Schwartz and William Hunt</div>
+			<a href="projectpages_SC_gender.html"><img class="galleryItemImage" src="papers/SC_gender.png"/></a>
+			<a href="projectpages_SC_gender.html" class="galleryItemLabel">What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 42 Factorial Survey Experiments</a>
+			<div class="galleryItemDescription">Working Paper, with Susanne Schwartz</div>
 		</div>
 		<div class="galleryItem">
 			<a href="projectpages_Coppock_trumptraders.html"><img class="galleryItemImage" src="papers/Coppock_trumptraders.png"/></a>
