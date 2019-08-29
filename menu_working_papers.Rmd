@@ -13,11 +13,25 @@ output:
 <div class="bandContent gallerySection">
 	<div class="gallerySectionTitle"> Political Attitudes and Behaviors</div>
 	<div class="galleryItems">
+
+		<div class="galleryItem">
+			<a href="projectpages_CHV_ads.html"><img class="galleryItemImage" src="papers/CHV_ads.png"/></a>
+			<a href="projectpages_CHV_ads.html" class="galleryItemLabel">Persuasive Effects of Presidential Campaign Advertising: Results of 53 Real-time Experiments in 2016</a>
+			<div class="galleryItemDescription">Working Paper, with Seth J. Hill and Lynn Vavreck</div>
+		</div>
+
+
+
+	
 		<div class="galleryItem">
 			<a href="projectpages_CGP_minting.html"><img class="galleryItemImage" src="papers/CGP_minting.png"/></a>
 			<a href="projectpages_CGP_minting.html" class="galleryItemLabel">Minting Partisans: Experimental Interventions to Test Theories of Partisan Change</a>
 			<div class="galleryItemDescription">Working Paper, with Donald P. Green and Ethan Porter</div>
 		</div>
+		
+		
+		
+		
 		<div class="galleryItem">
 			<a href="projectpages_SC_gender.html"><img class="galleryItemImage" src="papers/SC_gender.png"/></a>
 			<a href="projectpages_SC_gender.html" class="galleryItemLabel">What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 42 Factorial Survey Experiments</a>
