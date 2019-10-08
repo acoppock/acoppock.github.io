@@ -1,0 +1,29 @@
+---
+title: "Perils of Self-Assessed Attitude Change"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Matthew Graham and Alexander Coppock (2019), "Asking About Attitude Change." Working paper.
+
+- [Working paper (October 2019)](papers/GC_aaac.pdf)
+- [Matthew Graham's personal website](https://politicalscience.yale.edu/people/matthew-graham)
+
+## Abstract
+
+Surveys often ask respondents how information or events changed their attitudes. Does [information X] make you more or less supportive of [policy Y]? Does [scandal X] make you more or less likely to vote for [politician Y]? We show that this type of question (the *change format*) exhibits poor measurement properties, in large part because subjects engage in response substitution. When asked how their attitudes changed, people often appear to report the level of their attitudes instead. As an alternative, we propose the *counterfactual format*, which asks subjects what their attitude would have been in the counterfactual world in which they did (or did not) know a particular piece of information. Using a series of experiments embedded in four studies, we show that our alternative approach reduces response substitution and comes closer to experimental estimates of average causal effects of information.
+
+## Figure
+
+Figure 2 from paper, showing the effect of alternative question formats on reporting change by partisanship
+
+<center><img src="images/ate_on_change.png" alt="Graham and Coppock Figure 2" width="600"></center>
+

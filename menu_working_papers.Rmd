@@ -74,8 +74,8 @@ output:
 			<div class="galleryItemDescription">Working Paper, with Graeme Blair and Margaret Moor</div>
 		</div>
 		<div class="galleryItem">
-			<a href="projectpages_GC_perils.html"><img class="galleryItemImage" src="papers/GC_perils.png"/></a>
-			<a href="projectpages_GC_perils.html" class="galleryItemLabel">The Perils of Self-Assessed Attitude Change</a>
+			<a href="projectpages_GC_aaac.html"><img class="galleryItemImage" src="papers/GC_aaac.png"/></a>
+			<a href="projectpages_GC_aaac.html" class="galleryItemLabel">Asking about Attitude Change</a>
 			<div class="galleryItemDescription">Working Paper, with Matt Graham</div>
 		</div>
 		<div class="galleryItem">
