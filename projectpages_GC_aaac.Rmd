@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Matthew Graham and Alexander Coppock (2020), "Asking about Attitude Change." Working paper.
 
 - [Working paper (February 2020)](papers/GC_aaac.pdf)
+- [Supplementary Materials (February 2020)](papers/GC_aaac_appendix.pdf)
 - [Matthew Graham's personal website](https://politicalscience.yale.edu/people/matthew-graham)
 
 ## Abstract
