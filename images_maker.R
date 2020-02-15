@@ -14,7 +14,7 @@ file_names <- gsub(pattern = ".pdf",
 
 #for (i in 1:length(files)) {
 file_names
-i <- 39
+i <- 45
 
 
 try(image_read(paste0("papers/", files[i], "[0]"), density = 500) %>%
