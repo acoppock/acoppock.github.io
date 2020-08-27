@@ -1,0 +1,26 @@
+---
+title: 'fabricatr: Imagine Your Data Before You Collect It'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin, Neal Fultz. 2019. fabricatr: Imagine Your Data Before You Collect It. R package version 0.10.0.
+
+# Abstract
+Helps you imagine your data before you collect it. Hierarchical data structures and correlated data can be easily simulated, either from random number generators or by resampling from existing data sources. This package is faster with 'data.table' and 'mvnfast' installed.
+
+# Links
+ - <a href='blair_etal_2018c.pdf'>Link to paper</a>
+ - Project site: https://declaredesign.org/r/fabricatr/ 
+
+- Graeme Blair's website: https://graemeblair.com
+- Jasper Cooper's website: http://jasper-cooper.com
+- Macartan Humphreys's website: http://macartan.nyc
+- Aaron Rudkin's website: https://rudkin.ca
+- Neal Fultz's website: https://nfultz.github.io
+

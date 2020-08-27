@@ -1,0 +1,24 @@
+---
+title: 'Research Design: Declare, Diagnose, Redesign'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Blair, Graeme, Cooper, Jasper, Coppock, Alexander, Humphreys, Macartan. 2021. Research Design: Declare, Diagnose, Redesign. Under advance contract.
+
+# Abstract
+Book abstract
+
+# Links
+ - <a href='blair_cooper_coppock_humphreys_2021.pdf'>Link to paper</a>
+ - Project site: book.declaredesign.org 
+
+- Graeme Blair's website: https://graemeblair.com
+- Jasper Cooper's website: http://jasper-cooper.com
+- Macartan Humphreys's website: http://macartan.nyc
+

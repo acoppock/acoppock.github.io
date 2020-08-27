@@ -1,0 +1,22 @@
+---
+title: 'ri2: Randomization Inference for Randomized Experiments'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Alexander Coppock. 2019. ri2: Randomization Inference for Randomized Experiments. R package version 0.1.2.
+
+# Abstract
+Randomization inference procedures for simple and complex randomized designs, including multi-armed trials, as described in Gerber and Green (2012). Users formally describe their randomization procedure and test statistic. The randomization distribution of the test statistic under some null hypothesis is efficiently simulated.
+
+# Links
+ - <a href='coppock_2019c.pdf'>Link to paper</a>
+ - Project site: http://alexandercoppock.com/ri2/ 
+
+
+

@@ -1,0 +1,25 @@
+---
+title: 'estimatr: Fast Estimators for Design-Based Inference'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Luke Sonnet. 2020. estimatr: Fast Estimators for Design-Based Inference. R package version 0.22.0.
+
+# Abstract
+Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013).
+
+# Links
+ - <a href='blair_etal_2018b.pdf'>Link to paper</a>
+ - Project site: https://declaredesign.org/r/estimatr/ 
+
+- Graeme Blair's website: https://graemeblair.com
+- Jasper Cooper's website: http://jasper-cooper.com
+- Macartan Humphreys's website: http://macartan.nyc
+- Luke Sonnet's website: https://lukesonnet.com
+

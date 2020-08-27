@@ -1,0 +1,26 @@
+---
+title: 'Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, Green, Donald P.. 2016. Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities. American Journal of Political Science.
+
+# Abstract
+Field experiments and regression discontinuity designs test whether voting is habit forming by examining whether a random shock to turnout in one election affects participation in subsequent elections. We contribute to this literature by offering a vast amount of new statistical evidence on the long-term consequences of random and quasi-random inducements to vote. The behavior of millions of voters confirms the persistence of voter turnout and calls attention to theoretically meaningful nuances in the development and expression of voting habits. We suggest that individuals become habituated to voting in particular types of elections. The degree of persistence appears to vary by electoral context and by the attributes of those who comply with an initial inducement to vote.
+
+# Links
+ - <a href='coppock_green_2016.pdf'>Link to paper</a>
+ - <a href='coppock_green_2016_appendix.pdf'>Link to appendix</a>
+ - Journal site: https://doi.org/10.1111/ajps.12210 
+ - Replication archive: https://doi.org/10.7910/DVN/ALZVAW 
+
+- Donald P. Green's website: https://sites.google.com/site/donaldpgreen/
+
+# Figure
+<center><img src="display_figures/coppock_green_2016_display.png" alt="coppock_green_2016" width="600"></center>

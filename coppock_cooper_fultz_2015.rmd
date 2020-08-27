@@ -1,0 +1,23 @@
+---
+title: 'randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling. R package version 0.20.0.
+
+# Abstract
+Generates random assignments for common experimental designs and random samples for common sampling designs.
+
+# Links
+ - <a href='coppock_cooper_fultz_2015.pdf'>Link to paper</a>
+ - Project site: https://declaredesign.org/r/randomizr/ 
+
+- Jasper Cooper's website: http://jasper-cooper.com
+- Neal Fultz's website: https://nfultz.github.io
+

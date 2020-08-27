@@ -1,0 +1,25 @@
+---
+title: 'Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander. 2017. Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment. Statistics, Politics and Policy.
+
+# Abstract
+Explanations for the failure to predict Donald Trump's win in the 2016 Presidential election sometimes include the "Shy Trump Supporter" hypothesis, according to which some Trump supporters succumb to social desirability bias and hide their vote preference from pollsters. I evaluate this hypothesis by comparing direct question and list experimental estimates of Trump support in a nationally representative survey of 5,290 American adults fielded from September 2 to September 13, 2016. Of these, 32.5% report supporting Trump’s candidacy. A list experiment conducted on the same respondents yields an estimate 29.6%, suggesting that Trump’s poll numbers were not artificially deflated by social desirability bias as the list experiment estimate is actually lower than direct question estimate. I further investigate differences across measurement modes for relevant demographic and political subgroups and find no evidence in support of the "Shy Trump Supporter" hypothesis.
+
+# Links
+ - <a href='coppock_2017a.pdf'>Link to paper</a>
+ - Journal site: https://doi.org/10.1515/spp-2016-0005 
+ - Replication archive: https://doi.org/10079/zw3r2f9 
+
+
+
+# Figure
+<center><img src="display_figures/coppock_2017a_display.png" alt="coppock_2017a" width="600"></center>

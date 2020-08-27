@@ -1,0 +1,30 @@
+---
+title: 'Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, Alan S. Gerber, Donald P. Green, Holger L. Kern. 2017. Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments. Political Analysis.
+
+# Abstract
+Missing outcome data plague many randomized experiments. Common solutions rely on ignorability assumptions that may not be credible in all applications. We propose a method for confronting missing outcome data that makes fairly weak assumptions but can still yield informative bounds on the average treatment effect. Our approach is based on a combination of the double sampling design and non-parametric worst-case bounds. We derive a worst-case bounds estimator under double sampling and provide analytic expressions for variance estimators and confidence intervals. We also propose a method for covariate adjustment using post-stratification and a sensitivity analysis for non-ignorable missingness. Finally, we illustrate the utility of our approach using Monte Carlo simulations and a placebo-controlled randomized field experiment on the effects of persuasion on social attitudes with survey-based outcome measures.
+
+# Links
+ - <a href='coppock_etal_2017.pdf'>Link to paper</a>
+ - <a href='coppock_etal_2017_appendix.pdf'>Link to appendix</a>
+ - Journal site: https://doi.org/10.1017/pan.2016.6 
+ - Project site: http://alexandercoppock.com/attrition/index.html 
+ - Replication archive: https://doi.org/10.7910/DVN/AQB4MP 
+ - Preanalysis plan: https://osf.io/wkj8v 
+
+- Alan S. Gerber's website: http://campuspress.yale.edu/alangerber/
+- Donald P. Green's website: https://sites.google.com/site/donaldpgreen/
+- Holger L. Kern's website: http://www.holgerkern.com
+
+# Figure
+<center><img src="display_figures/coppock_etal_2017_display.png" alt="coppock_etal_2017" width="600"></center>

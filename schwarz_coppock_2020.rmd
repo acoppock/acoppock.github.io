@@ -1,0 +1,24 @@
+---
+title: 'What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Schwarz, Susanne, Alexander Coppock. 2020. What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments. Journal of Politics.
+
+# Abstract
+Candidate choice survey experiments in the form of conjoint or vignette experiments have become a standard part of the political science toolkit for understanding the effects of candidate characteristics on vote choice. We collect 67 such studies from all over the world and reanalyze them using a standardized approach. We find that the average effect of being a woman (relative to a man) is a gain of approximately 2 percentage points. We find some evidence of heterogeneity across contexts, candidates, and respondents. The difference is somewhat larger for white (versus black) candidates, and among survey respondents who are women (versus men) or, in the U.S. context, identify as Democrats or Independents (versus Republicans). Our results add to the growing body of experimental and observational evidence that voter preferences are not a major factor explaining the persistently low rates of women in elected office.
+
+# Links
+ - <a href='schwarz_coppock_2020.pdf'>Link to paper</a>
+ - <a href='schwarz_coppock_2020_appendix.pdf'>Link to appendix</a>
+
+- Susanne Schwarz's website: https://suschwarz.com
+
+# Figure
+<center><img src="display_figures/schwarz_coppock_2020_display.png" alt="schwarz_coppock_2020" width="600"></center>
