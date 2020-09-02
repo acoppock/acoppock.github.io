@@ -11,7 +11,7 @@
 
 
 
-<title>DeclareDesign: Declare and Diagnose Research Designs</title>
+<title>NA.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 <script type="text/javascript" src="js/rmarkdown.js"></script>
@@ -36,6 +37,21 @@
 
 </script>
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
 
@@ -205,26 +221,52 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">DeclareDesign: Declare and Diagnose Research Designs</h1>
 
 </div>
 
 
-<p>Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 2019. DeclareDesign: Declare and Diagnose Research Designs. R package version 0.23.0.</p>
-<div id="abstract" class="section level1">
-<h1>Abstract</h1>
-<p>Researchers can characterize and learn about the properties of research designs before implementation using <code>DeclareDesign</code>. Ex ante declaration and diagnosis of designs can help researchers clarify the strengths and limitations of their designs and to improve their properties, and can help readers evaluate a research strategy prior to implementation and without access to results. It can also make it easier for designs to be shared, replicated, and critiqued.</p>
-</div>
 <div id="links" class="section level1">
 <h1>Links</h1>
-<ul>
-<li><p><a href='blair_etal_2018a.pdf'>Link to paper</a></p></li>
-<li><p>Project site: <a href="https://declaredesign.org/r/declaredesign/" class="uri">https://declaredesign.org/r/declaredesign/</a></p></li>
-<li><p>Graeme Blair’s website: <a href="https://graemeblair.com" class="uri">https://graemeblair.com</a></p></li>
-<li><p>Jasper Cooper’s website: <a href="http://jasper-cooper.com" class="uri">http://jasper-cooper.com</a></p></li>
-<li><p>Macartan Humphreys’s website: <a href="http://macartan.nyc" class="uri">http://macartan.nyc</a></p></li>
-<li><p>Neal Fultz’s website: <a href="https://nfultz.github.io" class="uri">https://nfultz.github.io</a></p></li>
-</ul>
+<p>[1] “peer_orr_coppock_2020” “coppock_broockman_2015”<br />
+[3] “coppock_2021” “blair_cooper_coppock_humphreys_2021” [5] “blair_etal_2018a” “blair_etal_2018b”<br />
+[7] “blair_etal_2018c” “coppock_cooper_fultz_2015”<br />
+[9] “coppock_2019c” “coppock_green_porter_2020a”<br />
+[11] “coppock_2014” “coppock_hill_vavreck_2020”<br />
+[13] “blair_cooper_coppock_humphreys_2019” “yokum_ravishankar_coppock_2019”<br />
+[15] “coppock_2019a” “coppock_2020”<br />
+[17] “coppock_mcclellan_2019” “coppock_2019b”<br />
+[19] “flores_and_coppock_2018” “coppock_leeper_mullinix_2018”<br />
+[21] “schwarz_coppock_2020” “offer-westort_coppock_green_2020”<br />
+[23] “kirkland_coppock_2018” “green_etal_2016”<br />
+[25] “guess_coppock_2018” “graham_and_coppock_2020”<br />
+[27] “coppock_2018” “coppock_2017a”<br />
+[29] “coppock_2017b” “coppock_2016”<br />
+[31] “coppock_kirby_green_2017” “coppock_kaur_2020”<br />
+[33] “coppock_guess_ternovski_2016” “coppock_green_porter_2020b”<br />
+[35] “coppock_etal_2017” “coppock_green_2015”<br />
+[37] “coppock_green_2016” “coppock_green_2020”<br />
+[39] “coppock_ekins_kirby_2018” “blair_coppock_moor_2020”<br />
+[41] “aronow_etal_2015”<br />
+[1] “peer_orr_coppock_2020” “coppock_broockman_2015”<br />
+[3] “coppock_2021” “blair_cooper_coppock_humphreys_2021” [5] “blair_etal_2018a” “blair_etal_2018b”<br />
+[7] “blair_etal_2018c” “coppock_cooper_fultz_2015”<br />
+[9] “coppock_2019c” “coppock_green_porter_2020a”<br />
+[11] “coppock_2014” “coppock_hill_vavreck_2020”<br />
+[13] “blair_cooper_coppock_humphreys_2019” “yokum_ravishankar_coppock_2019”<br />
+[15] “coppock_2019a” “coppock_2020”<br />
+[17] “coppock_mcclellan_2019” “coppock_2019b”<br />
+[19] “flores_and_coppock_2018” “coppock_leeper_mullinix_2018”<br />
+[21] “schwarz_coppock_2020” “offer-westort_coppock_green_2020”<br />
+[23] “kirkland_coppock_2018” “green_etal_2016”<br />
+[25] “guess_coppock_2018” “graham_and_coppock_2020”<br />
+[27] “coppock_2018” “coppock_2017a”<br />
+[29] “coppock_2017b” “coppock_2016”<br />
+[31] “coppock_kirby_green_2017” “coppock_kaur_2020”<br />
+[33] “coppock_guess_ternovski_2016” “coppock_green_porter_2020b”<br />
+[35] “coppock_etal_2017” “coppock_green_2015”<br />
+[37] “coppock_green_2016” “coppock_green_2020”<br />
+[39] “coppock_ekins_kirby_2018” “blair_coppock_moor_2020”<br />
+[41] “aronow_etal_2015”</p>
 </div>
 
 </div> <!-- articleBandContent -->
