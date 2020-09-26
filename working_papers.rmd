@@ -1,4 +1,3 @@
-
 ---
 title: "Working Papers"
 output:
@@ -11,12 +10,12 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
-<a href="peer_orr_coppock_2020.html"> <img class="galleryItemImage" src="card_figures/peer_orr_coppock_2020_card.png"/> </a>
-<div class="galleryItemDescription"> Peer, Limor, Lilla Orr, Alexander Coppock. 2020. Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results. Unpublished manuscript. </div>
-</div>
-<div class="galleryItem">
 <a href="coppock_kaur_2020.html"> <img class="galleryItemImage" src="card_figures/coppock_kaur_2020_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Dipin Kaur. 2020. Qualitative Imputation of Missing Potential Outcomes. Unpublished manuscript. </div>
+</div>
+<div class="galleryItem">
+<a href="peer_orr_coppock_2020.html"> <img class="galleryItemImage" src="card_figures/peer_orr_coppock_2020_card.png"/> </a>
+<div class="galleryItemDescription"> Peer, Limor, Lilla Orr, Alexander Coppock. 2020. Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results. Unpublished manuscript. </div>
 </div>
 <div class="galleryItem">
 <a href="coppock_2018.html"> <img class="galleryItemImage" src="card_figures/coppock_2018_card.png"/> </a>
