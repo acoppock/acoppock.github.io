@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 <script type="text/javascript" src="js/rmarkdown.js"></script>
@@ -34,6 +37,15 @@
   ga('send', 'pageview');
 
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -217,14 +229,14 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div id="links" class="section level1">
 <h1>Links</h1>
 <ul>
-<li><a href='coppock_etal_2017.pdf'>Link to paper</a></li>
-<li><a href='coppock_etal_2017_appendix.pdf'>Link to appendix</a></li>
-<li>Journal site: <a href="https://doi.org/10.1017/pan.2016.6" class="uri">https://doi.org/10.1017/pan.2016.6</a></li>
-<li>Project site: <a href="http://alexandercoppock.com/attrition/index.html" class="uri">http://alexandercoppock.com/attrition/index.html</a></li>
-<li>Replication archive: <a href="https://doi.org/10.7910/DVN/AQB4MP" class="uri">https://doi.org/10.7910/DVN/AQB4MP</a></li>
+<li><p><a href='coppock_etal_2017.pdf'>Link to paper</a></p></li>
+<li><p><a href='coppock_etal_2017_appendix.pdf'>Link to appendix</a></p></li>
+<li><p>Journal site: <a href="https://doi.org/10.1017/pan.2016.6" class="uri">https://doi.org/10.1017/pan.2016.6</a></p></li>
+<li><p>Project site: <a href="http://alexandercoppock.com/attrition/index.html" class="uri">http://alexandercoppock.com/attrition/index.html</a></p></li>
+<li><p>Replication archive: <a href="https://doi.org/10.7910/DVN/AQB4MP" class="uri">https://doi.org/10.7910/DVN/AQB4MP</a></p></li>
 <li><p>Preanalysis plan: <a href="https://osf.io/wkj8v" class="uri">https://osf.io/wkj8v</a></p></li>
-<li>Alan S. Gerber’s website: <a href="http://campuspress.yale.edu/alangerber/" class="uri">http://campuspress.yale.edu/alangerber/</a></li>
-<li>Donald P. Green’s website: <a href="https://sites.google.com/site/donaldpgreen/" class="uri">https://sites.google.com/site/donaldpgreen/</a></li>
+<li><p>Alan S. Gerber’s website: <a href="http://campuspress.yale.edu/alangerber/" class="uri">http://campuspress.yale.edu/alangerber/</a></p></li>
+<li><p>Donald P. Green’s website: <a href="https://sites.google.com/site/donaldpgreen/" class="uri">https://sites.google.com/site/donaldpgreen/</a></p></li>
 <li><p>Holger L. Kern’s website: <a href="http://www.holgerkern.com" class="uri">http://www.holgerkern.com</a></p></li>
 </ul>
 </div>
@@ -260,7 +272,7 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

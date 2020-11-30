@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 <script type="text/javascript" src="js/rmarkdown.js"></script>
@@ -34,6 +37,15 @@
   ga('send', 'pageview');
 
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -217,8 +229,8 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div id="links" class="section level1">
 <h1>Links</h1>
 <ul>
-<li><a href='coppock_green_2015.pdf'>Link to paper</a></li>
-<li>Journal site: <a href="https://doi.org/10.1017/psrm.2014.10" class="uri">https://doi.org/10.1017/psrm.2014.10</a></li>
+<li><p><a href='coppock_green_2015.pdf'>Link to paper</a></p></li>
+<li><p>Journal site: <a href="https://doi.org/10.1017/psrm.2014.10" class="uri">https://doi.org/10.1017/psrm.2014.10</a></p></li>
 <li><p>Replication archive: <a href="https://doi.org/10.7910/DVN/25543" class="uri">https://doi.org/10.7910/DVN/25543</a></p></li>
 <li><p>Donald P. Green’s website: <a href="https://sites.google.com/site/donaldpgreen/" class="uri">https://sites.google.com/site/donaldpgreen/</a></p></li>
 </ul>
@@ -255,7 +267,7 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

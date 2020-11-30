@@ -25,6 +25,10 @@ toc_float: false
 <a href="coppock_2017b.html"> <img class="galleryItemImage" src="card_figures/coppock_2017b_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander. 2017. The Persistence of Survey Experimental Treatment Effects. Unpublished manuscript. </div>
 </div>
+<div class="galleryItem">
+<a href="peyton_huber_coppock_2020.html"> <img class="galleryItemImage" src="card_figures/peyton_huber_coppock_2020_card.png"/> </a>
+<div class="galleryItemDescription"> Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2020. The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic. Unpublished manuscript. </div>
+</div>
 </div>
 </div>
 <!--/html_preserve-->
