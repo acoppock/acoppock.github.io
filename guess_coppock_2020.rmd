@@ -1,0 +1,28 @@
+---
+title: 'Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Guess, Andrew, Coppock, Alexander. 2020. Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments. British Journal of Political Science.
+
+# Abstract
+NA
+
+# Links
+ - <a href='guess_coppock_2020.pdf'>Link to paper</a>
+ - <a href='guess_coppock_2020_appendix.pdf'>Link to appendix</a>
+ - Journal site: https://doi.org/10.1017/S0007123418000327 
+ - Replication archive: https://doi.org/10.7910/DVN/J7WNTM 
+ - Preanalysis plan: https://osf.io/y9vdr 
+ - Preanalysis plan 2: https://osf.io/5gdes 
+
+- Andrew Guess's website: https://andyguess.com
+
+# Figure
+<center><img src="display_figures/guess_coppock_2020_display.png" alt="guess_coppock_2020" width="600"></center>
