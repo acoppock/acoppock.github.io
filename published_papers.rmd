@@ -10,6 +10,10 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="coppock_kaur_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_kaur_2021_card.png"/> </a>
+<div class="galleryItemDescription"> Coppock, Alexander, Dipin Kaur. 2021. <b>Qualitative Imputation of Missing Potential Outcomes</b>. American Journal of Political Science. </div>
+</div>
+<div class="galleryItem">
 <a href="offer-westort_coppock_green_2021.html"> <img class="galleryItemImage" src="card_figures/offer-westort_coppock_green_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Offer-Westort, Molly, Alexander Coppock, Donald P. Green. 2021. <b>Adaptive Experimental Design: Prospects and Applications in Political Science</b>. American Journal of Political Science. </div>
 </div>
@@ -31,7 +35,7 @@ toc_float: false
 </div>
 <div class="galleryItem">
 <a href="coppock_hill_vavreck_2020.html"> <img class="galleryItemImage" src="card_figures/coppock_hill_vavreck_2020_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander, Seth J. Hill, Lynn Vavreck. 2020. <b>The Small Effects of Political Advertising are Small Regardless of Context, Message, Sender, or Receiver: Evidence from 59 Real-time Randomized Experiments</b>. Science Advances. </div>
+<div class="galleryItemDescription"> Coppock, Alexander, Hill, Seth J., Vavreck, Lynn. 2020. <b>The Small Effects of Political Advertising are Small Regardless of Context, Message, Sender, or Receiver: Evidence from 59 Real-time Randomized Experiments</b>. Science Advances. </div>
 </div>
 <div class="galleryItem">
 <a href="blair_coppock_moor_2020.html"> <img class="galleryItemImage" src="card_figures/blair_coppock_moor_2020_card.png"/> </a>
