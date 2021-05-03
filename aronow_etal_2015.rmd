@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Aronow, Peter M., Coppock, Alexander, Crawford, Forrest W., Green, Donald P.. 2015. Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence. Journal of Survey Statistics and Methodology.
+Aronow, Peter M., Coppock, Alexander, Crawford, Forrest W., Green, Donald P.. 2015. <b>Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence</b>. Journal of Survey Statistics and Methodology.
 
 # Abstract
 Survey respondents may give untruthful answers to sensitive questions when asked directly. In recent years, researchers have turned to the list experiment (also known as the item count technique) to overcome this difficulty. While list experiments are arguably less prone to bias than direct questioning, list experiments are also more susceptible to sampling variability. We show that researchers need not abandon direct questioning altogether in order to gain the advantages of list experimentation. We develop a nonparametric estimator of the prevalence of sensitive behaviors that combines list experimentation and direct questioning. We prove that this estimator is asymptotically more efficient than the standard difference-in-means estimator, and we provide a basis for inference using Wald-type confidence intervals. Additionally, leveraging information from the direct questioning, we derive two nonparametric placebo tests for assessing identifying assumptions underlying list experiments. We demonstrate the effectiveness of our combined estimator and placebo tests with an original survey experiment.
@@ -23,7 +23,7 @@ Survey respondents may give untruthful answers to sensitive questions when asked
 
 - Peter M. Aronow's website: https://peteraronow.github.io
 - Forrest W. Crawford's website: http://www.crawfordlab.io
-- Donald P. Green's website: https://sites.google.com/site/donaldpgreen/
+- Donald P. Green's website: http://www.donaldgreen.com/
 
 # Figure
 <center><img src="display_figures/aronow_etal_2015_display.png" alt="aronow_etal_2015" width="600"></center>

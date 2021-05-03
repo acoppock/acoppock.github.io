@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander. 2018. A Field Experimental Test of Vote Swapping. Unpublished manuscript.
+Coppock, Alexander. 2018. <b>A Field Experimental Test of Vote Swapping</b>. Unpublished manuscript.
 
 # Abstract
 Vote swapping platforms encourage third party supporters in battleground states to swap votes with major party supporters in nonbattleground states. In the 2016 US Presidential Elections, battleground state supporters of Gary Johnson, Evan McMullin, and Jill Stein who nevertheless preferred Hillary Clinton to Donald Trump were matched with Clinton supporters in nonbattleground states. These (legal) exchanges are puzzling because they should have small effects on vote choice: third party supporters willing to vote for Clinton in the presence of a swap should be likely to vote for Clinton in the absence of a swap. This study provides the first field experimental test of vote swapping. Third party supporters seeking swap partners on TrumpTraders.org were randomly assigned to be matched or not matched. In the control group, 25% report voting for Clinton compared with 57% in the treatment group, for an Average Treatment Effect estimate of 32 percentage points.

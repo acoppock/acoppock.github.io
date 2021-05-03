@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling. R package version 0.20.0.
+Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. <b>randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling</b>. R package version 0.20.0.
 
 # Abstract
 Generates random assignments for common experimental designs and random samples for common sampling designs.

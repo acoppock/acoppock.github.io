@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Alexander Coppock. 2021. Persuasion in Parallel. Under review.
+Alexander Coppock. 2021. <b>Persuasion in Parallel</b>. Under review.
 
 # Abstract
 Persuasion occurs in parallel.

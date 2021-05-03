@@ -23,7 +23,7 @@ Experimental researchers in political science frequently face the problem of inf
  - Preanalysis plan 3: https://osf.io/6p7ry 
 
 - Molly Offer-Westort's website: https://mollyow.github.io
-- Donald P. Green's website: https://sites.google.com/site/donaldpgreen/
+- Donald P. Green's website: http://www.donaldgreen.com/
 
 # Figure
 <center><img src="display_figures/offer-westort_coppock_green_2021_display.png" alt="offer-westort_coppock_green_2021" width="600"></center>
