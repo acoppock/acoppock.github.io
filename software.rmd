@@ -1,4 +1,3 @@
-
 ---
 title: "Software"
 output:
@@ -10,26 +9,103 @@ toc_float: false
 <div class="bandContent gallerySection">
 <div class="galleryItems"> 
 
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/declaredesign/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018a_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 2019. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.23.0. </div>
-</div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/estimatr/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018b_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Luke Sonnet. 2020. <b>estimatr: Fast Estimators for Design-Based Inference</b>. R package version 0.22.0. </div>
-</div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/fabricatr/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018c_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin, Neal Fultz. 2019. <b>fabricatr: Imagine Your Data Before You Collect It</b>. R package version 0.10.0. </div>
-</div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/randomizr/"> <img class="galleryItemImage" src="card_figures/coppock_cooper_fultz_2015_card.png"/> </a>
-<div class="galleryItemDescription"> Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. <b>randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling</b>. R package version 0.20.0. </div>
-</div>
-<div class="galleryItem">
-<a href="http://alexandercoppock.com/ri2/"> <img class="galleryItemImage" src="card_figures/coppock_2019c_card.png"/> </a>
-<div class="galleryItemDescription"> Alexander Coppock. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2. </div>
-</div>
-</div>
-</div>
-<!--/html_preserve-->
+< [1] "aronow_etal_2015"                      "blair_cooper_coppock_humphreys_2019"  
+ [3] "blair_coppock_moor_2020"               "coppock_2014"                         
+ [5] "coppock_2016"                          "coppock_2017a"                        
+ [7] "coppock_2017b"                         "coppock_2018"                         
+ [9] "coppock_2019a"                         "coppock_2019b"                        
+[11] "coppock_2020"                          "coppock_2021b"                        
+[13] "coppock_broockman_2015"                "coppock_cooper_fultz_2015_cheatsheet" 
+[15] "coppock_ekins_kirby_2018"              "coppock_etal_2017"                    
+[17] "coppock_green_2015"                    "coppock_green_2016"                   
+[19] "coppock_green_2020"                    "coppock_green_porter_2021"            
+[21] "coppock_guess_ternovski_2016"          "coppock_hill_vavreck_2020"            
+[23] "coppock_kaur_2021"                     "coppock_kirby_green_2017"             
+[25] "coppock_leeper_mullinix_2018_preprint" "coppock_leeper_mullinix_2018"         
+[27] "coppock_mcclellan_2019_preprint"       "coppock_mcclellan_2019"               
+[29] "flores_coppock_2018_preprint"          "flores_coppock_2018"                  
+[31] "graham_coppock_2020"                   "green_etal_2016"                      
+[33] "guess_coppock_2020_preprint"           "guess_coppock_2020"                   
+[35] "kirkland_coppock_2018"                 "offer-westort_coppock_green_2021"     
+[37] "peer_orr_coppock_2021"                 "peyton_huber_coppock_2021"            
+[39] "schwarz_coppock_2020"                  "yokum_ravishankar_coppock_2019"       
+ [1] "aronow_etal_2015"                      "blair_cooper_coppock_humphreys_2019"  
+ [3] "blair_coppock_moor_2020"               "coppock_2014"                         
+ [5] "coppock_2016"                          "coppock_2017a"                        
+ [7] "coppock_2017b"                         "coppock_2018"                         
+ [9] "coppock_2019a"                         "coppock_2019b"                        
+[11] "coppock_2020"                          "coppock_2021b"                        
+[13] "coppock_broockman_2015"                "coppock_cooper_fultz_2015_cheatsheet" 
+[15] "coppock_ekins_kirby_2018"              "coppock_etal_2017"                    
+[17] "coppock_green_2015"                    "coppock_green_2016"                   
+[19] "coppock_green_2020"                    "coppock_green_porter_2021"            
+[21] "coppock_guess_ternovski_2016"          "coppock_hill_vavreck_2020"            
+[23] "coppock_kaur_2021"                     "coppock_kirby_green_2017"             
+[25] "coppock_leeper_mullinix_2018_preprint" "coppock_leeper_mullinix_2018"         
+[27] "coppock_mcclellan_2019_preprint"       "coppock_mcclellan_2019"               
+[29] "flores_coppock_2018_preprint"          "flores_coppock_2018"                  
+[31] "graham_coppock_2020"                   "green_etal_2016"                      
+[33] "guess_coppock_2020_preprint"           "guess_coppock_2020"                   
+[35] "kirkland_coppock_2018"                 "offer-westort_coppock_green_2021"     
+[37] "peer_orr_coppock_2021"                 "peyton_huber_coppock_2021"            
+[39] "schwarz_coppock_2020"                  "yokum_ravishankar_coppock_2019"       
+ [1] "aronow_etal_2015"                      "blair_cooper_coppock_humphreys_2019"  
+ [3] "blair_coppock_moor_2020"               "coppock_2014"                         
+ [5] "coppock_2016"                          "coppock_2017a"                        
+ [7] "coppock_2017b"                         "coppock_2018"                         
+ [9] "coppock_2019a"                         "coppock_2019b"                        
+[11] "coppock_2020"                          "coppock_2021b"                        
+[13] "coppock_broockman_2015"                "coppock_cooper_fultz_2015_cheatsheet" 
+[15] "coppock_ekins_kirby_2018"              "coppock_etal_2017"                    
+[17] "coppock_green_2015"                    "coppock_green_2016"                   
+[19] "coppock_green_2020"                    "coppock_green_porter_2021"            
+[21] "coppock_guess_ternovski_2016"          "coppock_hill_vavreck_2020"            
+[23] "coppock_kaur_2021"                     "coppock_kirby_green_2017"             
+[25] "coppock_leeper_mullinix_2018_preprint" "coppock_leeper_mullinix_2018"         
+[27] "coppock_mcclellan_2019_preprint"       "coppock_mcclellan_2019"               
+[29] "flores_coppock_2018_preprint"          "flores_coppock_2018"                  
+[31] "graham_coppock_2020"                   "green_etal_2016"                      
+[33] "guess_coppock_2020_preprint"           "guess_coppock_2020"                   
+[35] "kirkland_coppock_2018"                 "offer-westort_coppock_green_2021"     
+[37] "peer_orr_coppock_2021"                 "peyton_huber_coppock_2021"            
+[39] "schwarz_coppock_2020"                  "yokum_ravishankar_coppock_2019"       
+ [1] "aronow_etal_2015"                      "blair_cooper_coppock_humphreys_2019"  
+ [3] "blair_coppock_moor_2020"               "coppock_2014"                         
+ [5] "coppock_2016"                          "coppock_2017a"                        
+ [7] "coppock_2017b"                         "coppock_2018"                         
+ [9] "coppock_2019a"                         "coppock_2019b"                        
+[11] "coppock_2020"                          "coppock_2021b"                        
+[13] "coppock_broockman_2015"                "coppock_cooper_fultz_2015_cheatsheet" 
+[15] "coppock_ekins_kirby_2018"              "coppock_etal_2017"                    
+[17] "coppock_green_2015"                    "coppock_green_2016"                   
+[19] "coppock_green_2020"                    "coppock_green_porter_2021"            
+[21] "coppock_guess_ternovski_2016"          "coppock_hill_vavreck_2020"            
+[23] "coppock_kaur_2021"                     "coppock_kirby_green_2017"             
+[25] "coppock_leeper_mullinix_2018_preprint" "coppock_leeper_mullinix_2018"         
+[27] "coppock_mcclellan_2019_preprint"       "coppock_mcclellan_2019"               
+[29] "flores_coppock_2018_preprint"          "flores_coppock_2018"                  
+[31] "graham_coppock_2020"                   "green_etal_2016"                      
+[33] "guess_coppock_2020_preprint"           "guess_coppock_2020"                   
+[35] "kirkland_coppock_2018"                 "offer-westort_coppock_green_2021"     
+[37] "peer_orr_coppock_2021"                 "peyton_huber_coppock_2021"            
+[39] "schwarz_coppock_2020"                  "yokum_ravishankar_coppock_2019"       
+ [1] "aronow_etal_2015"                      "blair_cooper_coppock_humphreys_2019"  
+ [3] "blair_coppock_moor_2020"               "coppock_2014"                         
+ [5] "coppock_2016"                          "coppock_2017a"                        
+ [7] "coppock_2017b"                         "coppock_2018"                         
+ [9] "coppock_2019a"                         "coppock_2019b"                        
+[11] "coppock_2020"                          "coppock_2021b"                        
+[13] "coppock_broockman_2015"                "coppock_cooper_fultz_2015_cheatsheet" 
+[15] "coppock_ekins_kirby_2018"              "coppock_etal_2017"                    
+[17] "coppock_green_2015"                    "coppock_green_2016"                   
+[19] "coppock_green_2020"                    "coppock_green_porter_2021"            
+[21] "coppock_guess_ternovski_2016"          "coppock_hill_vavreck_2020"            
+[23] "coppock_kaur_2021"                     "coppock_kirby_green_2017"             
+[25] "coppock_leeper_mullinix_2018_preprint" "coppock_leeper_mullinix_2018"         
+[27] "coppock_mcclellan_2019_preprint"       "coppock_mcclellan_2019"               
+[29] "flores_coppock_2018_preprint"          "flores_coppock_2018"                  
+[31] "graham_coppock_2020"                   "green_etal_2016"                      
+[33] "guess_coppock_2020_preprint"           "guess_coppock_2020"                   
+[35] "kirkland_coppock_2018"                 "offer-westort_coppock_green_2021"     
+[37] "peer_orr_coppock_2021"                 "peyton_huber_coppock_2021"            
+[39] "schwarz_coppock_2020"                  "yokum_ravishankar_coppock_2019"       

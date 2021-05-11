@@ -10,6 +10,10 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="peyton_huber_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/peyton_huber_coppock_2021_card.png"/> </a>
+<div class="galleryItemDescription"> Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2021. <b>The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic</b>. Journal of Experimental Political Science. </div>
+</div>
+<div class="galleryItem">
 <a href="coppock_kaur_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_kaur_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Dipin Kaur. 2021. <b>Qualitative Imputation of Missing Potential Outcomes</b>. American Journal of Political Science. </div>
 </div>
