@@ -24,7 +24,7 @@ Survey respondents may give untruthful answers to sensitive questions when asked
  - <a href= 'https://peteraronow.github.io' target='_blank'>Peter M. Aronow's website</a>
  - <a href= 'http://www.crawfordlab.io' target='_blank'>Forrest W. Crawford's website</a>
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
- - <a href='aronow_etal_2015.bib'target='_blank'>Bibtex citation</a>
+ - <a href='aronow_etal_2015.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/aronow_etal_2015_display.png" alt="aronow_etal_2015" width="600"></center>

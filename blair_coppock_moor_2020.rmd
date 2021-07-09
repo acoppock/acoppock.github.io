@@ -22,7 +22,7 @@ Eliciting honest answers to sensitive questions is frustrated if subjects withho
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
  - <a href= 'https://isps.yale.edu/team/margaret-moor' target='_blank'>Margaret Moor's website</a>
- - <a href='blair_coppock_moor_2020.bib'target='_blank'>Bibtex citation</a>
+ - <a href='blair_coppock_moor_2020.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/blair_coppock_moor_2020_display.png" alt="blair_coppock_moor_2020" width="600"></center>

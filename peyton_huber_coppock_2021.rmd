@@ -20,7 +20,7 @@ The COVID-19 pandemic imposed new constraints on empirical research, and online 
 
  - <a href= 'http://kyle-peyton.com' target='_blank'>Kyle Peyton's website</a>
  - <a href= 'https://huber.research.yale.edu' target='_blank'>Gregory A. Huber's website</a>
- - <a href='peyton_huber_coppock_2021.bib'target='_blank'>Bibtex citation</a>
+ - <a href='peyton_huber_coppock_2021.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/peyton_huber_coppock_2021_display.png" alt="peyton_huber_coppock_2021" width="600"></center>

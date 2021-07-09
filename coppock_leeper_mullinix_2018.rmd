@@ -22,7 +22,7 @@ The extent to which survey experiments conducted with non-representative conveni
 
  - <a href= 'https://thomasleeper.com' target='_blank'>Thomas J. Leeper's website</a>
  - <a href= 'https://kevinmullinix.com' target='_blank'>Kevin J. Mullinix's website</a>
- - <a href='coppock_leeper_mullinix_2018.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_leeper_mullinix_2018.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_leeper_mullinix_2018_display.png" alt="coppock_leeper_mullinix_2018" width="600"></center>

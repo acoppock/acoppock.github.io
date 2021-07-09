@@ -18,5 +18,5 @@ NA
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
  - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
- - <a href='blair_coppock_humphreys_2022.bib'target='_blank'>Bibtex citation</a>
+ - <a href='blair_coppock_humphreys_2022.txt'target='_blank'>Bibtex citation</a>
 

@@ -19,7 +19,7 @@ Do treatments deployed in survey experiments have persistent effects? The protot
  - <a href='coppock_2017b_appendix.pdf'target='_blank'>Link to appendix</a>
 
 
- - <a href='coppock_2017b.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_2017b.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2017b_display.png" alt="coppock_2017b" width="600"></center>

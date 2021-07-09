@@ -19,7 +19,7 @@ We propose a framework for meta-analysis of qualitative causal inferences. We in
  - <a href='coppock_kaur_2021_appendix.pdf'target='_blank'>Link to appendix</a>
 
  - <a href= 'https://politicalscience.yale.edu/people/dipin-kaur' target='_blank'>Dipin Kaur's website</a>
- - <a href='coppock_kaur_2021.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_kaur_2021.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_kaur_2021_display.png" alt="coppock_kaur_2021" width="600"></center>

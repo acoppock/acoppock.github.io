@@ -25,7 +25,7 @@ Missing outcome data plague many randomized experiments. Common solutions rely o
  - <a href= 'http://campuspress.yale.edu/alangerber/' target='_blank'>Alan S. Gerber's website</a>
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
  - <a href= 'http://www.holgerkern.com' target='_blank'>Holger L. Kern's website</a>
- - <a href='coppock_etal_2017.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_etal_2017.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_etal_2017_display.png" alt="coppock_etal_2017" width="600"></center>

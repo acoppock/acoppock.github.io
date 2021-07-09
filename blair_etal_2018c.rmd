@@ -23,5 +23,5 @@ Helps you imagine your data before you collect it. Hierarchical data structures 
  - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
  - <a href= 'https://rudkin.ca' target='_blank'>Aaron Rudkin's website</a>
  - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
- - <a href='blair_etal_2018c.bib'target='_blank'>Bibtex citation</a>
+ - <a href='blair_etal_2018c.txt'target='_blank'>Bibtex citation</a>
 

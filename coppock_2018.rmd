@@ -20,7 +20,7 @@ Vote swapping platforms encourage third party supporters in battleground states 
  - <a href='https://osf.io/74yvf'target='_blank'>Preanalysis plan</a>
 
 
- - <a href='coppock_2018.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_2018.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2018_display.png" alt="coppock_2018" width="600"></center>

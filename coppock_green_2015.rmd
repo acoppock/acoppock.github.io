@@ -20,7 +20,7 @@ A small but growing social science literature examines the correspondence betwee
  - <a href='https://doi.org/10.7910/DVN/25543'target='_blank'>Replication archive</a>
 
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
- - <a href='coppock_green_2015.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_green_2015.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2015_display.png" alt="coppock_green_2015" width="600"></center>

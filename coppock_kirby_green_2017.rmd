@@ -21,5 +21,5 @@ Existing theory and evidence on the effects of subtle primes suggests that even 
 
  - <a href= 'https://www.cato.org/people/david-kirby' target='_blank'>David Kirby's website</a>
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
- - <a href='coppock_kirby_green_2017.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_kirby_green_2017.txt'target='_blank'>Bibtex citation</a>
 

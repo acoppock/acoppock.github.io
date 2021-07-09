@@ -23,7 +23,7 @@ Do newspaper opinion pieces change the minds of those who read them? We conduct 
 
  - <a href= 'https://www.cato.org/people/emily-ekins' target='_blank'>Emily Ekins's website</a>
  - <a href= 'https://www.cato.org/people/david-kirby' target='_blank'>David Kirby's website</a>
- - <a href='coppock_ekins_kirby_2018.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_ekins_kirby_2018.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_ekins_kirby_2018_display.png" alt="coppock_ekins_kirby_2018" width="600"></center>

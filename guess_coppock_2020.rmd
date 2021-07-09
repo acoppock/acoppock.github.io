@@ -23,7 +23,7 @@ NA
  - <a href='https://osf.io/5gdes'target='_blank'>Preanalysis plan 2</a>
 
  - <a href= 'https://andyguess.com' target='_blank'>Andrew Guess's website</a>
- - <a href='guess_coppock_2020.bib'target='_blank'>Bibtex citation</a>
+ - <a href='guess_coppock_2020.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/guess_coppock_2020_display.png" alt="guess_coppock_2020" width="600"></center>

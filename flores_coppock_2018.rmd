@@ -22,7 +22,7 @@ Candidates for political office in the United States can appeal to constituents 
  - <a href='https://osf.io/e6zjk'target='_blank'>Preanalysis plan</a>
 
  - <a href= 'https://political-science.uchicago.edu/directory/alejandro-flores' target='_blank'>Alejandro Flores's website</a>
- - <a href='flores_coppock_2018.bib'target='_blank'>Bibtex citation</a>
+ - <a href='flores_coppock_2018.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/flores_coppock_2018_display.png" alt="flores_coppock_2018" width="600"></center>

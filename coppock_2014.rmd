@@ -21,7 +21,7 @@ A field experiment carried out by Butler and Nickerson (Butler, D. M., and Nicke
  - <a href='https://doi.org/10.7910/DVN/28664'target='_blank'>Replication archive</a>
 
 
- - <a href='coppock_2014.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_2014.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2014_display.png" alt="coppock_2014" width="600"></center>

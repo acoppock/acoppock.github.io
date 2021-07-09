@@ -20,7 +20,7 @@ Surveys often ask respondents how information or events changed their attitudes.
  - <a href='https://doi.org/10.7910/DVN/GFF78K'target='_blank'>Replication archive</a>
 
  - <a href= 'http://m-graham.com' target='_blank'>Matthew Graham's website</a>
- - <a href='graham_coppock_2020.bib'target='_blank'>Bibtex citation</a>
+ - <a href='graham_coppock_2020.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/graham_coppock_2020_display.png" alt="graham_coppock_2020" width="600"></center>

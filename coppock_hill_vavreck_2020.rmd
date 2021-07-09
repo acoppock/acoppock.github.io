@@ -22,7 +22,7 @@ Evidence across social science indicates that average effects of persuasive mess
 
  - <a href= 'https://www.sethjhill.com' target='_blank'>Seth J. Hill's website</a>
  - <a href= 'https://www.lynnvavreck.com' target='_blank'>Lynn Vavreck's website</a>
- - <a href='coppock_hill_vavreck_2020.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_hill_vavreck_2020.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_hill_vavreck_2020_display.png" alt="coppock_hill_vavreck_2020" width="600"></center>

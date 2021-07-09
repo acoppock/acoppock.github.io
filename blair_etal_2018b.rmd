@@ -22,5 +22,5 @@ Fast procedures for small set of commonly-used, design-appropriate estimators wi
  - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
  - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
  - <a href= 'https://lukesonnet.com' target='_blank'>Luke Sonnet's website</a>
- - <a href='blair_etal_2018b.bib'target='_blank'>Bibtex citation</a>
+ - <a href='blair_etal_2018b.txt'target='_blank'>Bibtex citation</a>
 

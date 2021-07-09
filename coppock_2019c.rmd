@@ -19,5 +19,5 @@ Randomization inference procedures for simple and complex randomized designs, in
  - <a href='http://alexandercoppock.com/ri2/'target='_blank'>Project site</a>
 
 
- - <a href='coppock_2019c.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_2019c.txt'target='_blank'>Bibtex citation</a>
 

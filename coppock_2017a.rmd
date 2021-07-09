@@ -20,7 +20,7 @@ Explanations for the failure to predict Donald Trump's win in the 2016 President
  - <a href='https://doi.org/10079/zw3r2f9'target='_blank'>Replication archive</a>
 
 
- - <a href='coppock_2017a.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_2017a.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2017a_display.png" alt="coppock_2017a" width="600"></center>

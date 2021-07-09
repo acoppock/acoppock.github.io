@@ -22,7 +22,7 @@ This study rigorously compares the effectiveness of online mobilization appeals 
 
  - <a href= 'https://andyguess.com' target='_blank'>Andrew Guess's website</a>
  - <a href= 'http://www.jter.co' target='_blank'>John Ternovski's website</a>
- - <a href='coppock_guess_ternovski_2016.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_guess_ternovski_2016.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_guess_ternovski_2016_display.png" alt="coppock_guess_ternovski_2016" width="600"></center>

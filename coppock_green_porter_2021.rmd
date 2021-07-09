@@ -21,7 +21,7 @@ UPDATE: Please see updated paper for a description of a differential attrition p
 
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
  - <a href= 'http://www.ethanporter.com' target='_blank'>Ethan Porter's website</a>
- - <a href='coppock_green_porter_2021.bib'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_green_porter_2021.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_porter_2021_display.png" alt="coppock_green_porter_2021" width="600"></center>
