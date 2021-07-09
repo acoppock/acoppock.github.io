@@ -22,6 +22,7 @@ As described in Converse (1964), belief systems are dynamically constrained if a
  - Preanalysis plan 2: https://osf.io/ch4ms 
 
 - Donald P. Green's website: http://www.donaldgreen.com/
+ - <a href='coppock_green_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2020_display.png" alt="coppock_green_2020" width="600"></center>

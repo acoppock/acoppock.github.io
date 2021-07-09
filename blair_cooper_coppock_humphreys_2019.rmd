@@ -23,4 +23,5 @@ Researchers need to select high-quality research designs and communicate those d
 - Graeme Blair's website: https://graemeblair.com
 - Jasper Cooper's website: http://jasper-cooper.com
 - Macartan Humphreys's website: http://macartan.nyc
+ - <a href='blair_cooper_coppock_humphreys_2019.bib'>Bibtex citation</a>
 

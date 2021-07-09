@@ -20,6 +20,7 @@ A small but growing social science literature examines the correspondence betwee
  - Replication archive: https://doi.org/10.7910/DVN/25543 
 
 - Donald P. Green's website: http://www.donaldgreen.com/
+ - <a href='coppock_green_2015.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2015_display.png" alt="coppock_green_2015" width="600"></center>

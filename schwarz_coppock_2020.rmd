@@ -19,6 +19,7 @@ Candidate choice survey experiments in the form of conjoint or vignette experime
  - <a href='schwarz_coppock_2020_appendix.pdf'>Link to appendix</a>
 
 - Susanne Schwarz's website: https://suschwarz.com
+ - <a href='schwarz_coppock_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/schwarz_coppock_2020_display.png" alt="schwarz_coppock_2020" width="600"></center>

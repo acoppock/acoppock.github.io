@@ -23,6 +23,7 @@ Police body-worn cameras (BWCs) have been widely promoted as a technological mec
 
 - David Yokum's website: https://thepolicylab.brown.edu/team/david-yokum/
 - Anita Ravishankar's website: https://thelab.dc.gov/anita.html
+ - <a href='yokum_ravishankar_coppock_2019.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/yokum_ravishankar_coppock_2019_display.png" alt="yokum_ravishankar_coppock_2019" width="600"></center>

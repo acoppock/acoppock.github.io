@@ -22,6 +22,7 @@ Eliciting honest answers to sensitive questions is frustrated if subjects withho
 
 - Graeme Blair's website: https://graemeblair.com
 - Margaret Moor's website: https://isps.yale.edu/team/margaret-moor
+ - <a href='blair_coppock_moor_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/blair_coppock_moor_2020_display.png" alt="blair_coppock_moor_2020" width="600"></center>

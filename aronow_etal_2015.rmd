@@ -24,6 +24,7 @@ Survey respondents may give untruthful answers to sensitive questions when asked
 - Peter M. Aronow's website: https://peteraronow.github.io
 - Forrest W. Crawford's website: http://www.crawfordlab.io
 - Donald P. Green's website: http://www.donaldgreen.com/
+ - <a href='aronow_etal_2015.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/aronow_etal_2015_display.png" alt="aronow_etal_2015" width="600"></center>

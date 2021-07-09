@@ -21,6 +21,7 @@ Field experiments and regression discontinuity designs test whether voting is ha
  - Replication archive: https://doi.org/10.7910/DVN/ALZVAW 
 
 - Donald P. Green's website: http://www.donaldgreen.com/
+ - <a href='coppock_green_2016.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2016_display.png" alt="coppock_green_2016" width="600"></center>

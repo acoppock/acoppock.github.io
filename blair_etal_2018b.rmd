@@ -22,4 +22,5 @@ Fast procedures for small set of commonly-used, design-appropriate estimators wi
 - Jasper Cooper's website: http://jasper-cooper.com
 - Macartan Humphreys's website: http://macartan.nyc
 - Luke Sonnet's website: https://lukesonnet.com
+ - <a href='blair_etal_2018b.bib'>Bibtex citation</a>
 

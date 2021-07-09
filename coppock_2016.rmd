@@ -20,6 +20,7 @@ In Coppock (2014), I presented a reanalysis of Butler and Nickerson (2011), a fi
  - Replication archive: https://doi.org/10.7910/DVN/28664 
 
 
+ - <a href='coppock_2016.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2016_display.png" alt="coppock_2016" width="600"></center>

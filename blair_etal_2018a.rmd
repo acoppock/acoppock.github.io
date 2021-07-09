@@ -22,4 +22,5 @@ Researchers can characterize and learn about the properties of research designs 
 - Jasper Cooper's website: http://jasper-cooper.com
 - Macartan Humphreys's website: http://macartan.nyc
 - Neal Fultz's website: https://nfultz.github.io
+ - <a href='blair_etal_2018a.bib'>Bibtex citation</a>
 

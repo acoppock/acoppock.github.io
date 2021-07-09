@@ -23,4 +23,5 @@ Helps you imagine your data before you collect it. Hierarchical data structures 
 - Macartan Humphreys's website: http://macartan.nyc
 - Aaron Rudkin's website: https://rudkin.ca
 - Neal Fultz's website: https://nfultz.github.io
+ - <a href='blair_etal_2018c.bib'>Bibtex citation</a>
 

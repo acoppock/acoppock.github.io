@@ -22,6 +22,7 @@ Evidence across social science indicates that average effects of persuasive mess
 
 - Seth J. Hill's website: https://www.sethjhill.com
 - Lynn Vavreck's website: https://www.lynnvavreck.com
+ - <a href='coppock_hill_vavreck_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_hill_vavreck_2020_display.png" alt="coppock_hill_vavreck_2020" width="600"></center>

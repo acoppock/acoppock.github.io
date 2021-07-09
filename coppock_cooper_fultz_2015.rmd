@@ -20,4 +20,5 @@ Generates random assignments for common experimental designs and random samples 
 
 - Jasper Cooper's website: http://jasper-cooper.com
 - Neal Fultz's website: https://nfultz.github.io
+ - <a href='coppock_cooper_fultz_2015.bib'>Bibtex citation</a>
 

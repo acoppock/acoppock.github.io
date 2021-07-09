@@ -23,6 +23,7 @@ NA
  - Preanalysis plan 2: https://osf.io/5gdes 
 
 - Andrew Guess's website: https://andyguess.com
+ - <a href='guess_coppock_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/guess_coppock_2020_display.png" alt="guess_coppock_2020" width="600"></center>

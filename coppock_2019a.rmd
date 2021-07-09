@@ -21,6 +21,7 @@ To what extent do survey experimental treatment effect estimates generalize to o
  - Replication archive: https://doi.org/10.7910/DVN/F1CFFM 
 
 
+ - <a href='coppock_2019a.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2019a_display.png" alt="coppock_2019a" width="600"></center>

@@ -19,4 +19,5 @@ Computational reproducibility, or the ability to reproduce analytic results of a
 
 - Limor Peer's website: https://isps.yale.edu/team/limor-peer
 - Lilla Orr's website: https://lillaorr.com
+ - <a href='peer_orr_coppock_2021.bib'>Bibtex citation</a>
 

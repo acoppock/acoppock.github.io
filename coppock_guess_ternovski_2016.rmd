@@ -22,6 +22,7 @@ This study rigorously compares the effectiveness of online mobilization appeals 
 
 - Andrew Guess's website: https://andyguess.com
 - John Ternovski's website: http://www.jter.co
+ - <a href='coppock_guess_ternovski_2016.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_guess_ternovski_2016_display.png" alt="coppock_guess_ternovski_2016" width="600"></center>

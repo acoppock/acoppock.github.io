@@ -21,6 +21,7 @@ In the absence of party labels, voters must use other information to infer candi
  - Replication archive: https://doi.org/10.7910/DVN/WSUHI3 
 
 - Patricia A. Kirkland's website: https://patriciakirkland.com
+ - <a href='kirkland_coppock_2018.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/kirkland_coppock_2018_display.png" alt="kirkland_coppock_2018" width="600"></center>

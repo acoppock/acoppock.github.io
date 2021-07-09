@@ -18,4 +18,5 @@ NA
 
 - Graeme Blair's website: https://graemeblair.com
 - Macartan Humphreys's website: http://macartan.nyc
+ - <a href='blair_coppock_humphreys_2022.bib'>Bibtex citation</a>
 

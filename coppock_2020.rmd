@@ -19,6 +19,7 @@ A good statistical graph for a randomized experiment simultaneously conveys the 
  - Replication archive: https://doi.org/10.7910/DVN/VE6VSR 
 
 
+ - <a href='coppock_2020.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2020_display.png" alt="coppock_2020" width="600"></center>

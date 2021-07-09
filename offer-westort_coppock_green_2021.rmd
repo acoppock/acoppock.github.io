@@ -24,6 +24,7 @@ Experimental researchers in political science frequently face the problem of inf
 
 - Molly Offer-Westort's website: https://mollyow.github.io
 - Donald P. Green's website: http://www.donaldgreen.com/
+ - <a href='offer-westort_coppock_green_2021.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/offer-westort_coppock_green_2021_display.png" alt="offer-westort_coppock_green_2021" width="600"></center>

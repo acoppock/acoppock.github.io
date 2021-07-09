@@ -20,4 +20,5 @@ Persuasion occurs in parallel.
  - Preanalysis plan 2: https://osf.io/cwepv 
 
 
+ - <a href='coppock_2021.bib'>Bibtex citation</a>
 

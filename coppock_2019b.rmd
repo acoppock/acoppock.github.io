@@ -20,6 +20,7 @@ Audit experiments are used to easure discrimination in a large number of domains
  - Replication archive: https://doi.org/10.7910/DVN/6NVI9C 
 
 
+ - <a href='coppock_2019b.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_2019b_display.png" alt="coppock_2019b" width="600"></center>

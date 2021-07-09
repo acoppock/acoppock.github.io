@@ -21,6 +21,7 @@ Researchers have increasingly turned to online convenience samples as sources of
  - Replication archive: https://doi.org/10.7910/DVN/DDWWJW 
 
 - Oliver A. McClellan's website: https://scholar.google.com/citations?user=qVR1Ek0AAAAJ&hl=en
+ - <a href='coppock_mcclellan_2019.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_mcclellan_2019_display.png" alt="coppock_mcclellan_2019" width="600"></center>

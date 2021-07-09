@@ -27,6 +27,7 @@ Although lawn signs rank among the most widely used campaign tactics, little sch
 - Benjamin D. Farrer's website: https://sites.google.com/a/binghamton.edu/benfarrer/home
 - Brandon Lenoir's website: http://www.highpoint.edu/presskit/2015/06/18/dr-brandon-lenoir-political-science-and-communication/
 - Joshua N. Zingher's website: https://fs.wp.odu.edu/jzingher/
+ - <a href='green_etal_2016.bib'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/green_etal_2016_display.png" alt="green_etal_2016" width="600"></center>
