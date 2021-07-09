@@ -15,13 +15,13 @@ Blair, Graeme, Cooper, Jasper, Coppock, Alexander, Humphreys, Macartan. 2019. <b
 Researchers need to select high-quality research designs and communicate those designs clearly to readers. Both tasks are difficult. We provide a framework for formally "declaring" the analytically relevant features of a research design in a demonstrably complete manner, with applications to qualitative, quantitative, and mixed methods research. The approach to design declaration we describe requires defining a model of the world (M), an inquiry (I), a data strategy (D), and an answer strategy (A). Declaration of these features in code provides sufficient information for researchers and readers to use Monte Carlo techniques to diagnose properties such as power, bias, accuracy of qualitative causal inferences, and other ``diagnosands.'' Ex ante declarations can be used to improve designs and facilitate preregistration, analysis, and reconciliation of intended and actual analyses. Ex post declarations are useful for describing, sharing, reanalyzing, and critiquing existing designs. We provide open-source software, DeclareDesign, to implement the proposed approach.
 
 # Links
- - <a href='blair_cooper_coppock_humphreys_2019.pdf'>Link to paper</a>
- - <a href='blair_cooper_coppock_humphreys_2019_appendix.pdf'>Link to appendix</a>
- - Journal site: https://doi.org/10.1017/S0003055419000194 
- - Replication archive: https://doi.org/10.7910/DVN/XYT1VB 
+ - <a href='blair_cooper_coppock_humphreys_2019.pdf' target='_blank'>Link to paper</a>
+ - <a href='blair_cooper_coppock_humphreys_2019_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1017/S0003055419000194'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/XYT1VB'target='_blank'>Replication archive</a>
 
-- Graeme Blair's website: https://graemeblair.com
-- Jasper Cooper's website: http://jasper-cooper.com
-- Macartan Humphreys's website: http://macartan.nyc
- - <a href='blair_cooper_coppock_humphreys_2019.bib'>Bibtex citation</a>
+ - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
+ - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href='blair_cooper_coppock_humphreys_2019.bib'target='_blank'>Bibtex citation</a>
 

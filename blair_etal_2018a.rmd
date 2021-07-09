@@ -15,12 +15,12 @@ Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 
 Researchers can characterize and learn about the properties of research designs before implementation using `DeclareDesign`. Ex ante declaration and diagnosis of designs can help researchers clarify the strengths and limitations of their designs and to improve their properties, and can help readers evaluate a research strategy prior to implementation and without access to results. It can also make it easier for designs to be shared, replicated, and critiqued.
 
 # Links
- - <a href='blair_etal_2018a.pdf'>Link to paper</a>
- - Project site: https://declaredesign.org/r/declaredesign/ 
+ - <a href='blair_etal_2018a.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://declaredesign.org/r/declaredesign/'target='_blank'>Project site</a>
 
-- Graeme Blair's website: https://graemeblair.com
-- Jasper Cooper's website: http://jasper-cooper.com
-- Macartan Humphreys's website: http://macartan.nyc
-- Neal Fultz's website: https://nfultz.github.io
- - <a href='blair_etal_2018a.bib'>Bibtex citation</a>
+ - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
+ - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
+ - <a href='blair_etal_2018a.bib'target='_blank'>Bibtex citation</a>
 

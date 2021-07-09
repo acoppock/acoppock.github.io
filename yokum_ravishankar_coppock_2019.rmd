@@ -15,15 +15,15 @@ Yokum, David, Ravishankar, Anita, Coppock, Alexander. 2019. <b>A Randomized Cont
 Police body-worn cameras (BWCs) have been widely promoted as a technological mechanism to improve policing and the perceived legitimacy of police and legal institutions, yet evidence of their effectiveness is limited. To estimate the effects of BWCs, we conducted a randomized controlled trial involving 2,224 Metropolitan Police Department officers in Washington, DC. Here we show that BWCs have very small and statistically insignificant effects on police use of force and civilian complaints, as well as other policing activities and judicial outcomes. These results suggest we should recalibrate our expectations of BWCs' ability to induce large-scale behavioral changes in policing, particularly in contexts similar to Washington, DC.
 
 # Links
- - <a href='yokum_ravishankar_coppock_2019.pdf'>Link to paper</a>
- - <a href='yokum_ravishankar_coppock_2019_appendix.pdf'>Link to appendix</a>
- - Journal site: https://doi.org/10.1073/pnas.1814773116 
- - Replication archive: https://doi.org/10.17605/OSF.IO/P6VUH 
- - Preanalysis plan: https://doi.org/10.17605/OSF.IO/P6VUH 
+ - <a href='yokum_ravishankar_coppock_2019.pdf' target='_blank'>Link to paper</a>
+ - <a href='yokum_ravishankar_coppock_2019_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1073/pnas.1814773116'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.17605/OSF.IO/P6VUH'target='_blank'>Replication archive</a>
+ - <a href='https://doi.org/10.17605/OSF.IO/P6VUH'target='_blank'>Preanalysis plan</a>
 
-- David Yokum's website: https://thepolicylab.brown.edu/team/david-yokum/
-- Anita Ravishankar's website: https://thelab.dc.gov/anita.html
- - <a href='yokum_ravishankar_coppock_2019.bib'>Bibtex citation</a>
+ - <a href= 'https://thepolicylab.brown.edu/team/david-yokum/' target='_blank'>David Yokum's website</a>
+ - <a href= 'https://thelab.dc.gov/anita.html' target='_blank'>Anita Ravishankar's website</a>
+ - <a href='yokum_ravishankar_coppock_2019.bib'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/yokum_ravishankar_coppock_2019_display.png" alt="yokum_ravishankar_coppock_2019" width="600"></center>

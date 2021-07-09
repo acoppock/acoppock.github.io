@@ -15,13 +15,13 @@ Coppock, Alexander, Green, Donald P.. 2016. <b>Is Voting Habit Forming? New Evid
 Field experiments and regression discontinuity designs test whether voting is habit forming by examining whether a random shock to turnout in one election affects participation in subsequent elections. We contribute to this literature by offering a vast amount of new statistical evidence on the long-term consequences of random and quasi-random inducements to vote. The behavior of millions of voters confirms the persistence of voter turnout and calls attention to theoretically meaningful nuances in the development and expression of voting habits. We suggest that individuals become habituated to voting in particular types of elections. The degree of persistence appears to vary by electoral context and by the attributes of those who comply with an initial inducement to vote.
 
 # Links
- - <a href='coppock_green_2016.pdf'>Link to paper</a>
- - <a href='coppock_green_2016_appendix.pdf'>Link to appendix</a>
- - Journal site: https://doi.org/10.1111/ajps.12210 
- - Replication archive: https://doi.org/10.7910/DVN/ALZVAW 
+ - <a href='coppock_green_2016.pdf' target='_blank'>Link to paper</a>
+ - <a href='coppock_green_2016_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1111/ajps.12210'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/ALZVAW'target='_blank'>Replication archive</a>
 
-- Donald P. Green's website: http://www.donaldgreen.com/
- - <a href='coppock_green_2016.bib'>Bibtex citation</a>
+ - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
+ - <a href='coppock_green_2016.bib'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2016_display.png" alt="coppock_green_2016" width="600"></center>

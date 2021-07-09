@@ -15,12 +15,12 @@ Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Luke Sonnet.
 Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013).
 
 # Links
- - <a href='blair_etal_2018b.pdf'>Link to paper</a>
- - Project site: https://declaredesign.org/r/estimatr/ 
+ - <a href='blair_etal_2018b.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://declaredesign.org/r/estimatr/'target='_blank'>Project site</a>
 
-- Graeme Blair's website: https://graemeblair.com
-- Jasper Cooper's website: http://jasper-cooper.com
-- Macartan Humphreys's website: http://macartan.nyc
-- Luke Sonnet's website: https://lukesonnet.com
- - <a href='blair_etal_2018b.bib'>Bibtex citation</a>
+ - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
+ - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://lukesonnet.com' target='_blank'>Luke Sonnet's website</a>
+ - <a href='blair_etal_2018b.bib'target='_blank'>Bibtex citation</a>
 

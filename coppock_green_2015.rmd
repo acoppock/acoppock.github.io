@@ -15,12 +15,12 @@ Coppock, Alexander, Donald P. Green. 2015. <b>Assessing the Correspondence Betwe
 A small but growing social science literature examines the correspondence between experimental results obtained in lab and field settings. This article reviews this literature and reanalyzes a set of recent experiments carried out in parallel in both the lab and field. Using a standardized format that calls attention to both the experimental estimates and the statistical uncertainty surrounding them, the study analyzes the overall pattern of lab-field correspondence, which is found to be quite strong (Spearman's rho = 0.73). Recognizing that this correlation may be distorted by the ad hoc manner in which lab-field comparisons are constructed (as well as the selective manner in which results are reported and published), the article concludes by suggesting directions for future research, stressing in particular the need for more systematic investigation of treatment effect heterogeneity.
 
 # Links
- - <a href='coppock_green_2015.pdf'>Link to paper</a>
- - Journal site: https://doi.org/10.1017/psrm.2014.10 
- - Replication archive: https://doi.org/10.7910/DVN/25543 
+ - <a href='coppock_green_2015.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://doi.org/10.1017/psrm.2014.10'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/25543'target='_blank'>Replication archive</a>
 
-- Donald P. Green's website: http://www.donaldgreen.com/
- - <a href='coppock_green_2015.bib'>Bibtex citation</a>
+ - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
+ - <a href='coppock_green_2015.bib'target='_blank'>Bibtex citation</a>
 
 # Figure
 <center><img src="display_figures/coppock_green_2015_display.png" alt="coppock_green_2015" width="600"></center>

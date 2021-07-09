@@ -15,10 +15,10 @@ Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. <b>randomizr: Easy-to-Use To
 Generates random assignments for common experimental designs and random samples for common sampling designs.
 
 # Links
- - <a href='coppock_cooper_fultz_2015.pdf'>Link to paper</a>
- - Project site: https://declaredesign.org/r/randomizr/ 
+ - <a href='coppock_cooper_fultz_2015.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://declaredesign.org/r/randomizr/'target='_blank'>Project site</a>
 
-- Jasper Cooper's website: http://jasper-cooper.com
-- Neal Fultz's website: https://nfultz.github.io
- - <a href='coppock_cooper_fultz_2015.bib'>Bibtex citation</a>
+ - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
+ - <a href='coppock_cooper_fultz_2015.bib'target='_blank'>Bibtex citation</a>
 

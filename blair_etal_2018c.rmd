@@ -15,13 +15,13 @@ Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin
 Helps you imagine your data before you collect it. Hierarchical data structures and correlated data can be easily simulated, either from random number generators or by resampling from existing data sources. This package is faster with 'data.table' and 'mvnfast' installed.
 
 # Links
- - <a href='blair_etal_2018c.pdf'>Link to paper</a>
- - Project site: https://declaredesign.org/r/fabricatr/ 
+ - <a href='blair_etal_2018c.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://declaredesign.org/r/fabricatr/'target='_blank'>Project site</a>
 
-- Graeme Blair's website: https://graemeblair.com
-- Jasper Cooper's website: http://jasper-cooper.com
-- Macartan Humphreys's website: http://macartan.nyc
-- Aaron Rudkin's website: https://rudkin.ca
-- Neal Fultz's website: https://nfultz.github.io
- - <a href='blair_etal_2018c.bib'>Bibtex citation</a>
+ - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
+ - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://rudkin.ca' target='_blank'>Aaron Rudkin's website</a>
+ - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
+ - <a href='blair_etal_2018c.bib'target='_blank'>Bibtex citation</a>
 

@@ -15,9 +15,9 @@ Alexander Coppock. 2019. <b>ri2: Randomization Inference for Randomized Experime
 Randomization inference procedures for simple and complex randomized designs, including multi-armed trials, as described in Gerber and Green (2012). Users formally describe their randomization procedure and test statistic. The randomization distribution of the test statistic under some null hypothesis is efficiently simulated.
 
 # Links
- - <a href='coppock_2019c.pdf'>Link to paper</a>
- - Project site: http://alexandercoppock.com/ri2/ 
+ - <a href='coppock_2019c.pdf' target='_blank'>Link to paper</a>
+ - <a href='http://alexandercoppock.com/ri2/'target='_blank'>Project site</a>
 
 
- - <a href='coppock_2019c.bib'>Bibtex citation</a>
+ - <a href='coppock_2019c.bib'target='_blank'>Bibtex citation</a>
 

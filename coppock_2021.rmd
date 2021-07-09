@@ -15,10 +15,10 @@ Alexander Coppock. 2021. <b>Persuasion in Parallel</b>. Forthcoming.
 Persuasion occurs in parallel.
 
 # Links
- - <a href='coppock_2021.pdf'>Link to paper</a>
- - Preanalysis plan: https://osf.io/wm62d 
- - Preanalysis plan 2: https://osf.io/cwepv 
+ - <a href='coppock_2021.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://osf.io/wm62d'target='_blank'>Preanalysis plan</a>
+ - <a href='https://osf.io/cwepv'target='_blank'>Preanalysis plan 2</a>
 
 
- - <a href='coppock_2021.bib'>Bibtex citation</a>
+ - <a href='coppock_2021.bib'target='_blank'>Bibtex citation</a>
 
