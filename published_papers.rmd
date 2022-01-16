@@ -10,16 +10,16 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="coppock_green_porter_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_green_porter_2022_card.png"/> </a>
+<div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green, Ethan Porter. 2022. <b>Does Digital Advertising Affect Vote Choice? Evidence from a Randomized Field Experiment</b>. Research \& Politics. </div>
+</div>
+<div class="galleryItem">
 <a href="peyton_huber_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/peyton_huber_coppock_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2021. <b>The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic</b>. Journal of Experimental Political Science. </div>
 </div>
 <div class="galleryItem">
 <a href="coppock_kaur_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_kaur_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Dipin Kaur. 2021. <b>Qualitative Imputation of Missing Potential Outcomes</b>. American Journal of Political Science. </div>
-</div>
-<div class="galleryItem">
-<a href="offer-westort_coppock_green_2021.html"> <img class="galleryItemImage" src="card_figures/offer-westort_coppock_green_2021_card.png"/> </a>
-<div class="galleryItemDescription"> Offer-Westort, Molly, Alexander Coppock, Donald P. Green. 2021. <b>Adaptive Experimental Design: Prospects and Applications in Political Science</b>. American Journal of Political Science. </div>
 </div>
 <div class="galleryItem">
 <a href="schwarz_coppock_2020.html"> <img class="galleryItemImage" src="card_figures/schwarz_coppock_2020_card.png"/> </a>
@@ -30,9 +30,10 @@ toc_float: false
 <div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green. 2020. <b>Do Belief Systems Exhibit Dynamic Constraint?</b>. Journal of Politics. </div>
 </div>
 <div class="galleryItem">
-<a href="graham_coppock_2020.html"> <img class="galleryItemImage" src="card_figures/graham_coppock_2020_card.png"/> </a>
-<div class="galleryItemDescription"> Graham, Matthew, Alexander Coppock. 2020. <b>Asking About Attitude Change</b>. Public Opinion Quarterly. </div>
+<a href="offer-westort_coppock_green_2021.html"> <img class="galleryItemImage" src="card_figures/offer-westort_coppock_green_2021_card.png"/> </a>
+<div class="galleryItemDescription"> Offer-Westort, Molly, Alexander Coppock, Donald P. Green. 2021. <b>Adaptive Experimental Design: Prospects and Applications in Political Science</b>. American Journal of Political Science. </div>
 </div>
+
 <div class="galleryItem">
 <a href="peer_orr_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/peer_orr_coppock_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Peer, Limor, Lilla Orr, Alexander Coppock. 2021. <b>Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results</b>. PS: Political Science \& Politics. </div>

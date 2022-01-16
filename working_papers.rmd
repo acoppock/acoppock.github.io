@@ -10,10 +10,6 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
-<a href="coppock_green_porter_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_green_porter_2021_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green, Ethan Porter. 2021. <b>Can Video Advertisements Change Partisanship? Results From Panel Survey Experiments</b>. Unpublished manuscript. </div>
-</div>
-<div class="galleryItem">
 <a href="coppock_2018.html"> <img class="galleryItemImage" src="card_figures/coppock_2018_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander. 2018. <b>A Field Experimental Test of Vote Swapping</b>. Unpublished manuscript. </div>
 </div>

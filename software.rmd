@@ -11,7 +11,7 @@ toc_float: false
 
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/declaredesign/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018a_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 2019. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.23.0. </div>
+<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 2018. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.28.0. </div>
 </div>
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/estimatr/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018b_card.png"/> </a>
