@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Graham, Matthew, Alexander Coppock. 2020. <b>Asking About Attitude Change</b>. Public Opinion Quarterly.
+Graham, Matthew, Alexander Coppock. 2021. <b>Asking About Attitude Change</b>. Public Opinion Quarterly.
 
 # Abstract
 Surveys often ask respondents how information or events changed their attitudes. Does [information X] make you more or less supportive of [policy Y]? Does [scandal X] make you more or less likely to vote for [politician Y]? We show that this type of question (the change format) exhibits poor measurement properties, in large part because subjects engage in response substitution. When asked how their attitudes changed, people often appear to report the level of their attitudes rather than the change in them. As an alternative, we propose the counterfactual format, which asks subjects what their attitude would have been in the counterfactual world in which they did not know the treatment information. Using a series of experiments embedded in four studies, we show that the counterfactual format greatly reduces bias relative to the change format.
@@ -20,7 +20,7 @@ Surveys often ask respondents how information or events changed their attitudes.
  - <a href='https://doi.org/10.7910/DVN/GFF78K'target='_blank'>Replication archive</a>
 
  - <a href= 'http://m-graham.com' target='_blank'>Matthew Graham's website</a>
- - <a href='graham_coppock_2020.txt'target='_blank'>Bibtex citation</a>
+ - <a href='graham_coppock_2021.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
-<center><img src="display_figures/graham_coppock_2020_display.png" alt="graham_coppock_2020" width="600"></center>
+<center><img src="display_figures/graham_coppock_2020_display.png" alt="graham_coppock_2021" width="600"></center>
