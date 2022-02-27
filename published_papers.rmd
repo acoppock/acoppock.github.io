@@ -26,8 +26,8 @@ toc_float: false
 <div class="galleryItemDescription"> Schwarz, Susanne, Alexander Coppock. 2020. <b>What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments</b>. Journal of Politics. </div>
 </div>
 <div class="galleryItem">
-<a href="coppock_green_2020.html"> <img class="galleryItemImage" src="card_figures/coppock_green_2020_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green. 2020. <b>Do Belief Systems Exhibit Dynamic Constraint?</b>. Journal of Politics. </div>
+<a href="coppock_green_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_green_2022_card.png"/> </a>
+<div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green. 2022. <b>Do Belief Systems Exhibit Dynamic Constraint?</b>. Journal of Politics. </div>
 </div>
 <div class="galleryItem">
 <a href="offer-westort_coppock_green_2021.html"> <img class="galleryItemImage" src="card_figures/offer-westort_coppock_green_2021_card.png"/> </a>
