@@ -1,7 +1,6 @@
-@article{aggarwal_2021,
-    Author = {Aggarwal, Minali and Jennifer Allen and Andrew Beasley and James Barnes and Alex Coppock and Dan Frankowski and Tara McGowan and Sol Messing and Kelly Zhang and Sylvan Zheng},
-    Title = {{The persuasive effects of digital campaign advertising during the 2020 US presidential election: evidence from survey experiments, real-time field experiments, and a 3.9 million person campaign-level experiment}},
-    Journal = {Unpublished manuscript},
-    Year = {2021},
-}
-
+@article{aggarwal_etal_2021,
+    Author = {Aggarwal, Minali and Jennifer Allen and Andrew Beasley and James Barnes and Alexander Coppock and Dan Frankowski and Sol Messing and Kelly Zhang and Sylvan Zheng},
+    Journal = {Nature Human Behavior},
+    Title = {The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment},
+    Year = {2022},
+    }
