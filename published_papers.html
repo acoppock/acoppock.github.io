@@ -13,7 +13,7 @@
 
 <title>Published Papers</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -120,8 +120,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -129,16 +129,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -227,6 +220,10 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="aggarwal_etal_2023.html"> <img class="galleryItemImage" src="card_figures/aggarwal_etal_2023_card.png"/> </a>
+<div class="galleryItemDescription"> Aggarwal, Minali, Jennifer Allen, Andrew Beasley, James Barnes, Alexander Coppock, Dan Frankowski, Sol Messing, Kelly Zhang, Sylvan Zheng. 2023. <b>The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment</b>. Nature Human Behavior. </div>
+</div>
+<div class="galleryItem">
 <a href="coppock_etal_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_etal_2021_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Gross, Kimberly, Porter, Ethan, Thorson, Emily, Wood, Thomas J.. 2022. <b>Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments</b>. British Journal of Political Science. </div>
 </div>
@@ -242,7 +239,10 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <a href="coppock_kaur_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_kaur_2022_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Dipin Kaur. 2022. <b>Qualitative Imputation of Missing Potential Outcomes</b>. American Journal of Political Science. </div>
 </div>
-
+<div class="galleryItem">
+<a href="schwarz_coppock_2022.html"> <img class="galleryItemImage" src="card_figures/schwarz_coppock_2022_card.png"/> </a>
+<div class="galleryItemDescription"> Schwarz, Susanne, Alexander Coppock. 2022. <b>What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments</b>. Journal of Politics. </div>
+</div>
 <div class="galleryItem">
 <a href="coppock_green_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_green_2022_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green. 2022. <b>Do Belief Systems Exhibit Dynamic Constraint?</b>. Journal of Politics. </div>

@@ -1,0 +1,7 @@
+@article{aggarwal_etal_2023,
+    Author = {Aggarwal, Minali and Jennifer Allen and Andrew Beasley and James Barnes and Alexander Coppock and Dan Frankowski and Sol Messing and Kelly Zhang and Sylvan Zheng},
+    Journal = {Nature Human Behavior},
+    Title = {The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment},
+    Year = {2023},
+    Note = {Forthcoming}
+    }
