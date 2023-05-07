@@ -1,0 +1,8 @@
+@article{galos_coppock_2023,
+    author = {Galos, Diana Roxana and Alexander Coppock},
+    journal = {Science Advances},
+    number = {18},
+    pages = {1-11},
+    title = {Gender Composition Predicts Gender Bias: A Meta-reanalysis of Hiring Discrimination Audit Experiments},
+    volume = {9},
+    year = {2023}}
