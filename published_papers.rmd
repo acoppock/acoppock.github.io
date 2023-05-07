@@ -10,17 +10,15 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="galos_coppock_2023.html"> <img class="galleryItemImage" src="card_figures/galos_coppock_2023_card.png"/> </a>
+<div class="galleryItemDescription"> Galos, Diana Roxana, Alexander Coppock. 2023. <b>Gender Composition Predicts Gender Bias: A Meta-reanalysis of Hiring Discrimination Audit Experiments</b>. Science Advances. </div>
+</div>
+<div class="galleryItem">
 <a href="aggarwal_etal_2023.html"> <img class="galleryItemImage" src="card_figures/aggarwal_etal_2023_card.png"/> </a>
-<div class="galleryItemDescription"> Aggarwal, Minali, Jennifer Allen, Andrew Beasley, James Barnes, Alexander Coppock, Dan Frankowski, Sol Messing, Kelly Zhang, Sylvan Zheng. 2023. <b>The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment</b>. Nature Human Behavior. </div>
+<div class="galleryItemDescription"> Aggarwal, Minali, Jennifer Allen, Andrew Beasley, James Barnes, Alexander Coppock, Dan Frankowski, Solomon Messing, Kelly Zhang, Sylvan Zheng. 2023. <b>The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment</b>. Nature Human Behavior. </div>
 </div>
-<div class="galleryItem">
-<a href="coppock_etal_2021.html"> <img class="galleryItemImage" src="card_figures/coppock_etal_2021_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander, Gross, Kimberly, Porter, Ethan, Thorson, Emily, Wood, Thomas J.. 2022. <b>Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments</b>. British Journal of Political Science. </div>
-</div>
-<div class="galleryItem">
-<a href="peyton_huber_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/peyton_huber_coppock_2021_card.png"/> </a>
-<div class="galleryItemDescription"> Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2021. <b>The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic</b>. Journal of Experimental Political Science. </div>
-</div>
+
+
 <div class="galleryItem">
 <a href="coppock_green_porter_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_green_porter_2022_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green, Ethan Porter. 2022. <b>Does Digital Advertising Affect Vote Choice? Evidence from a Randomized Field Experiment</b>. Research \& Politics. </div>
