@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Hewitt, Luke, David Broockman, Alexander Coppock, Ben M. Tappin, James Slezak, Valerie Coffman, Nathaniel Lubin, Mohammad Hamidian. 2022. <b>How experiments help campaigns persuade voters: Evidence from hundreds of campaigns' own experiments</b>. Revision requested at the American Political Science Review.
+Hewitt, Luke, David Broockman, Alexander Coppock, Ben M. Tappin, James Slezak, Valerie Coffman, Nathaniel Lubin, Mohammad Hamidian. 2023. <b>How experiments help campaigns persuade voters: Evidence from hundreds of campaigns' own experiments</b>. American Political Science Review.
 
 # Abstract
 NA

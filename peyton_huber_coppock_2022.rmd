@@ -15,8 +15,8 @@ Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2022. <b>The Generalizabili
 NA
 
 # Links
- - <a href='peyton_huber_coppock_2021.pdf' target='_blank'>Link to paper</a>
- - <a href='peyton_huber_coppock_2021_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='peyton_huber_coppock_2022.pdf' target='_blank'>Link to paper</a>
+ - <a href='peyton_huber_coppock_2022_appendix.pdf'target='_blank'>Link to appendix</a>
  - <a href='https://doi.org/10.1017/XPS.2021.17'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/38UTBF'target='_blank'>Replication archive</a>
 
@@ -25,4 +25,4 @@ NA
  - <a href='peyton_huber_coppock_2022.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
-<center><img src="display_figures/peyton_huber_coppock_2021_display.png" alt="peyton_huber_coppock_2022" width="600"></center>
+<center><img src="display_figures/peyton_huber_coppock_2022_display.png" alt="peyton_huber_coppock_2022" width="600"></center>
