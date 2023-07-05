@@ -17,7 +17,7 @@ We propose a framework for meta-analysis of qualitative causal inferences. We in
 # Links
  - <a href='coppock_kaur_2022.pdf' target='_blank'>Link to paper</a>
  - <a href='coppock_kaur_2022_appendix.pdf'target='_blank'>Link to appendix</a>
- - <a href='https://onlinelibrary.wiley.com/doi/10.1111/ajps.12697'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.1111/ajps.12697'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/2IVKXD'target='_blank'>Replication archive</a>
 
  - <a href= 'https://dipinkaur.com/' target='_blank'>Dipin Kaur's website</a>

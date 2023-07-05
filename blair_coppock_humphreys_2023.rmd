@@ -1,0 +1,26 @@
+---
+title: 'Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Blair, Graeme, Coppock, Alexander, Humphreys, Macartan. 2023. <b>Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign</b>. NA.
+
+# Abstract
+NA
+
+# Links
+ - <a href='book.declaredesign.org' target='_blank'>Link to paper</a>
+ - <a href='https://press.princeton.edu/books/paperback/9780691199573/research-design-in-the-social-sciences'target='_blank'>Journal site</a>
+ - <a href='book.declaredesign.org'target='_blank'>Project site</a>
+ - <a href='https://doi.org/10.7910/DVN/HYVPO5'target='_blank'>Replication archive</a>
+
+ - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
+ - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href='blair_coppock_humphreys_2023.txt'target='_blank'>Bibtex citation</a>
+

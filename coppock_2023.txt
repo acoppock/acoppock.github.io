@@ -1,9 +1,7 @@
 @book{coppock_2023,
-    Title = {Persuasion in Parallel},
-    Publisher = {University of Chicago Press},
-    Year = {2023},
-    Author = {Alexander Coppock},
-    Series = {Chicago Studies in American Politics},
-    Address = {Chicago}
-}
-
+    address = {Chicago},
+    author = {Alexander Coppock},
+    publisher = {University of Chicago Press},
+    series = {Chicago Studies in American Politics},
+    title = {Persuasion in Parallel: How Information Changes Minds about Politics},
+    year = {2023}}

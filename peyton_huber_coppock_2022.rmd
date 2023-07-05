@@ -1,0 +1,28 @@
+---
+title: 'The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic'
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2022. <b>The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic</b>. Journal of Experimental Political Science.
+
+# Abstract
+NA
+
+# Links
+ - <a href='peyton_huber_coppock_2021.pdf' target='_blank'>Link to paper</a>
+ - <a href='peyton_huber_coppock_2021_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1017/XPS.2021.17'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/38UTBF'target='_blank'>Replication archive</a>
+
+ - <a href= 'http://kyle-peyton.com' target='_blank'>Kyle Peyton's website</a>
+ - <a href= 'https://huber.research.yale.edu' target='_blank'>Gregory A. Huber's website</a>
+ - <a href='peyton_huber_coppock_2022.txt'target='_blank'>Bibtex citation</a>
+
+# Figure
+<center><img src="display_figures/peyton_huber_coppock_2021_display.png" alt="peyton_huber_coppock_2022" width="600"></center>

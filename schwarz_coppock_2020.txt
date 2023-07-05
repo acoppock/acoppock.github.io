@@ -1,8 +1,0 @@
-@article{schwarz_coppock_2020,
-    Author = {Schwarz, Susanne and Alexander Coppock},
-    Title = {{What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments}},
-    Journal = {Journal of Politics},
-    Year = {2020},
-Note = {Forthcoming}
-}
-

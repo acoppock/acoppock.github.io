@@ -17,6 +17,7 @@ Despite the increasing sums devoted to online political advertising, our underst
 # Links
  - <a href='coppock_green_porter_2022.pdf' target='_blank'>Link to paper</a>
  - <a href='coppock_green_porter_2022_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1177/20531680221076901'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/UH2NQW'target='_blank'>Replication archive</a>
  - <a href='https://osf.io/ch4ms'target='_blank'>Preanalysis plan</a>
 

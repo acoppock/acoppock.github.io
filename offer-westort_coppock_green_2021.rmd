@@ -17,6 +17,7 @@ Experimental researchers in political science frequently face the problem of inf
 # Links
  - <a href='offer-westort_coppock_green_2021.pdf' target='_blank'>Link to paper</a>
  - <a href='offer-westort_coppock_green_2021_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1111/ajps.12597'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/CMUHBU'target='_blank'>Replication archive</a>
  - <a href='https://osf.io/6p7ry'target='_blank'>Preanalysis plan</a>
  - <a href='https://osf.io/xp8mc'target='_blank'>Preanalysis plan 2</a>

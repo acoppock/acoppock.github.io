@@ -1,8 +1,0 @@
-@article{peyton_huber_coppock_2021,
-    Author = {Peyton, Kyle and Huber, Gregory A. and Coppock, Alexander},
-    Title = {{The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic}},
-    Journal = {Journal of Experimental Political Science},
-    Year = {2021},
-Note = {Forthcoming}
-}
-

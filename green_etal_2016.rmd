@@ -17,7 +17,7 @@ Although lawn signs rank among the most widely used campaign tactics, little sch
 # Links
  - <a href='green_etal_2016.pdf' target='_blank'>Link to paper</a>
  - <a href='green_etal_2016_appendix.pdf'target='_blank'>Link to appendix</a>
- - <a href='https://doi.org/10.7910/DVN/29984'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.1016/j.electstud.2015.12.002'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/K2TLDB'target='_blank'>Replication archive</a>
  - <a href='https://osf.io/umysq'target='_blank'>Preanalysis plan</a>
  - <a href='https://osf.io/ejfgk'target='_blank'>Preanalysis plan 2</a>

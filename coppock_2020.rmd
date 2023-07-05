@@ -16,6 +16,7 @@ A good statistical graph for a randomized experiment simultaneously conveys the 
 
 # Links
  - <a href='coppock_2020.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://doi.org/10.1017/9781108777919.022'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/VE6VSR'target='_blank'>Replication archive</a>
 
 

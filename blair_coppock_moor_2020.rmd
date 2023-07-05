@@ -17,8 +17,8 @@ Eliciting honest answers to sensitive questions is frustrated if subjects withho
 # Links
  - <a href='blair_coppock_moor_2020.pdf' target='_blank'>Link to paper</a>
  - <a href='blair_coppock_moor_2020_appendix.pdf'target='_blank'>Link to appendix</a>
- - <a href='https://www.cambridge.org/core/journals/american-political-science-review/article/when-to-worry-about-sensitivity-bias-a-social-reference-theory-and-evidence-from-30-years-of-list-experiments/3B922CC54881BA694E4D4B07FD286060'target='_blank'>Journal site</a>
- - <a href='https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YUXHZT'target='_blank'>Replication archive</a>
+ - <a href='https://doi.org/10.1017/S0003055420000374'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/YUXHZT'target='_blank'>Replication archive</a>
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
  - <a href= 'https://isps.yale.edu/team/margaret-moor' target='_blank'>Margaret Moor's website</a>

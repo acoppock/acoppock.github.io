@@ -1,9 +1,0 @@
-@book{blair_coppock_humphreys_2022,
-    Title = {{Research Design: Declare, Diagnose, Redesign}},
-    Publisher = {Princeton University Press},
-    Year = {2022},
-    Author = {Blair, Graeme and Coppock, Alexander and Humphreys, Macartan},
-    Address = {Princeton, NJ},
-Note = {Under advance contract}
-}
-

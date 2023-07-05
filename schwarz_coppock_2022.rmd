@@ -17,7 +17,7 @@ Candidate choice survey experiments in the form of conjoint or vignette experime
 # Links
  - <a href='schwarz_coppock_2022.pdf' target='_blank'>Link to paper</a>
  - <a href='schwarz_coppock_2022_appendix.pdf'target='_blank'>Link to appendix</a>
- - <a href='https://www.journals.uchicago.edu/doi/full/10.1086/716290'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.1086/716290'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/R27ULT'target='_blank'>Replication archive</a>
 
  - <a href= 'https://suschwarz.com' target='_blank'>Susanne Schwarz's website</a>
