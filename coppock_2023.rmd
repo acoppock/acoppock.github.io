@@ -17,9 +17,9 @@ According to theories of motivated reasoning, attempts to persuade political opp
 
 # Links
  - <a href='https://press.uchicago.edu/ucp/books/book/chicago/P/bo181475008.html' target='_blank'>Link to press</a>
+  - <a href='persuasion_in_parallel_chapter_1.pdf' target='_blank'>Chapter 1 preprint</a>
  - <a href='https://twitter.com/aecoppock/status/1615381402689900545'target='_blank'>Twitter thread introduction to Persuasion in Parallel</a>
-
+- <a href='https://doi.org/10.1093/psquar/qqad076' target='_blank'>Matthew Levendusky's review in Political Science Quarterly</a>
 - <a href='coppock_2023.txt'target='_blank'>Bibtex citation</a>
-
 <center><img src="display_figures/coppock_2023_display.jpg" alt="coppock_2020" width="600"></center>
 
