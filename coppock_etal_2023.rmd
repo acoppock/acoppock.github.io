@@ -1,5 +1,5 @@
 ---
-title: 'Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments'
+title: "Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments"
 output:
   html_document:
     highlight: tango

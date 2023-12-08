@@ -1,5 +1,5 @@
 ---
-title: 'Generalizability of Heterogeneous Treatment Effect Estimates Across Samples'
+title: "Generalizability of Heterogeneous Treatment Effect Estimates Across Samples"
 output:
   html_document:
     highlight: tango

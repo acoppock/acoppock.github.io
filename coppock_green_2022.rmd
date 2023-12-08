@@ -1,5 +1,5 @@
 ---
-title: 'Do Belief Systems Exhibit Dynamic Constraint?'
+title: "Do Belief Systems Exhibit Dynamic Constraint?"
 output:
   html_document:
     highlight: tango

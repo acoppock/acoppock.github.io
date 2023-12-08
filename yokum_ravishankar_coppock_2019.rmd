@@ -1,5 +1,5 @@
 ---
-title: 'A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras'
+title: "A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras"
 output:
   html_document:
     highlight: tango

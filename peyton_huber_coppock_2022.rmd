@@ -1,5 +1,5 @@
 ---
-title: 'The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic'
+title: "The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic"
 output:
   html_document:
     highlight: tango

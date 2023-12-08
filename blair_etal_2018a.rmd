@@ -1,5 +1,5 @@
 ---
-title: 'DeclareDesign: Declare and Diagnose Research Designs'
+title: "DeclareDesign: Declare and Diagnose Research Designs"
 output:
   html_document:
     highlight: tango

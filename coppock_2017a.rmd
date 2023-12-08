@@ -1,5 +1,5 @@
 ---
-title: 'Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment'
+title: "Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment'
+title: "The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'Qualitative Imputation of Missing Potential Outcomes'
+title: "Qualitative Imputation of Missing Potential Outcomes"
 output:
   html_document:
     highlight: tango

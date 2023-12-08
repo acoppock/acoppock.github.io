@@ -1,5 +1,5 @@
 ---
-title: 'Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments'
+title: "Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments"
 output:
   html_document:
     highlight: tango

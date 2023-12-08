@@ -1,5 +1,5 @@
 ---
-title: 'A Field Experimental Test of Vote Swapping'
+title: "A Field Experimental Test of Vote Swapping"
 output:
   html_document:
     highlight: tango

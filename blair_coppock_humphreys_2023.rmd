@@ -1,5 +1,5 @@
 ---
-title: 'Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign'
+title: "Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'ri2: Randomization Inference for Randomized Experiments'
+title: "ri2: Randomization Inference for Randomized Experiments"
 output:
   html_document:
     highlight: tango

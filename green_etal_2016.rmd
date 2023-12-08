@@ -1,5 +1,5 @@
 ---
-title: 'The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments'
+title: "The Effects of Lawn Signs on Vote Outcomes: Results from Four Randomized Field Experiments"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'fabricatr: Imagine Your Data Before You Collect It'
+title: "fabricatr: Imagine Your Data Before You Collect It"
 output:
   html_document:
     highlight: tango

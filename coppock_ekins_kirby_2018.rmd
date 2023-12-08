@@ -1,5 +1,5 @@
 ---
-title: 'The Long-lasting Effects of Newspaper Op-Eds on Public Opinion'
+title: "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion"
 output:
   html_document:
     highlight: tango

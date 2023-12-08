@@ -47,7 +47,7 @@ toc_float: false
 </div>
 <div class="galleryItem">
 <a href="graham_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/graham_coppock_2021_card.png"/> </a>
-<div class="galleryItemDescription"> Graham, Matthew, Alexander Coppock. 2021. <b>Asking About Attitude Change</b>. Public Opinion Quarterly. </div>
+<div class="galleryItemDescription"> Graham, Matthew H., Alexander Coppock. 2021. <b>Asking About Attitude Change</b>. Public Opinion Quarterly. </div>
 </div>
 <div class="galleryItem">
 <a href="peer_orr_coppock_2021.html"> <img class="galleryItemImage" src="card_figures/peer_orr_coppock_2021_card.png"/> </a>

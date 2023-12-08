@@ -1,5 +1,5 @@
 ---
-title: 'Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments'
+title: "Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'Avoiding Post-Treatment Bias in Audit Experiments'
+title: "Avoiding Post-Treatment Bias in Audit Experiments"
 output:
   html_document:
     highlight: tango

@@ -8,10 +8,10 @@ output:
 ---
 
 
-```{js}
-$("#rStudioHeader").removeClass("alwaysShrunk");
-$("#pageContent").removeClass("standardPadding");
-```
+<!-- ```{js} -->
+<!-- $("#rStudioHeader").removeClass("alwaysShrunk"); -->
+<!-- $("#pageContent").removeClass("standardPadding"); -->
+<!-- ``` -->
 
 <!--html_preserve-->
 <div id="homeContent">

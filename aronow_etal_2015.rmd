@@ -1,5 +1,5 @@
 ---
-title: 'Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence'
+title: "Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence"
 output:
   html_document:
     highlight: tango

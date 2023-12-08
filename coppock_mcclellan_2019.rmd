@@ -1,5 +1,5 @@
 ---
-title: 'Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents'
+title: "Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents"
 output:
   html_document:
     highlight: tango

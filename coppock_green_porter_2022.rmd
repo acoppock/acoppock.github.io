@@ -1,5 +1,5 @@
 ---
-title: 'Does Digital Advertising Affect Vote Choice? Evidence from a Randomized Field Experiment'
+title: "Does Digital Advertising Affect Vote Choice? Evidence from a Randomized Field Experiment"
 output:
   html_document:
     highlight: tango

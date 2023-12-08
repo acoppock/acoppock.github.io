@@ -1,5 +1,5 @@
 ---
-title: 'Positive, small, homogeneous, and durable: Political persuasion in response to information'
+title: "Positive, small, homogeneous, and durable: Political persuasion in response to information"
 output:
   html_document:
     highlight: tango

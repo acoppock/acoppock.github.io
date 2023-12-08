@@ -1,5 +1,5 @@
 ---
-title: 'Candidate Choice Without Party Labels: New Insights from Conjoint Survey Experiments'
+title: "Candidate Choice Without Party Labels: New Insights from Conjoint Survey Experiments"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach'
+title: "Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach"
 output:
   html_document:
     highlight: tango

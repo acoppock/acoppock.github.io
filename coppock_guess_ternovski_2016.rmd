@@ -1,5 +1,5 @@
 ---
-title: 'When Treatments are Tweets: A Network Mobilization Experiment over Twitter'
+title: "When Treatments are Tweets: A Network Mobilization Experiment over Twitter"
 output:
   html_document:
     highlight: tango

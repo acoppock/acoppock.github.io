@@ -1,5 +1,5 @@
 ---
-title: 'A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?'
+title: "A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?"
 output:
   html_document:
     highlight: tango

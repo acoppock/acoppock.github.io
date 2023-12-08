@@ -1,5 +1,5 @@
 ---
-title: 'Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments'
+title: "Combining Double Sampling and Bounds to Address Nonignorable Missing Outcomes in Randomized Experiments"
 output:
   html_document:
     highlight: tango

@@ -1,5 +1,5 @@
 ---
-title: 'Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research'
+title: "Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research"
 output:
   html_document:
     highlight: tango

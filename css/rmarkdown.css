@@ -549,6 +549,11 @@ p {
   margin-right: 0px;
 }
 
+#rStudioFooter .bandContent .footerLogo.bluesky {
+  background-image: url(../images/bluesky.svg);
+}
+
+
 #rStudioFooter .bandContent .footerLogo.twitter {
   background-image: url(../images/twitterLogo.svg);
 }

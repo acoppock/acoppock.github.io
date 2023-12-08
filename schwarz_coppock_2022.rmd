@@ -1,5 +1,5 @@
 ---
-title: 'What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments'
+title: "What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments"
 output:
   html_document:
     highlight: tango

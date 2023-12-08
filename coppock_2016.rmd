@@ -1,5 +1,5 @@
 ---
-title: 'Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness---CORRIGENDUM'
+title: "Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness---CORRIGENDUM"
 output:
   html_document:
     highlight: tango

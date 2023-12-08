@@ -1,5 +1,5 @@
 ---
-title: 'randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling'
+title: "randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling"
 output:
   html_document:
     highlight: tango
