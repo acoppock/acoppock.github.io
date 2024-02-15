@@ -1,0 +1,5 @@
+@article{hewitt_etal_2024,
+	author = {Hewitt, Luke and David Broockman and Alexander Coppock and Ben M. Tappin and James Slezak and Valerie Coffman and Nathaniel Lubin and Mohammad Hamidian},
+	journal = {American Political Science Review},
+	title = {How experiments help campaigns persuade voters: Evidence from hundreds of campaigns' own experiments},
+	year = {2024}}
