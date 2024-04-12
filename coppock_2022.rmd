@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Alexander Coppock. 2023. <b>Persuasion in Parallel: How Information Changes Minds about Politics</b>. University of Chicago Press. Chicago, IL.
+Alexander Coppock. 2022. <b>Persuasion in Parallel: How Information Changes Minds about Politics</b>. University of Chicago Press. Chicago, IL.
 
 # Abstract
 
@@ -23,7 +23,7 @@ According to theories of motivated reasoning, attempts to persuade political opp
 - <a href='https://doi.org/10.1017/S1537592723001299' target='_blank'>Taylor Carlson's review in Perspectives on Politics</a>
 - <a href='https://doi.org/10.7910/DVN/I9GSKI' target='_blank'>Replication archive</a>
 - <a href='https://press.uchicago.edu/ucp/books/book/chicago/P/bo181475008.html' target='_blank'>Link to press</a>
-- <a href='coppock_2023.txt'target='_blank'>Bibtex citation</a>
-<center><img src="display_figures/coppock_2023_display.jpg" alt="coppock_2020" width="600"></center>
+- <a href='coppock_2022.txt'target='_blank'>Bibtex citation</a>
+<center><img src="display_figures/coppock_2022_display.jpg" alt="coppock_2022" width="600"></center>
 
 
