@@ -9,10 +9,6 @@ toc_float: false
 <div class="bandContent gallerySection">
 <div class="galleryItems"> 
 
-<div class="galleryItem">
-<a href="barari_etal_2023.html"> <img class="galleryItemImage" src="card_figures/barari_etal_2023_card.png"/> </a>
-<div class="galleryItemDescription"> Barari, Soubhik, Coppock, Alexander, Graham, Matthew H., Padgett, Zoe. 2023. <b>Are Trump's Indictments Rallying His Base? Evidence from the Counterfactual Format</b>. Public Opinion Quarterly. </div>
-</div>
 </div>
 </div>
 <!--/html_preserve-->
