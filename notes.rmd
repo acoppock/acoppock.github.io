@@ -1,0 +1,18 @@
+---
+title: "Notes"
+output:
+html_document:
+toc_float: false
+---
+<!--html_preserve-->
+<!-- <section class="linkList"> -->
+  <ul>
+    <li><a href="subpages/note_Random_Assignment_Subject_To_Constraints.pdf">Random assignment subject to constraints</a></li>
+    <li><a href="subpages/note_Random_Assignment_Subject_To_Constraints.pdf">How to use the counterfactual format</a> (with <a href="https://m-graham.com//">Matt Graham</a>)</li>
+    <li><a href="attention.pdf">Notes on attention</a></li>
+    <li><a href="testing_with_grf.pdf">Note on testing for heterogeneity with grf</a> (with <a href="https://mollyow.github.io/">Molly Offer-Westort</a>) </li>
+  </ul>
+<!-- </section> -->
+
+<!--/html_preserve-->
+
