@@ -18,7 +18,7 @@ output:
   <div class="band full blue first leftText">
     <div class="bandContent vCenter">
       <div class="blurb">
-        <div>I am an Associate Professor (on term) of Political Science at Yale University. I'm the author of <a href="coppock_2022.html">Persuasion in Parallel</a> and a member of the <a href="https://declaredesign.org/">DeclareDesign</a> team. You can find my <a href="coppock_cv.pdf">CV here</a>.</div>
+        <div>I am an Associate Professor of Political Science at Northwestern University. I'm the author of <a href="coppock_2022.html">Persuasion in Parallel</a> and a member of the <a href="https://declaredesign.org/">DeclareDesign</a> team. You can find my <a href="coppock_cv.pdf">CV here</a>.</div>
       </div>
     </div>
     <img class="imageTwo" src="images/front_page.png"/>
