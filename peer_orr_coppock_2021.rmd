@@ -1,5 +1,5 @@
 ---
-title: "Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results"
+title: "{Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Peer, Limor, Lilla Orr, Alexander Coppock. 2021. <b>Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results</b>. PS: Political Science \& Politics.
+Peer, Limor, Lilla Orr, Alexander Coppock. 2021. <b>{Active Maintenance: A Proposal for the Long-term Computational Reproducibility of Scientific Results}</b>. PS: Political Science \& Politics.
 
 # Abstract
 Computational reproducibility, or the ability to reproduce analytic results of a scientific study on the basis of publicly available code and data, is a shared goal of many researchers, journals, and scientific communities. Researchers in many disciplines including political science have made strides toward realizing that goal. A new challenge, however, has arisen. Code too often becomes obsolete within just a few years. We document this problem with a random sample of studies posted to the ISPS Data Archive; we encountered nontrivial errors in seven of 20 studies. In line with similar proposals for the long-term maintenance of data and commercial software, we propose that researchers dedicated to computational reproducibility should have a plan in place for “active maintenance” of their analysis code. We offer concrete suggestions for how data archives, journals, and research communities could encourage and reward the active maintenance of scientific code and data.
@@ -18,7 +18,7 @@ Computational reproducibility, or the ability to reproduce analytic results of a
  - <a href='peer_orr_coppock_2021.pdf' target='_blank'>Link to paper</a>
  - <a href='https://doi.org/10.1017/S1049096521000366'target='_blank'>Journal site</a>
 
- - <a href= 'https://isps.yale.edu/team/limor-peer' target='_blank'>Limor Peer's website</a>
+ - <a href= 'https://campuspress.yale.edu/limorpeer/' target='_blank'>Limor Peer's website</a>
  - <a href= 'https://lillaorr.com' target='_blank'>Lilla Orr's website</a>
  - <a href='peer_orr_coppock_2021.txt'target='_blank'>Bibtex citation</a>
 

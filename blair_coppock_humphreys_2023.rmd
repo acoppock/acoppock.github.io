@@ -1,5 +1,5 @@
 ---
-title: "Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign"
+title: "{Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Blair, Graeme, Coppock, Alexander, Humphreys, Macartan. 2023. <b>Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign</b>. NA.
+Blair, Graeme, Coppock, Alexander, Humphreys, Macartan. 2023. <b>{Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign}</b>. NA.
 
 # Abstract
 NA
@@ -21,6 +21,6 @@ NA
  - <a href='https://doi.org/10.7910/DVN/HYVPO5'target='_blank'>Replication archive</a>
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
- - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://macartan.github.io/' target='_blank'>Macartan Humphreys's website</a>
  - <a href='blair_coppock_humphreys_2023.txt'target='_blank'>Bibtex citation</a>
 

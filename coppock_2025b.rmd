@@ -1,0 +1,21 @@
+---
+title: "vayr: Extensions for 'ggplot2' to Visualize as You Randomize"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Alexander Coppock. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0.
+
+# Abstract
+NA
+
+# Links
+
+
+ - <a href='coppock_2025b.txt'target='_blank'>Bibtex citation</a>
+

@@ -1,5 +1,5 @@
 ---
-title: "Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments"
+title: "{Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Gross, Kimberly, Porter, Ethan, Thorson, Emily, Wood, Thomas J.. 2023. <b>Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments</b>. British Journal of Political Science.
+Coppock, Alexander, Gross, Kimberly, Porter, Ethan, Thorson, Emily, Wood, Thomas J.. 2023. <b>{Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments}</b>. British Journal of Political Science.
 
 # Abstract
 In the final two months of the 2020 U.S. election, we conducted eight panel experiments to evaluate the immediate and medium-term effects of misinformation and factual corrections. Our results corroborate four sets of existing findings: fact-checks reliably improve factual accuracy, while misinformation degrades it; effects of fact-checks on belief accuracy endure, although they fade with time; effects on attitudes are minuscule; and there are important partisan asymmetries. We also offer one new empirical finding suggesting that effect heterogeneities by personality type and cognitive style may reflect attention paid to treatments. Our study confirms that the fundamental push and pull of misinformation and factual corrections on political beliefs holds even in electoral settings as saturated with mistruths as the 2020 U.S. election.

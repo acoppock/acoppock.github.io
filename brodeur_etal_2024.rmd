@@ -1,0 +1,21 @@
+---
+title: "Mass Reproducibility and Replicability: A New Hope"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Brodeur, Abel, 375 coauthors. 2024. <b>Mass Reproducibility and Replicability: A New Hope</b>. NA.
+
+# Abstract
+NA
+
+# Links
+
+
+ - <a href='brodeur_etal_2024.txt'target='_blank'>Bibtex citation</a>
+

@@ -19,8 +19,8 @@ Researchers can characterize and learn about the properties of research designs 
  - <a href='https://declaredesign.org/r/declaredesign/'target='_blank'>Project site</a>
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
- - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
- - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://www.linkedin.com/in/jasper-jack-cooper' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'https://macartan.github.io/' target='_blank'>Macartan Humphreys's website</a>
  - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
  - <a href='blair_etal_2018a.txt'target='_blank'>Bibtex citation</a>
 

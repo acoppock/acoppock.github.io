@@ -1,5 +1,5 @@
 ---
-title: "Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents"
+title: "{Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Oliver A. McClellan. 2019. <b>Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents</b>. Research \& Politics.
+Coppock, Alexander, Oliver A. McClellan. 2019. <b>{Validating the Demographic, Political, Psychological, and Experimental Results Obtained from a New Source of Online Survey Respondents}</b>. Research \& Politics.
 
 # Abstract
 Researchers have increasingly turned to online convenience samples as sources of survey responses that are easy and inexpensive to collect. As reliance on these sources has grown, so too have concerns about the use of convenience samples in general and Amazon's Mechanical Turk in particular. We distinguish between "external validity" and theoretical relevance, with the latter being the more important justification for any data collection strategy. We explore an alternative source of online convenience samples, the Lucid Fulcrum Exchange, and assess its suitability for online survey experimental research. Our point of departure is Berinsky et al. (2012), which compares Amazon's Mechanical Turk to US national probability samples in terms of respondent characteristics and treatment effect estimates. We replicate these same analyses using a large sample of survey responses on the Lucid platform. Our results indicate that demographic and experimental findings on Lucid track well with US national benchmarks, with the exception of experimental treatments that aim to dispel the ``death panel'' rumor regarding the Affordable Care Act. We conclude that subjects recruited from the Lucid platform constitute a sample that is suitable for evaluating many social scientific theories, and can serve as a drop-in replacement for many scholars currently conducting research on Mechanical Turk or other similar platforms.

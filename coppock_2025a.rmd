@@ -1,0 +1,21 @@
+---
+title: "The Effects of Party Cues Are Not the Effects of Partisanship"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander. 2025. <b>The Effects of Party Cues Are Not the Effects of Partisanship</b>. Political Science Quarterly.
+
+# Abstract
+NA
+
+# Links
+
+
+ - <a href='coppock_2025a.txt'target='_blank'>Bibtex citation</a>
+

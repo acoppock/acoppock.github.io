@@ -1,5 +1,5 @@
 ---
-title: "Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research"
+title: "{Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Donald P. Green. 2015. <b>Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research</b>. Political Science Research and Methods.
+Coppock, Alexander, Donald P. Green. 2015. <b>{Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research}</b>. Political Science Research and Methods.
 
 # Abstract
 A small but growing social science literature examines the correspondence between experimental results obtained in lab and field settings. This article reviews this literature and reanalyzes a set of recent experiments carried out in parallel in both the lab and field. Using a standardized format that calls attention to both the experimental estimates and the statistical uncertainty surrounding them, the study analyzes the overall pattern of lab-field correspondence, which is found to be quite strong (Spearman's rho = 0.73). Recognizing that this correlation may be distorted by the ad hoc manner in which lab-field comparisons are constructed (as well as the selective manner in which results are reported and published), the article concludes by suggesting directions for future research, stressing in particular the need for more systematic investigation of treatment effect heterogeneity.

@@ -1,5 +1,5 @@
 ---
-title: "Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?"
+title: "{Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Alejandro Flores, Alexander Coppock. 2018. <b>Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?</b>. Political Communication.
+Alejandro Flores, Alexander Coppock. 2018. <b>{Do Bilinguals Respond More Favorably to Candidate Advertisements in English or in Spanish?}</b>. Political Communication.
 
 # Abstract
 Candidates for political office in the United States can appeal to constituents in either English or in Spanish. We investigate the consequences of this choice in a series of survey experiments conducted on large, diverse samples of both monolingual and bilingual Americans. We take advantage of parallel advertisements produced in both English and Spanish by real candidates for national office - one presidential and two congressional. Because our design holds constant candidates' policy positions, we can attribute the effects on vote choice directly to the choice of language over and above other candidate attributes. In two of our three experiments, the Spanish-language advertisements increased candidates' electoral support by 5 percentage points among bilinguals. We find the opposite pattern of results among English-speaking monolingual Americans, who respond very negatively to Spanish language advertisements. Our results shed light on the strategic calculus of candidates who must appeal to multiple linguistic communities at once.
@@ -21,7 +21,7 @@ Candidates for political office in the United States can appeal to constituents 
  - <a href='https://doi.org/10.7910/DVN/XGQ2ZA'target='_blank'>Replication archive</a>
  - <a href='https://osf.io/e6zjk'target='_blank'>Preanalysis plan</a>
 
- - <a href= 'https://political-science.uchicago.edu/directory/alejandro-flores' target='_blank'>Alejandro Flores's website</a>
+ - <a href= 'https://gvpt.umd.edu/facultyprofile/flores/alex' target='_blank'>Alejandro Flores's website</a>
  - <a href='flores_coppock_2018.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
