@@ -1,0 +1,21 @@
+---
+title: "How party cue effects vary across issues, identities, and contexts: a meta-reanalysis of hundreds of party cue treatments"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, Diana Roxana Galos. 2024. <b>How party cue effects vary across issues, identities, and contexts: a meta-reanalysis of hundreds of party cue treatments</b>. Unpublished manuscript.
+
+# Abstract
+NA
+
+# Links
+
+ - <a href= 'https://www.dianagalos.com/' target='_blank'>Diana Roxana Galos's website</a>
+ - <a href='coppock_galos_2024.txt'target='_blank'>Bibtex citation</a>
+

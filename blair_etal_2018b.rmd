@@ -19,8 +19,8 @@ Fast procedures for small set of commonly-used, design-appropriate estimators wi
  - <a href='https://declaredesign.org/r/estimatr/'target='_blank'>Project site</a>
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>
- - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
- - <a href= 'http://macartan.nyc' target='_blank'>Macartan Humphreys's website</a>
+ - <a href= 'https://www.linkedin.com/in/jasper-jack-cooper' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'https://macartan.github.io/' target='_blank'>Macartan Humphreys's website</a>
  - <a href= 'https://lukesonnet.com' target='_blank'>Luke Sonnet's website</a>
  - <a href='blair_etal_2018b.txt'target='_blank'>Bibtex citation</a>
 

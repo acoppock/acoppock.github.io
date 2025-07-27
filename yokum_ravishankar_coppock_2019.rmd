@@ -1,5 +1,5 @@
 ---
-title: "A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras"
+title: "{A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Yokum, David, Ravishankar, Anita, Coppock, Alexander. 2019. <b>A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras</b>. Proceedings of the National Academy of Sciences.
+Yokum, David, Ravishankar, Anita, Coppock, Alexander. 2019. <b>{A Randomized Control Trial Evaluating the Effects of Police Body-worn Cameras}</b>. Proceedings of the National Academy of Sciences.
 
 # Abstract
 Police body-worn cameras (BWCs) have been widely promoted as a technological mechanism to improve policing and the perceived legitimacy of police and legal institutions, yet evidence of their effectiveness is limited. To estimate the effects of BWCs, we conducted a randomized controlled trial involving 2,224 Metropolitan Police Department officers in Washington, DC. Here we show that BWCs have very small and statistically insignificant effects on police use of force and civilian complaints, as well as other policing activities and judicial outcomes. These results suggest we should recalibrate our expectations of BWCs' ability to induce large-scale behavioral changes in policing, particularly in contexts similar to Washington, DC.
@@ -21,8 +21,8 @@ Police body-worn cameras (BWCs) have been widely promoted as a technological mec
  - <a href='https://doi.org/10.17605/OSF.IO/P6VUH'target='_blank'>Replication archive</a>
  - <a href='https://doi.org/10.17605/OSF.IO/P6VUH'target='_blank'>Preanalysis plan</a>
 
- - <a href= 'https://thepolicylab.brown.edu/team/david-yokum/' target='_blank'>David Yokum's website</a>
- - <a href= 'https://thelab.dc.gov/anita.html' target='_blank'>Anita Ravishankar's website</a>
+ - <a href= 'https://datascience.unc.edu/person/david-yokum/' target='_blank'>David Yokum's website</a>
+ - <a href= 'https://www.urban.org/author/anita-ravishankar' target='_blank'>Anita Ravishankar's website</a>
  - <a href='yokum_ravishankar_coppock_2019.txt'target='_blank'>Bibtex citation</a>
 
 # Figure

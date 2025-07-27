@@ -1,5 +1,5 @@
 ---
-title: "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion"
+title: "{The Long-lasting Effects of Newspaper Op-Eds on Public Opinion}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Emily Ekins, David Kirby. 2018. <b>The Long-lasting Effects of Newspaper Op-Eds on Public Opinion</b>. Quarterly Journal of Political Science.
+Coppock, Alexander, Emily Ekins, David Kirby. 2018. <b>{The Long-lasting Effects of Newspaper Op-Eds on Public Opinion}</b>. Quarterly Journal of Political Science.
 
 # Abstract
 Do newspaper opinion pieces change the minds of those who read them? We conduct two randomized panel survey experiments on elite and mass convenience samples to estimate the effects of five op-eds on policy attitudes. We find very large treatment effects on target issues, equivalent to shifts of 10 to 20 percentage points, that persist for at least one month. We find essentially no treatment effects on non-target issues, suggesting that our subjects read, understood, and were persuaded by the arguments presented in these op-eds. We find limited evidence of treatment effect heterogeneity by party identification: Democrats, Republicans and independents all appear to move in the predicted direction by similar magnitudes. We conduct this study on both a sample of Amazon Mechanical Turk workers and a sample of elites. Despite large differences in demographics and initial political beliefs, we find that op-eds were persuasive to both the mass public and elites, but marginally more persuasive among the mass public. Our findings add to the growing body of evidence of the everyday nature of persuasion.

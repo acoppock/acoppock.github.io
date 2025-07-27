@@ -1,5 +1,5 @@
 ---
-title: "The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic"
+title: "{The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2022. <b>The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic</b>. Journal of Experimental Political Science.
+Peyton, Kyle, Huber, Gregory A., Coppock, Alexander. 2022. <b>{The Generalizability of Online Experiments Conducted During The COVID-19 Pandemic}</b>. Journal of Experimental Political Science.
 
 # Abstract
 NA

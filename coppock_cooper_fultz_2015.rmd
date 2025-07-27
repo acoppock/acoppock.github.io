@@ -18,7 +18,7 @@ Generates random assignments for common experimental designs and random samples 
  - <a href='coppock_cooper_fultz_2015.pdf' target='_blank'>Link to paper</a>
  - <a href='https://declaredesign.org/r/randomizr/'target='_blank'>Project site</a>
 
- - <a href= 'http://jasper-cooper.com' target='_blank'>Jasper Cooper's website</a>
+ - <a href= 'https://www.linkedin.com/in/jasper-jack-cooper' target='_blank'>Jasper Cooper's website</a>
  - <a href= 'https://nfultz.github.io' target='_blank'>Neal Fultz's website</a>
  - <a href='coppock_cooper_fultz_2015.txt'target='_blank'>Bibtex citation</a>
 

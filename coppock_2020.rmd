@@ -1,5 +1,5 @@
 ---
-title: "Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments"
+title: "{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander. 2020. <b>Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments</b>. Advances in Experimental Political Science.
+Coppock, Alexander. 2020. <b>{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}</b>. Advances in Experimental Political Science.
 
 # Abstract
 A good statistical graph for a randomized experiment simultaneously conveys the study's design, analysis, and results. It reveals the experimental design by mapping design elements to aesthetic parameters. It illuminates the analysis by plotting the statistical model in "data-space." When the design and analysis of an experiment are encoded in a plot, the interpretation of the experimental results is clarified. "Analyze as you randomize" is a dictum attributed to Fisher that guides interpretations of experimental data. This chapter extends that principle to visualizations of randomized experiments. While not every experiment requires a visualization, those that do should be visualized in ways that communicate the design and results together.

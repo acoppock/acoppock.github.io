@@ -1,0 +1,27 @@
+---
+title: "Did Trump's Indictments Rally His Base? Evidence from the Counterfactual Format"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Barari, Soubhik, Coppock, Alexander, Graham, Matthew H, Padgett, Zoe. 2024. <b>Did Trump's Indictments Rally His Base? Evidence from the Counterfactual Format</b>. Public Opinion Quarterly.
+
+# Abstract
+In the task of assessing how sudden, significant events causally affect public opinion, political pollsters often ask respondents how the event affected their attitudes and beliefs. We study the case of former President Donald Trump’s federal indictment for allegedly mishandling classified documents using two methods of retrospective causal inference. The commonly used change format asks respondents to state directly how the event affected their attitudes: Republicans say the event increased their support of Trump, while Democrats say the opposite. Like previous work, we argue that the change format exhibits a form of bias known as response substitution. The alternative counterfactual format is plausibly free of this source of error and asks respondents to imagine what their attitudes and beliefs would have been if the event had not happened. Using this method, Republican primary voters report that the indictment increased their belief that Trump mishandled documents (+2.5 pp) and decreased their intention to vote for him in the primaries (−1.6 pp). We argue that the counterfactual format is particularly valuable for studying the effects of highly salient news events like the Trump indictment on public opinion.
+
+# Links
+ - <a href='barari_etal_2024.pdf' target='_blank'>Link to paper</a>
+ - <a href='https://doi.org/10.1093/poq/nfae061'target='_blank'>Journal site</a>
+ - <a href='https://doi.org/10.7910/DVN/QDOBJF'target='_blank'>Replication archive</a>
+
+ - <a href= 'https://soubhikbarari.com/' target='_blank'>Soubhik Barari's website</a>
+ - <a href= 'https://www.linkedin.com/in/zoe-padgett-26217260' target='_blank'>Zoe Padgett's website</a>
+ - <a href='barari_etal_2024.txt'target='_blank'>Bibtex citation</a>
+
+# Figure
+<center><img src="display_figures/barari_etal_2024_display.jpg" alt="barari_etal_2024" width="600"></center>

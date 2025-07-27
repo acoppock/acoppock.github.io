@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Did Trump’s Indictments Rally His Base? Evidence from the Counterfactual Format</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<meta name="description" content="Alexander Coppock" />
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101327191-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">Alexander Coppock</a>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="coppock_cv.pdf">CV</a>
+        <a class="menuItem" href="published_papers.html">Published Articles</a>
+        <a class="menuItem" href="working_papers.html">Working Papers</a>
+        <a class="menuItem" href="notes.html">Notes</a>
+        <a class="menuItem" href="software.html">Software</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+    
+    
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Did Trump’s Indictments Rally His Base?
+Evidence from the Counterfactual Format</h1>
+
+</div>
+
+
+<p>Barari, Soubhik, Coppock, Alexander, Graham, Matthew H, Padgett, Zoe.
+2024. <b>Did Trump’s Indictments Rally His Base? Evidence from the
+Counterfactual Format</b>. Public Opinion Quarterly.</p>
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+<p>In the task of assessing how sudden, significant events causally
+affect public opinion, political pollsters often ask respondents how the
+event affected their attitudes and beliefs. We study the case of former
+President Donald Trump’s federal indictment for allegedly mishandling
+classified documents using two methods of retrospective causal
+inference. The commonly used change format asks respondents to state
+directly how the event affected their attitudes: Republicans say the
+event increased their support of Trump, while Democrats say the
+opposite. Like previous work, we argue that the change format exhibits a
+form of bias known as response substitution. The alternative
+counterfactual format is plausibly free of this source of error and asks
+respondents to imagine what their attitudes and beliefs would have been
+if the event had not happened. Using this method, Republican primary
+voters report that the indictment increased their belief that Trump
+mishandled documents (+2.5 pp) and decreased their intention to vote for
+him in the primaries (−1.6 pp). We argue that the counterfactual format
+is particularly valuable for studying the effects of highly salient news
+events like the Trump indictment on public opinion.</p>
+</div>
+<div id="links" class="section level1">
+<h1>Links</h1>
+<ul>
+<li><p><a href='barari_etal_2024.pdf' target='_blank'>Link to
+paper</a></p></li>
+<li><p><a href='https://doi.org/10.1093/poq/nfae061'target='_blank'>Journal
+site</a></p></li>
+<li><p><a href='https://doi.org/10.7910/DVN/QDOBJF'target='_blank'>Replication
+archive</a></p></li>
+<li><p><a href= 'https://soubhikbarari.com/' target='_blank'>Soubhik
+Barari’s website</a></p></li>
+<li><p><a href= 'https://www.linkedin.com/in/zoe-padgett-26217260' target='_blank'>Zoe
+Padgett’s website</a></p></li>
+<li><p><a href='barari_etal_2024.txt'target='_blank'>Bibtex
+citation</a></p></li>
+</ul>
+</div>
+<div id="figure" class="section level1">
+<h1>Figure</h1>
+<center>
+<img src="display_figures/barari_etal_2024_display.jpg" alt="barari_etal_2024" width="600">
+</center>
+</div>
+
+</div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2024 Alexander Coppock</div>
+  <div id="logos">
+    <a href="https://bsky.app/profile/aecoppock.bsky.social" class="footerLogo bluesky"></a>
+    <a href="https://github.com/acoppock" class="footerLogo gitHub"></a>
+    <a href="https://orcid.org/0000-0002-5733-2386" class="footerLogo orcid"></a>
+    <a href="https://scholar.google.com/citations?user=4LJmDWkAAAAJ" class="footerLogo gscholar"></a>
+    <a href="http://thedata.harvard.edu/dvn/dv/alexandercoppock" class="footerLogo dataverse"></a>
+    <a href="https://politicalscience.yale.edu/people/alexander-coppock" class="footerLogo yale"></a>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

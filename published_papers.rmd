@@ -10,8 +10,12 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
-<a href="barari_etal_2025.html"> <img class="galleryItemImage" src="card_figures/barari_etal_2025_card.png"/> </a>
-<div class="galleryItemDescription"> Barari, Soubhik, Coppock, Alexander, Graham, Matthew H., Padgett, Zoe. 2025. <b>{Are Trump's Indictments Rallying His Base? Evidence from the Counterfactual Format}</b>. Public Opinion Quarterly. </div>
+<a href="baxter-king_etal_2025.html"> <img class="galleryItemImage" src="card_figures/baxter-king_etal_2025_card.png"/> </a>
+<div class="galleryItemDescription"> Baxter-King, Ryan, Coppock, Alexander, Straus, Graham, Vavreck, Lynn. 2025. <b>Endorsements vs. information: Experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis</b>. PNAS Nexus. </div>
+</div>
+<div class="galleryItem">
+<a href="barari_etal_2024.html"> <img class="galleryItemImage" src="card_figures/barari_etal_2024_card.png"/> </a>
+<div class="galleryItemDescription"> Barari, Soubhik, Coppock, Alexander, Graham, Matthew H, Padgett, Zoe. 2024. <b>Did Trump's Indictments Rally His Base? Evidence from the Counterfactual Format</b>. Public Opinion Quarterly. </div>
 </div>
 <div class="galleryItem">
 <a href="hewitt_etal_2024.html"> <img class="galleryItemImage" src="card_figures/hewitt_etal_2024_card.png"/> </a>
@@ -23,7 +27,7 @@ toc_float: false
 </div>
 <div class="galleryItem">
 <a href="aggarwal_etal_2023.html"> <img class="galleryItemImage" src="card_figures/aggarwal_etal_2023_card.png"/> </a>
-<div class="galleryItemDescription"> Aggarwal, Minali, Jennifer Allen, Andrew Beasley, James Barnes, Alexander Coppock, Dan Frankowski, Solomon Messing, Kelly Zhang, Sylvan Zheng. 2023. <b>The impact of digital advertising on turnout during the 2020 US presidential election: evidence from a massive campaign-level field experiment</b>. Nature Human Behavior. </div>
+<div class="galleryItemDescription"> Aggarwal, Minali, Allen, Jennifer, Coppock, Alexander, Frankowski, Dan, Messing, Solomon, Zhang, Kelly, Barnes, James, Beasley, Andrew, Hantman, Harry, Zheng, Sylvan. 2023. <b>A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout</b>. Nature Human Behaviour. </div>
 </div>
 <div class="galleryItem">
 <a href="coppock_etal_2023.html"> <img class="galleryItemImage" src="card_figures/coppock_etal_2023_card.png"/> </a>
