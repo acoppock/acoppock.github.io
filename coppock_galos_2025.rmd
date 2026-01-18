@@ -1,0 +1,21 @@
+---
+title: "Toward the generalizability of the party cue effect: a meta-reanalysis of hundreds of experimental contrasts"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, Diana Roxana Galos. 2025. <b>Toward the generalizability of the party cue effect: a meta-reanalysis of hundreds of experimental contrasts</b>. Unpublished manuscript.
+
+# Abstract
+NA
+
+# Links
+
+ - <a href= 'https://www.dianagalos.com/' target='_blank'>Diana Roxana Galos's website</a>
+ - <a href='coppock_galos_2025.txt'target='_blank'>Bibtex citation</a>
+

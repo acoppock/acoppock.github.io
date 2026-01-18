@@ -1,0 +1,7 @@
+@article{coppock_green_porter_2021,
+    Author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
+    Title = {{Can Video Advertisements Change Partisanship? Results From Panel Survey Experiments}},
+    Journal = {Unpublished manuscript},
+    Year = 2021,
+}
+

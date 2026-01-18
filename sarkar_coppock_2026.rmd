@@ -1,0 +1,21 @@
+---
+title: "The effects of religious messages and endorsements on political attitudes: A meta-reanalysis"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Sarkar, Radha,, Coppock, Alexander. 2026. <b>The effects of religious messages and endorsements on political attitudes: A meta-reanalysis</b>. American Political Science Review.
+
+# Abstract
+NA
+
+# Links
+
+
+ - <a href='sarkar_coppock_2026.txt'target='_blank'>Bibtex citation</a>
+

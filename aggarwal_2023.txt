@@ -1,0 +1,8 @@
+@article{aggarwal_etal_2023,
+    author = {Aggarwal, Minali and Allen, Jennifer and Coppock, Alexander and Frankowski, Dan and Messing, Solomon and Zhang, Kelly and Barnes, James and Beasley, Andrew and Hantman, Harry and Zheng, Sylvan},
+    journal = {Nature Human Behaviour},
+    number = {3},
+    pages = {332--341},
+    title = {A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout},
+    volume = {7},
+    year = {2023}}

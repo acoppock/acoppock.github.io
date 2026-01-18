@@ -1,0 +1,10 @@
+@book{coppock_2021,
+    Title = {Persuasion in Parallel},
+    Publisher = {University of Chicago Press},
+    Year = {2021},
+    Author = {Alexander Coppock},
+    Series = {Chicago Studies in American Politics},
+    Address = {Chicago},
+Note = {Forthcoming}
+}
+
