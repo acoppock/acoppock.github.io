@@ -1,0 +1,8 @@
+@article{coppock_green_2020,
+    Author = {Coppock, Alexander and Donald P. Green},
+    Title = {{Do Belief Systems Exhibit Dynamic Constraint?}},
+    Journal = {Journal of Politics},
+    Year = {2020},
+Note = {Forthcoming}
+}
+

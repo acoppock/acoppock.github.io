@@ -1,0 +1,22 @@
+---
+title: "In person minting"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander, Donald P. Green, Ethan Porter. 2023. <b>In person minting</b>. Unpublished manuscript.
+
+# Abstract
+NA
+
+# Links
+
+ - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
+ - <a href= 'http://www.ethanporter.com' target='_blank'>Ethan Porter's website</a>
+ - <a href='coppock_green_porter_20XX.txt'target='_blank'>Bibtex citation</a>
+

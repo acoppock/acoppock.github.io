@@ -1,0 +1,6 @@
+@article{coppock_green_porter_2026,
+	author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
+	journal = {Quarterly Journal of Political Science},
+	title = {Americans Can Imagine Changing Partisan Affiliation: Evidence from Hypothetical Scenarios},
+	year = {2026},
+	note = {Forthcoming}}

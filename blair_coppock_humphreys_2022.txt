@@ -1,0 +1,6 @@
+@book{blair_coppock_humphreys_2023,
+    address = {Princeton, NJ},
+    author = {Blair, Graeme and Coppock, Alexander and Humphreys, Macartan},
+    publisher = {Princeton University Press},
+    title = {{Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign}},
+    year = {2023}}
