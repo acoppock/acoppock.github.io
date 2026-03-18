@@ -1,0 +1,8 @@
+@article{graham_coppock_2020,
+    Author = {Graham, Matthew and Alexander Coppock},
+    Title = {{Asking About Attitude Change}},
+    Journal = {Public Opinion Quarterly},
+    Year = 2020,
+Note = {Forthcoming}
+}
+
