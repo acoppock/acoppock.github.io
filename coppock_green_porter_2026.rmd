@@ -17,6 +17,7 @@ While attempts to change Americans’ partisanship via persuasive treatments lar
 # Links
  - <a href='coppock_green_porter_2026_preprint.pdf' target='_blank'>Link to paper</a>
  - <a href='coppock_green_porter_2026_appendix.pdf'target='_blank'>Link to appendix</a>
+ - <a href='https://doi.org/10.1108/QJPS-02-2025-0026'target='_blank'>Journal site</a>
  - <a href='https://osf.io/nvmza'target='_blank'>Preanalysis plan</a>
 
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
