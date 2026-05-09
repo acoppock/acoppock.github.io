@@ -3,7 +3,9 @@
     Title = {{Americans Can Imagine Changing Partisan Affiliation: Evidence from Hypothetical Scenarios}},
     Journal = {Quarterly Journal of Political Science},
     Year = {2026},
-    Pages = {1--23},
+    Volume = {21},
+    Number = {1},
+    Pages = {26--48},
     DOI = {10.1108/QJPS-02-2025-0026}}
 
 
