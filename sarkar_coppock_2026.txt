@@ -1,0 +1,8 @@
+@article{sarkar_coppock_2026,
+    Author = {Sarkar, Radha and Coppock, Alexander},
+    Title = {{The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis}},
+    Journal = {American Political Science Review},
+    Year = {2026},
+    DOI = {10.1017/S0003055426101695}}
+
+
