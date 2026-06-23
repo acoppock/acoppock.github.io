@@ -10,6 +10,10 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
+<a href="sarkar_coppock_2026.html"> <img class="galleryItemImage" src="card_figures/sarkar_coppock_2026_card.png"/> </a>
+<div class="galleryItemDescription"> Sarkar, Radha, Coppock, Alexander. 2026. <b>The effects of religious messages and endorsements on political attitudes: A meta-reanalysis</b>. American Political Science Review. </div>
+</div>
+<div class="galleryItem">
 <a href="coppock_green_porter_2026.html"> <img class="galleryItemImage" src="card_figures/coppock_green_porter_2026_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander, Donald P. Green, Ethan Porter. 2026. <b>Americans Can Imagine Changing Partisan Affiliation: Evidence from Hypothetical Scenarios</b>. Quarterly Journal of Political Science. </div>
 </div>
