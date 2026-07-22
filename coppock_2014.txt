@@ -1,11 +1,11 @@
 @article{coppock_2014,
-    Author = {Coppock, Alexander},
-    Title = {{Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness}},
-    Journal = {Journal of Experimental Political Science},
-    Year = {2014},
-    Volume = {1},
-    Number = {2},
-    Pages = {159-169},
-Note = {See ``Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness -- CORRIGENDUM.'' \textit{Journal of Experimental Political Science} 3(2): 206-208.}
+  author = {Coppock, Alexander},
+  title = {{Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness}},
+  journal = {Journal of Experimental Political Science},
+  year = {2014},
+  volume = {1},
+  number = {2},
+  pages = {159-169},
+  note = {See ``Information Spillovers: Another Look at Experimental Estimates of Legislator Responsiveness -- CORRIGENDUM.'' \textit{Journal of Experimental Political Science} 3(2): 206-208.},
+  doi = {10.1017/xps.2014.9}
 }
-

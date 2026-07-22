@@ -1,6 +1,10 @@
-@article{coppock_etal_2021,
-    author = {Coppock, Alexander and Gross, Kimberly and Porter, Ethan and Thorson, Emily and Wood, Thomas J.},
-    journal = {British Journal of Political Science},
-    title = {{Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Seven Panel Survey Experiments}},
-    year = {2022},
+@article{coppock_etal_2023,
+  author = {Coppock, Alexander and Gross, Kimberly and Porter, Ethan and Thorson, Emily and Wood, Thomas J.},
+  title = {{Conceptual Replication of Four Key Findings about Factual Corrections and Misinformation During the 2020 U.S. Election: Evidence from Panel Survey Experiments}},
+  journal = {British Journal of Political Science},
+  year = {2023},
+  volume = {53},
+  number = {4},
+  pages = {1328-1341},
+  doi = {10.1017/s0007123422000631}
 }

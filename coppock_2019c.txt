@@ -1,7 +1,7 @@
 @manual{coppock_2019c,
-    Title = {ri2: Randomization Inference for Randomized Experiments},
-    Author = {Alexander Coppock},
-    Year = {2019},
-Note = {R package version 0.1.2}
+  author = {Alexander Coppock},
+  title = {ri2: Randomization Inference for Randomized Experiments},
+  year = {2019},
+  note = {R package version 0.1.2},
+  doi = {10.32614/cran.package.ri2}
 }
-

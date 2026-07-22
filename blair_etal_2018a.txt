@@ -1,7 +1,7 @@
 @manual{blair_etal_2018a,
-    Title = {DeclareDesign: Declare and Diagnose Research Designs},
-    Author = {Graeme Blair and Jasper Cooper and Alexander Coppock and Macartan Humphreys and Neal Fultz},
-    Year = {2019},
-Note = {R package version 0.23.0}
+  author = {Graeme Blair and Jasper Cooper and Alexander Coppock and Macartan Humphreys and Neal Fultz},
+  title = {DeclareDesign: Declare and Diagnose Research Designs},
+  year = {2018},
+  note = {R package version 0.28.0},
+  doi = {10.32614/cran.package.declaredesign}
 }
-

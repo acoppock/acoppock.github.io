@@ -1,10 +1,10 @@
 @article{coppock_green_2016,
-    Author = {Coppock, Alexander and Green, Donald P.},
-    Title = {{Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities}},
-    Journal = {American Journal of Political Science},
-    Year = {2016},
-    Volume = {60},
-    Number = {4},
-    Pages = {1044--1062},
+  author = {Coppock, Alexander and Green, Donald P.},
+  title = {{Is Voting Habit Forming? New Evidence from Experiments and Regression Discontinuities}},
+  journal = {American Journal of Political Science},
+  year = {2016},
+  volume = {60},
+  number = {4},
+  pages = {1044--1062},
+  doi = {10.1111/ajps.12210}
 }
-

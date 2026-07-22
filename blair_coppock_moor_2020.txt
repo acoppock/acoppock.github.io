@@ -1,10 +1,10 @@
 @article{blair_coppock_moor_2020,
-    Author = {Blair, Graeme and Alexander Coppock and Margaret Moor},
-    Title = {{When to Worry About Sensitivity Bias: Evidence from 30 Years of List Experiments}},
-    Journal = {American Political Science Review},
-    Year = 2020,
-    Volume = {114},
-    Number = {4},
-    Pages = {1297-1315},
+  author = {Blair, Graeme and Alexander Coppock and Margaret Moor},
+  title = {{When to Worry About Sensitivity Bias: Evidence from 30 Years of List Experiments}},
+  journal = {American Political Science Review},
+  year = 2020,
+  volume = {114},
+  number = {4},
+  pages = {1297-1315},
+  doi = {10.1017/s0003055420000374}
 }
-

@@ -1,5 +1,10 @@
 @article{barari_etal_2024,
-    author = {Barari, Soubhik and Coppock, Alexander and Graham, Matthew H. and Padgett, Zoe},
-    journal = {Public Opinion Quarterly},
-    title = {{Are Trump's Indictments Rallying His Base? Evidence from the Counterfactual Format}},
-    year = {2025}}
+  author = {Barari, Soubhik and Coppock, Alexander and Graham, Matthew H and Padgett, Zoe},
+  title = {Did Trump's Indictments Rally His Base? Evidence from the Counterfactual Format},
+  journal = {Public Opinion Quarterly},
+  year = {2024},
+  volume = {88},
+  number = {4},
+  pages = {1216-1233},
+  doi = {10.1093/poq/nfae061}
+}

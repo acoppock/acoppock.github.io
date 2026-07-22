@@ -1,10 +1,10 @@
 @article{coppock_green_2015,
-    Author = {Coppock, Alexander and Donald P. Green},
-    Title = {{Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research}},
-    Journal = {Political Science Research and Methods},
-    Year = {2015},
-    Volume = {3},
-    Number = {1},
-    Pages = {113--131},
+  author = {Coppock, Alexander and Donald P. Green},
+  title = {{Assessing the Correspondence Between Experimental Results Obtained in the Lab and Field: A Review of Recent Social Science Research}},
+  journal = {Political Science Research and Methods},
+  year = {2015},
+  volume = {3},
+  number = {1},
+  pages = {113--131},
+  doi = {10.1017/psrm.2014.10}
 }
-

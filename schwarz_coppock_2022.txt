@@ -1,8 +1,10 @@
 @article{schwarz_coppock_2022,
-    author = {Schwarz, Susanne and Alexander Coppock},
-    journal = {Journal of Politics},
-    number = {2},
-    pages = {655-668},
-    title = {{What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments}},
-    volume = {84},
-    year = {2022}}
+  author = {Schwarz, Susanne and Alexander Coppock},
+  title = {{What Have We Learned About Gender From Candidate Choice Experiments? A Meta-analysis of 67 Factorial Survey Experiments}},
+  journal = {Journal of Politics},
+  year = {2022},
+  volume = {84},
+  number = {2},
+  pages = {655-668},
+  doi = {10.1086/716290}
+}

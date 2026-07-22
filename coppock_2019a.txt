@@ -1,10 +1,11 @@
 @article{coppock_2019a,
-    Author = {Coppock, Alexander},
-    Title = {{Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach}},
-    Journal = {Political Science Research and Methods},
-    Year = {2019},
-    Volume = {7},
-    Number = {3},
-    Pages = {613--628},
+  author = {Coppock, Alexander},
+  title = {{Generalizing from Survey Experiments Conducted on Mechanical Turk: A Replication Approach}},
+  journal = {Political Science Research and Methods},
+  year = {2019},
+  volume = {7},
+  number = {3},
+  pages = {613--628},
+  publisher = {Cambridge University Press},
+  doi = {10.1017/psrm.2018.10}
 }
-

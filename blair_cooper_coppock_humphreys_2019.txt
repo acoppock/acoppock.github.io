@@ -1,10 +1,10 @@
 @article{blair_cooper_coppock_humphreys_2019,
-    Author = {Blair, Graeme and Cooper, Jasper and Coppock, Alexander and Humphreys, Macartan},
-    Title = {{Declaring and Diagnosing Research Designs}},
-    Journal = {American Political Science Review},
-    Year = {2019},
-    Volume = {113},
-    Number = {3},
-    Pages = {838--859},
+  author = {Blair, Graeme and Cooper, Jasper and Coppock, Alexander and Humphreys, Macartan},
+  title = {{Declaring and Diagnosing Research Designs}},
+  journal = {American Political Science Review},
+  year = {2019},
+  volume = {113},
+  number = {3},
+  pages = {838--859},
+  doi = {10.1017/s0003055419000194}
 }
-

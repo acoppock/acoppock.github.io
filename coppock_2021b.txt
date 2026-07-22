@@ -1,7 +1,9 @@
 @article{coppock_2021b,
-    Author = {Coppock, Alexander},
-    Title = {{Review of: Paul J. Lavrakas, Michael W. Traugott, Courtney Kennedy, Allyson L. Holbrook, Edith D. de Leeuw, and Brady T. West, eds. Experimental Methods in Survey Research: Techniques That Combine Random Sampling with Random Assignment}},
-    Journal = {Public Opinion Quarterly},
-    Year = {2021},
+  author = {Coppock, Alexander},
+  title = {{Review of: Paul J. Lavrakas, Michael W. Traugott, Courtney Kennedy, Allyson L. Holbrook, Edith D. de Leeuw, and Brady T. West, eds. Experimental Methods in Survey Research: Techniques That Combine Random Sampling with Random Assignment}},
+  journal = {Public Opinion Quarterly},
+  year = {2020},
+  volume = {84},
+  number = {4},
+  pages = {1014-1016}
 }
-

@@ -1,8 +1,10 @@
 @article{baxter-king_etal_2025,
-	author = {Baxter-King, Ryan and Coppock, Alexander and Straus, Graham and Vavreck, Lynn},
-	journal = {PNAS Nexus},
-	number = {6},
-	pages = {1-11},
-	title = {Endorsements vs. information: Experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis},
-	volume = {4},
-	year = {2025}}
+  author = {Baxter-King, Ryan and Coppock, Alexander and Straus, Graham and Vavreck, Lynn},
+  title = {Endorsements vs. information: Experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis},
+  journal = {PNAS Nexus},
+  year = {2025},
+  volume = {4},
+  number = {6},
+  pages = {1-11},
+  doi = {10.1093/pnasnexus/pgaf185}
+}

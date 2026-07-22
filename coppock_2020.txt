@@ -1,10 +1,11 @@
 @incollection{coppock_2020,
-    Author = {Coppock, Alexander},
-    Title = {{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}},
-    Booktitle = {Advances in Experimental Political Science},
-    Publisher = {Cambridge University Press},
-    Year = {2020},
-    Editor = {Druckman, James N. and Donald P. Green},
-    Address = {New York},
+  author = {Coppock, Alexander},
+  editor = {Druckman, James N. and Donald P. Green},
+  title = {{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}},
+  booktitle = {Advances in Experimental Political Science},
+  year = {2020},
+  pages = {320--336},
+  publisher = {Cambridge University Press},
+  address = {New York},
+  doi = {10.1017/9781108777919.022}
 }
-

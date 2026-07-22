@@ -1,7 +1,9 @@
 @book{coppock_2022,
-    address = {Chicago},
-    author = {Alexander Coppock},
-    publisher = {University of Chicago Press},
-    series = {Chicago Studies in American Politics},
-    title = {Persuasion in Parallel: How Information Changes Minds about Politics},
-    year = {2022}}
+  author = {Alexander Coppock},
+  title = {Persuasion in Parallel: How Information Changes Minds about Politics},
+  year = {2022},
+  publisher = {University of Chicago Press},
+  address = {Chicago},
+  series = {Chicago Studies in American Politics},
+  doi = {10.7208/chicago/9780226821832.001.0001}
+}

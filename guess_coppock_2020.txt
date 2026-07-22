@@ -1,10 +1,10 @@
 @article{guess_coppock_2020,
-    Author = {Guess, Andrew and Coppock, Alexander},
-    Title = {{Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments}},
-    Journal = {British Journal of Political Science},
-    Year = {2020},
-    Volume = {50},
-    Number = {4},
-    Pages = {1497--1515},
+  author = {Guess, Andrew and Coppock, Alexander},
+  title = {{Does Counter-Attitudinal Information Cause Backlash? Results from Three Large Survey Experiments}},
+  journal = {British Journal of Political Science},
+  year = {2020},
+  volume = {50},
+  number = {4},
+  pages = {1497--1515},
+  doi = {10.1017/s0007123418000327}
 }
-
