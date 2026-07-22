@@ -1,5 +1,5 @@
 ---
-title: "Mass Reproducibility and Replicability: A New Hope"
+title: "Reproducibility and Robustness of Economics and Political Science Research"
 output:
   html_document:
     highlight: tango
@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Brodeur, Abel, 375 coauthors. 2024. <b>Mass Reproducibility and Replicability: A New Hope</b>. NA.
+Brodeur, Abel, 375 coauthors. 2026. <b>Reproducibility and Robustness of Economics and Political Science Research</b>. Nature 652: 151&ndash;156. <a href='https://doi.org/10.1038/s41586-026-10251-x' target='_blank'>doi:10.1038/s41586-026-10251-x</a>
 
 # Abstract
 NA

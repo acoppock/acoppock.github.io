@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Martin Schweinsberg, 161 coauthors. 2021. <b>Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis</b>. Organizational Behavior and Human Decision Processes.
+Martin Schweinsberg, 161 coauthors. 2021. <b>Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis</b>. Organizational Behavior and Human Decision Processes 165: 228&ndash;249.
 
 # Abstract
 NA
