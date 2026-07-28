@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Alexander Coppock. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0. <a href='https://doi.org/10.32614/cran.package.vayr' target='_blank'>doi:10.32614/cran.package.vayr</a>
+Coppock, Alexander. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0. <a href='https://doi.org/10.32614/cran.package.vayr' target='_blank'>doi:10.32614/cran.package.vayr</a>
 
 # Abstract
 NA

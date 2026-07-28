@@ -11,23 +11,23 @@ toc_float: false
 
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/declaredesign/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018a_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Neal Fultz. 2018. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.28.0. </div>
+<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, and Neal Fultz. 2018. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.28.0. <a href='https://doi.org/10.32614/cran.package.declaredesign' target='_blank'>doi:10.32614/cran.package.declaredesign</a> </div>
 </div>
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/estimatr/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018b_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Luke Sonnet. 2020. <b>estimatr: Fast Estimators for Design-Based Inference</b>. R package version 0.22.0. </div>
+<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, and Luke Sonnet. 2020. <b>estimatr: Fast Estimators for Design-Based Inference</b>. R package version 0.22.0. <a href='https://doi.org/10.32614/cran.package.estimatr' target='_blank'>doi:10.32614/cran.package.estimatr</a> </div>
 </div>
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/fabricatr/"> <img class="galleryItemImage" src="card_figures/blair_etal_2018c_card.png"/> </a>
-<div class="galleryItemDescription"> Graeme Blair, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin, Neal Fultz. 2019. <b>fabricatr: Imagine Your Data Before You Collect It</b>. R package version 0.10.0. </div>
+<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin, and Neal Fultz. 2019. <b>fabricatr: Imagine Your Data Before You Collect It</b>. R package version 0.10.0. <a href='https://doi.org/10.32614/cran.package.fabricatr' target='_blank'>doi:10.32614/cran.package.fabricatr</a> </div>
 </div>
 <div class="galleryItem">
 <a href="https://declaredesign.org/r/randomizr/"> <img class="galleryItemImage" src="card_figures/coppock_cooper_fultz_2015_card.png"/> </a>
-<div class="galleryItemDescription"> Alexander Coppock, Jasper Cooper, Neal Fultz. 2015. <b>randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling</b>. R package version 0.20.0. </div>
+<div class="galleryItemDescription"> Coppock, Alexander, Jasper Cooper, and Neal Fultz. 2015. <b>randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling</b>. R package version 0.20.0. <a href='https://doi.org/10.32614/cran.package.randomizr' target='_blank'>doi:10.32614/cran.package.randomizr</a> </div>
 </div>
 <div class="galleryItem">
 <a href="http://alexandercoppock.com/ri2/"> <img class="galleryItemImage" src="card_figures/coppock_2019c_card.png"/> </a>
-<div class="galleryItemDescription"> Alexander Coppock. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2. </div>
+<div class="galleryItemDescription"> Coppock, Alexander. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2. <a href='https://doi.org/10.32614/cran.package.ri2' target='_blank'>doi:10.32614/cran.package.ri2</a> </div>
 </div>
 </div>
 </div>

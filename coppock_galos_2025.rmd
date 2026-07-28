@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Diana Roxana Galos. 2025. <b>Toward the generalizability of the party cue effect: a meta-reanalysis of hundreds of experimental contrasts</b>. Unpublished manuscript.
+Coppock, Alexander and Diana Roxana Galos. 2025. <b>Toward the generalizability of the party cue effect: a meta-reanalysis of hundreds of experimental contrasts</b>. Unpublished manuscript.
 
 # Abstract
 NA

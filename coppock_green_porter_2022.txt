@@ -2,7 +2,7 @@
   author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
   title = {{Does Digital Advertising Affect Vote Choice? Evidence from a Randomized Field Experiment}},
   journal = {Research \& Politics},
-  year = 2022,
+  year = {2022},
   volume = {9},
   number = {1},
   pages = {1--7},

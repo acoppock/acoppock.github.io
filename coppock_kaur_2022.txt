@@ -2,7 +2,7 @@
   author = {Coppock, Alexander and Dipin Kaur},
   title = {{Qualitative Imputation of Missing Potential Outcomes}},
   journal = {American Journal of Political Science},
-  year = 2022,
+  year = {2022},
   volume = {66},
   number = {3},
   pages = {681-695},

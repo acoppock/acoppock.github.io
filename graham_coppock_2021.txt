@@ -2,7 +2,7 @@
   author = {Graham, Matthew H. and Alexander Coppock},
   title = {{Asking About Attitude Change}},
   journal = {Public Opinion Quarterly},
-  year = 2021,
+  year = {2021},
   volume = {85},
   number = {1},
   pages = {28-53},

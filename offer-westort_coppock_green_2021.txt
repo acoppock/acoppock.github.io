@@ -2,7 +2,7 @@
   author = {Offer-Westort, Molly and Alexander Coppock and Donald P. Green},
   title = {{Adaptive Experimental Design: Prospects and Applications in Political Science}},
   journal = {American Journal of Political Science},
-  year = 2021,
+  year = {2021},
   volume = {65},
   number = {4},
   pages = {826-844},

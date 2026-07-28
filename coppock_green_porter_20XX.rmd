@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander, Donald P. Green, Ethan Porter. 2023. <b>In person minting</b>. Unpublished manuscript.
+Coppock, Alexander, Donald P. Green, and Ethan Porter. 2023. <b>In person minting</b>. Unpublished manuscript.
 
 # Abstract
 NA
