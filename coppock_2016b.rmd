@@ -9,13 +9,15 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander. 2016. <b>Positive, Small, Homogeneous, and Durable: Political Persuasion in Response to Information</b>. NA.
+Coppock, Alexander. 2016. <b>Positive, Small, Homogeneous, and Durable: Political Persuasion in Response to Information</b>. PhD dissertation, Columbia University. <a href='https://doi.org/10.7916/D8J966CS' target='_blank'>doi:10.7916/D8J966CS</a>
 
 
 # Abstract
-This dissertation offers a theory of political persuasion rooted in a Bayesian model of information processing. I support this theory with the results of 20 survey experiments, conducted variously on samples of convenience, nationally representative samples, and samples of political elites. Deposited at Columbia University Academic Commons. 
+This dissertation offers a theory of political persuasion rooted in a Bayesian model of information processing. I support this theory with the results of 20 survey experiments, conducted variously on convenience samples and nationally-representative surveys. From these data, I draw four main conclusions. First, when confronted with persuasive messages, individuals update their views in the direction of information. Second, people change their minds about political issues in small increments. Third, persuasion in the direction of information occurs regardless of background characteristics, initial beliefs, or ideological position. Finally, these changes in political attitudes are not ephemeral, in most cases lasting at least 10 days.
+
+These findings stand in contrast to the predictions of the attitude polarization literature, which posits that the effects of persuasion attempts will be positive for some, but negative for others. Across these 20 experiments, I was unable to find any evidence of negative effects (defined as attitude changes away from treatment information) for any subgroup defined by standard demographics, prior attitudes, or their intersections. Instead, people appear to update their views in a manner consistent with Bayes' rule, i.e., as a weighted average of prior beliefs and new information. 
 # Links
- - <a href='https://doi.org/10.7916/D8J966CS'target='_blank'>Journal site</a>
+ - <a href='coppock_2016b.pdf' target='_blank'>Link to paper</a>
 
 
  - <a href='coppock_2016b.txt'target='_blank'>Bibtex citation</a>
