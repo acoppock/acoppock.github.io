@@ -1,0 +1,22 @@
+---
+title: "excheckr: Tools for Exploring and Checking Experimental Data"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander. 2025. <b>excheckr: Tools for Exploring and Checking Experimental Data</b>. R package version 0.1.0.
+
+# Abstract
+Functions for diagnosing, summarizing, and visualizing covariate balance, differential attrition, missingness, and data integrity in experimental datasets. Includes per-study checks that can be labelled and stacked across many studies, plus triage and uniform-reference diagnostics for the resulting collection of tests.
+
+# Links
+ - <a href='https://alexandercoppock.com/excheckr/'target='_blank'>Project site</a>
+
+
+ - <a href='excheckr.txt'target='_blank'>Bibtex citation</a>
+

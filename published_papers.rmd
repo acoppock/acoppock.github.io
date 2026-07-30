@@ -166,7 +166,7 @@ toc_float: false
 </div>
 <div class="galleryItem">
 <a href="aronow_etal_2015.html"> <img class="galleryItemImage" src="card_figures/aronow_etal_2015_card.png"/> </a>
-<div class="galleryItemDescription"> Aronow, Peter M., Alexander Coppock, Forrest W. Crawford, and Donald P. Green. 2015. <b>Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence</b>. Journal of Survey Statistics and Methodology 3(1): 43&ndash;66. </div>
+<div class="galleryItemDescription"> Aronow, Peter M., Alexander Coppock, Forrest W. Crawford, and Donald P. Green. 2015. <b>Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence</b>. Journal of Survey Statistics and Methodology 3(1): 43&ndash;66. <a href='https://doi.org/10.1093/jssam/smu023' target='_blank'>doi:10.1093/jssam/smu023</a> </div>
 </div>
 <div class="galleryItem">
 <a href="coppock_green_2015.html"> <img class="galleryItemImage" src="card_figures/coppock_green_2015_card.png"/> </a>

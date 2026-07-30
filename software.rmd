@@ -33,6 +33,22 @@ toc_float: false
 <a class="galleryItemLabel" href="https://alexandercoppock.com/vayr/">vayr: Extensions for 'ggplot2' to Visualize as You Randomize</a>
 <div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0. </div>
 </div>
+<div class="galleryItem">
+<a class="galleryItemLabel" href="https://alexandercoppock.com/excheckr/">excheckr: Tools for Exploring and Checking Experimental Data</a>
+<div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>excheckr: Tools for Exploring and Checking Experimental Data</b>. R package version 0.1.0. </div>
+</div>
+<div class="galleryItem">
+<a class="galleryItemLabel" href="https://alexandercoppock.com/metaprep/">metaprep: Tidy Preparation of Dependent Effect Estimates for Meta-Analysis</a>
+<div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>metaprep: Tidy Preparation of Dependent Effect Estimates for Meta-Analysis</b>. R package version 0.4.0. </div>
+</div>
+<div class="galleryItem">
+<a class="galleryItemLabel" href="https://alexandercoppock.com/estimatrTools/">estimatrTools: Data-Driven Covariate Adjustment for the 'estimatr' Estimators</a>
+<div class="galleryItemDescription"> Coppock, Alexander. 2026. <b>estimatrTools: Data-Driven Covariate Adjustment for the 'estimatr' Estimators</b>. R package version 0.1.0. </div>
+</div>
+<div class="galleryItem">
+<a class="galleryItemLabel" href="https://alexandercoppock.com/conjointmatchups/">conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments</a>
+<div class="galleryItemDescription"> Coppock, Alexander. 2026. <b>conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments</b>. R package version 0.0.0.9000. </div>
+</div>
 </div>
 </div>
 <!--/html_preserve-->

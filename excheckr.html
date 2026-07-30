@@ -11,7 +11,7 @@
 
 
 
-<title>Software</title>
+<title>excheckr: Tools for Exploring and Checking Experimental Data</title>
 
 <script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -30,8 +30,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <meta name="description" content="Alexander Coppock" />
 <script type="text/javascript" src="js/rmarkdown.js"></script>
@@ -57,16 +55,6 @@
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
 
 
 
@@ -211,59 +199,31 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">Software</h1>
+<h1 class="title toc-ignore">excheckr: Tools for Exploring and Checking
+Experimental Data</h1>
 
 </div>
 
 
-
-<div class="band full">
-<div class="bandContent gallerySection">
-<div class="galleryItems"> 
-
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/declaredesign/"> <img class="galleryItemImage" src="card_figures/DeclareDesign_card.png"/> </a>
-<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, and Neal Fultz. 2018. <b>DeclareDesign: Declare and Diagnose Research Designs</b>. R package version 0.28.0. </div>
+<p>Coppock, Alexander. 2025. <b>excheckr: Tools for Exploring and
+Checking Experimental Data</b>. R package version 0.1.0.</p>
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+<p>Functions for diagnosing, summarizing, and visualizing covariate
+balance, differential attrition, missingness, and data integrity in
+experimental datasets. Includes per-study checks that can be labelled
+and stacked across many studies, plus triage and uniform-reference
+diagnostics for the resulting collection of tests.</p>
 </div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/estimatr/"> <img class="galleryItemImage" src="card_figures/estimatr_card.png"/> </a>
-<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, and Luke Sonnet. 2020. <b>estimatr: Fast Estimators for Design-Based Inference</b>. R package version 0.22.0. </div>
+<div id="links" class="section level1">
+<h1>Links</h1>
+<ul>
+<li><p><a href='https://alexandercoppock.com/excheckr/'target='_blank'>Project
+site</a></p></li>
+<li><p><a href='excheckr.txt'target='_blank'>Bibtex
+citation</a></p></li>
+</ul>
 </div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/fabricatr/"> <img class="galleryItemImage" src="card_figures/fabricatr_card.png"/> </a>
-<div class="galleryItemDescription"> Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudkin, and Neal Fultz. 2019. <b>fabricatr: Imagine Your Data Before You Collect It</b>. R package version 0.10.0. </div>
-</div>
-<div class="galleryItem">
-<a href="https://declaredesign.org/r/randomizr/"> <img class="galleryItemImage" src="card_figures/randomizr_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander, Jasper Cooper, and Neal Fultz. 2015. <b>randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling</b>. R package version 0.20.0. </div>
-</div>
-<div class="galleryItem">
-<a href="https://alexandercoppock.com/ri2/"> <img class="galleryItemImage" src="card_figures/ri2_card.png"/> </a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2. </div>
-</div>
-<div class="galleryItem">
-<a class="galleryItemLabel" href="https://alexandercoppock.com/vayr/">vayr: Extensions for 'ggplot2' to Visualize as You Randomize</a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0. </div>
-</div>
-<div class="galleryItem">
-<a class="galleryItemLabel" href="https://alexandercoppock.com/excheckr/">excheckr: Tools for Exploring and Checking Experimental Data</a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>excheckr: Tools for Exploring and Checking Experimental Data</b>. R package version 0.1.0. </div>
-</div>
-<div class="galleryItem">
-<a class="galleryItemLabel" href="https://alexandercoppock.com/metaprep/">metaprep: Tidy Preparation of Dependent Effect Estimates for Meta-Analysis</a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>metaprep: Tidy Preparation of Dependent Effect Estimates for Meta-Analysis</b>. R package version 0.4.0. </div>
-</div>
-<div class="galleryItem">
-<a class="galleryItemLabel" href="https://alexandercoppock.com/estimatrTools/">estimatrTools: Data-Driven Covariate Adjustment for the 'estimatr' Estimators</a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2026. <b>estimatrTools: Data-Driven Covariate Adjustment for the 'estimatr' Estimators</b>. R package version 0.1.0. </div>
-</div>
-<div class="galleryItem">
-<a class="galleryItemLabel" href="https://alexandercoppock.com/conjointmatchups/">conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments</a>
-<div class="galleryItemDescription"> Coppock, Alexander. 2026. <b>conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments</b>. R package version 0.0.0.9000. </div>
-</div>
-</div>
-</div>
-
 
 </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->

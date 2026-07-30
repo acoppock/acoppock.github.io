@@ -1,0 +1,22 @@
+---
+title: "conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Coppock, Alexander. 2026. <b>conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments</b>. R package version 0.0.0.9000.
+
+# Abstract
+Infrastructure for the data grammar of forced-choice (paired) conjoint experiments. Provides lossless reshaping between the profile-level (long, one row per candidate profile) and task-level (wide, one row per choice task) representations, and extraction of "matchups": the subset of tasks realizing a specified contrast between the two profiles, returned with a clean binary outcome ready for estimation. Complements single-experiment estimators such as cregg, cjoint, projoint, and factorEx by producing the analysis-ready datasets they consume, and underlies the Average Feature Choice Probability (AFCP) estimand of Abramson, Kocak, Magazinnik, and Strezhnev.
+
+# Links
+ - <a href='https://alexandercoppock.com/conjointmatchups/'target='_blank'>Project site</a>
+
+
+ - <a href='conjointmatchups.txt'target='_blank'>Bibtex citation</a>
+
