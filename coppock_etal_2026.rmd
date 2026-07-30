@@ -14,5 +14,5 @@ Coppock, Alexander, Matthew Blyth, Marco M. Aviña, and Semra Sevi. 2025. <b>Pol
 # Links
 
 
- - <a href='coppock_etal_wpa.txt'target='_blank'>Bibtex citation</a>
+ - <a href='coppock_etal_2026.txt'target='_blank'>Bibtex citation</a>
 

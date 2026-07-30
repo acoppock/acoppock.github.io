@@ -1,0 +1,21 @@
+---
+title: "What do we learn from registered reports?"
+output:
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Eggers, Andrew C. and Alexander Coppock. 2026. <b>What do we learn from registered reports?</b>. Submitted to the Journal of Politics}.
+
+
+# Abstract
+In a registered report, the researcher submits a research design for review and the journal decides whether to publish the completed study before results are available. We use a formal model of the publication process to assess how registered reports affect learning when journal space is scarce. 
+# Links
+
+
+ - <a href='eggers_coppock_2026.txt'target='_blank'>Bibtex citation</a>
+

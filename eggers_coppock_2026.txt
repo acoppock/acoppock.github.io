@@ -1,0 +1,6 @@
+@unpublished{eggers_coppock_2026,
+  author = {Eggers, Andrew C. and Coppock, Alexander},
+  title = {What do we learn from registered reports?},
+  year = {2026},
+  note = {Submitted to the Journal of Politics}
+}

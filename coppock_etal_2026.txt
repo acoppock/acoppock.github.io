@@ -1,4 +1,4 @@
-@unpublished{coppock_etal_wpa,
+@unpublished{coppock_etal_2026,
   author = {Coppock, Alexander and Blyth, Matthew and Avi{\~n}a, Marco M. and Sevi, Semra},
   title = {Policy Not Identity: Generalizable Lessons from a Decade of Candidate Choice Conjoint Experiments},
   year = {2025},
