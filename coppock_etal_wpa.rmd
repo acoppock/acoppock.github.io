@@ -11,9 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, Matthew Blyth, Marco M. Aviña, and Semra Sevi. 2025. <b>Policy Not Identity: Generalizable Lessons from a Decade of Candidate Choice Conjoint Experiments</b>. Working paper.
 
-# Abstract
-NA
-
 # Links
 
 

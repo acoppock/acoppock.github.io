@@ -11,9 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Brodeur, Abel and 375 coauthors. 2026. <b>Reproducibility and Robustness of Economics and Political Science Research</b>. Nature 652: 151&ndash;156. <a href='https://doi.org/10.1038/s41586-026-10251-x' target='_blank'>doi:10.1038/s41586-026-10251-x</a>
 
-# Abstract
-NA
-
 # Links
 
 

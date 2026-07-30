@@ -11,9 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander. 2016. <b>Positive, small, homogeneous, and durable: Political persuasion in response to information</b>. NA.
 
-# Abstract
-NA
-
 # Links
 
 

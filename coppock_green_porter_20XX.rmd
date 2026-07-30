@@ -11,9 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Coppock, Alexander, Donald P. Green, and Ethan Porter. 2023. <b>In person minting</b>. Unpublished manuscript.
 
-# Abstract
-NA
-
 # Links
 
  - <a href= 'http://www.donaldgreen.com/' target='_blank'>Donald P. Green's website</a>
