@@ -183,7 +183,7 @@ toc_float: false
 <div class="galleryItems"> 
 
 <div class="galleryItem">
-<a class="galleryItemLabel" href="coppock_2025a.html">The Effects of Party Cues Are Not the Effects of Partisanship</a>
+<a href="coppock_2025a.html"> <img class="galleryItemImage" src="card_figures/coppock_2025a_card.png"/> </a>
 <div class="galleryItemDescription"> Coppock, Alexander. 2025. <b>The Effects of Party Cues Are Not the Effects of Partisanship</b>. Political Science Quarterly: 1&ndash;4. <a href='https://doi.org/10.1093/psquar/qqaf037' target='_blank'>doi:10.1093/psquar/qqaf037</a> </div>
 </div>
 <div class="galleryItem">
