@@ -9,13 +9,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2. <a href='https://doi.org/10.32614/cran.package.ri2' target='_blank'>doi:10.32614/cran.package.ri2</a>
+Coppock, Alexander. 2019. <b>ri2: Randomization Inference for Randomized Experiments</b>. R package version 0.1.2.
 
 # Abstract
 Randomization inference procedures for simple and complex randomized designs, including multi-armed trials, as described in Gerber and Green (2012). Users formally describe their randomization procedure and test statistic. The randomization distribution of the test statistic under some null hypothesis is efficiently simulated.
 
 # Links
- - <a href='http://alexandercoppock.com/ri2/'target='_blank'>Project site</a>
+ - <a href='https://alexandercoppock.com/ri2/'target='_blank'>Project site</a>
 
 
  - <a href='coppock_2019c.txt'target='_blank'>Bibtex citation</a>

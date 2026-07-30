@@ -9,12 +9,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Coppock, Alexander. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0. <a href='https://doi.org/10.32614/cran.package.vayr' target='_blank'>doi:10.32614/cran.package.vayr</a>
+Coppock, Alexander. 2025. <b>vayr: Extensions for 'ggplot2' to Visualize as You Randomize</b>. R package version 1.0.0.
 
 # Abstract
 NA
 
 # Links
+ - <a href='https://alexandercoppock.com/vayr/'target='_blank'>Project site</a>
 
 
  - <a href='coppock_2025b.txt'target='_blank'>Bibtex citation</a>
