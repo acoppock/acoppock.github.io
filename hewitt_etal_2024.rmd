@@ -16,7 +16,7 @@ Political campaigns increasingly conduct experiments to learn how to persuade vo
 
 # Links
  - <a href='hewitt_etal_2024.pdf' target='_blank'>Link to paper</a>
- - <a href='hewitt_etal_2024_all_appendicies.pdf'target='_blank'>Link to appendix</a>
+ - <a href='hewitt_etal_2024_online_appendix.pdf'target='_blank'>Link to appendix</a>
  - <a href='https://doi.org/10.1017/S0003055423001387'target='_blank'>Journal site</a>
  - <a href='https://doi.org/10.7910/DVN/LBPSSV'target='_blank'>Replication archive</a>
  - <a href='https://osf.io/q276a'target='_blank'>Preanalysis plan</a>

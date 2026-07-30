@@ -1,0 +1,8 @@
+@article{coppock_2025a,
+  author = {Coppock, Alexander},
+  title = {The Effects of Party Cues Are Not the Effects of Partisanship},
+  journal = {Political Science Quarterly},
+  year = {2025},
+  pages = {1-4},
+  doi = {10.1093/psquar/qqaf037}
+}

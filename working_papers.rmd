@@ -6,9 +6,8 @@ toc_float: false
 ---
 <!--html_preserve-->
 <div class="band full">
-<div class="bandContent gallerySection">
-<div class="galleryItems"> 
-
+<div class="bandContent gallerySection"> 
+<div class="galleryIntro">No working papers currently posted.</div> 
 </div>
 </div>
 <!--/html_preserve-->

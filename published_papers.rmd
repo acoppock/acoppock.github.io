@@ -1,5 +1,5 @@
 ---
-title: "Published Papers"
+title: "Published Works"
 output:
 html_document:
 toc_float: false
@@ -7,6 +7,21 @@ toc_float: false
 <!--html_preserve-->
 <div class="band full">
 <div class="bandContent gallerySection">
+<div class="gallerySectionTitle">Books</div>
+<div class="galleryItems"> 
+
+<div class="galleryItem">
+<a href="blair_coppock_humphreys_2023.html"> <img class="galleryItemImage" src="card_figures/blair_coppock_humphreys_2023_card.png"/> </a>
+<div class="galleryItemDescription"> Blair, Graeme, Alexander Coppock, and Macartan Humphreys. 2023. <b>Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign</b>. Princeton University Press. </div>
+</div>
+<div class="galleryItem">
+<a href="coppock_2022.html"> <img class="galleryItemImage" src="card_figures/coppock_2022_card.png"/> </a>
+<div class="galleryItemDescription"> Coppock, Alexander. 2022. <b>Persuasion in Parallel: How Information Changes Minds about Politics</b>. University of Chicago Press. <a href='https://doi.org/10.7208/chicago/9780226821832.001.0001' target='_blank'>doi:10.7208/chicago/9780226821832.001.0001</a> </div>
+</div>
+</div>
+</div>
+<div class="bandContent gallerySection">
+<div class="gallerySectionTitle">Articles</div>
 <div class="galleryItems"> 
 
 <div class="galleryItem">

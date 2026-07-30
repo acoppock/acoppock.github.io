@@ -1,0 +1,8 @@
+@article{schweinsberg_etal_2021,
+  author = {Martin Schweinsberg and 161 coauthors},
+  title = {Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis},
+  journal = {Organizational Behavior and Human Decision Processes},
+  year = {2021},
+  volume = {165},
+  pages = {228-249}
+}

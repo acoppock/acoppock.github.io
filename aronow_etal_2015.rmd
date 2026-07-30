@@ -1,5 +1,5 @@
 ---
-title: "{Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence}"
+title: "Combining List Experiment and Direct Question Estimates of Sensitive Behavior Prevalence"
 output:
   html_document:
     highlight: tango
@@ -27,4 +27,4 @@ Survey respondents may give untruthful answers to sensitive questions when asked
  - <a href='aronow_etal_2015.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
-<center><img src="display_figures/aronow_etal_2015_display.png" alt="aronow_etal_2015" width="600"></center>
+<center><img src="display_figures/aronow_etal_2015_display.jpg" alt="aronow_etal_2015" width="600"></center>

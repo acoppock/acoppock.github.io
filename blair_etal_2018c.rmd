@@ -15,7 +15,6 @@ Blair, Graeme, Jasper Cooper, Alexander Coppock, Macartan Humphreys, Aaron Rudki
 Helps you imagine your data before you collect it. Hierarchical data structures and correlated data can be easily simulated, either from random number generators or by resampling from existing data sources. This package is faster with 'data.table' and 'mvnfast' installed.
 
 # Links
- - <a href='blair_etal_2018c.pdf' target='_blank'>Link to paper</a>
  - <a href='https://declaredesign.org/r/fabricatr/'target='_blank'>Project site</a>
 
  - <a href= 'https://graemeblair.com' target='_blank'>Graeme Blair's website</a>

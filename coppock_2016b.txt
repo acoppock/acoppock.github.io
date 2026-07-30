@@ -1,0 +1,6 @@
+@phdthesis{coppock_2016b,
+  author = {Coppock, Alexander},
+  title = {Positive, small, homogeneous, and durable: Political persuasion in response to information},
+  year = {2016},
+  school = {Columbia University}
+}

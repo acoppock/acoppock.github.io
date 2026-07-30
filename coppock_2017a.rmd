@@ -1,5 +1,5 @@
 ---
-title: "{Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment}"
+title: "Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment"
 output:
   html_document:
     highlight: tango
@@ -23,4 +23,4 @@ Explanations for the failure to predict Donald Trump's win in the 2016 President
  - <a href='coppock_2017a.txt'target='_blank'>Bibtex citation</a>
 
 # Figure
-<center><img src="display_figures/coppock_2017a_display.png" alt="coppock_2017a" width="600"></center>
+<center><img src="display_figures/coppock_2017a_display.jpg" alt="coppock_2017a" width="600"></center>

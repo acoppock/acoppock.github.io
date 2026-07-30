@@ -15,7 +15,6 @@ Coppock, Alexander, Jasper Cooper, and Neal Fultz. 2015. <b>randomizr: Easy-to-U
 Generates random assignments for common experimental designs and random samples for common sampling designs.
 
 # Links
- - <a href='coppock_cooper_fultz_2015.pdf' target='_blank'>Link to paper</a>
  - <a href='https://declaredesign.org/r/randomizr/'target='_blank'>Project site</a>
 
  - <a href= 'https://www.linkedin.com/in/jasper-jack-cooper' target='_blank'>Jasper Cooper's website</a>

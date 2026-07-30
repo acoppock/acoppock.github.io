@@ -1,5 +1,5 @@
 ---
-title: "{Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign}"
+title: "Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign"
 output:
   html_document:
     highlight: tango
@@ -15,7 +15,7 @@ Blair, Graeme, Alexander Coppock, and Macartan Humphreys. 2023. <b>Research Desi
 NA
 
 # Links
- - <a href='book.declaredesign.org' target='_blank'>Link to paper</a>
+ - <a href='https://book.declaredesign.org' target='_blank'>Link to paper</a>
  - <a href='https://press.princeton.edu/books/paperback/9780691199573/research-design-in-the-social-sciences'target='_blank'>Journal site</a>
  - <a href='book.declaredesign.org'target='_blank'>Project site</a>
  - <a href='https://doi.org/10.7910/DVN/HYVPO5'target='_blank'>Replication archive</a>
