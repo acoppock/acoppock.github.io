@@ -1,7 +1,6 @@
-@manual{blair_etal_2018c,
+@manual{fabricatr,
   author = {Graeme Blair and Jasper Cooper and Alexander Coppock and Macartan Humphreys and Aaron Rudkin and Neal Fultz},
   title = {fabricatr: Imagine Your Data Before You Collect It},
   year = {2019},
-  note = {R package version 0.10.0},
-  doi = {10.32614/cran.package.fabricatr}
+  note = {R package version 0.10.0}
 }

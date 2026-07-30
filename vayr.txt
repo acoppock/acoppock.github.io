@@ -1,7 +1,6 @@
-@manual{coppock_2025b,
+@manual{vayr,
   author = {Alexander Coppock},
   title = {vayr: Extensions for 'ggplot2' to Visualize as You Randomize},
   year = {2025},
-  note = {R package version 1.0.0},
-  doi = {10.32614/cran.package.vayr}
+  note = {R package version 1.0.0}
 }

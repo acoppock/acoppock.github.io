@@ -18,5 +18,5 @@ NA
  - <a href='https://alexandercoppock.com/vayr/'target='_blank'>Project site</a>
 
 
- - <a href='coppock_2025b.txt'target='_blank'>Bibtex citation</a>
+ - <a href='vayr.txt'target='_blank'>Bibtex citation</a>
 
