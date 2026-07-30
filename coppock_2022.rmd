@@ -20,14 +20,14 @@ Many mistakenly believe that it is fruitless to try to persuade those who disagr
 
 # Links
 
- - <a href='persuasion_in_parallel_chapter_1.pdf'target='_blank'>Chapter 1</a>
- - <a href='pip_conversation_among_critics.pdf'target='_blank'>A conversation among critics</a>
- - <a href='https://press.uchicago.edu/ucp/books/book/chicago/P/bo181475008.html'target='_blank'>Link to press</a>
- - <a href='https://www.amazon.com/Persuasion-Parallel-Information-Politics-American/dp/0226821846/ref=cm_cr_arp_d_product_top?ie=UTF8'target='_blank'>Amazon</a>
- - <a href='coppock_2022.txt'target='_blank'>Bibtex citation</a>
+ - <a href='persuasion_in_parallel_chapter_1.pdf' target='_blank'>Chapter 1</a>
+ - <a href='pip_conversation_among_critics.pdf' target='_blank'>A conversation among critics</a>
+ - <a href='https://press.uchicago.edu/ucp/books/book/chicago/P/bo181475008.html' target='_blank'>Link to press</a>
+ - <a href='https://www.amazon.com/Persuasion-Parallel-Information-Politics-American/dp/0226821846/ref=cm_cr_arp_d_product_top?ie=UTF8' target='_blank'>Amazon</a>
+ - <a href='coppock_2022.txt' target='_blank'>Bibtex citation</a>
 
 # Reviews
 
- - Carlson, Taylor N. 2023. Review of <i>Persuasion in Parallel: How Information Changes Minds about Politics</i>. <b>Perspectives on Politics</b> 21(3): 1087&ndash;1088. <a href='https://doi.org/10.1017/S1537592723001299'target='_blank'>doi:10.1017/S1537592723001299</a>
- - Levendusky, Matthew. 2023. Can Information Persuade Rather Than Polarize? A Review of Alex Coppock's <i>Persuasion in Parallel</i>. <b>Political Science Quarterly</b>. <a href='https://doi.org/10.1093/psquar/qqad076'target='_blank'>doi:10.1093/psquar/qqad076</a>
+ - Carlson, Taylor N. 2023. Review of <i>Persuasion in Parallel: How Information Changes Minds about Politics</i>. <b>Perspectives on Politics</b> 21(3): 1087&ndash;1088. <a href='https://doi.org/10.1017/S1537592723001299' target='_blank'>doi:10.1017/S1537592723001299</a>
+ - Levendusky, Matthew. 2023. Can Information Persuade Rather Than Polarize? A Review of Alex Coppock's <i>Persuasion in Parallel</i>. <b>Political Science Quarterly</b>. <a href='https://doi.org/10.1093/psquar/qqad076' target='_blank'>doi:10.1093/psquar/qqad076</a>
 
