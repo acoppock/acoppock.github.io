@@ -1,6 +1,0 @@
-@manual{metaprep,
-  author = {Alexander Coppock},
-  title = {metaprep: Tidy Preparation of Dependent Effect Estimates for Meta-Analysis},
-  year = {2025},
-  note = {R package version 0.4.0}
-}

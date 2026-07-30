@@ -1,6 +1,0 @@
-@manual{randomizr,
-  author = {Alexander Coppock and Jasper Cooper and Neal Fultz},
-  title = {randomizr: Easy-to-Use Tools for Common Forms of Random Assignment and Sampling},
-  year = {2015},
-  note = {R package version 0.20.0}
-}

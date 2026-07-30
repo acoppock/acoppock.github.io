@@ -1,6 +1,0 @@
-@manual{excheckr,
-  author = {Alexander Coppock},
-  title = {excheckr: Tools for Exploring and Checking Experimental Data},
-  year = {2025},
-  note = {R package version 0.1.0}
-}

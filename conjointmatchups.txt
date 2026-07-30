@@ -1,6 +1,0 @@
-@manual{conjointmatchups,
-  author = {Alexander Coppock},
-  title = {conjointmatchups: Reshape and Extract Matchups from Forced-Choice Conjoint Experiments},
-  year = {2026},
-  note = {R package version 0.0.0.9000}
-}

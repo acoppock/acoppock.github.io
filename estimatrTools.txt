@@ -1,6 +1,0 @@
-@manual{estimatrTools,
-  author = {Alexander Coppock},
-  title = {estimatrTools: Data-Driven Covariate Adjustment for the 'estimatr' Estimators},
-  year = {2026},
-  note = {R package version 0.1.0}
-}

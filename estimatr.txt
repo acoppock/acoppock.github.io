@@ -1,6 +1,0 @@
-@manual{estimatr,
-  author = {Graeme Blair and Jasper Cooper and Alexander Coppock and Macartan Humphreys and Luke Sonnet},
-  title = {estimatr: Fast Estimators for Design-Based Inference},
-  year = {2020},
-  note = {R package version 0.22.0}
-}
