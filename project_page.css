@@ -439,7 +439,7 @@ main.content {
 }
 
 #homeContent .blue a {
-  color: #fa6fa5;
+  color: #a72f5b;
   font-weight: 600;
   text-decoration: none;
 }
@@ -450,25 +450,48 @@ main.content {
 
 /* The footer band carried the same blue. */
 #rStudioFooter.band.full {
-  background-color: #004c6d;
-  color: #FBFAF7;
+  background-color: #FBFAF7;
+  color: #6B7078;
+  border-top: 1px solid #E4E0D8;
+}
+
+#rStudioFooter .footerLogo {
+  filter: brightness(0) saturate(100%);
+  opacity: 0.5;
+}
+
+#rStudioFooter .footerLogo:hover {
+  opacity: 0.85;
 }
 
 /* The header carried a near-white background of its own, so it sat as a white
    strip above the parchment page. */
+/* The header now matches the pkgdown bar: parchment ground, a hairline rule,
+   the name in the heading serif and the nav in quiet sans. Teal chrome made
+   the site and the packages look like two different projects, which was the
+   opposite of the point. */
 #rStudioHeader,
 #rStudioHeader.shrunk {
-  background-color: #004c6d;
-  border-bottom: none;
+  background-color: #FBFAF7;
+  border-bottom: 1px solid #E4E0D8;
 }
 
-#rStudioHeader .productName,
-#rStudioHeader .menuItem {
-  color: #FBFAF7 !important;
+#rStudioHeader .productName {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #3C444C !important;
 }
 
-#rStudioHeader .menuItem:hover {
-  color: #fa6fa5 !important;
+#rStudioHeader #menu .menuItem {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6B7078 !important;
+  opacity: 1;
+}
+
+#rStudioHeader #menu .menuItem:hover {
+  color: #a72f5b !important;
 }
 
 /* On the home page the band sits directly under the header, so the sliver of
@@ -479,14 +502,10 @@ main.content {
    selector matched nothing, because Quarto's body class is just `quarto-light`.
    The 80px comes from .standardPadding, and the width breakout is the standard
    full-bleed trick for an element inside a centred column. */
-#homeContent {
-  margin-top: -80px;
-}
-
 #homeContent .band.full {
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
 }
 
 #homeContent .band.full .bandContent {
