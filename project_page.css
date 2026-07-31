@@ -555,23 +555,29 @@ main.content {
   font-style: italic;
 }
 
-.bibHeading {
+/* Two levels, as in the CV: the section takes the rule so it reads as the
+   heavier break, and the year sits under it without one. */
+.bibSection {
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 600;
-  margin-bottom: 6px;
+  border-bottom: 1px solid #E4E0D8;
+  padding-bottom: 5px;
+  margin: 46px 0 16px;
+}
+
+.bibliography .bibSection:first-child {
+  margin-top: 0;
 }
 
 /* The year carries what a CV puts in the left margin, so the entries beneath
    it never repeat it. */
 .bibYear {
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #6B7078;
-  border-bottom: 1px solid #E4E0D8;
-  padding-bottom: 4px;
-  margin: 30px 0 12px;
+  margin: 24px 0 9px;
 }
 
 /* A hanging indent, so the author name that starts each entry is the only
