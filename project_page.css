@@ -263,6 +263,7 @@ main.content {
    reads as citation-like in prose but as clutter in the nav and the link row.
    Underline on hover only, so the affordance survives. */
 .menuItem,
+.galleryItemLabel,
 .workLinks a,
 .workCitation a,
 .galleryItemDescription a,
@@ -272,6 +273,7 @@ main.content {
 }
 
 .menuItem:hover,
+.galleryItemLabel:hover,
 .workLinks a:hover,
 .workCitation a:hover,
 .galleryItemDescription a:hover {
@@ -383,17 +385,30 @@ main.content {
   display: block;
 }
 
+.galleryItems .galleryItemDescription b {
+  font-weight: 600;
+}
+
 .galleryItems .galleryItemDescription {
   font-size: 0.875rem;
   line-height: 1.45;
   padding: 0.6rem 0.75rem 0.9rem 0.75rem;
 }
 
+/* A package with no hex yet gets a square of the same footprint carrying its
+   name, so the grid stays even and the gap is legible rather than being a
+   short label floating in white space. */
 .galleryItems .galleryItemLabel {
-  display: block;
-  padding: 2.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
   font-weight: 600;
+  font-size: 1.15rem;
+  background: var(--code-bg, #F4F0E8);
+  border-bottom: 1px solid var(--rule-color, #E2DCD2);
 }
 
 /* A hex must not be cropped, and a note's first page is portrait, so both are

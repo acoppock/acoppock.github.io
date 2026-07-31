@@ -201,6 +201,11 @@ build_slice <- function(root = ".", show_figure = TRUE) {
       left_join(harvest$assets |> filter(role == "card") |> select(work_id, card = file),
                 by = "work_id") |>
       mutate(
+        # A package citation opens with "name: what it does", and the name is
+        # the part a reader scans for, so it is bolded on its own rather than
+        # the whole title being bold.
+        citation = str_replace(citation, "<b>([^:<]+): ", "<b>\\1</b>: "),
+        citation = str_replace(citation, "</b>\\.", "."),
         card_src = map2_chr(work_id, card, function(id, f) {
           if (is.na(f)) return(NA_character_)
           hit <- c(file.path(works_dir(root), id, "assets", f),
