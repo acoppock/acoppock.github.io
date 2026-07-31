@@ -439,7 +439,7 @@ main.content {
 }
 
 #homeContent .blue a {
-  color: #f2b8cb;
+  color: #fa6fa5;
   font-weight: 600;
   text-decoration: none;
 }
@@ -468,17 +468,45 @@ main.content {
 }
 
 #rStudioHeader .menuItem:hover {
-  color: #f2b8cb !important;
+  color: #fa6fa5 !important;
 }
 
 /* On the home page the band sits directly under the header, so the sliver of
    parchment between two teal blocks reads as a mistake. Flush, and full width,
    which is what "band full" was always meant to be. */
-#homeContent .band.full.first {
-  margin-top: 0;
-  padding-top: 0;
+/* The home band goes flush to the header and edge to edge. `#homeContent`
+   exists only on the home page, so it is the hook; my earlier `.template-index`
+   selector matched nothing, because Quarto's body class is just `quarto-light`.
+   The 80px comes from .standardPadding, and the width breakout is the standard
+   full-bleed trick for an element inside a centred column. */
+#homeContent {
+  margin-top: -80px;
 }
 
-.template-index .standardPadding {
-  padding-top: 0;
+#homeContent .band.full {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+#homeContent .band.full .bandContent {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* One typographic system in the header. The name and the menu items differed
+   in size and the items carried opacity 0.8, so they read as two unrelated
+   pieces of furniture rather than one bar. Same family, same weight, same
+   colour, and the name steps down so the two sit in proportion. */
+#rStudioHeader .productName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+#rStudioHeader #menu .menuItem {
+  font-size: 1.15rem;
+  font-weight: 600;
+  opacity: 1;
+  letter-spacing: -0.01em;
 }
