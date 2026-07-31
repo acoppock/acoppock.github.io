@@ -125,7 +125,7 @@ build_site_chrome <- function(root = ".") {
 
   notes <- tribble(
     ~href, ~thumb, ~title, ~extra,
-    "note_Random_Assignment_Subject_To_Constraints.pdf",
+    "subpages/note_Random_Assignment_Subject_To_Constraints.pdf",
       "note_Random_Assignment_Subject_To_Constraints.png",
       "Random assignment subject to constraints", "",
     "subpages/counterfactual_format.html", "counterfactual_format.png",

@@ -220,8 +220,14 @@ build_slice <- function(root = ".", show_figure = TRUE) {
 
     for (k in seq_len(nrow(tiles))) {
       if (!tiles$has_hex[k]) next
-      src <- file.path(works_dir(root), tiles$work_id[k], "assets", tiles$card[k])
-      if (file.exists(src)) {
+      # A package hex has no recipe, so it lives in original_materials rather
+      # than assets. Looking in one place only lost ri2's card silently, and the
+      # tile then fell back to a placeholder as though the hex did not exist.
+      src <- c(file.path(works_dir(root), tiles$work_id[k], "assets", tiles$card[k]),
+               file.path(works_dir(root), tiles$work_id[k], "original_materials", tiles$card[k])) |>
+        keep(file.exists) |>
+        head(1)
+      if (length(src)) {
         file.copy(src, file.path(slice_dir, "card_figures", tiles$card[k]), overwrite = TRUE)
       }
     }
