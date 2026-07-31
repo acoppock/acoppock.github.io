@@ -439,20 +439,28 @@ main.content {
 }
 
 #homeContent .blue a {
-  color: #a72f5b;
+  color: #FBFAF7;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #fa6fa5;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22em;
 }
 
 #homeContent .blue a:hover {
-  text-decoration: underline;
+  text-decoration-color: #FBFAF7;
 }
 
 /* The footer band carried the same blue. */
 #rStudioFooter.band.full {
   background-color: #FBFAF7;
-  color: #6B7078;
+  color: #004c6d;
   border-top: 1px solid #E4E0D8;
+  font-size: 15.2px;
+}
+
+#rStudioFooter #copyright {
+  color: #004c6d;
 }
 
 #rStudioFooter .footerLogo {
@@ -476,21 +484,28 @@ main.content {
   border-bottom: 1px solid #E4E0D8;
 }
 
+/* Measured off a built pkgdown site rather than approximated: the brand is
+   Source Serif 4 at 19.2px weight 600, the nav links Source Sans 3 at 15.2px
+   weight 400. Teal instead of the near-black, which is Alex's second colour
+   and ties the chrome to the identity without shouting. */
 #rStudioHeader .productName {
   font-family: "Source Serif 4", Georgia, serif !important;
-  font-size: 1.35rem;
+  font-size: 19.2px;
   font-weight: 600;
-  color: #3C444C !important;
+  color: #004c6d !important;
 }
 
 #rStudioHeader #menu .menuItem {
-  font-size: 1rem;
+  font-family: "Source Sans 3", -apple-system, sans-serif;
+  font-size: 15.2px;
   font-weight: 400;
-  color: #6B7078 !important;
+  color: #004c6d !important;
   opacity: 1;
 }
 
-#rStudioHeader #menu .menuItem:hover {
+/* pkgdown lifts a nav item to the primary colour on hover. */
+#rStudioHeader #menu .menuItem:hover,
+#rStudioHeader .productName:hover {
   color: #a72f5b !important;
 }
 
