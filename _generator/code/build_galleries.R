@@ -109,3 +109,117 @@ build_galleries <- function(root = ".") {
   counts <- published |> count(kind)
   list(sections = counts, n_published = nrow(published), n_working = nrow(working))
 }
+
+# The home page bibliography (Alex, 2026-07-31): the same works the galleries
+# show, as CV-style text below the fold. It is an alternative way in, not a
+# replacement, so the galleries are untouched.
+#
+# The structure is the CV's own. Sections in the CV's order, and within a
+# section, year subheadings where the section is long enough to need them and
+# the year folded into the entry where it is not. That is why `year_headings`
+# is a column rather than a rule inferred from the row count: which sections
+# get subheadings is a judgement about how the page reads, so it is written
+# down where it can be seen and changed.
+bib_sections <- tribble(
+  ~title,                          ~kind,           ~year_headings,
+  "Books",                         "book",          FALSE,
+  "Articles",                      "article",       TRUE,
+  "Software",                      "software",      FALSE,
+  "Book reviews",                  "review",        FALSE,
+  "Crowdsourced collaborations",   "crowdsourced",  FALSE,
+  "Dissertation",                  "dissertation",  FALSE
+)
+
+bibliography_entry <- function(it, show_year) {
+  authors <- format_authors(it$author_parsed[[1]])
+
+  # Software has no PDF and no project page, so its title goes to its pkgdown
+  # site. Everything else prefers the PDF and falls back to its project page.
+  title_href <- coalesce(it$paper_url, it$project_url, str_c(it$work_id, ".html"))
+
+  out <- str_c(
+    '<div class="bibEntry">',
+    str_remove(authors, "\\.$"), '. ',
+    '<a class="bibTitle" href="', title_href, '">', it$title, '</a>.'
+  )
+
+  venue <- coalesce(it$journal, it$booktitle, it$publisher, it$type, it$school, it$note)
+  if (!is.na(venue)) {
+    # "R package version 1.0.0" is a note, not a venue, so it is not set in the
+    # italic a journal name gets.
+    is_venue <- !is.na(coalesce(it$journal, it$booktitle, it$publisher, it$type, it$school))
+    vol <- if (!is.na(it$volume)) str_c(" ", it$volume) else ""
+    num <- if (!is.na(it$number)) str_c("(", it$number, ")") else ""
+    pgs <- if (!is.na(it$pages)) str_c(": ", str_replace_all(it$pages, "-+", "–")) else ""
+    series <- if (is.na(it$journal) && !is.na(it$series)) str_c(", ", it$series) else ""
+    body <- if (is_venue) str_c('<i>', venue, '</i>') else venue
+    out <- str_c(out, ' ', body, series, vol, num, pgs)
+    # Under a year subheading the year is already stated; without one it goes
+    # here, which is where the CV puts it.
+    out <- str_c(out, if (show_year) str_c(", ", it$year, ".") else ".")
+  } else if (show_year) {
+    out <- str_c(out, " ", it$year, ".")
+  }
+
+  if (!is.na(it$journal_url)) {
+    is_doi <- str_detect(it$journal_url, "doi\\.org/")
+    label <- if (is_doi) {
+      str_c("doi:", str_remove(it$journal_url, "^https?://(dx\\.)?doi\\.org/"))
+    } else {
+      # A publisher page rather than a DOI. The bare URL ran to three lines, so
+      # the host stands in for it.
+      str_remove(str_extract(it$journal_url, "^https?://[^/]+"), "^https?://(www\\.)?")
+    }
+    out <- str_c(out, ' <a class="bibDoi" href="', it$journal_url, '" target="_blank">',
+                 label, '</a>')
+  }
+
+  # Software gets no marker: build_slice gives it no project page to point at.
+  if (it$kind != "software") {
+    out <- str_c(out, ' <a class="bibMore" href="', it$work_id,
+                 '.html" title="Project page">&#9656;</a>')
+  }
+  str_c(out, '</div>')
+}
+
+build_bibliography <- function(root = ".") {
+  harvest <- harvest_works(root)
+
+  works <- harvest$works |>
+    filter(stage == "published") |>
+    left_join(harvest$bib, by = "bibtex_key") |>
+    left_join(harvest$links |> filter(slot == "paper") |> select(work_id, paper_url = target),
+              by = "work_id") |>
+    left_join(harvest$links |> filter(slot == "journal") |> select(work_id, journal_url = target),
+              by = "work_id") |>
+    left_join(harvest$links |> filter(slot == "project") |> select(work_id, project_url = target),
+              by = "work_id")
+
+  blocks <- bib_sections |>
+    pmap_chr(function(title, kind, year_headings) {
+      items <- works |>
+        filter(.data$kind == .env$kind) |>
+        arrange(desc(as.numeric(year)), work_id)
+      if (!nrow(items)) return("")
+
+      entries <- if (year_headings) {
+        # Split by year in the order the arrange produced. group_by/group_map
+        # would re-sort the groups ascending and put 2013 at the top.
+        unique(items$year) |>
+          map_chr(function(y) {
+            rows <- items |> filter(year == y)
+            str_c('<div class="bibYear">', y, '</div>\n',
+                  str_flatten(map_chr(seq_len(nrow(rows)),
+                                      ~ bibliography_entry(rows[.x, ], show_year = FALSE)), "\n"))
+          }) |>
+          str_flatten("\n")
+      } else {
+        str_flatten(map_chr(seq_len(nrow(items)),
+                            ~ bibliography_entry(items[.x, ], show_year = TRUE)), "\n")
+      }
+
+      str_c('<div class="bibSection">', title, '</div>\n', entries)
+    })
+
+  str_c('<div class="bibliography">\n', str_flatten(discard(blocks, ~ .x == ""), "\n"), '\n</div>')
+}

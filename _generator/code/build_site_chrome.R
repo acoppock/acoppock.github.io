@@ -10,6 +10,7 @@
 # own CSS is written against them.
 
 source("code/harvest_works.R")
+source("code/build_galleries.R")
 
 # The nav, footer and stylesheets are SOURCE, not build output, so they live in
 # works/site_chrome/ rather than being read back out of the published repo. They
@@ -40,7 +41,11 @@ build_site_chrome <- function(root = ".") {
   typography <- str_detect(css, 'font-family: "Source Sans Pro"') |
     str_detect(css, "^  color: #404040;") |
     str_detect(css, "^  background-color:#fff;") |
-    str_detect(css, "^  line-height: 1.7em;")
+    str_detect(css, "^  line-height: 1.7em;") |
+    # The gold #fcbf49 is the old cosmo home-page link colour. It applies to
+    # every link inside #homeContent at id specificity, so the bibliography's
+    # own colours lost to it silently.
+    str_detect(css, "^  color: #fcbf49;")
   write_lines(css[!typography], file.path(slice, "css", "rmarkdown.css"))
   dir.create(file.path(slice, "images"), showWarnings = FALSE)
   file.copy(list.files(file.path(root, "site_images"), full.names = TRUE),
@@ -114,7 +119,10 @@ build_site_chrome <- function(root = ".") {
     'You can find my <a href="coppock_cv.pdf">CV here</a>.</div>\n',
     '</div>\n</div>\n',
     '<img class="imageTwo" src="images/front_page.png"/>\n',
-    '</div>\n</div>\n'
+    '</div>\n',
+    # Below the fold: the same published works the gallery shows, as text.
+    build_bibliography(root), '\n',
+    '</div>\n'
   ), file.path(slice, "index.qmd"))
 
   # Notes stays hand-curated by decision: generating it from a directory would

@@ -34,7 +34,7 @@ classify <- function(target) {
   )
 }
 
-check_links <- function(site = "/Users/alexandercoppock/git_projects/acoppock.github.io/_build/_site",
+check_links <- function(site = "/Users/alexandercoppock/git_projects/acoppock_site_build/_site",
                         external = FALSE, workers = 8) {
   pages <- list.files(site, pattern = "\\.html$", full.names = TRUE)
 

@@ -12,7 +12,7 @@ source("code/build_project_page.R")
 # The built site does not live in Dropbox (Alex, 2026-07-31): it belongs only
 # in the git repo. The build directory sits beside the repo, is gitignored, and
 # is regenerable from works/ at any time, so nothing of value lives here.
-slice_dir <- "/Users/alexandercoppock/git_projects/acoppock.github.io/_build"
+slice_dir <- "/Users/alexandercoppock/git_projects/acoppock_site_build"
 
 link_labels <- c(
   paper = "Link to paper",
@@ -258,6 +258,39 @@ publish_assets <- function(root = ".") {
   # flat files this function owns are swept; Quarto's own output is left alone.
   owned <- list.files(out, pattern = "\\.(pdf|txt)$", full.names = TRUE)
   if (length(owned)) file.remove(owned)
+
+  # The generator, copied onto the site so the code that produces it has a
+  # history in the same repository. It was a one-time hand copy and had already
+  # drifted from works/code in four files by 2026-07-31, so it is build output
+  # now. The script list is explicit rather than a glob: a retired script must
+  # not reappear here just because it is still sitting in the directory.
+  gen <- file.path(out, "_generator")
+  dir.create(file.path(gen, "code"), recursive = TRUE, showWarnings = FALSE)
+  pipeline_scripts <- c("harvest_works.R", "read_bib.R", "build_slice.R",
+                        "build_project_page.R", "build_galleries.R",
+                        "build_site_chrome.R", "check_links.R",
+                        "make_bib_files.R", "make_card_images.R",
+                        "make_page1_thumbnails.R")
+  file.copy(file.path(root, "code", pipeline_scripts), file.path(gen, "code"),
+            overwrite = TRUE)
+  file.copy("/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss", gen,
+            overwrite = TRUE)
+  for (f in c("README.md", "new_site_plan.md", "port_audit_20260730.md",
+              "retired_urls.txt")) {
+    src <- file.path(root, "notes", f)
+    if (file.exists(src)) file.copy(src, gen, overwrite = TRUE)
+  }
+
+  # The custom domain. It lived only at the repo root, which meant the built
+  # tree was not a complete description of what should be published and an
+  # rsync --delete would have taken the domain down. Emitted here so the build
+  # output is authoritative and the sync can safely delete what it does not
+  # produce.
+  write_lines("alexandercoppock.com", file.path(out, "CNAME"))
+
+  # Without this Pages runs Jekyll, which skips every path beginning with an
+  # underscore. _generator/ would silently not be served.
+  write_lines("", file.path(out, ".nojekyll"))
 
   # Every non-URL link target: papers, appendices, and the book's extra PDFs.
   # Link targets AND published_files: the second are live citable URLs that no
