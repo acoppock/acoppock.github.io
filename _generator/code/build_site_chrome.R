@@ -137,19 +137,24 @@ build_site_chrome <- function(root = ".") {
       " with <a href=\"https://mollyow.github.io/\">Molly Offer-Westort</a>"
   )
 
-  note_cards <- notes |>
+  # Same card-and-description pattern as the papers and software galleries
+  # (Alex, 2026-07-31). The description carries the note's title and, where
+  # there is one, the coauthor, which is what a gallery caption does elsewhere.
+  note_items <- notes |>
     glue_data(
-      "<div class='noteCard'>",
-      "<a href='{href}'><img src='note_thumbs/{thumb}' alt='{title}'/></a>",
-      "<div class='noteCardTitle'><a href='{href}'>{title}</a>{extra}</div>",
+      "<div class='galleryItem'>\n",
+      "<a href='{href}'> <img class='galleryItemImage' src='note_thumbs/{thumb}'/> </a>\n",
+      "<div class='galleryItemDescription'> <b>{title}</b>{extra} </div>\n",
       "</div>"
     ) |>
     str_flatten("\n")
 
   write_lines(str_c(
     '---\ntitle: ""\npagetitle: "Notes"\n---\n\n',
-    '<div class="noteGrid">\n', note_cards, '\n</div>\n'
-  ), file.path(slice, "notes.qmd"))
+    '<div class="noteGallery">\n<div class="galleryItems">\n',
+    note_items,
+    '\n</div>\n</div>\n'
+  ), file.path(slice_dir, "notes.qmd"))
 
   invisible(TRUE)
 }

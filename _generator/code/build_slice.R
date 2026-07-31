@@ -187,50 +187,50 @@ build_slice <- function(root = ".", show_figure = TRUE) {
   # was invisible for so long.
   software <- harvest$works |> filter(kind == "software")
   if (nrow(software)) {
+    # The same card-and-description pattern as the papers gallery (Alex,
+    # 2026-07-31). A single wrapper class carries the software-specific styling,
+    # because pandoc keeps only the first class of a raw HTML div and a second
+    # class on the item would be silently dropped.
+    cites <- harvest$bib |>
+      mutate(citation = map_chr(seq_len(n()), ~ format_citation(harvest$bib[.x, ]))) |>
+      select(bibtex_key, citation, title)
+
     tiles <- software |>
       left_join(harvest$links |> filter(slot == "project"), by = "work_id") |>
-      left_join(harvest$bib |> select(bibtex_key, title), by = "bibtex_key") |>
+      left_join(cites, by = "bibtex_key") |>
       left_join(harvest$assets |> filter(role == "card") |> select(work_id, card = file),
                 by = "work_id") |>
       mutate(
-        has_hex = !is.na(card),
-        # The package name, not the bib title: a tile is an icon with a label,
-        # and "ri2: Randomization Inference for Randomized Experiments" is a
-        # sentence rather than a label.
-        name = work_id,
-        blurb = str_remove(title, "^[^:]+:\\s*"),
-        tile = if_else(
-          has_hex,
-          str_c("<a class='softwareTile' href='", target, "'>",
-                "<img src='card_figures/", card, "' alt='", name, "'/>",
-                "<span class='tileName'>", name, "</span>",
-                "<span class='tileBlurb'>", blurb, "</span></a>"),
-          str_c("<a class='softwareTile noHex' href='", target, "'>",
-                "<span class='tileName'>", name, "</span>",
-                "<span class='tileBlurb'>", blurb, "</span></a>")
+        card_src = map2_chr(work_id, card, function(id, f) {
+          if (is.na(f)) return(NA_character_)
+          hit <- c(file.path(works_dir(root), id, "assets", f),
+                   file.path(works_dir(root), id, "original_materials", f)) |>
+            keep(file.exists)
+          if (length(hit)) hit[1] else NA_character_
+        }),
+        has_card = !is.na(card_src),
+        item = if_else(
+          has_card,
+          str_c("<div class='galleryItem'>\n",
+                "<a href='", target, "'> <img class='galleryItemImage' src='card_figures/", card, "'/> </a>\n",
+                "<div class='galleryItemDescription'> ", citation, " </div>\n</div>"),
+          str_c("<div class='galleryItem'>\n",
+                "<a class='galleryItemLabel' href='", target, "'>", work_id, "</a>\n",
+                "<div class='galleryItemDescription'> ", citation, " </div>\n</div>")
         )
       )
 
     write_lines(str_c(
       '---\ntitle: ""\npagetitle: "Software"\n---\n\n',
-      '<div class="softwareGrid">\n',
-      str_flatten(tiles$tile, "\n"),
-      '\n</div>\n'
+      '<div class="softwareGallery">\n<div class="galleryItems">\n',
+      str_flatten(tiles$item, "\n"),
+      '\n</div>\n</div>\n'
     ), file.path(slice_dir, "software.qmd"))
 
-    for (k in seq_len(nrow(tiles))) {
-      if (!tiles$has_hex[k]) next
-      # A package hex has no recipe, so it lives in original_materials rather
-      # than assets. Looking in one place only lost ri2's card silently, and the
-      # tile then fell back to a placeholder as though the hex did not exist.
-      src <- c(file.path(works_dir(root), tiles$work_id[k], "assets", tiles$card[k]),
-               file.path(works_dir(root), tiles$work_id[k], "original_materials", tiles$card[k])) |>
-        keep(file.exists) |>
-        head(1)
-      if (length(src)) {
-        file.copy(src, file.path(slice_dir, "card_figures", tiles$card[k]), overwrite = TRUE)
-      }
-    }
+    dir.create(file.path(slice_dir, "card_figures"), showWarnings = FALSE)
+    walk2(tiles$card_src, tiles$card, function(src, f) {
+      if (!is.na(src)) file.copy(src, file.path(slice_dir, "card_figures", f), overwrite = TRUE)
+    })
   }
 
   invisible(harvest)

@@ -126,51 +126,6 @@ table.workLinks td a + a::before {
   display: block;
 }
 
-/* Software tiles, 2026-07-31. A hex is a label, so the tile leads with the
-   image and names the package under it rather than printing the bib title.
-   Five of the ten packages have no hex: those render as a marked placeholder
-   tile rather than a bare link, so the gap is visible. Drawing the missing
-   nine was already logged as a facelift deliverable. */
-.softwareGrid {
-  display: grid;
-  /* minmax(0, 1fr), not 1fr: a bare 1fr will not shrink below its content
-     width, so the long citations forced unequal columns (measured at
-     81px / 250px / 72px / 72px). */
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem 1.5rem;
-  align-items: start;
-  margin: 2rem 0;
-}
-
-.softwareTile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.softwareTile img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin-bottom: 0.6rem;
-}
-
-.softwareTile .tileName {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.softwareTile .tileBlurb {
-  font-size: 0.85rem;
-  color: var(--muted-color, #5C554B);
-  margin-top: 0.2rem;
-  line-height: 1.35;
-}
-
 /* No hex yet: a placeholder of the same footprint keeps the grid even and
    makes the missing artwork legible rather than invisible. */
 .softwareTile.noHex {
@@ -373,39 +328,6 @@ main.content {
   font-weight: 600;
 }
 
-/* Notes as cards, same footprint logic as the galleries. */
-.noteGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem 1.5rem;
-  margin: 2rem 0;
-  max-width: 1360px;
-}
-
-.noteCard img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1.3;
-  object-fit: cover;
-  object-position: top center;
-  border: 1px solid var(--rule-color, #E2DCD2);
-  display: block;
-}
-
-.noteCardTitle {
-  font-size: 0.9rem;
-  line-height: 1.45;
-  padding-top: 0.6rem;
-}
-
-.noteCardTitle a {
-  font-weight: 600;
-}
-
-@media (max-width: 800px) {
-  .noteGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
 /* A slim pipe between links, drawn as a border on the element rather than a
    pseudo-element: a 1px pseudo in a light warm grey rendered so faintly it read
    as no separator at all. */
@@ -435,4 +357,59 @@ main.content {
 
 .noteCardTitle a:hover {
   text-decoration: underline;
+}
+
+/* One gallery pattern for papers, software and notes (Alex, 2026-07-31).
+   The shared rules are keyed on .galleryItems rather than on .gallerySection,
+   so every gallery inherits the same square card and caption. */
+.galleryItems {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+  justify-content: start;
+}
+
+.galleryItems .galleryItem {
+  width: auto;
+  border: 1px solid #f0f0f0;
+}
+
+.galleryItems .galleryItemImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryItems .galleryItemDescription {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  padding: 0.6rem 0.75rem 0.9rem 0.75rem;
+}
+
+.galleryItems .galleryItemLabel {
+  display: block;
+  padding: 2.5rem 0.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* A hex must not be cropped, and a note's first page is portrait, so both are
+   fitted inside the square rather than filled to it. */
+.softwareGallery .galleryItemImage,
+.noteGallery .galleryItemImage {
+  object-fit: contain;
+  object-position: top center;
+  background: #fff;
+}
+
+.softwareGallery .galleryItems,
+.noteGallery .galleryItems {
+  max-width: 1360px;
+}
+
+@media (max-width: 800px) {
+  .galleryItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
