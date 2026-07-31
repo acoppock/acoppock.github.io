@@ -536,3 +536,88 @@ main.content {
 /* (An earlier version of these rules lived here and, having the same
    specificity but appearing later in the file, silently overrode the measured
    pkgdown metrics below. Removed 2026-07-31.) */
+
+/* The home page bibliography, 2026-07-31. The gallery answers "show me the
+   work"; this answers "what has he written", which is a scanning task that
+   plain text does better than 44 thumbnails. All 44 entries are 21 KB of HTML,
+   about a tenth of one card image, so they all render at once: there is nothing
+   for lazy loading to save. */
+.bibliography {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 70px 5% 90px;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* reset.css sets `font: inherit` on every element, which silently takes the
+   slant off <i> along with everything else. */
+.bibEntry i {
+  font-style: italic;
+}
+
+.bibHeading {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* The year carries what a CV puts in the left margin, so the entries beneath
+   it never repeat it. */
+.bibYear {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6B7078;
+  border-bottom: 1px solid #E4E0D8;
+  padding-bottom: 4px;
+  margin: 30px 0 12px;
+}
+
+/* A hanging indent, so the author name that starts each entry is the only
+   thing on the left edge and the list scans down the surnames. */
+.bibEntry {
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 11px;
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+
+.bibTitle {
+  color: #a72f5b;
+  text-decoration: none;
+}
+
+.bibTitle:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.bibDoi {
+  font-size: 0.85em;
+  color: #6B7078;
+  text-decoration: none;
+}
+
+.bibDoi:hover {
+  color: #a72f5b;
+}
+
+/* The project page is the third destination and the least urgent of the three,
+   so it is a marker rather than a fourth run of link text. */
+.bibMore {
+  color: #D6D1C6;
+  text-decoration: none;
+  padding-left: 0.15em;
+}
+
+.bibMore:hover {
+  color: #a72f5b;
+}
+
+@media (max-width: 600px) {
+  .bibliography { padding: 0 6% 60px; }
+  .bibEntry { font-size: 15px; }
+}

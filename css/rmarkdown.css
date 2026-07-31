@@ -410,12 +410,10 @@ p {
 
 #homeContent a {
   text-decoration: none;
-  color: #fcbf49;
   /* color: #2780e3; */
 }
 
 #homeContent .blue a {
-  color: #fcbf49;
   font-weight: normal;
 }
 
