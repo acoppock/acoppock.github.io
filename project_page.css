@@ -691,3 +691,19 @@ main.content {
     position: relative;
   }
 }
+
+/* Prose-only pages: the 404 and the redirect stubs. They were using
+   .workHeader with no .workCard, so the body landed in the 170px card column
+   and wrapped at about 215px. A single class, because pandoc keeps only the
+   first class of a raw HTML div. */
+.workProse {
+  max-width: 640px;
+  margin-bottom: 3rem;
+}
+
+.workProse h1 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}

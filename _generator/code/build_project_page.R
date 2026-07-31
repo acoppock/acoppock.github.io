@@ -201,7 +201,23 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
   # `title: ""` because the page prints its own <h1> inside the header grid,
   # beside the card. Quarto's own title would sit above and duplicate it.
   str_c(
-    '---\ntitle: ""\npagetitle: "', str_replace_all(entry$title, '"', "'"), '"\n---\n\n',
+    '---\ntitle: ""\npagetitle: "', str_replace_all(entry$title, '"', "'"), '"\n',
+    og_front_matter(
+      page_title = entry$title,
+      # The abstract is the description where there is one; the citation says
+      # at least what the work is where there is not.
+      # The citation carries link markup, which must not reach a meta tag.
+      description = if (!is.na(abstract)) abstract else str_remove_all(citation, "<[^>]+>"),
+      image = if (file.exists(file.path(works_dir(root), work_id, "assets",
+                                        str_c(work_id, "_card.png")))) {
+        str_c("card_figures/", work_id, "_card.png")
+      } else {
+        "images/front_page.png"
+      },
+      url = str_c(work_id, ".html"),
+      type = "article"
+    ),
+    '---\n\n',
     # Custom content sits directly under the links, above the figure (Alex,
     # 2026-07-31). It matters for coppock_2014, where the correction notice must
     # be read before the figure it applies to; a book's reviews are unaffected,

@@ -86,7 +86,11 @@ build_galleries <- function(root = ".") {
                      overwrite = TRUE))
 
   page <- str_c(
-    '---\ntitle: ""\npagetitle: "Published Works"\n---\n\n',
+    '---\ntitle: ""\npagetitle: "Published work"\n',
+    og_front_matter("Published work | Alexander Coppock",
+                    "Books, articles, book reviews and crowdsourced collaborations by Alexander Coppock, Associate Professor of Political Science at Northwestern University.",
+                    "images/front_page.png", "published_papers.html"),
+    '---\n\n',
     '<div class="band full">\n<div class="bandContent gallerySection">\n',
     str_flatten(blocks[nzchar(blocks)], "\n\n"),
     '\n</div>\n</div>\n'
@@ -102,7 +106,11 @@ build_galleries <- function(root = ".") {
     "There are no working papers posted at the moment."
   } else ""
   write_lines(
-    str_c('---\ntitle: ""\npagetitle: "Working Papers"\n---\n\n', notice, "\n"),
+    str_c('---\ntitle: ""\npagetitle: "Working Papers"\n',
+          og_front_matter("Working papers | Alexander Coppock",
+                          "Working papers and papers under review by Alexander Coppock, Associate Professor of Political Science at Northwestern University.",
+                          "images/front_page.png", "working_papers.html"),
+          '---\n\n', notice, "\n"),
     file.path(slice_dir, "working_papers.qmd")
   )
 

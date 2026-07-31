@@ -172,10 +172,15 @@ build_slice <- function(root = ".", show_figure = TRUE) {
       new <- harvest$supersedes$work_id[i]
       entry <- harvest$bib |> filter(bibtex_key == new)
       write_lines(str_c(
-        '---\ntitle: ""\npagetitle: "Moved"\n---\n\n',
-        '<div class="workHeader"><div class="workBody">\n',
-        '<h1 class="workTitle">This page has moved</h1>\n',
-        '<div class="workAbstract">The corrigendum and the article it corrects are one entry. ',
+        '---\ntitle: ""\npagetitle: "Moved"\n',
+        og_front_matter(str_c(entry$title, " | Alexander Coppock"),
+                        str_c("This page has moved. The work is now published as ",
+                              entry$title, "."),
+                        "images/front_page.png", str_c(old, ".html")),
+        '---\n\n',
+        '<div class="workProse">\n',
+        '<h1>This page has moved</h1>\n',
+        '<div>The corrigendum and the article it corrects are one entry. ',
         'See <a href="', new, '.html">', entry$title, '</a>.</div>\n',
         '</div></div>\n'
       ), file.path(slice_dir, str_c(old, ".qmd")))
@@ -226,7 +231,11 @@ build_slice <- function(root = ".", show_figure = TRUE) {
       )
 
     write_lines(str_c(
-      '---\ntitle: ""\npagetitle: "Software"\n---\n\n',
+      '---\ntitle: ""\npagetitle: "Software"\n',
+      og_front_matter("Software | Alexander Coppock",
+                      "R packages by Alexander Coppock: randomizr, ri2, estimatr, fabricatr, DeclareDesign, vayr, metaprep, excheckr, estimatrTools and conjointmatchups.",
+                      "images/front_page.png", "software.html"),
+      '---\n\n',
       '<div class="softwareGallery">\n<div class="galleryItems">\n',
       str_flatten(tiles$item, "\n"),
       '\n</div>\n</div>\n'
@@ -266,7 +275,7 @@ publish_assets <- function(root = ".") {
   # not reappear here just because it is still sitting in the directory.
   gen <- file.path(out, "_generator")
   dir.create(file.path(gen, "code"), recursive = TRUE, showWarnings = FALSE)
-  pipeline_scripts <- c("harvest_works.R", "read_bib.R", "build_slice.R",
+  pipeline_scripts <- c("build_site.R", "harvest_works.R", "read_bib.R", "build_slice.R",
                         "build_project_page.R", "build_galleries.R",
                         "build_site_chrome.R", "check_links.R",
                         "make_bib_files.R", "make_card_images.R",
@@ -280,6 +289,26 @@ publish_assets <- function(root = ".") {
     src <- file.path(root, "notes", f)
     if (file.exists(src)) file.copy(src, gen, overwrite = TRUE)
   }
+
+  # A sitemap, listing what is actually in the output rather than what the
+  # catalog says should be. Redirect stubs are excluded: pointing a crawler at
+  # a page whose only content is "this has moved" competes with the page it
+  # moved to.
+  moved <- str_c(harvest$supersedes$superseded, ".html")
+  pages <- list.files(out, pattern = "\\.html$") |>
+    setdiff(c(moved, "404.html")) |>
+    sort()
+  loc <- if_else(pages == "index.html", "", pages)
+  write_lines(c(
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    str_c("  <url><loc>", SITE_URL, "/", loc, "</loc></url>"),
+    "</urlset>"
+  ), file.path(out, "sitemap.xml"))
+
+  write_lines(c("User-agent: *", "Allow: /", "",
+                str_c("Sitemap: ", SITE_URL, "/sitemap.xml")),
+              file.path(out, "robots.txt"))
 
   # The custom domain. It lived only at the repo root, which meant the built
   # tree was not a complete description of what should be published and an

@@ -252,3 +252,43 @@ check_works <- function(harvest, root = ".") {
             bad_coauthors, missing_gloss, missing_abstract, orphan_bib) |>
     arrange(factor(severity, levels = c("error", "report")), work_id)
 }
+
+# Social preview tags. Quarto's own `open-graph` option belongs to the website
+# project type and this project is `type: default`, so the tags are emitted per
+# page instead. `header-includes` rather than `include-in-header`, because the
+# latter is already set at project level and a document-level value would
+# replace it rather than add to it.
+#
+# Without these, a link to any page posted on Bluesky or Slack rendered as a
+# bare URL: no title, no description, no image, though all three were already
+# generated for every work.
+SITE_URL <- "https://alexandercoppock.com"
+
+og_escape <- function(x) {
+  x |>
+    str_replace_all("&", "&amp;") |>
+    str_replace_all('"', "&quot;") |>
+    str_replace_all("<", "&lt;") |>
+    str_replace_all(">", "&gt;") |>
+    str_squish()
+}
+
+og_front_matter <- function(page_title, description, image, url, type = "website") {
+  # Platforms cut descriptions around 200 characters; cutting on a word here
+  # means the preview ends on a word rather than mid-syllable.
+  desc <- og_escape(description)
+  if (str_length(desc) > 200) {
+    desc <- str_c(str_trim(str_sub(desc, 1, 197) |> str_remove("\\S*$")), "...")
+  }
+  tags <- c(
+    str_c('<meta property="og:type" content="', type, '">'),
+    str_c('<meta property="og:title" content="', og_escape(page_title), '">'),
+    str_c('<meta property="og:description" content="', desc, '">'),
+    str_c('<meta property="og:url" content="', SITE_URL, "/", url, '">'),
+    str_c('<meta property="og:site_name" content="Alexander Coppock">'),
+    str_c('<meta property="og:image" content="', SITE_URL, "/", image, '">'),
+    '<meta name="twitter:card" content="summary">',
+    str_c('<meta name="description" content="', desc, '">')
+  )
+  str_c('header-includes: |\n', str_flatten(str_c("  ", tags), "\n"), "\n")
+}

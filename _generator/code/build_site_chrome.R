@@ -112,7 +112,11 @@ build_site_chrome <- function(root = ".") {
   # Home. Hand-written, and its bands use the site's own CSS classes rather
   # than any framework, so it ports verbatim.
   write_lines(str_c(
-    '---\ntitle: ""\npagetitle: "Alexander Coppock"\n---\n\n',
+    '---\ntitle: ""\npagetitle: "Alexander Coppock"\n',
+    og_front_matter("Alexander Coppock",
+                    "Associate Professor of Political Science at Northwestern University. Author of Persuasion in Parallel and a member of the DeclareDesign team.",
+                    "images/front_page.png", ""),
+    '---\n\n',
     '<div id="homeContent">\n',
     '<div class="band full blue first leftText">\n',
     '<div class="bandContent vCenter">\n',
@@ -128,6 +132,26 @@ build_site_chrome <- function(root = ".") {
     build_bibliography(root), '\n',
     '</div>\n'
   ), file.path(slice, "index.qmd"))
+
+  # GitHub Pages serves /404.html for any path it cannot resolve on a custom
+  # domain. Without one the visitor got GitHub's generic page, with no way back
+  # to the site.
+  write_lines(str_c(
+    '---\ntitle: ""\npagetitle: "Page not found"\n',
+    og_front_matter("Page not found | Alexander Coppock",
+                    "That page does not exist.",
+                    "images/front_page.png", "404.html"),
+    '---\n\n',
+    '<div class="workProse">\n',
+    '<h1>Page not found</h1>\n',
+    '<div>That address does not exist. ',
+    'Try <a href="published_papers.html">published work</a>, ',
+    '<a href="working_papers.html">working papers</a>, ',
+    '<a href="software.html">software</a>, ',
+    '<a href="notes.html">notes</a>, ',
+    'or start from the <a href="index.html">home page</a>.</div>\n',
+    '</div>\n'
+  ), file.path(slice, "404.qmd"))
 
   # Notes stays hand-curated by decision: generating it from a directory would
   # publish whatever sits in subpages/, which is precisely the judgement Alex
@@ -166,7 +190,11 @@ build_site_chrome <- function(root = ".") {
     str_flatten("\n")
 
   write_lines(str_c(
-    '---\ntitle: ""\npagetitle: "Notes"\n---\n\n',
+    '---\ntitle: ""\npagetitle: "Notes"\n',
+    og_front_matter("Notes | Alexander Coppock",
+                    "Teaching notes, syllabi and short methodological pieces by Alexander Coppock.",
+                    "images/front_page.png", "notes.html"),
+    '---\n\n',
     '<div class="noteGallery">\n<div class="galleryItems">\n',
     note_items,
     '\n</div>\n</div>\n'
