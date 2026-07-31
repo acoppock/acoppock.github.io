@@ -32,15 +32,25 @@ link_text <- c(
 # Author names carry their own websites, so a coauthor with a page on file is
 # linked in place rather than listed again underneath.
 link_authors <- function(citation, work_id, harvest, coauthor_file) {
-  slugs <- harvest$coauthors |> filter(work_id == .env$work_id) |> pull(slug)
-  if (!length(slugs)) return(citation)
-  people <- coauthor_file |> filter(slug %in% slugs)
-  for (i in seq_len(nrow(people))) {
-    citation <- str_replace(
-      citation,
-      fixed(people$full_name[i]),
-      str_c("<a href='", people$website[i], "' target='_blank'>", people$full_name[i], "</a>")
-    )
+  rows <- harvest$coauthors |> filter(work_id == .env$work_id)
+  if (!nrow(rows)) return(citation)
+  rows <- rows |> left_join(coauthor_file |> select(slug, website), by = "slug")
+
+  for (i in seq_len(nrow(rows))) {
+    nm <- rows$bib_name[i]
+    if (is.na(nm)) next
+    link <- function(txt) str_c("<a href='", rows$website[i], "' target='_blank'>", txt, "</a>")
+
+    # A citation inverts its FIRST author ("Barari, Soubhik"), so searching for
+    # the natural form never matched them and no first author was ever linked.
+    parts <- str_split_1(nm, " ")
+    inverted <- str_c(parts[length(parts)], ", ", str_flatten(parts[-length(parts)], " "))
+
+    if (str_detect(citation, fixed(inverted))) {
+      citation <- str_replace(citation, fixed(inverted), link(inverted))
+    } else if (str_detect(citation, fixed(nm))) {
+      citation <- str_replace(citation, fixed(nm), link(nm))
+    }
   }
   citation
 }

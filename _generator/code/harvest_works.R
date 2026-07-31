@@ -101,14 +101,29 @@ harvest_works <- function(root = ".") {
   coauthor_file <- read_excel(file.path(root, "data", "coauthors_by_hand.xlsx"))
   bib_early <- read_bib(file.path(root, "bibliography", "bibliography.bib"))
 
+  # Matched on first initial plus surname rather than on the exact string. The
+  # bib and the coauthors file disagree on punctuation and middle initials
+  # ("Matthew H Graham" against "Matthew H. Graham", "Ben M. Tappin" against
+  # "Ben Tappin"), and an exact join drops those links silently.
+  name_key <- function(x) {
+    x |>
+      stri_trans_general("Latin-ASCII") |>
+      str_replace_all("[^A-Za-z ]", " ") |>
+      str_squish() |>
+      str_to_lower() |>
+      (\(s) str_c(str_sub(s, 1, 1), "_", word(s, -1)))()
+  }
+
   coauthors <- works_tbl |>
     select(work_id, bibtex_key) |>
     left_join(bib_early |> select(bibtex_key, author_parsed), by = "bibtex_key") |>
     mutate(people = map(author_parsed, ~ if (is.null(.x)) character() else .x$full_name)) |>
     select(work_id, people) |>
     unnest(people) |>
-    inner_join(coauthor_file |> select(slug, full_name), by = c("people" = "full_name")) |>
-    select(work_id, slug)
+    mutate(k = name_key(people)) |>
+    inner_join(coauthor_file |> select(slug, full_name) |> mutate(k = name_key(full_name)),
+               by = "k") |>
+    select(work_id, slug, bib_name = people)
 
   assets <- imap(meta, function(m, id) {
     roles <- names(m$assets %||% list())
