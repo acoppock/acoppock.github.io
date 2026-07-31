@@ -11,16 +11,20 @@
 
 source("code/harvest_works.R")
 
-site_repo <- "~/git_projects/acoppock.github.io" |> path.expand()
+# The nav, footer and stylesheets are SOURCE, not build output, so they live in
+# works/site_chrome/ rather than being read back out of the published repo. They
+# were restored there from tag pre-quarto-20260731 when the branch removed the
+# old pipeline's inputs (2026-07-31).
+chrome_dir <- function(root = ".") file.path(root, "site_chrome")
 
 build_site_chrome <- function(root = ".") {
-  slice <- file.path(root, slice_dir)
+  slice <- slice_dir
 
   # Stylesheets and scripts come from the site repo, which is where they live
   # today; site_images/ is the works-side copy rescued on 2026-07-30.
   for (d in c("css", "js")) {
     dir.create(file.path(slice, d), showWarnings = FALSE)
-    file.copy(list.files(file.path(site_repo, d), full.names = TRUE),
+    file.copy(list.files(file.path(chrome_dir(root), d), full.names = TRUE),
               file.path(slice, d), overwrite = TRUE)
   }
 
@@ -38,18 +42,21 @@ build_site_chrome <- function(root = ".") {
   file.copy(list.files(file.path(root, "site_images"), full.names = TRUE),
             file.path(slice, "images"), overwrite = TRUE)
 
-  header <- read_lines(file.path(site_repo, "include_header.html")) |>
+  file.copy(file.path(chrome_dir(root), "project_page.css"),
+            file.path(slice_dir, "project_page.css"), overwrite = TRUE)
+
+  header <- read_lines(file.path(chrome_dir(root), "include_header.html")) |>
     discard(~ str_detect(.x, "main-container")) |>
     discard(~ str_detect(.x, "^<script|^</script>"))
   write_lines(header, file.path(slice, "_before_body.html"))
 
-  file.copy(file.path(site_repo, "include_footer.html"),
+  file.copy(file.path(chrome_dir(root), "include_footer.html"),
             file.path(slice, "_after_body.html"), overwrite = TRUE)
 
   # The Google Analytics block in the site's head uses a UA- property, which
   # Universal Analytics retired in 2023, so it is dead code that still fires a
   # request. Ported for fidelity; flagged rather than silently dropped.
-  head_html <- read_lines(file.path(site_repo, "include_head.html"))
+  head_html <- read_lines(file.path(chrome_dir(root), "include_head.html"))
   write_lines(head_html, file.path(slice, "_in_header.html"))
 
   write_lines(c(

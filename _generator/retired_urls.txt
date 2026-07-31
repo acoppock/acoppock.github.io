@@ -39,3 +39,16 @@ coppock_kaur_2021.txt
 graham_coppock_2020.txt
 peyton_huber_coppock_2021.txt
 schwarz_coppock_2020.txt
+
+# The watermarked book PDF. Removed from the site on 2026-07-29 and purged from
+# the repo's history; it appears in the snapshot only because the snapshot was
+# taken the same day. Alex's own copy stays in works/documents/, and
+# publish_assets() carries it on a never_publish list so a copy-everything rule
+# cannot put it back, which it did on 2026-07-31.
+Coppock_9780226821825_Watermarked_AEC.pdf
+
+# 2026-07-31: the bibtex file for brodeur_etal_2024, whose key was renamed to
+# brodeur_etal_2026 to match the publication year (Nature 652: 151-156). The
+# entry no longer exists under the old key, so there is nothing to serve; the
+# old .html keeps working as a stub via `supersedes`.
+brodeur_etal_2024.txt

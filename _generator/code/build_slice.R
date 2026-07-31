@@ -9,7 +9,10 @@
 source("code/harvest_works.R")
 source("code/build_project_page.R")
 
-slice_dir <- "quarto_slice"
+# The built site does not live in Dropbox (Alex, 2026-07-31): it belongs only
+# in the git repo. The build directory sits beside the repo, is gitignored, and
+# is regenerable from works/ at any time, so nothing of value lives here.
+slice_dir <- "/Users/alexandercoppock/git_projects/acoppock.github.io/_build"
 
 link_labels <- c(
   paper = "Link to paper",
@@ -112,9 +115,9 @@ build_slice <- function(root = ".", show_figure = TRUE) {
   harvest <- harvest_works(root)
   coauthor_file <- read_excel(file.path(root, "data", "coauthors_by_hand.xlsx"))
 
-  dir.create(file.path(root, slice_dir), showWarnings = FALSE)
+  dir.create(slice_dir, showWarnings = FALSE)
   for (d in c("display_figures", "book_covers", "card_figures", "page1")) {
-    dir.create(file.path(root, slice_dir, d), showWarnings = FALSE)
+    dir.create(file.path(slice_dir, d), showWarnings = FALSE)
   }
 
   write_lines(c(
@@ -126,13 +129,13 @@ build_slice <- function(root = ".", show_figure = TRUE) {
     "    theme: cosmo",
     "    toc: false",
     "    css: slice.css"
-  ), file.path(root, slice_dir, "_quarto.yml"))
+  ), file.path(slice_dir, "_quarto.yml"))
 
   write_lines(c(
     "/* Ported look, not the new brand: the restructure is verified by pages",
     "   that look UNCHANGED, and the brand lands as its own separate pass. */",
     "body { max-width: 900px; margin: 0 auto; }"
-  ), file.path(root, slice_dir, "slice.css"))
+  ), file.path(slice_dir, "slice.css"))
 
   # NOT `pages`: the bib carries a `pages` FIELD, and inside a data-masked
   # filter() that column shadows a local variable of the same name.
@@ -146,7 +149,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
   for (i in seq_len(nrow(page_works))) {
     id <- page_works$work_id[i]
     write_lines(build_project_page(id, harvest, coauthor_file, root, show_figure = show_figure),
-                file.path(root, slice_dir, str_c(id, ".qmd")))
+                file.path(slice_dir, str_c(id, ".qmd")))
 
     # The page leads with the card, so cards travel with the pages as well as
     # with the gallery.
@@ -156,7 +159,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
                          card = "card_figures", page1 = "page1")
       src <- file.path(works_dir(root), id,
                        if (row$role %in% c("card", "page1")) "assets" else "original_materials", a)
-      if (file.exists(src)) file.copy(src, file.path(root, slice_dir, dest_dir, a), overwrite = TRUE)
+      if (file.exists(src)) file.copy(src, file.path(slice_dir, dest_dir, a), overwrite = TRUE)
     }
   }
 
@@ -175,7 +178,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
         '<div class="workAbstract">The corrigendum and the article it corrects are one entry. ',
         'See <a href="', new, '.html">', entry$title, '</a>.</div>\n',
         '</div></div>\n'
-      ), file.path(root, slice_dir, str_c(old, ".qmd")))
+      ), file.path(slice_dir, str_c(old, ".qmd")))
     }
   }
 
@@ -213,13 +216,13 @@ build_slice <- function(root = ".", show_figure = TRUE) {
       '<div class="softwareGrid">\n',
       str_flatten(tiles$tile, "\n"),
       '\n</div>\n'
-    ), file.path(root, slice_dir, "software.qmd"))
+    ), file.path(slice_dir, "software.qmd"))
 
     for (k in seq_len(nrow(tiles))) {
       if (!tiles$has_hex[k]) next
       src <- file.path(works_dir(root), tiles$work_id[k], "assets", tiles$card[k])
       if (file.exists(src)) {
-        file.copy(src, file.path(root, slice_dir, "card_figures", tiles$card[k]), overwrite = TRUE)
+        file.copy(src, file.path(slice_dir, "card_figures", tiles$card[k]), overwrite = TRUE)
       }
     }
   }
@@ -233,7 +236,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
 # `quarto render`, since Quarto clears its output directory.
 publish_assets <- function(root = ".") {
   harvest <- harvest_works(root)
-  out <- file.path(root, slice_dir, "_site")
+  out <- file.path(slice_dir, "_site")
   stopifnot(dir.exists(out))
 
   # `quarto render` does NOT clear its output directory, so anything that stops
@@ -286,7 +289,7 @@ publish_assets <- function(root = ".") {
   # working". Copied explicitly here, which is the only way to be sure the
   # served stylesheet is the one on disk.
   for (f in c("project_page.css", "slice.css")) {
-    src <- file.path(root, slice_dir, f)
+    src <- file.path(slice_dir, f)
     if (file.exists(src)) file.copy(src, file.path(out, f), overwrite = TRUE)
   }
 

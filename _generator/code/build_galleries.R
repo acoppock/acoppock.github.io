@@ -78,11 +78,11 @@ build_galleries <- function(root = ".") {
   # The gallery is its cards. They live in each work's assets/ folder now, so
   # the page references resolve only if they are copied out; without this every
   # one of the 43 images is broken and the page is nothing but captions.
-  dir.create(file.path(root, slice_dir, "card_figures"), showWarnings = FALSE)
+  dir.create(file.path(slice_dir, "card_figures"), showWarnings = FALSE)
   published |>
     filter(card_exists) |>
     pull(card_file) |>
-    walk(~ file.copy(.x, file.path(root, slice_dir, "card_figures", basename(.x)),
+    walk(~ file.copy(.x, file.path(slice_dir, "card_figures", basename(.x)),
                      overwrite = TRUE))
 
   page <- str_c(
@@ -91,7 +91,7 @@ build_galleries <- function(root = ".") {
     str_flatten(blocks[nzchar(blocks)], "\n\n"),
     '\n</div>\n</div>\n'
   )
-  write_lines(page, file.path(root, slice_dir, "published_papers.qmd"))
+  write_lines(page, file.path(slice_dir, "published_papers.qmd"))
 
   # Working Papers: the same listing filtered to stage == "working". Its empty
   # state is a property of the listing rather than an `if` in a generator, which
@@ -103,7 +103,7 @@ build_galleries <- function(root = ".") {
   } else ""
   write_lines(
     str_c('---\ntitle: ""\npagetitle: "Working Papers"\n---\n\n', notice, "\n"),
-    file.path(root, slice_dir, "working_papers.qmd")
+    file.path(slice_dir, "working_papers.qmd")
   )
 
   counts <- published |> count(kind)

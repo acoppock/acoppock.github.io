@@ -1,0 +1,9 @@
+@article{brodeur_etal_2026,
+  author = {Brodeur, Abel and 375 coauthors},
+  title = {Reproducibility and Robustness of Economics and Political Science Research},
+  journal = {Nature},
+  year = {2026},
+  volume = {652},
+  pages = {151--156},
+  doi = {10.1038/s41586-026-10251-x}
+}
