@@ -428,3 +428,39 @@ main.content {
 @media (max-width: 800px) {
   .galleryItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Home bands, 2026-07-31. The old band blue (#75aadb) with gold links belonged
+   to the cosmo palette and fought everything once the brand changed. Teal is
+   the second colour from Alex's own presentation template, so the site and his
+   slides now agree. */
+#homeContent .band.blue {
+  background-color: #004c6d;
+  color: #FBFAF7;
+}
+
+#homeContent .blue a {
+  color: #f2b8cb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#homeContent .blue a:hover {
+  text-decoration: underline;
+}
+
+/* The footer band carried the same blue. */
+#rStudioFooter.band.full {
+  background-color: #004c6d;
+  color: #FBFAF7;
+}
+
+/* The header carried a near-white background of its own, so it sat as a white
+   strip above the parchment page. */
+#rStudioHeader {
+  background-color: rgba(251, 250, 247, 0.98);
+  border-bottom: 1px solid var(--rule-color, #E4E0D8);
+}
+
+#rStudioHeader.shrunk {
+  background-color: rgba(251, 250, 247, 0.98);
+}

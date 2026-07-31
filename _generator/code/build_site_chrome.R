@@ -34,8 +34,12 @@ build_site_chrome <- function(root = ".") {
   # file to do what only it can do: the bands, the nav, the footer, the gallery.
   # Stripped in the COPY so the site repo's own stylesheet is untouched.
   css <- read_lines(file.path(slice, "css", "rmarkdown.css"))
+  # background-color included: rmarkdown.css sets the body to #fff, which is
+  # why the parchment ground from brand.scss never appeared and the site did
+  # not match the package sites no matter what the theme said.
   typography <- str_detect(css, 'font-family: "Source Sans Pro"') |
     str_detect(css, "^  color: #404040;") |
+    str_detect(css, "^  background-color:#fff;") |
     str_detect(css, "^  line-height: 1.7em;")
   write_lines(css[!typography], file.path(slice, "css", "rmarkdown.css"))
   dir.create(file.path(slice, "images"), showWarnings = FALSE)
