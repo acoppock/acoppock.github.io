@@ -438,12 +438,15 @@ main.content {
   color: #FBFAF7;
 }
 
+/* The magenta only reads against teal at 2px, and at 2px with bold text it
+   shouts. A hairline in the band's own text colour says "link" as clearly and
+   matches how links behave on every other page. */
 #homeContent .blue a {
   color: #FBFAF7;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
-  text-decoration-color: #fa6fa5;
-  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(251, 250, 247, 0.45);
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.22em;
 }
 
@@ -459,8 +462,10 @@ main.content {
   font-size: 15.2px;
 }
 
-#rStudioFooter #copyright {
-  color: #5C554B;
+/* The copyright line is gone, so the logo row centres rather than being
+   pushed to one side by space-between. */
+#rStudioFooter .bandContent {
+  justify-content: center;
 }
 
 #rStudioFooter .footerLogo {
