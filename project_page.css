@@ -456,11 +456,29 @@ main.content {
 
 /* The header carried a near-white background of its own, so it sat as a white
    strip above the parchment page. */
-#rStudioHeader {
-  background-color: rgba(251, 250, 247, 0.98);
-  border-bottom: 1px solid var(--rule-color, #E4E0D8);
+#rStudioHeader,
+#rStudioHeader.shrunk {
+  background-color: #004c6d;
+  border-bottom: none;
 }
 
-#rStudioHeader.shrunk {
-  background-color: rgba(251, 250, 247, 0.98);
+#rStudioHeader .productName,
+#rStudioHeader .menuItem {
+  color: #FBFAF7 !important;
+}
+
+#rStudioHeader .menuItem:hover {
+  color: #f2b8cb !important;
+}
+
+/* On the home page the band sits directly under the header, so the sliver of
+   parchment between two teal blocks reads as a mistake. Flush, and full width,
+   which is what "band full" was always meant to be. */
+#homeContent .band.full.first {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.template-index .standardPadding {
+  padding-top: 0;
 }
