@@ -23,7 +23,11 @@ build_site_chrome <- function(root = ".") {
 
   # Stylesheets and scripts come from the site repo, which is where they live
   # today; site_images/ is the works-side copy rescued on 2026-07-30.
+  # Emptied first, not copied into: a file deleted from site_chrome/ otherwise
+  # survives in the build and stays published. rmarkdown.js kept being served
+  # for exactly that reason after it was retired.
   for (d in c("css", "js")) {
+    unlink(file.path(slice, d), recursive = TRUE)
     dir.create(file.path(slice, d), showWarnings = FALSE)
     file.copy(list.files(file.path(chrome_dir(root), d), full.names = TRUE),
               file.path(slice, d), overwrite = TRUE)

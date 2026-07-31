@@ -75,7 +75,6 @@ p {
   z-index: 5;
 }
 
-
 #rStudioHeader {
   position: fixed;
   top: 0px;
@@ -233,7 +232,6 @@ p {
   display: none;
 }
 
-
 #homeContent, #pageContent {
   position: relative;
   z-index: 1;
@@ -311,10 +309,6 @@ p {
   font-weight: 300;
 }
 
-.formatSection .formatSectionTitle {
-  margin-bottom: 10px;
-}
-
 .gallerySection .galleryIntro {
   margin-bottom: 10px;
 }
@@ -353,54 +347,6 @@ p {
   font-size: 12px;
   padding: 0px 10px 10px 10px;
 }
-
-.formatSection a.doc, .formatSection a.pres, .formatSection a.more {
-  display: inline-block;
-  margin: 0 15px 15px 0;
-
-  color: #fff;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-
-  vertical-align: top;
-
-  background-color: #f0f0f0;
-}
-
-.formatTable {
-  display: table;
-  width: 100%;
-}
-
-.formatTable .formatTableRow {
-  display: table-row;
-  text-decoration: none;
-}
-
-.formatTable .formatTableRow:hover {
-  background-color: #f8f8f8;
-}
-
-.formatTable .formatName {
-  display: table-cell;
-  padding: 5px;
-  width: 200px;
-}
-
-.formatTable .formatDescription {
-  display: table-cell;
-  line-height: 15px;
-  padding-bottom: 5px;
-}
-
-.formatTable a.formatTableRow .formatDescription {
-}
-
 
 #homeContent .tagline {
   padding-top: 100px;
@@ -536,7 +482,6 @@ p {
   margin: 0 8px;
 }
 
-
 #rStudioFooter .bandContent #logos .footerLogo:last-child {
   margin-right: 0px;
 }
@@ -544,7 +489,6 @@ p {
 #rStudioFooter .bandContent .footerLogo.bluesky {
   background-image: url(../images/bluesky.svg);
 }
-
 
 #rStudioFooter .bandContent .footerLogo.twitter {
   background-image: url(../images/twitterLogo.svg);
@@ -566,117 +510,6 @@ p {
 }
 #rStudioFooter .bandContent .footerLogo.dataverse {
   background-image: url(../images/dataverseLogo.svg);
-}
-
-.screenshot {
-  border: 1px solid #ccc;
-}
-
-.notebook-screenshot {
-  border: 1px solid #ccc;
-  margin-bottom: 8px;
-}
-
-/* Don't show link underlines in tables (too busy) */
-table.table td a:only-child:link,
-table.table td a:only-child:visited {
-  text-decoration: none;
-}
-table.table td a:only-child:hover,
-table.table td a:only-child:active {
-  text-decoration: underline;
-}
-
-/* Use the background color from the R logo for the floating toc nav */
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: rgb(97,151,213);
-}
-
-/* offset scroll position for anchor links  */
-
-.section h1 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-
-.section h2 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h3 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h4 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h5 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h6 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-
-.lessonPage {
-  display: flex;
-  display: -ms-flexbox;
-}
-
-.lessonPage .lessonsNav {
-  margin-top: 23px;
-  min-width: 290px;
-  line-height: 40px;
-  padding-right: 30px;
-}
-
-.lessonPage .lessonsNav a {
-  display: block;
-  padding: 0 10px;
-}
-
-.lessonPage .lessonsNav a:hover {
-  text-decoration: none;
-  background-color: #f8f8f8;
-}
-
-.lessonPage .lessonsNav a.current {
-  background-color: #75aadb;
-  color: #fff;
-}
-
-.lessonPage .lessonContent #show-answer h2 {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 7px 20px;
-  background-color: #75aadb;
-  color: #fff;
-
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.lessonPage .lessonContent #show-answer.showing {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer.showing {
-  display: block;
-}
-
-.lessonPage .lessonContent #continue-to-next-lesson h2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.lessonPage .continue-link {
-  font-size: 24px;
 }
 
 /* adjustments for smaller screens */
@@ -779,7 +612,6 @@ position: relative;
     width: 100%;
     margin-bottom: 100px;
 
-
     /*
     position: relative;
     top: 0;
@@ -818,29 +650,11 @@ position: relative;
   #pageContent .columns .column2 {
     max-width: none;
   }
-
-  .lessonPage .lessonsNav {
-    min-width: 200px;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .lessonPage {
-    display: block;
-  }
-
-  .lessonPage .lessonsNav {
-    display: none;
-  }
-
 }
 
 @media screen and (max-width: 500px){
   .gallerySection .galleryItems .galleryItem {
     width: 100%;
-  }
-  .formatTable .formatName {
-    width: 150px;
   }
 }
 
@@ -854,60 +668,5 @@ position: relative;
       margin: 0 2px;
     }
 
-}
-
-iframe.scale65 {
-  width: 154%;
-  border: #ddd 8px solid;
-  overflow: hidden;
-  position: relative;
-  -ms-zoom: 0.65;
-  -moz-transform: scale(0.65);
-  -moz-transform-origin: 0px 0;
-  -o-transform: scale(0.65);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.65);
-  -webkit-transform-origin: 0 0;
-}
-
-
-.snippet {
-  border: solid 1px #cccccc;
-  margin-bottom: 12px;
-  width: 100%;
-}
-
-.holder {
-  padding-right: 5px;
-  padding-bottom: 5px;
-}
-
-#textSpace {
-    height: 100%;
-    width: 50%;
-    float: left;
-    text-align: justify;
-    padding: 5px;
-    
-}
-
-#findMe {
-    height: 70px;
-    width: 33.333%;
-    float: left;
-    text-align: center;
-    border: 5px;
-    border-style: solid;
-    border-color: #75aadb;
-    background-color: #ffffff;
-    color: #404040;
-    border-radius: 10px;
-}
-
-.fill-div {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
 }
 

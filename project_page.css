@@ -627,3 +627,67 @@ main.content {
   .bibliography { padding: 0 6% 60px; }
   .bibEntry { font-size: 15px; }
 }
+
+/* Mobile, 2026-07-31. Measured at a true 390px viewport rather than in headless
+   Chrome, which floors its window at 500px and so had been hiding all of this.
+   Three things were wrong: the galleries ran two columns that overflowed the
+   screen, the project header never collapsed so titles ran off the right edge,
+   and the menu button did nothing. */
+
+/* A bare `1fr` will not shrink below its content width, which is why the
+   two-column breakpoint overflowed by 30px while the desktop grid, which
+   already used minmax(0, 1fr), did not. */
+@media (max-width: 800px) {
+  .gallerySection .galleryItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .gallerySection .galleryItems { grid-template-columns: minmax(0, 1fr); }
+  .gallerySection .galleryItems .galleryItemDescription { font-size: 15px; }
+}
+
+/* The card sits above the text rather than beside it. At 390px a 170px column
+   left barely 150px for a title, a citation and an abstract. */
+@media (max-width: 700px) {
+  .workHeader {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2rem;
+  }
+
+  .workCard img {
+    max-width: 150px;
+  }
+
+  .workBody h1.workTitle {
+    font-size: 1.4rem;
+  }
+
+  /* The links row wraps to several lines on a narrow screen, and the pipes
+     then fall at the start of a line. */
+  .workLinksRow {
+    row-gap: 0.35rem;
+  }
+}
+
+/* The open menu is a stack under the bar, not an inline run that overflows it. */
+@media (max-width: 1023px) {
+  #rStudioHeader #menu #menuItems.showMenu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #FBFAF7;
+    border: 1px solid #E4E0D8;
+    border-top: none;
+    padding: 8px 20px 12px;
+    min-width: 190px;
+    z-index: 50;
+  }
+
+  #rStudioHeader #menu {
+    position: relative;
+  }
+
+  #rStudioHeader .innards {
+    position: relative;
+  }
+}
