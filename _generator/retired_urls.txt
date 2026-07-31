@@ -1,0 +1,41 @@
+# URLs deliberately removed from the site, with the date and the reason.
+#
+# The snapshot at published_urls_20260729.txt records what WAS published and
+# exists to catch URLs lost by accident. This file records the ones removed on
+# purpose, so a build check can subtract them and still fail loudly on anything
+# else. Every line below was verified to return 404 on the live site on the date
+# given, so this is a record of what already happened rather than an intention.
+
+# 2026-07-29: Alex directed that no working paper appear on the site at all,
+# meaning no page, no bibtex file and no PDF. Verified 404 live on 2026-07-30.
+coppock_2017b.html
+coppock_2018.html
+coppock_broockman_2015.html
+coppock_galos_2025.html
+coppock_green_porter_20XX.html
+coppock_kirby_green_2017.html
+
+# 2026-07-30: pages for bib keys that no longer exist, superseded by renames at
+# publication. Verified 404 live on 2026-07-30, so these record what already
+# happened rather than a decision taken here.
+coppock_galos_2024.html
+coppock_etal_wpa.html
+coppock_etal_wpa.txt
+peer_orr_coppock_2020.html
+
+# 2026-07-31 (Alex): bibtex files for bib keys renamed at publication. Each was
+# verified on 2026-07-30 to have a DEAD page (404) and a live .txt, so nothing
+# linked them: the same shape as the 12 package bibtex URLs retired 2026-07-29,
+# and retired on the same reasoning. The works themselves are served under their
+# current keys.
+aggarwal_2021.txt
+aggarwal_2023.txt
+blair_coppock_humphreys_2022.txt
+coppock_2021.txt
+coppock_etal_2021.txt
+coppock_green_2020.txt
+coppock_green_porter_2020b.txt
+coppock_kaur_2021.txt
+graham_coppock_2020.txt
+peyton_huber_coppock_2021.txt
+schwarz_coppock_2020.txt

@@ -1,7 +1,0 @@
-@article{coppock_green_porter_2020b,
-    Author = {Coppock, Alexander and Donald P. Green and Ethan Porter},
-    Title = {{Does Digital Advertising Affect Vote Choice? A Meta-analysis of the Existing and Original Field Experimental Record}},
-    Journal = {Unpublished manuscript},
-    Year = 2020,
-}
-
