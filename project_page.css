@@ -454,13 +454,13 @@ main.content {
 /* The footer band carried the same blue. */
 #rStudioFooter.band.full {
   background-color: #FBFAF7;
-  color: #004c6d;
+  color: #5C554B;
   border-top: 1px solid #E4E0D8;
   font-size: 15.2px;
 }
 
 #rStudioFooter #copyright {
-  color: #004c6d;
+  color: #5C554B;
 }
 
 #rStudioFooter .footerLogo {
@@ -492,14 +492,14 @@ main.content {
   font-family: "Source Serif 4", Georgia, serif !important;
   font-size: 19.2px;
   font-weight: 600;
-  color: #004c6d !important;
+  color: #3C444C !important;
 }
 
 #rStudioHeader #menu .menuItem {
   font-family: "Source Sans 3", -apple-system, sans-serif;
   font-size: 15.2px;
   font-weight: 400;
-  color: #004c6d !important;
+  color: #5C554B !important;
   opacity: 1;
 }
 
@@ -528,19 +528,6 @@ main.content {
   margin: 0 auto;
 }
 
-/* One typographic system in the header. The name and the menu items differed
-   in size and the items carried opacity 0.8, so they read as two unrelated
-   pieces of furniture rather than one bar. Same family, same weight, same
-   colour, and the name steps down so the two sit in proportion. */
-#rStudioHeader .productName {
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-#rStudioHeader #menu .menuItem {
-  font-size: 1.15rem;
-  font-weight: 600;
-  opacity: 1;
-  letter-spacing: -0.01em;
-}
+/* (An earlier version of these rules lived here and, having the same
+   specificity but appearing later in the file, silently overrode the measured
+   pkgdown metrics below. Removed 2026-07-31.) */
