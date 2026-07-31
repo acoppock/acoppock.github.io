@@ -75,8 +75,26 @@ build_links_row <- function(work_id, harvest) {
   # A work can register more than one pre-analysis plan, and two links both
   # reading "Pre-analysis plan" is not a list, it is a puzzle. Numbered only
   # when there is more than one.
+  # A work can have its replication archive in more than one repository. They
+  # are NOT assumed to be byte-identical copies: Alex notes (2026-07-31) that
+  # the ISPS Data Archive asked for changes in some cases, so the Yale and
+  # Harvard deposits may genuinely differ. That is precisely why each is named
+  # by host rather than numbered: a reader choosing between them needs to know
+  # whose curation they are getting, which "Replication archive 1" and "2"
+  # would hide.
+  archive_host <- function(url) {
+    case_when(
+      str_detect(url, "10\\.7910") ~ "Harvard Dataverse",
+      str_detect(url, "10\\.60600") ~ "Yale Dataverse",
+      TRUE ~ NA_character_
+    )
+  }
+
   anchors <- all_links |>
-    mutate(text = coalesce(label, unname(link_text[slot]))) |>
+    mutate(text = coalesce(label, unname(link_text[slot])),
+           text = if_else(slot == "replication_archive" & !is.na(archive_host(target)),
+                          str_c("Replication archive (", archive_host(target), ")"),
+                          text)) |>
     group_by(text) |>
     mutate(text = if (n() > 1) str_c(text, " ", row_number()) else text) |>
     ungroup() |>

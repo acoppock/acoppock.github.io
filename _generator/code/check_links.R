@@ -66,8 +66,14 @@ check_links <- function(site = "/Users/alexandercoppock/git_projects/acoppock.gi
     # on many pages and there is no reason to ask a publisher about it twice.
     tmp_in <- tempfile(); tmp_out <- tempfile()
     write_lines(urls, tmp_in)
+    # A browser user-agent, because publishers and LinkedIn refuse scripted
+    # requests. Without it 28 perfectly good links reported as failures and the
+    # report was too noisy to read.
+    ua <- paste("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36")
     system2("xargs", c("-P", workers, "-I{}", "curl", "-s", "-L", "-o", "/dev/null",
-                       "--max-time", "25", "-w", shQuote("%{http_code} {}\\n"), "{}"),
+                       "-A", shQuote(ua), "--max-time", "25",
+                       "-w", shQuote("%{http_code} {}\\n"), "{}"),
             stdin = tmp_in, stdout = tmp_out)
 
     fetched <- read_lines(tmp_out) |>
@@ -85,8 +91,14 @@ check_links <- function(site = "/Users/alexandercoppock/git_projects/acoppock.gi
       # 000 is curl's own failure (DNS, TLS, timeout), and 4xx/5xx are the
       # server's. 403 is reported but often a bot block rather than a dead link.
       filter(is.na(code) | code == 0 | code >= 400) |>
-      transmute(page, target, kind, status = if_else(is.na(code) | code == 0,
-                                                     "unreachable", as.character(code)))
+      # 403 and 999 are refusals to talk to a script, not dead links. Reported
+      # as `blocked` so a real 404 is not lost among them.
+      transmute(page, target, kind,
+                status = case_when(
+                  is.na(code) | code == 0 ~ "unreachable",
+                  code %in% c(403, 999) ~ "blocked",
+                  TRUE ~ as.character(code)
+                ))
 
     result <- bind_rows(result, bad_external)
   }
