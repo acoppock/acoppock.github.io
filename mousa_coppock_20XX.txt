@@ -1,0 +1,6 @@
+@article{mousa_coppock_20XX,
+  author = {Mousa, Salma and Alexander Coppock},
+  title = {Perspective taking meta analysis},
+  journal = {Unpublished manuscript},
+  year = {2023}
+}

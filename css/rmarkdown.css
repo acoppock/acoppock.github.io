@@ -1,9 +1,7 @@
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color:#fff;
 
   font-weight: normal;
-  color: #404040;
 }
 
 html, body, .footerPushDown {
@@ -11,7 +9,6 @@ html, body, .footerPushDown {
 }
 
 p {
-  line-height: 1.7em;
   margin-bottom: 1em;
 }
 
@@ -124,7 +121,6 @@ p {
 }
 
 #rStudioHeader .productName {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 40px;
   color: inherit;
@@ -404,7 +400,6 @@ p {
 }
 
 .formatTable a.formatTableRow .formatDescription {
-  color: #404040;
 }
 
 

@@ -1,0 +1,6 @@
+@article{schwarz_coppock_20XX,
+  author = {Schwarz, Susanne and Alexander Coppock},
+  title = {Revisiting gender conjoint meta analysis},
+  journal = {Unpublished manuscript},
+  year = {2023}
+}

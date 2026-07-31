@@ -2,5 +2,6 @@
   author = {Coppock, Alexander},
   title = {Positive, Small, Homogeneous, and Durable: Political Persuasion in Response to Information},
   year = {2016},
-  school = {Columbia University}
+  school = {Columbia University},
+  doi = {10.7916/D8J966CS}
 }

@@ -1,0 +1,6 @@
+@article{coppock_etal_2025,
+  author = {Coppock, Alexander and Susan Hyde and Edward Malesky and Mathias Poertner and Lauren Young},
+  title = {Metaketa V: Women's Action Committees and Local Services},
+  journal = {Unpublished manuscript},
+  year = {2025}
+}

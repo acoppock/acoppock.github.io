@@ -4,5 +4,6 @@
   journal = {Organizational Behavior and Human Decision Processes},
   year = {2021},
   volume = {165},
-  pages = {228-249}
+  pages = {228-249},
+  doi = {10.1016/j.obhdp.2021.02.003}
 }

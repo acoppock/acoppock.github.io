@@ -1,0 +1,6 @@
+@article{coppock_hewitt_tappin_20XX,
+  author = {Coppock, Alexander and Luke Hewitt and Ben M. Tappin},
+  title = {Swayable heterogeneity},
+  journal = {Unpublished manuscript},
+  year = {2023}
+}

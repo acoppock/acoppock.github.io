@@ -1,0 +1,6 @@
+@article{coppock_2018,
+  author = {Coppock, Alexander},
+  title = {{A Field Experimental Test of Vote Swapping}},
+  journal = {Unpublished manuscript},
+  year = {2018}
+}

@@ -1,0 +1,6 @@
+@article{coppock_foley_osserman_2022,
+  author = {Coppock, Alexander and Grace Foley and Stephen Osserman},
+  title = {Visually Communicating Election Night Uncertainty to Increase Perceptions of Electoral Legitimacy},
+  journal = {Unpublished manuscript},
+  year = {2022}
+}

@@ -1,0 +1,6 @@
+@article{coppock_broockman_2015,
+  author = {Alexander Coppock and David Broockman},
+  title = {Summary Report: The Effectiveness of Online Ads: A Field Experiment},
+  journal = {Unpublished manuscript},
+  year = {2015}
+}

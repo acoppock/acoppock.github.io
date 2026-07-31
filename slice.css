@@ -1,0 +1,3 @@
+/* Ported look, not the new brand: the restructure is verified by pages
+   that look UNCHANGED, and the brand lands as its own separate pass. */
+body { max-width: 900px; margin: 0 auto; }
