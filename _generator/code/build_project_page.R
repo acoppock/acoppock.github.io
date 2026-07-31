@@ -84,8 +84,11 @@ build_links_row <- function(work_id, harvest) {
   # would hide.
   archive_host <- function(url) {
     case_when(
-      str_detect(url, "10\\.7910") ~ "Harvard Dataverse",
-      str_detect(url, "10\\.60600") ~ "Yale Dataverse",
+      # Short forms: the row is long enough with two archives and two
+      # pre-analysis plans, and "Harvard" disambiguates as well as
+      # "Harvard Dataverse" does.
+      str_detect(url, "10\\.7910") ~ "Harvard",
+      str_detect(url, "10\\.60600") ~ "Yale",
       TRUE ~ NA_character_
     )
   }

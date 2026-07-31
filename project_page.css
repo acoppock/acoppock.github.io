@@ -413,7 +413,10 @@ main.content {
    of each link and the right of the one before it. Using flex `gap` for one
    side and padding for the other put the pipe hard against the following word. */
 .workLinks a {
-  padding-left: 1.5rem;
+  padding-left: 1.15rem;
+  /* A label is a unit: without this "Pre-analysis plan 2" breaks across lines
+     as "Pre-" and "analysis plan 2", which reads as two broken links. */
+  white-space: nowrap;
 }
 
 .workLinks a:first-child {
@@ -422,7 +425,7 @@ main.content {
 
 .workLinks a:not(:last-child) {
   border-right: 1px solid var(--rule-strong, #D8D0C4);
-  padding-right: 1.5rem;
+  padding-right: 1.15rem;
 }
 
 /* Note card titles are links too. */
