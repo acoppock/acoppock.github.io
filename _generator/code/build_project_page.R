@@ -165,8 +165,12 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
   # beside the card. Quarto's own title would sit above and duplicate it.
   str_c(
     '---\ntitle: ""\npagetitle: "', str_replace_all(entry$title, '"', "'"), '"\n---\n\n',
+    # Custom content sits directly under the links, above the figure (Alex,
+    # 2026-07-31). It matters for coppock_2014, where the correction notice must
+    # be read before the figure it applies to; a book's reviews are unaffected,
+    # since a book has no display figure and stays last either way.
     str_flatten(compact(list(header, build_links_row(work_id, harvest),
-                             if (nzchar(figure)) figure else NULL, custom)), "\n\n"),
+                             custom, if (nzchar(figure)) figure else NULL)), "\n\n"),
     "\n"
   )
 }
