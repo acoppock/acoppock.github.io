@@ -90,9 +90,15 @@ build_links_row <- function(work_id, harvest) {
     )
   }
 
+  # The host is named only when a work has more than one archive. With a single
+  # deposit the repository is not a choice the reader has to make, so naming it
+  # adds a word that carries no information.
+  n_archives <- sum(all_links$slot == "replication_archive")
+
   anchors <- all_links |>
     mutate(text = coalesce(label, unname(link_text[slot])),
-           text = if_else(slot == "replication_archive" & !is.na(archive_host(target)),
+           text = if_else(slot == "replication_archive" & n_archives > 1 &
+                            !is.na(archive_host(target)),
                           str_c("Replication archive (", archive_host(target), ")"),
                           text)) |>
     group_by(text) |>
