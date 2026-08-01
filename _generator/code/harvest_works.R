@@ -33,7 +33,8 @@ harvest_works <- function(root = ".") {
       kind = m$kind %||% NA_character_,
       stage = m$stage %||% NA_character_,
       rights = m$rights %||% NA_character_,
-      active_maintenance = m$active_maintenance %||% NA_character_,
+      active_maintenance = m$active_maintenance$status %||% NA_character_,
+      maintenance_repo = m$active_maintenance$repo %||% NA_character_,
       has_custom = file.exists(file.path(works_dir(root), id, "metadata", "custom.md"))
     )
   }) |>

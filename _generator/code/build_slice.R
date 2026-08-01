@@ -346,8 +346,12 @@ publish_assets <- function(root = ".") {
   # Superseded ids keep their bibtex file too: the entry still exists in the bib
   # (the CV cites it) and the .txt URL is live, so a merge must not silently
   # retire it any more than it retires the page.
+  # `stage != "dormant"` as well as `kind != "software"` (Alex, 2026-07-31):
+  # a dormant work is to leave no record on the site, and a bibtex stub is a
+  # record. coppock_2015.txt was in the pre-migration snapshot but 404s on the
+  # live site, so retiring it takes nothing away from anybody.
   bib_keys_to_publish <- c(
-    harvest$works |> filter(kind != "software") |> pull(bibtex_key),
+    harvest$works |> filter(kind != "software", stage != "dormant") |> pull(bibtex_key),
     harvest$supersedes$superseded
   ) |> unique()
 

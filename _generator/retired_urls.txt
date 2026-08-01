@@ -59,3 +59,9 @@ brodeur_etal_2024.txt
 # project page and the bibliography both link. Retired at Alex's direction
 # rather than kept alive as a second address for one document.
 coppock_2025.pdf
+
+# 2026-07-31: coppock_2015.txt, the bibtex stub for a paper Alex has marked
+# dormant and wants no record of on the site. It was in the pre-migration
+# snapshot but 404s on the live site and is absent from master, so it was never
+# actually served: retiring it removes nothing a reader could reach.
+coppock_2015.txt

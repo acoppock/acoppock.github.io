@@ -1,6 +1,0 @@
-@article{coppock_2015,
-  author = {Coppock, Alexander},
-  title = {Decreasing Treatment Noncompliance by Design},
-  journal = {Unpublished manuscript},
-  year = {2015}
-}
