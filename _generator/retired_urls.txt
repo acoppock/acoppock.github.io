@@ -97,3 +97,10 @@ subpages/syllabus_PLSC_512.pdf
 subpages/note_how_do_I_learn_R.pdf
 subpages/note_how_to_write_up_an_experiment.pdf
 subpages/lefse.jpeg
+
+# 2026-07-31: subpages/XMAS2018.html, "VeeGee Christmas eXtravaganza 2018" — a
+# family Christmas party page with a schedule and six base64-embedded photos,
+# 15 MB and 88% of subpages/ by size. Unlinked from every page but live and
+# returning 200. Moved to Dropbox/family/VG_XMAS2018/ rather than deleted: it
+# is eight years old and someone may still have the link.
+subpages/XMAS2018.html
