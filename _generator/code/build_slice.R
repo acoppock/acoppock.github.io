@@ -273,7 +273,12 @@ publish_assets <- function(root = ".") {
   # drifted from works/code in four files by 2026-07-31, so it is build output
   # now. The script list is explicit rather than a glob: a retired script must
   # not reappear here just because it is still sitting in the directory.
+  # Mirrored, not copied into. This is the fifth place today where copying into
+  # a directory left a retired file published: css/, js/, subpages/, the notes
+  # thumbs, and here, where a deleted README.md and port_audit went on being
+  # served. Anything the build owns wholesale gets emptied first.
   gen <- file.path(out, "_generator")
+  unlink(gen, recursive = TRUE)
   dir.create(file.path(gen, "code"), recursive = TRUE, showWarnings = FALSE)
   pipeline_scripts <- c("build_site.R", "harvest_works.R", "read_bib.R", "build_slice.R",
                         "build_project_page.R", "build_galleries.R",
@@ -284,8 +289,11 @@ publish_assets <- function(root = ".") {
             overwrite = TRUE)
   file.copy("/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss", gen,
             overwrite = TRUE)
-  for (f in c("README.md", "new_site_plan.md", "port_audit_20260730.md",
-              "retired_urls.txt")) {
+  # update_routines.txt replaces the old README.md, which described the
+  # five-call build retired by build_site.R and still advertised the
+  # `never_publish` blocklist that the allowlist replaced. Two documents that
+  # disagree are worse than one.
+  for (f in c("update_routines.txt", "new_site_plan.md", "retired_urls.txt")) {
     src <- file.path(root, "notes", f)
     if (file.exists(src)) file.copy(src, gen, overwrite = TRUE)
   }

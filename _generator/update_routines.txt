@@ -1,0 +1,203 @@
+How to update the website
+=========================
+
+The whole build is one command. Everything below it is the detail of what to
+put in the catalog first.
+
+    cd ~/Dropbox/works
+    Rscript site/code/build_site.R
+
+That builds the pages, galleries and chrome, copies brand.scss, runs
+`quarto render`, publishes the assets, checks every link and every published
+URL, and then rsyncs the result into ~/git_projects/acoppock.github.io. It
+refuses to sync if a check fails. Add `--local` to build and check without
+syncing.
+
+Then review and commit in the site repo:
+
+    cd ~/git_projects/acoppock.github.io
+    git status
+    git add -A && git commit && git push origin quarto-site
+
+Two ordering constraints are baked into build_site.R and are not guessable from
+the individual scripts: brand.scss must be copied in BEFORE the render, or the
+theme compiles against a stale palette; and publish_assets() must run AFTER it,
+because Quarto owns _site and writes it last.
+
+
+Adding a work
+-------------
+
+A work is a folder. Adding one is creating the folder; nothing else is a list
+that needs editing.
+
+    catalog/<work_id>/
+      metadata/work.yaml        the hand-edited layer
+      metadata/abstract.txt     the abstract, if there is one
+      metadata/custom.md        optional extra HTML, e.g. a correction box
+      original_materials/       paper, appendix, display figure, corrigendum
+      assets/                   derived images (card, page1 thumbnail)
+
+1. Create `catalog/<work_id>/original_materials/` and put in `<work_id>.pdf`,
+   `<work_id>_appendix.pdf` if there is one, and the display figure as
+   `<work_id>_display.png`.
+
+2. Add the BibTeX entry to `bibliography/bibliography.bib` (BibDesk), then
+   `Rscript site/code/make_bib_files.R` to write the per-entry .txt files.
+
+3. Write `catalog/<work_id>/metadata/work.yaml`. Copy a neighbour's and edit.
+
+4. Abstract: `catalog/<work_id>/metadata/abstract.txt`. Blank lines separate
+   paragraphs and are rendered as such.
+
+5. Card image: `Rscript site/code/make_card_images.R`.
+   Page-1 thumbnail: `Rscript site/code/make_page1_thumbnails.R`.
+   Both write into the work's own `assets/` and only make what is missing.
+
+6. New coauthor: add a row to `data/coauthors_by_hand.xlsx`. Matching is on
+   first initial plus surname, so "Matthew H. Graham" and "Matthew H Graham"
+   both resolve.
+
+7. `Rscript site/code/build_site.R`, then review and commit.
+
+
+work.yaml
+---------
+
+    work_id: <id>
+    bibtex_key: <id>
+    kind: article
+    stage: published
+
+    links:
+      paper: <id>.pdf                  a local file, published at the site root
+      appendix: <id>_appendix.pdf
+      journal: https://doi.org/...     a URL
+      replication_archive: ...         one URL, or a list of them
+      preanalysis_plans: []            a list
+      project: ~
+      extra:                           anything else, each with its own label
+      - label: Corrigendum
+        file: <id>_corrigendum.pdf     `file:` for a local file
+      - label: AJPS blog post
+        url: https://...               `url:` for a URL
+
+    coauthors: [donald_green]          slugs from coauthors_by_hand.xlsx
+
+    assets:
+      page1:   {file: <id>_page1.png}
+      display:
+        file: <id>_display.png
+        figure_label: Figure 4         the paper's own label
+        caption: 'Figure 4. ...'       the paper's own caption, Note: and all
+        figure_source: AJPS blog post  only when the figure is NOT from the paper
+      card:    {file: <id>_card.png}
+      cover: ~                         books only
+      hex: ~
+
+    rights: public
+    active_maintenance:
+      status: none                     or `complete`
+      repo: ~                          a github.com/active-maintenance-aec URL
+    published_files: <id>_preprint.pdf  live URLs no page links; string or list
+    superseded_by: <other_id>          recorded, not rendered
+
+`extra:` takes `file:` for a local file and `url:` for a URL. Using `target:`
+fails silently: the link simply does not appear.
+
+`kind` is one of: article, book, chapter, review, crowdsourced, dissertation,
+software, note.
+
+`stage` is one of:
+  published  appears in the galleries and the home page bibliography
+  working    appears on the Working Papers page
+  staged     has a catalog folder, appears nowhere, still publishes its bibtex
+  dormant    publishes NOTHING: no page, no PDF, no bibtex
+
+The display figure renders as "Figure 4 from paper: <caption>", or
+"Figure from <figure_source>: <caption>" where the figure came from elsewhere.
+A `custom.md` in `metadata/` is emitted above the figure; that is how the
+correction boxes on coppock_2014, guess_coppock_2020 and
+peyton_huber_coppock_2022 are made.
+
+
+work_id years
+-------------
+
+A work_id carries the year the work will be published, and an unpublished work
+carries its best guess. The guess is NOT corrected as it drifts: the id stays
+put until the work is actually published, and only then settles to the real
+year (Alex, 2026-07-31). Renaming an id mid-flight costs more than it buys,
+because the id names a folder, its files, its bibtex key and any URL already
+published under it.
+
+So `coppock_galos_2025` staying 2025 into 2026 is correct, not stale. What DOES
+need keeping current is the bib entry: that paper's title had drifted a long
+way from the manuscript before anyone noticed, because nothing compares the two.
+
+
+Where things live
+-----------------
+
+    ~/Dropbox/works                      canonical source, stays in Dropbox
+      catalog/                           the works
+      bibliography/                      feeds the site AND the CV
+      media/                             press coverage, and the scripts for it
+      curriculum_vitae/  data/  notes/
+      code/                              non-site code: publication timelines,
+                                         the Google Scholar fetch
+      site/                              the whole website subsystem:
+                                           code/    the generator
+                                           chrome/  nav, footer, stylesheets
+                                           notes/   the Notes page's files
+                                           images/
+    ~/git_projects/acoppock_site_build   the build; beside the repo, not in it
+    ~/git_projects/acoppock.github.io    the site repo
+
+The build directory is regenerable and holds nothing of value. It sits outside
+the repo on purpose: when it was inside, every `git add -A` committed the site
+twice. It is also why nothing may be placed in the site repo by hand: the sync
+runs with `--delete` and would remove it on the next build.
+
+Pages currently serves `master`, which is the old site. The new site is on the
+`quarto-site` branch. Promoting it means repointing Pages, not merging.
+
+Notes live in `site/notes/`: the file goes in the folder, its thumbnail in
+`site/notes/thumbs/<same stem>.png`, and a row in the `notes` table in
+build_site_chrome.R gives it a title and any coauthor. Deliberately looser than
+a work, which needs a folder and a work.yaml.
+
+Everything published at the site root comes from a work (`links` and
+`published_files`) or from `site/notes/`. There is no blanket copy of any
+directory, on purpose: an allowlist cannot leak a file by being forgotten,
+which a blocklist did once with the watermarked book PDF.
+
+To look at the build before pushing, `python3 site/code/serve.py` serves it the
+way Pages does, sending 404.html with a 404 status. `python3 -m http.server`
+cannot test that: it sends its own error page.
+
+
+Checks
+------
+
+`build_site.R` runs both automatically, but they can be run alone:
+
+    Rscript -e 'source("site/code/build_slice.R"); publish_assets(".")'
+      -> 194/194 as of 2026-08-01. Every URL the old site published must still
+         resolve. Deliberate retirements go in notes/retired_urls.txt with a
+         reason and are subtracted from the expected set, never dropped
+         silently. The count falls as URLs are retired; it must never fall
+         because a file went missing.
+
+    Rscript -e 'source("site/code/check_links.R"); check_links()'
+      -> every internal link resolves to a file that exists.
+    check_links(external = TRUE) additionally fetches every off-site URL.
+      403 and 999 are reported as `blocked` rather than dead: they are refusals
+      to talk to a script, not broken links. A slow host can also time out and
+      report `unreachable` while serving fine in a browser (blogs.lse.ac.uk
+      does this), so verify before deleting a link the checker complains about.
+
+Note on the snapshot: `published_urls_20260729.txt` is what the OLD generator
+was meant to produce, not a crawl of what was served. 15 of its URLs are absent
+from `master` and 404 on the live site today. Treat an entry there as an
+obligation, not as evidence the URL ever worked.
