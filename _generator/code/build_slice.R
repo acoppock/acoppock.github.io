@@ -382,29 +382,27 @@ publish_assets <- function(root = ".") {
   # the nav pointing at a 404.
   file.copy(file.path(root, "curriculum_vitae", "coppock_cv.pdf"), out, overwrite = TRUE)
 
-  # Root-level documents that belong to no work: two notes the Notes page links,
-  # a call for proposals, and a research note with no catalog entry yet.
+  # Notes. One folder, files dumped in, thumbnails in a subfolder (Alex,
+  # 2026-07-31). Deliberately looser than a work: a note gets no folder of its
+  # own and no work.yaml, because the apparatus buys nothing when the only
+  # metadata is a title and a coauthor. Those live in the notes table in
+  # build_site_chrome.R, which stays hand-curated.
   #
-  # This used to blanket-copy `documents/` and exclude the watermarked book by
-  # name (Alex, 2026-07-31). Two things were wrong with that. Anything a work
-  # owns was being published from a flat directory rather than from the work,
-  # so the same PDF had two possible homes and the work's folder was not the
-  # answer to "what does this paper ship". And a blocklist publishes by default:
-  # the watermarked book reached a branch that way, and any future private file
-  # dropped into the directory would do the same.
-  #
-  # Work-owned files moved into `catalog/<work_id>/original_materials/` and are
-  # published through each work's `published_files`. What remains is an
-  # allowlist directory: a file is published because it was put here, so
-  # forgetting cannot leak anything. `documents/` is no longer read by the build
-  # at all and now holds only Alex's private copies.
-  file.copy(list.files(file.path(root, "site_documents"), full.names = TRUE),
-            out, overwrite = TRUE)
-  # Emptied first: this was copied into and never cleared, so a note deleted at
-  # source stayed published indefinitely.
+  # This replaces site_documents/ and subpages/, which had both drifted into
+  # being about notes and nothing else.
+  note_files <- list.files(file.path(root, "site_notes"), full.names = TRUE) |>
+    discard(~ basename(.x) == "thumbs")
+  file.copy(note_files, out, overwrite = TRUE)
+
+  # Two notes were published under a subpages/ prefix for years. The files are
+  # canonical at the root now, and these copies keep the old addresses working:
+  # Pages serves no redirects, and neither a .pdf nor a .html can be
+  # meta-refreshed without replacing the thing the reader came for.
+  legacy_subpages <- c("counterfactual_format.html",
+                       "note_Random_Assignment_Subject_To_Constraints.pdf")
   unlink(file.path(out, "subpages"), recursive = TRUE)
   dir.create(file.path(out, "subpages"), showWarnings = FALSE)
-  file.copy(list.files(file.path(root, "subpages"), full.names = TRUE),
+  file.copy(file.path(root, "site_notes", legacy_subpages),
             file.path(out, "subpages"), overwrite = TRUE)
 
   # The migration is not done until a rebuilt site contains every URL that the

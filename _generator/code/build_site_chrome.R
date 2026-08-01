@@ -160,15 +160,15 @@ build_site_chrome <- function(root = ".") {
   # for a PDF note is its first page; for the one HTML note it is a screenshot
   # of the page itself.
   dir.create(file.path(slice, "note_thumbs"), showWarnings = FALSE)
-  file.copy(list.files(file.path(root, "subpages", "thumbs"), full.names = TRUE),
+  file.copy(list.files(file.path(root, "site_notes", "thumbs"), full.names = TRUE),
             file.path(slice, "note_thumbs"), overwrite = TRUE)
 
   notes <- tribble(
     ~href, ~thumb, ~title, ~extra,
-    "subpages/note_Random_Assignment_Subject_To_Constraints.pdf",
+    "note_Random_Assignment_Subject_To_Constraints.pdf",
       "note_Random_Assignment_Subject_To_Constraints.png",
       "Random assignment subject to constraints", "",
-    "subpages/counterfactual_format.html", "counterfactual_format.png",
+    "counterfactual_format.html", "counterfactual_format.png",
       "How to use the counterfactual format",
       " with <a href=\"https://m-graham.com//\">Matt Graham</a>",
     "attention.pdf", "attention.png", "Notes on attention", "",

@@ -15,6 +15,11 @@ library(tidyverse)
 # links and stylesheets.
 extract_links <- function(file) {
   html <- read_file(file)
+  # Script bodies are not links. counterfactual_format.html builds hrefs in
+  # JavaScript, so scanning them reported `'+b+'` and `' + hash + '` as missing
+  # files. It only surfaced when the note moved from subpages/ to the root,
+  # because the checker never recursed into subdirectories.
+  html <- str_remove_all(html, regex("<script[^>]*>.*?</script>", dotall = TRUE))
   tibble(
     page = basename(file),
     target = c(
