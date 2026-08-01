@@ -324,10 +324,16 @@ publish_assets <- function(root = ".") {
   # Every non-URL link target: papers, appendices, and the book's extra PDFs.
   # Link targets AND published_files: the second are live citable URLs that no
   # page links, so copying only what is linked loses them.
+  # Dormant works publish nothing at all. Excluding them from the bibtex rule
+  # was not enough: link targets are copied here too, so coppock_2017b.pdf and
+  # its appendix were still being served for a work with no page.
+  live <- harvest$works |> filter(stage != "dormant") |> pull(work_id)
   local_files <- bind_rows(
     harvest$links |> filter(!is_url) |> transmute(work_id, file = target),
     harvest$published_files |> transmute(work_id, file)
-  ) |> distinct()
+  ) |>
+    filter(work_id %in% live) |>
+    distinct()
   copied_docs <- local_files |>
     mutate(src = file.path(works_dir(root), work_id, "original_materials", file)) |>
     filter(file.exists(src)) |>
@@ -394,6 +400,9 @@ publish_assets <- function(root = ".") {
   # at all and now holds only Alex's private copies.
   file.copy(list.files(file.path(root, "site_documents"), full.names = TRUE),
             out, overwrite = TRUE)
+  # Emptied first: this was copied into and never cleared, so a note deleted at
+  # source stayed published indefinitely.
+  unlink(file.path(out, "subpages"), recursive = TRUE)
   dir.create(file.path(out, "subpages"), showWarnings = FALSE)
   file.copy(list.files(file.path(root, "subpages"), full.names = TRUE),
             file.path(out, "subpages"), overwrite = TRUE)

@@ -1,6 +1,0 @@
-@article{coppock_2017b,
-  author = {Coppock, Alexander},
-  title = {{The Persistence of Survey Experimental Treatment Effects}},
-  journal = {Unpublished manuscript},
-  year = {2017}
-}

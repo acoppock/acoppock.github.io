@@ -71,3 +71,30 @@ coppock_2015.txt
 # creation timestamp). One document does not need two addresses; the surviving
 # one is the name without the author list, at Alex's direction.
 coppock_cooper_fultz_2015_cheatsheet.pdf
+
+# 2026-07-31: everything below was published but linked from no page. Alex went
+# through the list and removed these. The works keep their catalog folders and
+# go dormant; the syllabi and teaching notes are quarantined rather than deleted.
+coppock_2017b.pdf
+coppock_2017b.txt
+coppock_2017b_appendix.pdf
+coppock_broockman_2015.pdf
+coppock_broockman_2015.txt
+coppock_kirby_green_2017.pdf
+coppock_kirby_green_2017.txt
+coppock_green_porter_20XX.txt
+
+# Superseded, per Alex. Successor not recorded: he did not name one.
+coppock_green_porter_2021.pdf
+coppock_green_porter_2021.txt
+coppock_green_porter_2021_appendix.pdf
+coppock_galos_2025.txt
+
+# The old site's Notes page linked these; the curated Notes page does not, and
+# Alex has retired rather than restored them. lefse.jpeg is an image from one.
+subpages/syllabus_PLSC_341.pdf
+subpages/syllabus_PLSC_500.pdf
+subpages/syllabus_PLSC_512.pdf
+subpages/note_how_do_I_learn_R.pdf
+subpages/note_how_to_write_up_an_experiment.pdf
+subpages/lefse.jpeg

@@ -1,6 +1,0 @@
-@article{coppock_kirby_green_2017,
-  author = {Coppock, Alexander and David Kirby and Donald P. Green},
-  title = {{A Field Experimental Test of Political Primes: Does the Constitution Affect Values, Vote Choice, or Turnout?}},
-  journal = {Unpublished manuscript},
-  year = {2017}
-}

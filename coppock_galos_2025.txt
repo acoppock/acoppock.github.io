@@ -1,7 +1,0 @@
-@article{coppock_galos_2025,
-  author = {Coppock, Alexander and Diana Roxana Galos},
-  title = {Toward the generalizability of the party cue effect: a meta-reanalysis of hundreds of experimental contrasts},
-  journal = {Unpublished manuscript},
-  year = {2025},
-  note = {Unpublished Manuscript}
-}
