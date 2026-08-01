@@ -1,0 +1,7 @@
+@article{coppock_galos_2025,
+  author = {Coppock, Alexander and Diana Roxana Galos},
+  title = {How party cue effects vary across issues, identities, and contexts: a meta-reanalysis of hundreds of experimental party cue contrasts},
+  journal = {Unpublished manuscript},
+  year = {2025},
+  note = {Unpublished Manuscript}
+}

@@ -84,11 +84,10 @@ coppock_kirby_green_2017.pdf
 coppock_kirby_green_2017.txt
 coppock_green_porter_20XX.txt
 
-# Superseded, per Alex. Successor not recorded: he did not name one.
+# Folded into coppock_green_porter_2026, per Alex.
 coppock_green_porter_2021.pdf
 coppock_green_porter_2021.txt
 coppock_green_porter_2021_appendix.pdf
-coppock_galos_2025.txt
 
 # The old site's Notes page linked these; the curated Notes page does not, and
 # Alex has retired rather than restored them. lefse.jpeg is an image from one.
