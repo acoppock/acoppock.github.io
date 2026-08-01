@@ -193,7 +193,7 @@ check_works <- function(harvest, root = ".") {
     transmute(work_id, severity = "error", check = "kind", detail = str_c("unknown kind '", kind, "'"))
 
   bad_stage <- works_tbl |>
-    filter(!stage %in% c("published", "working", "staged")) |>
+    filter(!stage %in% c("published", "working", "staged", "dormant")) |>
     transmute(work_id, severity = "error", check = "stage", detail = str_c("unknown stage '", stage, "'"))
 
   # A work's files live in its own folder. The flat directories remain as a
@@ -244,8 +244,11 @@ check_works <- function(harvest, root = ".") {
     transmute(work_id, severity = "report", check = "gloss",
               detail = "display asset has no gloss")
 
+  # Dormant works are excluded: nothing renders them, so there is no page for
+  # an abstract to be missing from, and reporting one every run trains the eye
+  # to skip the report.
   missing_abstract <- works_tbl |>
-    filter(kind %in% c("article", "book", "chapter")) |>
+    filter(kind %in% c("article", "book", "chapter"), stage != "dormant") |>
     mutate(path = file.path(works_dir(root), work_id, "metadata", "abstract.txt")) |>
     filter(!file.exists(path)) |>
     transmute(work_id, severity = "report", check = "abstract",
