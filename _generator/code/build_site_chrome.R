@@ -13,17 +13,17 @@ source("code/harvest_works.R")
 source("code/build_galleries.R")
 
 # The nav, footer and stylesheets are SOURCE, not build output, so they live in
-# works/site_chrome/ rather than being read back out of the published repo. They
+# works/site/chrome/ rather than being read back out of the published repo. They
 # were restored there from tag pre-quarto-20260731 when the branch removed the
 # old pipeline's inputs (2026-07-31).
-chrome_dir <- function(root = ".") file.path(root, "site_chrome")
+chrome_dir <- function(root = ".") file.path(root, "site", "chrome")
 
 build_site_chrome <- function(root = ".") {
   slice <- slice_dir
 
   # Stylesheets and scripts come from the site repo, which is where they live
-  # today; site_images/ is the works-side copy rescued on 2026-07-30.
-  # Emptied first, not copied into: a file deleted from site_chrome/ otherwise
+  # today; site/images/ is the works-side copy rescued on 2026-07-30.
+  # Emptied first, not copied into: a file deleted from site/chrome/ otherwise
   # survives in the build and stays published. rmarkdown.js kept being served
   # for exactly that reason after it was retired.
   for (d in c("css", "js")) {
@@ -52,7 +52,7 @@ build_site_chrome <- function(root = ".") {
     str_detect(css, "^  color: #fcbf49;")
   write_lines(css[!typography], file.path(slice, "css", "rmarkdown.css"))
   dir.create(file.path(slice, "images"), showWarnings = FALSE)
-  file.copy(list.files(file.path(root, "site_images"), full.names = TRUE),
+  file.copy(list.files(file.path(root, "site", "images"), full.names = TRUE),
             file.path(slice, "images"), overwrite = TRUE)
 
   file.copy(file.path(chrome_dir(root), "project_page.css"),
@@ -160,7 +160,7 @@ build_site_chrome <- function(root = ".") {
   # for a PDF note is its first page; for the one HTML note it is a screenshot
   # of the page itself.
   dir.create(file.path(slice, "note_thumbs"), showWarnings = FALSE)
-  file.copy(list.files(file.path(root, "site_notes", "thumbs"), full.names = TRUE),
+  file.copy(list.files(file.path(root, "site", "notes", "thumbs"), full.names = TRUE),
             file.path(slice, "note_thumbs"), overwrite = TRUE)
 
   notes <- tribble(

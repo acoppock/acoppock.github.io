@@ -207,7 +207,7 @@ check_works <- function(harvest, root = ".") {
       file.path(works_dir(root), id, c("original_materials", "assets", "metadata"), f)
     } else character()
     flat <- file.path(root, c("documents", "display_figures", "card_figures",
-                              "book_covers", "site_images"), f)
+                              "book_covers", "site/images"), f)
     hit <- c(own, flat)[file.exists(c(own, flat))]
     if (length(hit)) hit[1] else NA_character_
   }

@@ -376,6 +376,19 @@ publish_assets <- function(root = ".") {
     if (file.exists(src)) file.copy(src, file.path(out, f), overwrite = TRUE)
   }
 
+  # css/ and js/ are MIRRORED, not copied into. Emptying them in the build
+  # directory was not enough: Quarto copies project resources into _site and
+  # never clears _site, so js/rmarkdown.js survived there after being retired
+  # and the sync carried it to the branch. It was still being served hours
+  # after it was deleted. Found 2026-08-01 by listing the branch rather than
+  # trusting that the deletion had taken.
+  for (d in c("css", "js")) {
+    unlink(file.path(out, d), recursive = TRUE)
+    dir.create(file.path(out, d), showWarnings = FALSE)
+    file.copy(list.files(file.path(slice_dir, d), full.names = TRUE),
+              file.path(out, d), overwrite = TRUE)
+  }
+
   # Site-level files: the CV the nav links, the Notes the Notes page links, and
   # everything under subpages/. None belongs to a work, so none is reachable
   # through the works tables, and publishing only work-owned files would leave
@@ -390,7 +403,7 @@ publish_assets <- function(root = ".") {
   #
   # This replaces site_documents/ and subpages/, which had both drifted into
   # being about notes and nothing else.
-  note_files <- list.files(file.path(root, "site_notes"), full.names = TRUE) |>
+  note_files <- list.files(file.path(root, "site", "notes"), full.names = TRUE) |>
     discard(~ basename(.x) == "thumbs")
   file.copy(note_files, out, overwrite = TRUE)
 
