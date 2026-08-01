@@ -394,16 +394,10 @@ publish_assets <- function(root = ".") {
     discard(~ basename(.x) == "thumbs")
   file.copy(note_files, out, overwrite = TRUE)
 
-  # Two notes were published under a subpages/ prefix for years. The files are
-  # canonical at the root now, and these copies keep the old addresses working:
-  # Pages serves no redirects, and neither a .pdf nor a .html can be
-  # meta-refreshed without replacing the thing the reader came for.
-  legacy_subpages <- c("counterfactual_format.html",
-                       "note_Random_Assignment_Subject_To_Constraints.pdf")
+  # subpages/ is gone entirely (Alex, 2026-07-31): the two notes that lived
+  # under that prefix are canonical at the root and the old addresses are
+  # retired rather than mirrored.
   unlink(file.path(out, "subpages"), recursive = TRUE)
-  dir.create(file.path(out, "subpages"), showWarnings = FALSE)
-  file.copy(file.path(root, "site_notes", legacy_subpages),
-            file.path(out, "subpages"), overwrite = TRUE)
 
   # The migration is not done until a rebuilt site contains every URL that the
   # pre-migration snapshot recorded. Now that the site is complete, check EVERY

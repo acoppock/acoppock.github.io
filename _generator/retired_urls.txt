@@ -104,3 +104,9 @@ subpages/lefse.jpeg
 # returning 200. Moved to Dropbox/family/VG_XMAS2018/ rather than deleted: it
 # is eight years old and someone may still have the link.
 subpages/XMAS2018.html
+
+# 2026-07-31: the last two subpages/ URLs. Both notes are canonical at the root
+# now that notes live in site_notes/, and Alex chose not to mirror the old
+# addresses. subpages/ no longer exists in the source or in the output.
+subpages/counterfactual_format.html
+subpages/note_Random_Assignment_Subject_To_Constraints.pdf
