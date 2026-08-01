@@ -9,8 +9,8 @@
 # be a no-op at best. The wrapper divs it preceded are kept, because the site's
 # own CSS is written against them.
 
-source("code/harvest_works.R")
-source("code/build_galleries.R")
+source("site/code/harvest_works.R")
+source("site/code/build_galleries.R")
 
 # The nav, footer and stylesheets are SOURCE, not build output, so they live in
 # works/site/chrome/ rather than being read back out of the published repo. They

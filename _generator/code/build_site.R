@@ -7,18 +7,18 @@
 # writes it last), and brand.scss must be copied into the build BEFORE the
 # render, or the theme compiles against a stale palette.
 #
-#   Rscript code/build_site.R          build, check, and sync to the repo
-#   Rscript code/build_site.R --local  build and check only, no sync
+#   Rscript site/code/build_site.R          build, check, and sync to the repo
+#   Rscript site/code/build_site.R --local  build and check only, no sync
 #
 # It refuses to sync when a check fails. The published-URL count is the one
 # that matters: 217 URLs were live before the restructure and every one of them
 # must still resolve, so a build that drops one is a build that breaks somebody
 # else's citation.
 
-source("code/build_slice.R")
-source("code/build_galleries.R")
-source("code/build_site_chrome.R")
-source("code/check_links.R")
+source("site/code/build_slice.R")
+source("site/code/build_galleries.R")
+source("site/code/build_site_chrome.R")
+source("site/code/check_links.R")
 
 brand_source <- "/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss"
 site_repo <- "/Users/alexandercoppock/git_projects/acoppock.github.io"

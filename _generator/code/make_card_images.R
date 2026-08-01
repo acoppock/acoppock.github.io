@@ -14,7 +14,7 @@
 #
 # Only missing cards are generated. Delete a card to force it to be remade.
 
-source("code/harvest_works.R")
+source("site/code/harvest_works.R")
 library(magick)
 
 make_card_images <- function(root = ".") {

@@ -6,8 +6,8 @@
 # links straight out to the pkgdown site, so this script renders the listing
 # from `kind: software` rather than from a hardcoded set of calls.
 
-source("code/harvest_works.R")
-source("code/build_project_page.R")
+source("site/code/harvest_works.R")
+source("site/code/build_project_page.R")
 
 # The built site does not live in Dropbox (Alex, 2026-07-31): it belongs only
 # in the git repo. The build directory sits beside the repo, is gitignored, and
@@ -280,7 +280,7 @@ publish_assets <- function(root = ".") {
                         "build_site_chrome.R", "check_links.R",
                         "make_bib_files.R", "make_card_images.R",
                         "make_page1_thumbnails.R")
-  file.copy(file.path(root, "code", pipeline_scripts), file.path(gen, "code"),
+  file.copy(file.path(root, "site", "code", pipeline_scripts), file.path(gen, "code"),
             overwrite = TRUE)
   file.copy("/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss", gen,
             overwrite = TRUE)

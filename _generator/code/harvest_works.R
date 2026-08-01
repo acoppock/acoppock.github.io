@@ -10,7 +10,7 @@ library(glue)
 library(yaml)
 library(readxl)
 
-source("code/read_bib.R")
+source("site/code/read_bib.R")
 
 # Paper folders live under original_materials/ (Alex, 2026-07-30), which keeps
 # the 70 of them out of the type-based directories at the top of works/ and

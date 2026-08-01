@@ -9,7 +9,7 @@
 library(tidyverse)
 library(magick)
 
-source("code/harvest_works.R")
+source("site/code/harvest_works.R")
 
 make_page1 <- function(root = ".", width = 900) {
   h <- harvest_works(root)

@@ -5,7 +5,7 @@
 # ordering and the empty state are all read off the works now, so adding a work
 # is adding a folder.
 
-source("code/harvest_works.R")
+source("site/code/harvest_works.R")
 
 # Section order on the page, and which kind fills each. Books before Articles is
 # the order the site adopted on 2026-07-29.

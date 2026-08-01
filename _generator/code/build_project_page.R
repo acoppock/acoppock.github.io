@@ -12,7 +12,7 @@
 # Alex is unsure they earn their place, so the switch exists to be looked at
 # both ways rather than argued about.
 
-source("code/harvest_works.R")
+source("site/code/harvest_works.R")
 
 # No taxonomy. Every grouping scheme generated edge cases (a pre-analysis plan
 # is not data, a preprint is not quite "published", a project site is neither),
