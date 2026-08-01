@@ -174,7 +174,25 @@ build_site_chrome <- function(root = ".") {
     "attention.pdf", "attention.png", "Notes on attention", "",
     "testing_with_grf.pdf", "testing_with_grf.png",
       "Note on testing for heterogeneity with grf",
-      " with <a href=\"https://mollyow.github.io/\">Molly Offer-Westort</a>"
+      " with <a href=\"https://mollyow.github.io/\">Molly Offer-Westort</a>",
+    "adjustment.pdf", "adjustment.png", "Trusting covariate adjustment", "",
+    # Not a paper, and superseded by the meta-conjoint project (Alex,
+    # 2026-07-31). It keeps its URL and becomes a note rather than being
+    # retired, because the URL is live and the note still says something.
+    "coppock_blyth_2024.pdf", "coppock_blyth_2024.png",
+      "A meta-reanalysis of hypothetical candidate conjoint experiments",
+      str_c(" with Matthew Blyth",
+            "<span class='noteSuperseded'>Superseded by the meta-conjoint project.</span>"),
+    "replication_novel_cfp.pdf", "replication_novel_cfp.png",
+      "Call for proposals: replication and novel survey experiments",
+      str_c(" with <a href=\"https://www.marymcgrath.net/\">Mary McGrath</a>",
+            "<span class='noteClosed'>Submissions are closed.</span>"),
+    # One note, not two. randomizr_cheatsheet.pdf and
+    # coppock_cooper_fultz_2015_cheatsheet.pdf are byte-identical (md5
+    # 82bbd8eb...), so listing both would show the same PDF twice. The second
+    # URL stays published and unlinked until Alex decides whether to retire it.
+    "randomizr_cheatsheet.pdf", "randomizr_cheatsheet.png",
+      "randomizr cheatsheet", " with Jasper Cooper and Neal Fultz"
   )
 
   # Same card-and-description pattern as the papers and software galleries

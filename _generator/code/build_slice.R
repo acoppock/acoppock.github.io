@@ -371,16 +371,25 @@ publish_assets <- function(root = ".") {
   # through the works tables, and publishing only work-owned files would leave
   # the nav pointing at a 404.
   file.copy(file.path(root, "curriculum_vitae", "coppock_cv.pdf"), out, overwrite = TRUE)
-  # NEVER blanket-copy documents/. It holds Alex's own copy of the watermarked
-  # book PDF, which was publicly retrievable until it was purged from the site
-  # repo's history in July 2026 at real cost. A copy-everything rule put it
-  # straight back into the build on 2026-07-31 and it reached a branch before
-  # being caught. Excluded by name, and anything else that should not be
-  # published goes on this list rather than being remembered.
-  never_publish <- c("Coppock_9780226821825_Watermarked_AEC.pdf")
-  site_docs <- list.files(file.path(root, "documents"), full.names = TRUE) |>
-    discard(~ basename(.x) %in% never_publish)
-  file.copy(site_docs, out, overwrite = TRUE)
+
+  # Root-level documents that belong to no work: two notes the Notes page links,
+  # a call for proposals, and a research note with no catalog entry yet.
+  #
+  # This used to blanket-copy `documents/` and exclude the watermarked book by
+  # name (Alex, 2026-07-31). Two things were wrong with that. Anything a work
+  # owns was being published from a flat directory rather than from the work,
+  # so the same PDF had two possible homes and the work's folder was not the
+  # answer to "what does this paper ship". And a blocklist publishes by default:
+  # the watermarked book reached a branch that way, and any future private file
+  # dropped into the directory would do the same.
+  #
+  # Work-owned files moved into `catalog/<work_id>/original_materials/` and are
+  # published through each work's `published_files`. What remains is an
+  # allowlist directory: a file is published because it was put here, so
+  # forgetting cannot leak anything. `documents/` is no longer read by the build
+  # at all and now holds only Alex's private copies.
+  file.copy(list.files(file.path(root, "site_documents"), full.names = TRUE),
+            out, overwrite = TRUE)
   dir.create(file.path(out, "subpages"), showWarnings = FALSE)
   file.copy(list.files(file.path(root, "subpages"), full.names = TRUE),
             file.path(out, "subpages"), overwrite = TRUE)

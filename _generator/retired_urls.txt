@@ -52,3 +52,10 @@ Coppock_9780226821825_Watermarked_AEC.pdf
 # entry no longer exists under the old key, so there is nothing to serve; the
 # old .html keeps working as a stub via `supersedes`.
 brodeur_etal_2024.txt
+
+# 2026-07-31: coppock_2025.pdf, a byte-identical duplicate of coppock_2025a.pdf
+# (md5 610be977b1f444624ea730fd6e96e349) carried over from before the work took
+# its disambiguated id. The paper is served at coppock_2025a.pdf, which the
+# project page and the bibliography both link. Retired at Alex's direction
+# rather than kept alive as a second address for one document.
+coppock_2025.pdf

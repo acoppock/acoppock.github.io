@@ -13,7 +13,7 @@ Build order:
 
     source("code/build_slice.R"); source("code/build_galleries.R"); source("code/build_site_chrome.R")
     build_slice("."); build_galleries("."); build_site_chrome(".")
-    quarto render quarto_slice
+    quarto render ~/git_projects/acoppock_site_build
     publish_assets(".")     # flat files, and the URL check against the snapshot
 
 `publish_assets()` verifies the build against `notes/published_urls_20260729.txt`,

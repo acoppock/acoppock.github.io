@@ -717,3 +717,23 @@ main.content {
 .workAbstract p:last-child {
   margin-bottom: 0;
 }
+
+/* Notices on a note card. The closed call for proposals must read as closed at
+   a glance: someone who skims the card and downloads the PDF should not draft a
+   proposal for a call that ended. */
+.noteClosed,
+.noteSuperseded {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.noteClosed {
+  color: #a72f5b;
+}
+
+.noteSuperseded {
+  color: #6B7078;
+}

@@ -1,68 +1,65 @@
-rm(list = ls())
+# Gallery cards, one per work, written into the work's own folder.
+#
+# Ported to the catalog on 2026-07-31. The previous version was the last script
+# still living in the pre-catalog world: it read PDFs out of the flat
+# `documents/` directory, took its key list from `bib2df` (retired in favour of
+# read_bib), and wrote its output into the SITE REPO rather than into the
+# catalog. That last part had become actively destructive, because the build
+# now syncs with `--delete`: a card written to the repo would be deleted on the
+# next build, since the build does not produce it.
+#
+# Cards are derived, so they belong beside the other derived images in
+# `catalog/<work_id>/assets/`, which is where make_page1_thumbnails.R already
+# puts the page-1 thumbnails.
+#
+# Only missing cards are generated. Delete a card to force it to be remade.
+
+source("code/harvest_works.R")
 library(magick)
-library(magrittr)
-library(pdftools)
 
-# For papers --------------------------------------------------------------
-# Generates only the cards that are MISSING, rather than whichever index happened to
-# be assigned to `i`. The old form hardcoded `i <- 31`, so running the script wrote
-# one arbitrary card: on 2026-07-29 that silently produced an unreferenced
-# coppock_green_porter_2026_preprint_card.png, and it also meant a genuinely missing
-# card was never noticed.
-#
-# Restricted to stems that are bib keys, which keeps preprint and other suffixed PDFs
-# in documents/ from acquiring cards nothing will ever reference.
-library(tidyverse)
-library(bib2df)
+make_card_images <- function(root = ".") {
+  harvest <- harvest_works(root)
 
-keys <- suppressWarnings(bib2df("bibliography/bibliography.bib"))$BIBTEXKEY
+  works <- harvest$works |>
+    mutate(
+      dest = file.path(works_dir(root), work_id, "assets", str_c(work_id, "_card.png")),
+      paper = file.path(works_dir(root), work_id, "original_materials",
+                        str_c(work_id, ".pdf")),
+      cover = file.path(works_dir(root), work_id, "original_materials",
+                        str_c(work_id, "_cover.jpg"))
+    ) |>
+    filter(!file.exists(dest), file.exists(paper) | file.exists(cover))
 
-files <- list.files(path = "documents/", pattern = "[.]pdf$")
-files <- files[!grepl("appendix", files)]
-file_names <- gsub(pattern = "[.]pdf$", replacement = "", x = files)
-
-card_dir <- path.expand("~/git_projects/acoppock.github.io/card_figures")
-wanted <- tibble(file = files, key = file_names) |>
-  filter(key %in% keys) |>
-  filter(!file.exists(file.path(card_dir, paste0(key, "_card.png"))))
-
-if (nrow(wanted) == 0) {
-  print("paper cards: none missing")
-} else {
-  for (i in seq_len(nrow(wanted))) {
-    try(image_read_pdf(paste0("documents/", wanted$file[i]), pages = 1, density = 500) |>
-          image_scale("1000") |>
-          image_crop("1000x1000") |>
-          image_convert(format = "png") |>
-          image_write(file.path(card_dir, paste0(wanted$key[i], "_card.png"))))
-    print(wanted$key[i])
+  if (!nrow(works)) {
+    print("cards: none missing")
+    return(invisible(character()))
   }
+
+  for (i in seq_len(nrow(works))) {
+    id <- works$work_id[i]
+    dir.create(dirname(works$dest[i]), showWarnings = FALSE, recursive = TRUE)
+
+    if (file.exists(works$cover[i])) {
+      # A cover is portrait (Persuasion in Parallel is 1249x1874) while every
+      # other card is a 1000x1000 square, so it is FITTED and padded rather than
+      # cropped: cropping a cover cuts off the title or the author. `image_resize`
+      # without a "!" preserves the aspect ratio and `image_extent` centres it.
+      image_read(works$cover[i]) |>
+        image_resize("1000x1000") |>
+        image_extent("1000x1000", color = "white") |>
+        image_convert(format = "png") |>
+        image_write(works$dest[i])
+    } else {
+      image_read_pdf(works$paper[i], pages = 1, density = 500) |>
+        image_scale("1000") |>
+        image_crop("1000x1000") |>
+        image_convert(format = "png") |>
+        image_write(works$dest[i])
+    }
+    print(id)
+  }
+
+  invisible(works$work_id)
 }
 
-
-# For books ---------------------------------------------------------------
-# A book has no paper PDF in documents/, so the loop above cannot make its card and
-# the gallery fell back to a title-only entry. The card is made from the cover
-# instead, kept in book_covers/<key>_cover.jpg.
-#
-# Covers are portrait (Persuasion in Parallel is 1249x1874) while every other card is
-# a 1000x1000 square, so the cover is FITTED inside the square and padded with white
-# rather than cropped: cropping a cover cuts off the title or the author, and the
-# page background is #fff so the padding is invisible. `image_resize` without a "!"
-# preserves the aspect ratio, and `image_extent` centres it on the square canvas.
-#
-# Runs over the whole directory rather than by index, so adding a cover is enough.
-covers <- list.files("book_covers", pattern = "_cover\\.(jpg|jpeg|png)$")
-
-for (cover in covers) {
-  key <- sub("_cover\\.(jpg|jpeg|png)$", "", cover)
-  image_read(file.path("book_covers", cover)) |>
-    image_resize("1000x1000") |>
-    image_extent("1000x1000", color = "white") |>
-    image_convert(format = "png") |>
-    image_write(paste0("~/git_projects/acoppock.github.io/card_figures/", key, "_card.png"))
-  print(key)
-}
-
-
-
+if (!interactive() && sys.nframe() == 0) make_card_images()
