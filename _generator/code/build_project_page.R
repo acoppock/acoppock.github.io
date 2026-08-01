@@ -20,13 +20,13 @@ source("code/harvest_works.R")
 # to six links: a short row, not a dump. Order is fixed and meaningful, running
 # from the paper itself outwards to the apparatus.
 link_order <- c("paper", "appendix", "preprint", "journal", "replication_archive",
-                "preanalysis_plan", "project", "extra", "bibtex")
+                "preanalysis_plan", "project", "maintenance", "extra", "bibtex")
 
 link_text <- c(
   paper = "PDF", appendix = "Appendix", preprint = "Preprint",
   journal = "Journal", replication_archive = "Replication archive",
   preanalysis_plan = "Pre-analysis plan", project = "Project site",
-  bibtex = "BibTeX"
+  maintenance = "Active maintenance", bibtex = "BibTeX"
 )
 
 # Author names carry their own websites, so a coauthor with a page on file is
@@ -63,9 +63,19 @@ build_links_row <- function(work_id, harvest) {
     mutate(slot = if_else(str_detect(file, "preprint"), "preprint", "appendix")) |>
     transmute(slot, label = NA_character_, target = file)
 
+  # An actively maintained work carries a repository of replication code that
+  # is kept running as its dependencies move. That is a different promise from
+  # a frozen replication archive, so it is a link of its own rather than a
+  # second "Replication archive".
+  repo <- harvest$works$maintenance_repo[harvest$works$work_id == work_id]
+  maintenance <- if (length(repo) && !is.na(repo[1])) {
+    tibble(slot = "maintenance", label = NA_character_, target = repo[1])
+  } else NULL
+
   all_links <- bind_rows(
     rows |> select(slot, label, target),
     extra_files,
+    maintenance,
     tibble(slot = "bibtex", label = NA_character_, target = str_c(work_id, ".txt"))
   ) |>
     mutate(rank = match(slot, link_order)) |>
