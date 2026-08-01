@@ -293,7 +293,7 @@ publish_assets <- function(root = ".") {
   # five-call build retired by build_site.R and still advertised the
   # `never_publish` blocklist that the allowlist replaced. Two documents that
   # disagree are worse than one.
-  for (f in c("update_routines.txt", "new_site_plan.md", "retired_urls.txt")) {
+  for (f in c("update_routines.txt", "retired_urls.txt")) {
     src <- file.path(root, "notes", f)
     if (file.exists(src)) file.copy(src, gen, overwrite = TRUE)
   }
