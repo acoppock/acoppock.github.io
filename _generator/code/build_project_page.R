@@ -120,7 +120,7 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
 
   citation <- link_authors(format_citation(entry, with_title = FALSE), work_id, harvest, coauthor_file)
 
-  abstract_path <- file.path(root, "abstracts", str_c(work_id, ".txt"))
+  abstract_path <- file.path(works_dir(root), work_id, "metadata", "abstract.txt")
   abstract <- if (file.exists(abstract_path)) str_trim(read_file(abstract_path)) else NA_character_
 
   # A book leads with its cover; everything else leads with its card, which is

@@ -246,10 +246,10 @@ check_works <- function(harvest, root = ".") {
 
   missing_abstract <- works_tbl |>
     filter(kind %in% c("article", "book", "chapter")) |>
-    mutate(path = file.path(root, "abstracts", str_c(work_id, ".txt"))) |>
+    mutate(path = file.path(works_dir(root), work_id, "metadata", "abstract.txt")) |>
     filter(!file.exists(path)) |>
     transmute(work_id, severity = "report", check = "abstract",
-              detail = "no abstracts/<work_id>.txt")
+              detail = "no metadata/abstract.txt")
 
   bind_rows(missing_bib, bad_kind, bad_stage, asset_files, link_files, published_missing,
             bad_coauthors, missing_gloss, missing_abstract, orphan_bib) |>
