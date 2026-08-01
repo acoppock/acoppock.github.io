@@ -138,6 +138,9 @@ harvest_works <- function(root = ".") {
           source = a$source %||% NA_character_,
           gloss = a$gloss %||% NA_character_,
           figure_label = a$figure_label %||% NA_character_,
+          # Where the figure came from, when it was not the paper. One display
+          # figure is from an AJPS blog post rather than the article.
+          figure_source = a$figure_source %||% NA_character_,
           caption = a$caption %||% NA_character_
         )
       }) |>

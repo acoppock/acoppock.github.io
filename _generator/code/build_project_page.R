@@ -156,7 +156,15 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
     '<div class="workBody">\n',
     '<h1 class="workTitle">', entry$title, '</h1>\n',
     '<div class="workCitation">', citation, '</div>\n',
-    if (!is.na(abstract)) str_c('<div class="workAbstract">', abstract, '</div>\n') else "",
+    if (!is.na(abstract)) {
+      paras <- abstract |>
+        str_split_1("\n\\s*\n") |>
+        str_squish() |>
+        keep(nzchar) |>
+        str_c("<p>", ... = _, "</p>") |>
+        str_flatten("\n")
+      str_c('<div class="workAbstract">', paras, '</div>\n')
+    } else "",
     '</div>\n</div>'
   )
 
@@ -168,6 +176,9 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
     # needs no defending.
     label <- display$figure_label[1]
     caption <- display$caption[1]
+    # "paper" unless the work says otherwise: coppock_green_2016's figure is
+    # from an AJPS blog post, and calling it the paper's would be wrong.
+    source_name <- coalesce(display$figure_source[1], "paper")
     gloss <- if (!is.na(caption) && !is.na(label)) {
       # The extracted caption still opens with its own label, so strip it rather
       # than print "Figure 1 from paper: Figure 1. ...".
@@ -179,7 +190,7 @@ build_project_page <- function(work_id, harvest, coauthor_file, root = ".",
         # captions off mid-thought. No truncation either, for the same reason.
         str_squish()
       str_c('\n<div class="workGloss"><span class="figureLabel">', label,
-            ' from paper:</span> ', body, '</div>')
+            ' from ', source_name, ':</span> ', body, '</div>')
     } else ""
     orient <- {
       path <- file.path(works_dir(root), work_id, "original_materials", display$file[1])

@@ -707,3 +707,13 @@ main.content {
   font-size: 1.7rem;
   line-height: 1.2;
 }
+
+/* The abstract is paragraphs now, not one interpolated string. Only the book
+   has more than one, but the last must not add a margin under the block. */
+.workAbstract p {
+  margin-bottom: 0.8rem;
+}
+
+.workAbstract p:last-child {
+  margin-bottom: 0;
+}

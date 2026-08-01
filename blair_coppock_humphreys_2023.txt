@@ -3,5 +3,6 @@
   title = {{Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign}},
   year = {2023},
   publisher = {Princeton University Press},
-  address = {Princeton, NJ}
+  address = {Princeton, NJ},
+  doi = {10.2307/j.ctv34xx5vd}
 }
