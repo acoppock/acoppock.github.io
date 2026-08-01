@@ -65,3 +65,9 @@ coppock_2025.pdf
 # snapshot but 404s on the live site and is absent from master, so it was never
 # actually served: retiring it removes nothing a reader could reach.
 coppock_2015.txt
+
+# 2026-07-31: coppock_cooper_fultz_2015_cheatsheet.pdf, byte-identical to
+# randomizr_cheatsheet.pdf (md5 82bbd8eb7c13c3dd5a60fe615b88abc1, same 2018
+# creation timestamp). One document does not need two addresses; the surviving
+# one is the name without the author list, at Alex's direction.
+coppock_cooper_fultz_2015_cheatsheet.pdf
