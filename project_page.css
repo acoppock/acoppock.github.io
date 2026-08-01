@@ -214,7 +214,7 @@ main.content {
 .workLinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 0;
+  row-gap: 0.5rem;
   align-items: baseline;
   margin: 1.5rem 0 2rem 0;
   padding-bottom: 1rem;
@@ -333,23 +333,28 @@ main.content {
 /* A slim pipe between links, drawn as a border on the element rather than a
    pseudo-element: a 1px pseudo in a light warm grey rendered so faintly it read
    as no separator at all. */
-/* The separator sits midway between its neighbours: equal padding on the left
-   of each link and the right of the one before it. Using flex `gap` for one
-   side and padding for the other put the pipe hard against the following word. */
+/* Space, not pipes (2026-08-01). The pipes were a border-right on each link,
+   so a separator BELONGED to its link and rendered at the end of a wrapped
+   line with nothing after it. They also cost 2.3rem per link in padding, which
+   is what forced the wrap in the first place: at ten links the same row fits on
+   one line without them. Alex asked for the pipes when a row held four or five
+   links, where they read well and never wrapped.
+
+   The spacing is margin on the anchors, NOT flex `column-gap`. Pandoc wraps a
+   raw HTML div's contents in a <p>, so .workLinks holds exactly one flex child
+   and a column-gap applies between nothing: the links rendered a single space
+   apart. The old pipes hid this, being padding on each <a> and so indifferent
+   to the structure.
+
+   A label is a unit: without `nowrap`, "Pre-analysis plan 2" breaks across
+   lines as "Pre-" and "analysis plan 2", which reads as two broken links. */
 .workLinks a {
-  padding-left: 1.15rem;
-  /* A label is a unit: without this "Pre-analysis plan 2" breaks across lines
-     as "Pre-" and "analysis plan 2", which reads as two broken links. */
   white-space: nowrap;
+  margin-right: 1.5rem;
 }
 
-.workLinks a:first-child {
-  padding-left: 0;
-}
-
-.workLinks a:not(:last-child) {
-  border-right: 1px solid var(--rule-strong, #D8D0C4);
-  padding-right: 1.15rem;
+.workLinks a:last-child {
+  margin-right: 0;
 }
 
 /* Note card titles are links too. */
