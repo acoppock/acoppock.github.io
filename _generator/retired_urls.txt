@@ -110,3 +110,49 @@ subpages/XMAS2018.html
 # addresses. subpages/ no longer exists in the source or in the output.
 subpages/counterfactual_format.html
 subpages/note_Random_Assignment_Subject_To_Constraints.pdf
+
+# 2026-08-03: the three-way work_id rename. These four URLs are RETIRED because
+# their id no longer exists. Status: all were 200 before the switch; this is a
+# deliberate removal, not a verified-404 record.
+#   coppock_2021b -> coppock_2020   (POQ review; its year was always 2020)
+#   coppock_2025a -> coppock_2025   ('a' had nothing to disambiguate from)
+coppock_2021b.pdf
+coppock_2021b.txt
+coppock_2025a.html
+coppock_2025a.txt
+#
+# NOT RETIRED AND NOT SAFE: coppock_2020.html / .pdf / .txt still resolve, but
+# from 2026-08-03 they serve a DIFFERENT WORK. They were the CUP chapter
+# "Visualize As You Randomize" (now coppock_2021, whose Crossref date is
+# 2021-04-01 and whose bib year was wrong); they now serve the POQ review.
+# Alex accepted this cost knowingly on 2026-08-03 when choosing the full swap.
+# No check can catch it, because the URL still returns 200 — it just answers
+# with the wrong work. Recorded here because it is the one thing in this file
+# that a 404 sweep will never find.
+
+# 2026-08-03, before the switch. Alex's decisions on the 49 URLs that were live
+# on master and absent from the new build. All were 200 at the time; these are
+# deliberate removals, not verified-404 records.
+#   - the 9 subpages/ documents: everything worth saving was moved out first
+#   - the orphan bibtex .txt for keys that no longer exist
+#   - 26 orphan card/display images from the old generator, linked from nothing
+# KEPT instead: coppock_cooper_fultz_2015_cheatsheet.pdf, republished as an
+# address alias of randomizr_cheatsheet.pdf (see publish_assets).
+subpages/lefse.jpeg
+aggarwal_2023.txt
+blair_coppock_humphreys_2022.txt
+brodeur_etal_2024.txt
+coppock_etal_2021.txt
+coppock_green_2020.txt
+coppock_green_porter_2020b.txt
+coppock_kaur_2021.txt
+graham_coppock_2020.txt
+peyton_huber_coppock_2021.txt
+schwarz_coppock_2020.txt
+#
+# ALSO REASSIGNED, and no 404 sweep will find it: coppock_2021.txt was the
+# forthcoming BibTeX for Persuasion in Parallel (@book{coppock_2021, Note =
+# {Forthcoming}}). That book published as coppock_2022, and after the
+# 2026-08-03 rename the same URL now serves the CUP chapter's BibTeX. Same
+# shape as coppock_2020.* above: the URL still returns 200 and answers with a
+# different work.

@@ -120,6 +120,22 @@ build_slice <- function(root = ".", show_figure = TRUE) {
     dir.create(file.path(slice_dir, d), showWarnings = FALSE)
   }
 
+  # Sweep the page sources this function owns before writing them.
+  #
+  # Nothing here ever deleted a .qmd, so a work that is renamed or removed left
+  # its page behind and Quarto re-rendered it forever. The 2026-08-03 rename
+  # made it visible: `coppock_2021b.qmd` and `coppock_2025a.qmd` survived and
+  # rendered pages pointing at PDFs that no longer existed. This is the same
+  # shape as the five leaks already recorded (css/, js/, subpages/, note thumbs,
+  # _generator/), and the same rule applies: a directory the build populates
+  # must be emptied before it is filled, or its contents are the union of every
+  # state the build has ever been in.
+  #
+  # `_quarto.yml`, the stylesheets and the asset directories are written or
+  # copied separately below, so only the generated page sources are swept.
+  unlink(list.files(slice_dir, "\\.qmd$", full.names = TRUE))
+  unlink(list.files(slice_dir, "_files$", full.names = TRUE), recursive = TRUE)
+
   write_lines(c(
     "project:",
     "  type: default",
@@ -419,6 +435,30 @@ publish_assets <- function(root = ".") {
   # under that prefix are canonical at the root and the old addresses are
   # retired rather than mirrored.
   unlink(file.path(out, "subpages"), recursive = TRUE)
+
+  # Kept URLs: an old address that still has to resolve after the switch, even
+  # though nothing links it and the file is published under a better name.
+  #
+  # `coppock_cooper_fultz_2015_cheatsheet.pdf` is the randomizr cheatsheet's
+  # original address, live since 2015 and byte-identical to
+  # `randomizr_cheatsheet.pdf`. A cheatsheet is exactly the kind of thing that
+  # ends up in somebody else's teaching materials, where the link can never be
+  # updated, so Alex kept it on 2026-08-03. The Notes page deliberately lists
+  # the file once, under the better name; this is the address, not a second
+  # note.
+  #
+  # NOTE: build_site_chrome.R already carried a comment saying this URL "stays
+  # published", but nothing implemented it and the file was absent from the
+  # build. Found by diffing the built output against what master actually
+  # serves, rather than against the snapshot of what it was meant to serve.
+  kept_urls <- tribble(
+    ~from,                        ~to,
+    "randomizr_cheatsheet.pdf",   "coppock_cooper_fultz_2015_cheatsheet.pdf"
+  )
+  for (i in seq_len(nrow(kept_urls))) {
+    src <- file.path(out, kept_urls$from[i])
+    if (file.exists(src)) file.copy(src, file.path(out, kept_urls$to[i]), overwrite = TRUE)
+  }
 
   # The migration is not done until a rebuilt site contains every URL that the
   # pre-migration snapshot recorded. Now that the site is complete, check EVERY

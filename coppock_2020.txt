@@ -1,11 +1,10 @@
-@incollection{coppock_2020,
+@article{coppock_2020,
   author = {Coppock, Alexander},
-  editor = {Druckman, James N. and Donald P. Green},
-  title = {{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}},
-  booktitle = {Advances in Experimental Political Science},
+  title = {{Review of: Paul J. Lavrakas, Michael W. Traugott, Courtney Kennedy, Allyson L. Holbrook, Edith D. de Leeuw, and Brady T. West, eds. Experimental Methods in Survey Research: Techniques That Combine Random Sampling with Random Assignment}},
+  journal = {Public Opinion Quarterly},
   year = {2020},
-  pages = {320--336},
-  publisher = {Cambridge University Press},
-  address = {New York},
-  doi = {10.1017/9781108777919.022}
+  volume = {84},
+  number = {4},
+  pages = {1014-1016},
+  doi = {10.1093/poq/nfaa053}
 }

@@ -105,6 +105,34 @@ work.yaml
 `extra:` takes `file:` for a local file and `url:` for a URL. Using `target:`
 fails silently: the link simply does not appear.
 
+CORRECTIONS GO ON THE WEBSITE, AS AN `extra:` LINK (Alex, 2026-08-01). Put the
+document in `original_materials/` and register it. Which kind it is decides the
+name and how many links it gets:
+
+  Published in the journal, so it has its own DOI -> `<id>_corrigendum.pdf`,
+  linked TWICE: `- label: Corrigendum` with the file, and `- label: Corrigendum
+  in the journal` with the DOI. The file is the copy that cannot rot; the DOI is
+  the version of record. Examples: guess_coppock_2020, peyton_huber_coppock_2022.
+
+  A corrigendum published in a year of its own carries its own citation and gets
+  its own paper_id, so the LOCAL link points at that file rather than at an
+  `_corrigendum.pdf`. Example: coppock_2014 links coppock_2016.pdf.
+
+  Author-produced, with no DOI -> `<id>_errata.pdf`, labelled `Errata`, one link
+  only. Example: coppock_green_porter_2022, whose errors were found while
+  rebuilding the analysis from the deposited replication archive.
+
+Do not label an author's errata note a corrigendum: a corrigendum is a thing a
+journal publishes.
+
+`bibtex_key: ~` is legal and means the work has NO bib entry yet. A project
+exists before its paper does, and the timelines want it from the day it has a
+submission row, so a folder plus a stub `work.yaml` is enough to enter the
+catalog. check_works() reports that as a note while the work is staged or
+dormant and FAILS on it for anything that renders a page, since a page with no
+bib entry has no citation, title or venue. Add the bib entry when the paper
+exists and set the key then.
+
 `kind` is one of: article, book, chapter, review, crowdsourced, dissertation,
 software, note.
 

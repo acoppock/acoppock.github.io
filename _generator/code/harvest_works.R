@@ -32,6 +32,18 @@ harvest_works <- function(root = ".") {
       bibtex_key = m$bibtex_key %||% NA_character_,
       kind = m$kind %||% NA_character_,
       stage = m$stage %||% NA_character_,
+      # Four hand-written labels, all optional, all migrated out of
+      # projects_by_hand.xlsx on 2026-08-01. Consumers fall back to something
+      # built from the bib, so a new work needs none of them to appear.
+      #   short_title  "Digital Demobilization: Aggarwal et al. (2023, NHB)"
+      #   nickname     "Differential mobilization"
+      #   plot_label   the same, hand-wrapped over lines, for a figure
+      #   slug         a short mnemonic id, not the work_id
+      short_title = m$short_title %||% NA_character_,
+      nickname = m$nickname %||% NA_character_,
+      plot_label = m$plot_label %||% NA_character_,
+      slug = m$slug %||% NA_character_,
+      topics = list(as.character(unlist(m$topics %||% character()))),
       rights = m$rights %||% NA_character_,
       active_maintenance = m$active_maintenance$status %||% NA_character_,
       maintenance_repo = m$active_maintenance$repo %||% NA_character_,
@@ -170,10 +182,28 @@ check_works <- function(harvest, root = ".") {
   works_tbl <- harvest$works
   bib_keys <- harvest$bib$bibtex_key
 
+  # A work with no bib entry is LEGAL while it is unpublished (2026-08-03): a
+  # project exists before its paper does, and the timelines want it from the
+  # day it has a submission row. `bibtex_key: ~` says so explicitly. It stays
+  # FATAL for anything that renders a page, because a page with no bib entry
+  # has no citation, no title and no venue.
+  renders_page <- works_tbl$stage == "published" & works_tbl$kind != "software"
+
   missing_bib <- works_tbl |>
-    filter(!bibtex_key %in% bib_keys) |>
-    transmute(work_id, severity = "error", check = "bib join",
-              detail = str_c("bibtex_key '", bibtex_key, "' is not in bibliography.bib"))
+    mutate(renders_page = renders_page) |>
+    filter(is.na(bibtex_key) | !bibtex_key %in% bib_keys) |>
+    transmute(
+      work_id,
+      severity = if_else(renders_page, "error", "report"),
+      check = "bib join",
+      detail = if_else(
+        renders_page,
+        str_c("no bib entry for '", coalesce(bibtex_key, work_id),
+              "', and this work renders a page"),
+        str_c("no bib entry yet; legal while ", stage,
+              ". Add one when the paper exists.")
+      )
+    )
 
   # A bib entry with no folder is LEGAL (Alex, 2026-07-30): the bib's scope is
   # set by its consumer, the CV, not by authorship, so it holds reviews of

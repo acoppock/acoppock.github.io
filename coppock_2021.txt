@@ -1,0 +1,11 @@
+@incollection{coppock_2021,
+  author = {Coppock, Alexander},
+  editor = {Druckman, James N. and Donald P. Green},
+  title = {{Visualize As You Randomize: Design-based Statistical Graphs for Randomized Experiments}},
+  booktitle = {Advances in Experimental Political Science},
+  year = {2021},
+  pages = {320--336},
+  publisher = {Cambridge University Press},
+  address = {New York},
+  doi = {10.1017/9781108777919.022}
+}
