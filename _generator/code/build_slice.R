@@ -406,7 +406,14 @@ publish_assets <- function(root = ".") {
   # and the sync carried it to the branch. It was still being served hours
   # after it was deleted. Found 2026-08-01 by listing the branch rather than
   # trusting that the deletion had taken.
-  for (d in c("css", "js")) {
+  # `note_thumbs` joined the list on 2026-08-03, for exactly the reason the
+  # comment above describes: sweeping it in the build directory was not enough,
+  # because Quarto had already copied the stale thumbnail into _site. A renamed
+  # note left `coppock_cooper_fultz_2015_cheatsheet.png` there and it was still
+  # being published months later. Measured rather than assumed: comparing each
+  # build-owned directory against its _site counterpart showed note_thumbs was
+  # the only one with an extra file (8 against 9).
+  for (d in c("css", "js", "note_thumbs")) {
     unlink(file.path(out, d), recursive = TRUE)
     dir.create(file.path(out, d), showWarnings = FALSE)
     file.copy(list.files(file.path(slice_dir, d), full.names = TRUE),
@@ -436,29 +443,11 @@ publish_assets <- function(root = ".") {
   # retired rather than mirrored.
   unlink(file.path(out, "subpages"), recursive = TRUE)
 
-  # Kept URLs: an old address that still has to resolve after the switch, even
-  # though nothing links it and the file is published under a better name.
-  #
-  # `coppock_cooper_fultz_2015_cheatsheet.pdf` is the randomizr cheatsheet's
-  # original address, live since 2015 and byte-identical to
-  # `randomizr_cheatsheet.pdf`. A cheatsheet is exactly the kind of thing that
-  # ends up in somebody else's teaching materials, where the link can never be
-  # updated, so Alex kept it on 2026-08-03. The Notes page deliberately lists
-  # the file once, under the better name; this is the address, not a second
-  # note.
-  #
-  # NOTE: build_site_chrome.R already carried a comment saying this URL "stays
-  # published", but nothing implemented it and the file was absent from the
-  # build. Found by diffing the built output against what master actually
-  # serves, rather than against the snapshot of what it was meant to serve.
-  kept_urls <- tribble(
-    ~from,                        ~to,
-    "randomizr_cheatsheet.pdf",   "coppock_cooper_fultz_2015_cheatsheet.pdf"
-  )
-  for (i in seq_len(nrow(kept_urls))) {
-    src <- file.path(out, kept_urls$from[i])
-    if (file.exists(src)) file.copy(src, file.path(out, kept_urls$to[i]), overwrite = TRUE)
-  }
+  # There is deliberately no alias mechanism here. One was added on 2026-08-03
+  # to keep `coppock_cooper_fultz_2015_cheatsheet.pdf` resolving beside
+  # `randomizr_cheatsheet.pdf`, and Alex removed it the same day: he wants ONE
+  # copy of the cheatsheet, at the better name. A table with no rows in it is
+  # speculation, so it is gone rather than left empty.
 
   # The migration is not done until a rebuilt site contains every URL that the
   # pre-migration snapshot recorded. Now that the site is complete, check EVERY

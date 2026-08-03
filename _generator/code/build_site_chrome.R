@@ -159,6 +159,14 @@ build_site_chrome <- function(root = ".") {
   # cards like the galleries, rather than a bare list of links. The thumbnail
   # for a PDF note is its first page; for the one HTML note it is a screenshot
   # of the page itself.
+  # Emptied before it is filled. This directory is copied into wholesale, so
+  # without the sweep a renamed note leaves its old thumbnail behind forever:
+  # `note_thumbs/coppock_cooper_fultz_2015_cheatsheet.png` survived here long
+  # after the source thumb was renamed to `randomizr_cheatsheet.png`, and was
+  # still being published on 2026-08-03. Same rule as everywhere else in this
+  # build: a directory the build owns is the union of every state it has ever
+  # been in unless it is cleared first.
+  unlink(file.path(slice, "note_thumbs"), recursive = TRUE)
   dir.create(file.path(slice, "note_thumbs"), showWarnings = FALSE)
   file.copy(list.files(file.path(root, "site", "notes", "thumbs"), full.names = TRUE),
             file.path(slice, "note_thumbs"), overwrite = TRUE)
@@ -187,10 +195,11 @@ build_site_chrome <- function(root = ".") {
       "Call for proposals: replication and novel survey experiments",
       str_c(" with <a href=\"https://www.marymcgrath.net/\">Mary McGrath</a>",
             "<span class='noteClosed'>Submissions are closed.</span>"),
-    # One note, not two. randomizr_cheatsheet.pdf and
-    # coppock_cooper_fultz_2015_cheatsheet.pdf are byte-identical (md5
-    # 82bbd8eb...), so listing both would show the same PDF twice. The second
-    # URL stays published and unlinked until Alex decides whether to retire it.
+    # One note, one file, one URL. `coppock_cooper_fultz_2015_cheatsheet.pdf`
+    # was a byte-identical second copy (md5 82bbd8eb...) at the original 2015
+    # address. DECIDED 2026-08-03: Alex wants only `randomizr_cheatsheet.pdf`,
+    # so the old address is retired rather than mirrored, and the duplicate is
+    # deleted from the site repo.
     "randomizr_cheatsheet.pdf", "randomizr_cheatsheet.png",
       "randomizr cheatsheet", " with Jasper Cooper and Neal Fultz"
   )

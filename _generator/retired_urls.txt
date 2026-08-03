@@ -136,8 +136,15 @@ coppock_2025a.txt
 #   - the 9 subpages/ documents: everything worth saving was moved out first
 #   - the orphan bibtex .txt for keys that no longer exist
 #   - 26 orphan card/display images from the old generator, linked from nothing
-# KEPT instead: coppock_cooper_fultz_2015_cheatsheet.pdf, republished as an
-# address alias of randomizr_cheatsheet.pdf (see publish_assets).
+# Also retired, REVERSING a same-day decision: Alex first kept
+# coppock_cooper_fultz_2015_cheatsheet.pdf as an address alias, then decided he
+# wants exactly one copy of the cheatsheet, at randomizr_cheatsheet.pdf. The
+# alias mechanism was removed rather than left empty.
+coppock_cooper_fultz_2015_cheatsheet.pdf
+# And its stale thumbnail, which no source file had produced since the note was
+# renamed: note_thumbs/ was copied into and never cleared, so the old thumb
+# survived every rebuild. Fixed by sweeping the directory before filling it.
+note_thumbs/coppock_cooper_fultz_2015_cheatsheet.png
 subpages/lefse.jpeg
 aggarwal_2023.txt
 blair_coppock_humphreys_2022.txt
@@ -156,3 +163,37 @@ schwarz_coppock_2020.txt
 # 2026-08-03 rename the same URL now serves the CUP chapter's BibTeX. Same
 # shape as coppock_2020.* above: the URL still returns 200 and answers with a
 # different work.
+#
+# The 26 orphan images: card and display figures the OLD generator made for
+# preprints, syllabi, notes and dormant works. No page has ever linked them,
+# and the new build generates its own card_figures/ from the catalog. Same
+# reasoning Alex applied to the 12 package bibtex URLs on 2026-07-29.
+card_figures/.DS_Store
+card_figures/coppock_2016_card.png
+card_figures/coppock_2017b_card.png
+card_figures/coppock_2018_card.png
+card_figures/coppock_broockman_2015_card.png
+card_figures/coppock_green_porter_2021_card.png
+card_figures/coppock_kirby_green_2017_card.png
+card_figures/coppock_leeper_mullinix_2018_preprint_card.png
+card_figures/coppock_mcclellan_2019_preprint_card.png
+card_figures/flores_coppock_2018_preprint_card.png
+card_figures/guess_coppock_2020_preprint_card.png
+card_figures/note_Random_Assignment_Subject_To_Constraints_card.png
+card_figures/note_how_do_I_learn_R_card.png
+card_figures/note_how_to_write_up_an_experiment_card.png
+card_figures/offer-westort_coppock_green_2020_card.png
+card_figures/peer_orr_coppock_2020_card.png
+card_figures/publication_timelines_card.png
+card_figures/randomizr_cheatsheet_card.png
+card_figures/syllabus_PLSC_341_card.png
+card_figures/syllabus_PLSC_500_card.png
+card_figures/syllabus_PLSC_512_card.png
+display_figures/.DS_Store
+display_figures/coppock_2016_display.png
+display_figures/coppock_2017b_display.png
+display_figures/coppock_2018_display.png
+display_figures/coppock_2022_display.jpg
+display_figures/coppock_green_porter_2021_display.png
+display_figures/keys_without_figs.txt
+display_figures/replication_comparison_plot.png
