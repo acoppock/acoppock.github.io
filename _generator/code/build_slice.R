@@ -249,7 +249,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
     write_lines(str_c(
       '---\ntitle: ""\npagetitle: "Software"\n',
       og_front_matter("Software | Alexander Coppock",
-                      "R packages by Alexander Coppock: randomizr, ri2, estimatr, fabricatr, DeclareDesign, vayr, metaprep, excheckr, estimatrTools and conjointmatchups.",
+                      "R packages by Alexander Coppock: randomizr, ri2, estimatr, fabricatr, DeclareDesign, vayr, metaprep, excheckr, estimatrTools, conjointmatchups and attrition.",
                       "images/front_page.png", "software.html"),
       '---\n\n',
       '<div class="softwareGallery">\n<div class="galleryItems">\n',
