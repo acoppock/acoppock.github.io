@@ -19,6 +19,7 @@ source("site/code/build_slice.R")
 source("site/code/build_galleries.R")
 source("site/code/build_site_chrome.R")
 source("site/code/check_links.R")
+source("site/code/package_versions.R")
 
 brand_source <- "/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss"
 site_repo <- "/Users/alexandercoppock/git_projects/acoppock.github.io"
@@ -53,10 +54,33 @@ build_site <- function(root = ".", sync = TRUE) {
   message("6/6 checks")
   links <- check_links()
 
-  ok <- assets$urls_present == assets$urls_expected && nrow(links$problems) == 0
+  # check_works() existed from the start and nothing ever called it, so the
+  # whole catalog validation layer ran only when someone remembered to run it
+  # by hand (2026-08-09). Its errors block the sync, since an error there means
+  # a page rendering without a citation; its reports are counted and shown.
+  harvest <- harvest_works(root)
+  catalog <- check_works(harvest, root)
+  catalog_errors <- catalog |> filter(severity == "error")
+
+  # Report-only, always. A stale version is worth knowing about on every build
+  # and is never a reason to refuse to publish, and an offline build resolves
+  # nothing at all.
+  versions <- check_package_versions(harvest)
+
+  ok <- assets$urls_present == assets$urls_expected &&
+    nrow(links$problems) == 0 &&
+    nrow(catalog_errors) == 0
   message(str_c("  published URLs: ", assets$urls_present, "/", assets$urls_expected))
   message(str_c("  links checked: ", links$checked, ", problems: ", nrow(links$problems)))
+  message(str_c("  catalog: ", nrow(catalog_errors), " errors, ",
+                sum(catalog$severity == "report"), " reports"))
+  message(str_c("  package versions: ", nrow(versions), " stale"))
   if (nrow(links$problems)) print(links$problems, n = 20)
+  if (nrow(catalog_errors)) print(catalog_errors, n = 20)
+  if (nrow(versions)) {
+    print(versions, n = 20)
+    message("  run: Rscript site/code/update_package_versions.R --dry-run")
+  }
 
   if (!ok) {
     message("checks failed; NOT syncing to the site repo")

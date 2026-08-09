@@ -299,6 +299,7 @@ publish_assets <- function(root = ".") {
   pipeline_scripts <- c("build_site.R", "harvest_works.R", "read_bib.R", "build_slice.R",
                         "build_project_page.R", "build_galleries.R",
                         "build_site_chrome.R", "check_links.R",
+                        "package_versions.R", "update_package_versions.R",
                         "make_bib_files.R", "make_card_images.R",
                         "make_page1_thumbnails.R")
   file.copy(file.path(root, "site", "code", pipeline_scripts), file.path(gen, "code"),
