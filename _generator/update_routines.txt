@@ -17,7 +17,7 @@ Then review and commit in the site repo:
 
     cd ~/git_projects/acoppock.github.io
     git status
-    git add -A && git commit && git push origin quarto-site
+    git add -A && git commit && git push origin main
 
 Two ordering constraints are baked into build_site.R and are not guessable from
 the individual scripts: brand.scss must be copied in BEFORE the render, or the
@@ -187,8 +187,8 @@ the repo on purpose: when it was inside, every `git add -A` committed the site
 twice. It is also why nothing may be placed in the site repo by hand: the sync
 runs with `--delete` and would remove it on the next build.
 
-Pages currently serves `master`, which is the old site. The new site is on the
-`quarto-site` branch. Promoting it means repointing Pages, not merging.
+Pages serves this branch, `main`, from the repository root. The old site is
+archived on `archived-rmarkdown-site` and is no longer served.
 
 Notes live in `site/notes/`: the file goes in the folder, its thumbnail in
 `site/notes/thumbs/<same stem>.png`, and a row in the `notes` table in
@@ -227,5 +227,5 @@ Checks
 
 Note on the snapshot: `published_urls_20260729.txt` is what the OLD generator
 was meant to produce, not a crawl of what was served. 15 of its URLs are absent
-from `master` and 404 on the live site today. Treat an entry there as an
+from the old site and 404 on the live site today. Treat an entry there as an
 obligation, not as evidence the URL ever worked.
