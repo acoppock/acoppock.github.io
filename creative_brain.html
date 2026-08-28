@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Creative Brain: CREATES Brainsets Assessment</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --panel: #f7f7f5;
+    --border: #d9d7d1;
+    --ink: #1a1a1a;
+    --muted: #5f5c56;
+    --accent: #2f5d78;
+    --accent-soft: #a8c2d1;
+    --accent-dim: #dce6ec;
+    --warn: #8a3d2e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a;
+      --panel: #1f2225;
+      --border: #383c40;
+      --ink: #e8e6e2;
+      --muted: #a8a49d;
+      --accent: #7fb2d0;
+      --accent-soft: #3f5b6d;
+      --accent-dim: #2a343b;
+      --warn: #d98b78;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+  .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+  .intro { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-bottom: 28px; }
+  .intro p { margin: 0 0 10px; }
+  .intro p:last-child { margin-bottom: 0; }
+  .namebox { margin: 0 0 24px; }
+  .namebox label { display: block; font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
+  .namebox input {
+    width: 100%; max-width: 340px; padding: 8px 10px; font: inherit; font-size: 0.95rem;
+    border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--ink);
+  }
+  .q { border-top: 1px solid var(--border); padding: 18px 0 4px; }
+  .q.unanswered { background: linear-gradient(90deg, var(--accent-dim), transparent 60%); }
+  .qtext { margin: 0 0 10px; }
+  .qnum { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 8px; }
+  .opts { display: flex; flex-direction: column; gap: 2px; }
+  .opt {
+    display: flex; align-items: flex-start; gap: 10px; padding: 7px 10px; margin-left: -10px;
+    border-radius: 6px; cursor: pointer;
+  }
+  .opt:hover { background: var(--panel); }
+  .opt input { margin: 5px 0 0; accent-color: var(--accent); flex: none; }
+  .opt span { flex: 1; }
+  figure { margin: 4px 0 14px; }
+  figure svg { max-width: 100%; height: auto; }
+  .paths { display: flex; gap: 22px; flex-wrap: wrap; }
+  .paths figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+  .navon {
+    font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 15px; line-height: 1.05;
+    letter-spacing: 0.35em; white-space: pre; margin: 6px 0 14px;
+  }
+  .actions { margin: 32px 0 0; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  button {
+    font: inherit; font-size: 1rem; padding: 11px 20px; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: #fff;
+  }
+  button.ghost { background: transparent; color: var(--accent); }
+  button:hover { filter: brightness(1.08); }
+  .note { color: var(--warn); font-size: 0.92rem; margin: 14px 0 0; }
+  #results { display: none; margin-top: 8px; }
+  .headline { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; margin-bottom: 26px; }
+  .headline p { margin: 0 0 10px; }
+  .headline p:last-child { margin-bottom: 0; }
+  .big { font-size: 1.35rem; font-weight: bold; color: var(--accent); }
+  .chart { margin: 0 0 8px; }
+  .row { display: grid; grid-template-columns: 108px 1fr 34px; align-items: center; gap: 10px; margin-bottom: 7px; }
+  .row .lab { font-size: 0.95rem; text-align: right; }
+  .row .lab.primary { font-weight: bold; }
+  .bar { height: 20px; background: var(--accent-dim); border-radius: 3px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--accent-soft); }
+  .bar > i.primary { background: var(--accent); }
+  .row .val { font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+  .glossary { font-size: 0.95rem; }
+  .glossary dt { font-weight: bold; margin-top: 10px; }
+  .glossary dd { margin: 2px 0 0; color: var(--muted); }
+  #paste {
+    width: 100%; min-height: 150px; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 13px;
+    padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); color: var(--ink);
+  }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  #print-name { display: none; font-size: 1rem; margin: 0 0 24px; }
+  @media print {
+    .opt:not(:has(input:checked)) { display: none; }
+    #quiz .actions, .namebox { display: none; }
+    button { display: none; }
+    #print-name:not(:empty) { display: block; }
+    .q, figure, .row { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Your Creative Brain</h1>
+<p class="sub">CREATES Brainsets Assessment &mdash; Cluster One Questions</p>
+<p id="print-name"></p>
+
+<div class="intro">
+  <p>Answer the question that applies to you <em>most of the time</em>. There are no wrong answers. It takes about five minutes.</p>
+  <p>Your answers are scored in your browser. Nothing is uploaded or stored anywhere, and closing the page erases everything.</p>
+</div>
+
+<div id="quiz">
+
+<div class="namebox">
+  <label for="student-name">Your name (optional &mdash; only used to label the results you copy at the end)</label>
+  <input type="text" id="student-name" autocomplete="name" placeholder="Optional">
+</div>
+
+<div id="questions"></div>
+
+<div class="actions">
+  <button type="button" id="score-btn">Score my assessment</button>
+  <button type="button" class="ghost" id="reset-btn">Start over</button>
+</div>
+<p class="note" id="warning" hidden></p>
+
+</div>
+
+<div id="results">
+  <h2>Your results</h2>
+
+  <div class="headline">
+    <p>Your primary mental comfort zone is the <span class="big" id="primary-name"></span> brainset.</p>
+    <p>Your secondary mental comfort zone is the <strong id="secondary-name"></strong> brainset.</p>
+    <p id="pathway-line"></p>
+  </div>
+
+  <h2>Brainset scores</h2>
+  <div class="chart" id="brainset-chart"></div>
+
+  <h2>Pathway to creative ideas</h2>
+  <div class="chart" id="pathway-chart"></div>
+
+  <h2>What the brainsets mean</h2>
+  <dl class="glossary" id="glossary"></dl>
+
+  <h2>Turn in your results</h2>
+  <p>Copy the text below and paste it into the assignment on Canvas.</p>
+  <textarea id="paste" readonly></textarea>
+  <div class="actions">
+    <button type="button" id="copy-btn">Copy to clipboard</button>
+    <button type="button" class="ghost" id="print-btn">Print / save as PDF</button>
+    <button type="button" class="ghost" id="back-btn">Back to my answers</button>
+  </div>
+</div>
+
+<footer>
+  Assessment adapted from the CREATES brainsets assessment in Shelley Carson, <em>Your Creative Brain</em>. Scoring follows Appendix One of the original. This page is for classroom use; it is not a clinical or diagnostic instrument.
+</footer>
+
+</div>
+
+<script>
+"use strict";
+
+var DIMENSIONS = [
+  { key: "C",  name: "connect",   blurb: "Wide-open associative thinking: many ideas at once, unusual combinations, seeing links between distant things." },
+  { key: "R",  name: "reason",    blurb: "Deliberate, orderly problem solving: working memory, planning, and step-by-step control of your own attention." },
+  { key: "En", name: "envision",  blurb: "Thinking in pictures rather than words: mental imagery, visual manipulation, seeing the shape of a solution." },
+  { key: "A",  name: "absorb",    blurb: "Openness to experience: taking in the world without filtering it, comfortable with ambiguity and novelty." },
+  { key: "T",  name: "transform", blurb: "Turning discomfort into creative work: self-awareness, emotional intensity, and the drive that comes from it." },
+  { key: "Ev", name: "evaluate",  blurb: "The critical eye: judging the value of ideas against criteria for usefulness and appropriateness." },
+  { key: "St", name: "stream",    blurb: "Flow: sustained, effortless engagement in an activity, with a running stream of ideas and reduced self-consciousness." }
+];
+
+var PATHWAYS = [
+  { key: "D",  name: "deliberate",   blurb: "You get to new ideas by working at them on purpose: gathering information, applying it, and pushing through in a controlled way." },
+  { key: "Sp", name: "spontaneous",  blurb: "You get to new ideas when you are not trying: they arrive while your attention is elsewhere, defocused or at rest." }
+];
+
+// Question text, options, and the Appendix One scoring key.
+// Each option lists the columns that receive a point when it is chosen.
+var QUESTIONS = [
+  { t: "When you read a magazine article, do you tend to skim the article looking for the main points or do you tend to read the article from the beginning word for word?",
+    o: [["skim", ["R","D"]], ["word for word", []]] },
+  { t: "When someone proposes a new project, are you able to immediately see what might go wrong?",
+    o: [["yes", ["Ev","D"]], ["no", []]] },
+  { t: "Do you tend to prefer to multitask or do you tend to work on one project at a time?",
+    o: [["multitask", ["C","Sp"]], ["one project at a time", ["R","D"]]] },
+  { t: "Do you have a good sense of time or do you find that you often lose track of time?",
+    o: [["good sense of time", ["R","D"]], ["often lose track of time", ["En","A","T","St","Sp"]]] },
+  { t: "Is it easy for you to think up new ideas?",
+    o: [["yes", ["C","En","A","Sp"]], ["no", ["Ev","D"]]] },
+  { t: "Are you particularly good at spelling?",
+    o: [["yes", ["R","Ev","D"]], ["no", []]] },
+  { t: "Do you find it hard to get hooked into the story of a movie or novel?",
+    o: [["yes", ["R","St","D"]], ["no", ["En","A","Sp"]]] },
+  { t: "Do you often have vivid dreams?",
+    o: [["yes", ["C","En","A","Sp"]], ["no", ["R","Ev","D"]]] },
+  { t: "Are you good at solving crossword puzzles?",
+    o: [["yes", ["R","D"]], ["no", []]] },
+  { t: "Do you consider the following statement to be true or false: &ldquo;Everything is connected to everything else.&rdquo;",
+    o: [["true", ["C","A","Sp"]], ["false", []]] },
+  { t: "When you go on vacation, do you prefer to have a set itinerary or do you prefer to have a freeform vacation?",
+    o: [["set itinerary", ["R","Ev","D"]], ["freeform", ["A","Sp"]]] },
+  { t: "Do you prefer to eat dinner at the same time each night or do you prefer to eat whenever you get hungry?",
+    o: [["set time", ["R","D"]], ["when I get hungry", ["A","Sp"]]] },
+  { t: "When deciding how to get from point A to point B, do you prefer to have written or verbal instructions, or do you prefer to look at a map?",
+    o: [["written instructions", ["R"]], ["map", ["En"]]] },
+  { t: "Do you believe you may be psychic?",
+    o: [["yes", ["A","Sp"]], ["no", ["R","Ev","D"]]] },
+  { t: "Do you tend to think more in pictures or in words?",
+    o: [["pictures", ["En","Sp"]], ["words", ["C","R"]]] },
+  { t: "Point A is your starting point and Point B is your destination. Which of the two paths below reflects your preferred journey?",
+    fig: "paths",
+    o: [["path a", ["R","D"]], ["path b", ["A","Sp"]]] },
+  { t: "Do you think you would make a good movie critic?",
+    o: [["yes", ["Ev","D"]], ["no", ["A","Sp"]]] },
+  { t: "How do you typically respond if someone criticizes one of your ideas?",
+    o: [["try to get something constructive out of the criticism that can help you", ["R","D"]],
+        ["become irritated with the critic", []],
+        ["feel humiliated and shamed", ["T"]]] },
+  { t: "Do you tend to spend a lot of time daydreaming?",
+    o: [["yes", ["En","A","T","Sp"]], ["no", ["R","D"]]] },
+  { t: "When you walk into a room, can you quickly notice if something is out of place?",
+    o: [["yes", ["Ev","D"]], ["no", []]] },
+  { t: "Do you enjoy cleaning out your car, or do you find it to be a necessary chore?",
+    o: [["enjoy", ["Ev","D"]], ["chore", []]] },
+  { t: "Does it feel like others just don&rsquo;t move fast enough for you?",
+    o: [["yes", ["C"]], ["no", []]] },
+  { t: "When you looked at the diagram above, which letter did you notice first?",
+    fig: "navon",
+    o: [["P", ["R","Ev","D"]], ["H", ["C","En","A","Sp"]]] },
+  { t: "You&rsquo;ve consented to host a fundraiser for a local charity at your home. Which of the tasks below describes the part you would like to play in this event?",
+    o: [["I have a vision for the theme of this event, and I&rsquo;d like to tell others my vision and let them handle the details.", ["En","Sp"]],
+        ["I&rsquo;d like to be directly involved in details such as planning the menu, the decorations, the entertainment, and the publicity.", ["R","D"]],
+        ["I&rsquo;d like to be involved in as few details as possible. Just tell me when to show up for the party.", []],
+        ["I only consented to be the host because I felt guilty about not doing enough for my community.", ["T"]]] },
+  { t: "Do you have days where you just don&rsquo;t want to get out of bed?",
+    o: [["yes", ["T"]], ["not really", []]] },
+  { t: "Do you get excited to start a new project but have trouble finishing it?",
+    o: [["yes", ["C","Sp"]], ["no", ["R","D"]]] },
+  { t: "Do you have trouble filtering out distracting noises?",
+    o: [["yes", ["C","A","Sp"]], ["no", ["R","D"]]] },
+  { t: "Would others describe you as a &ldquo;go-getter&rdquo;?",
+    o: [["yes", ["C"]], ["no", []]] },
+  { t: "Do you often have periods where ideas chase each other in your head so fast you can hardly keep track of them?",
+    o: [["occasionally", []], ["often", ["C","Sp"]], ["never", ["Ev","D"]]] },
+  { t: "Do you often go on spending sprees?",
+    o: [["occasionally", []], ["often", ["C","Sp"]], ["never", ["R","Ev","D"]]] },
+  { t: "Which of the following best describes how you would like to spend an evening with a friend?",
+    o: [["go to a movie and dinner", []], ["go someplace quiet to talk about your problems", ["T"]]] },
+  { t: "Do you think other people would consider you to be upbeat or sort of a drag?",
+    o: [["upbeat", ["C"]], ["a drag", ["T"]]] }
+];
+
+var LETTERS = ["a","b","c","d"];
+
+var FIGURES = {
+  paths: '<figure class="paths">' +
+    '<div><svg viewBox="0 0 130 170" width="130" height="170" role="img" aria-label="Path a: a straight arrow running from A at the bottom to B at the top.">' +
+      '<rect x="1" y="1" width="128" height="168" fill="none" stroke="currentColor" stroke-width="1.5"/>' +
+      '<text x="65" y="150" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif">A</text>' +
+      '<text x="65" y="28" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif">B</text>' +
+      '<line x1="65" y1="140" x2="65" y2="40" stroke="currentColor" stroke-width="1.5"/>' +
+      '<polygon points="65,32 61,44 69,44" fill="currentColor"/>' +
+    '</svg><figcaption>path a</figcaption></div>' +
+    '<div><svg viewBox="0 0 130 170" width="130" height="170" role="img" aria-label="Path b: a winding, meandering line running from A at the bottom to B at the top.">' +
+      '<rect x="1" y="1" width="128" height="168" fill="none" stroke="currentColor" stroke-width="1.5"/>' +
+      '<text x="88" y="152" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif">A</text>' +
+      '<text x="70" y="26" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif">B</text>' +
+      '<path d="M 82 143 C 30 138, 22 112, 60 104 C 100 96, 104 78, 62 74 C 24 70, 26 46, 66 38 C 88 34, 88 32, 84 33" fill="none" stroke="currentColor" stroke-width="1.5"/>' +
+      '<polygon points="76,31 88,32 82,40" fill="currentColor"/>' +
+    '</svg><figcaption>path b</figcaption></div>' +
+  '</figure>',
+  navon: '<figure><div class="navon" role="img" aria-label="A large letter H drawn out of many small letter P characters.">' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'PPPPPPPPPPP\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P\n' +
+    'P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P' +
+  '</div></figure>'
+};
+
+// Build the questionnaire ----
+
+var container = document.getElementById("questions");
+
+QUESTIONS.forEach(function (q, i) {
+  var n = i + 1;
+  var div = document.createElement("div");
+  div.className = "q";
+  div.id = "q" + n;
+
+  var html = "";
+  if (q.fig) html += FIGURES[q.fig];
+  html += '<p class="qtext"><span class="qnum">' + n + '.</span>' + q.t + "</p>";
+  html += '<div class="opts">';
+  q.o.forEach(function (opt, j) {
+    html += '<label class="opt"><input type="radio" name="q' + n + '" value="' + j + '">' +
+            "<span>" + LETTERS[j] + ". " + opt[0] + "</span></label>";
+  });
+  html += "</div>";
+
+  div.innerHTML = html;
+  container.appendChild(div);
+});
+
+container.addEventListener("change", function (e) {
+  var q = e.target.closest(".q");
+  if (q) q.classList.remove("unanswered");
+});
+
+// The name input's typed value does not appear in a printout, so mirror it into
+// an element that does. Without this, a printed sheet is anonymous.
+var name_input = document.getElementById("student-name");
+var print_name = document.getElementById("print-name");
+
+function sync_print_name() {
+  var name = name_input.value.trim();
+  print_name.textContent = name ? "Name: " + name : "";
+}
+
+name_input.addEventListener("input", sync_print_name);
+
+// Scoring ----
+
+function collect_answers() {
+  return QUESTIONS.map(function (q, i) {
+    var picked = document.querySelector('input[name="q' + (i + 1) + '"]:checked');
+    return picked === null ? null : Number(picked.value);
+  });
+}
+
+function score(answers) {
+  var totals = {};
+  DIMENSIONS.concat(PATHWAYS).forEach(function (d) { totals[d.key] = 0; });
+  answers.forEach(function (a, i) {
+    if (a === null) return;
+    QUESTIONS[i].o[a][1].forEach(function (key) { totals[key] += 1; });
+  });
+  return totals;
+}
+
+function rank(totals, set) {
+  return set.map(function (d) { return { key: d.key, name: d.name, blurb: d.blurb, score: totals[d.key] }; })
+            .sort(function (x, y) { return y.score - x.score; });
+}
+
+function tied_with(ranked, position) {
+  var target = ranked[position].score;
+  return ranked.filter(function (d) { return d.score === target; });
+}
+
+function name_list(items) {
+  var names = items.map(function (d) { return d.name; });
+  if (names.length === 1) return names[0];
+  if (names.length === 2) return names[0] + " and " + names[1];
+  return names.slice(0, -1).join(", ") + ", and " + names[names.length - 1];
+}
+
+function draw_chart(el, ranked, highlight_count) {
+  var max = Math.max.apply(null, ranked.map(function (d) { return d.score; }));
+  var scale = max > 0 ? max : 1;
+  el.innerHTML = ranked.map(function (d, i) {
+    var hi = i < highlight_count ? " primary" : "";
+    var pct = (d.score / scale) * 100;
+    return '<div class="row">' +
+             '<div class="lab' + hi + '">' + d.name + "</div>" +
+             '<div class="bar"><i class="' + hi.trim() + '" style="width:' + pct + '%"></i></div>' +
+             '<div class="val">' + d.score + "</div>" +
+           "</div>";
+  }).join("");
+}
+
+function build_paste_text(name, brainsets, pathways, primary, secondary, pathway_label) {
+  var lines = [];
+  lines.push("CREATES Brainsets Assessment — Cluster One results");
+  if (name) lines.push("Name: " + name);
+  lines.push("");
+  lines.push("Primary brainset:   " + primary);
+  lines.push("Secondary brainset: " + secondary);
+  lines.push("Pathway:            " + pathway_label);
+  lines.push("");
+  lines.push("Brainset scores");
+  brainsets.forEach(function (d) {
+    lines.push("  " + (d.name + "          ").slice(0, 10) + " " + d.score);
+  });
+  lines.push("");
+  lines.push("Pathway scores");
+  pathways.forEach(function (d) {
+    lines.push("  " + (d.name + "            ").slice(0, 12) + " " + d.score);
+  });
+  return lines.join("\n");
+}
+
+document.getElementById("score-btn").addEventListener("click", function () {
+  var answers = collect_answers();
+  var missing = [];
+
+  answers.forEach(function (a, i) {
+    var q = document.getElementById("q" + (i + 1));
+    if (a === null) {
+      missing.push(i + 1);
+      q.classList.add("unanswered");
+    } else {
+      q.classList.remove("unanswered");
+    }
+  });
+
+  var warning = document.getElementById("warning");
+  if (missing.length > 0) {
+    warning.hidden = false;
+    warning.textContent = missing.length === 1
+      ? "Question " + missing[0] + " is still unanswered. Answer it and try again."
+      : "These questions are still unanswered: " + missing.join(", ") + ".";
+    document.getElementById("q" + missing[0]).scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+  warning.hidden = true;
+
+  var totals = score(answers);
+  var brainsets = rank(totals, DIMENSIONS);
+  var pathways = rank(totals, PATHWAYS);
+
+  var top = tied_with(brainsets, 0);
+  var primary_label = name_list(top);
+  document.getElementById("primary-name").textContent = primary_label;
+
+  var secondary_label;
+  if (top.length > 1) {
+    secondary_label = "tied with your primary (" + primary_label + ")";
+    document.getElementById("secondary-name").textContent = "not separable — " + primary_label + " are tied at the top";
+  } else {
+    var second = tied_with(brainsets, 1);
+    secondary_label = name_list(second);
+    document.getElementById("secondary-name").textContent = secondary_label;
+  }
+
+  var d_score = totals.D, sp_score = totals.Sp;
+  var pathway_label, pathway_sentence;
+  if (Math.abs(d_score - sp_score) <= 1) {
+    pathway_label = "flexible (deliberate " + d_score + ", spontaneous " + sp_score + ")";
+    pathway_sentence = "Your deliberate and spontaneous scores are close, which means you can already switch flexibly between the two pathways to creative ideas.";
+  } else if (d_score > sp_score) {
+    pathway_label = "deliberate (" + d_score + " vs " + sp_score + ")";
+    pathway_sentence = "You prefer the <strong>deliberate</strong> pathway to creative ideas.";
+  } else {
+    pathway_label = "spontaneous (" + sp_score + " vs " + d_score + ")";
+    pathway_sentence = "You prefer the <strong>spontaneous</strong> pathway to creative ideas.";
+  }
+  document.getElementById("pathway-line").innerHTML = pathway_sentence;
+
+  draw_chart(document.getElementById("brainset-chart"), brainsets, top.length > 1 ? top.length : 1);
+  draw_chart(document.getElementById("pathway-chart"), pathways, 1);
+
+  document.getElementById("glossary").innerHTML = brainsets.map(function (d) {
+    return "<dt>" + d.name + "</dt><dd>" + d.blurb + "</dd>";
+  }).join("");
+
+  var name = name_input.value.trim();
+  sync_print_name();
+  document.getElementById("paste").value =
+    build_paste_text(name, brainsets, pathways, primary_label, secondary_label, pathway_label);
+
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("results").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.getElementById("back-btn").addEventListener("click", function () {
+  document.getElementById("results").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.getElementById("reset-btn").addEventListener("click", function () {
+  document.querySelectorAll('#questions input[type="radio"]').forEach(function (el) { el.checked = false; });
+  document.querySelectorAll(".q").forEach(function (el) { el.classList.remove("unanswered"); });
+  name_input.value = "";
+  sync_print_name();
+  document.getElementById("warning").hidden = true;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.getElementById("copy-btn").addEventListener("click", function () {
+  var box = document.getElementById("paste");
+  box.select();
+  box.setSelectionRange(0, box.value.length);
+  var done = function () {
+    var btn = document.getElementById("copy-btn");
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = "Copy to clipboard"; }, 1800);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(box.value).then(done, function () { document.execCommand("copy"); done(); });
+  } else {
+    document.execCommand("copy");
+    done();
+  }
+});
+
+document.getElementById("print-btn").addEventListener("click", function () { window.print(); });
+</script>
+
+</body>
+</html>

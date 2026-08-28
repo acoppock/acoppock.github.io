@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-DOCS: Kaufman Domains of Creativity Scale</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --panel: #f7f7f5;
+    --border: #d9d7d1;
+    --ink: #1a1a1a;
+    --muted: #5f5c56;
+    --accent: #2f5d78;
+    --accent-soft: #a8c2d1;
+    --accent-dim: #dce6ec;
+    --predict: #b5813f;
+    --warn: #8a3d2e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a;
+      --panel: #1f2225;
+      --border: #383c40;
+      --ink: #e8e6e2;
+      --muted: #a8a49d;
+      --accent: #7fb2d0;
+      --accent-soft: #3f5b6d;
+      --accent-dim: #2a343b;
+      --predict: #d9a866;
+      --warn: #d98b78;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 17px; line-height: 1.5;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+  h3 { font-size: 1.05rem; margin: 26px 0 8px; }
+  .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+  .intro { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-bottom: 26px; }
+  .intro p { margin: 0 0 10px; }
+  .intro p:last-child { margin-bottom: 0; }
+  #print-name { display: none; font-size: 1rem; margin: 0 0 24px; }
+  .step { display: none; }
+  .step.active { display: block; }
+  .namebox { margin: 0 0 24px; }
+  .namebox label { display: block; font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
+  .namebox input {
+    width: 100%; max-width: 340px; padding: 8px 10px; font: inherit; font-size: 0.95rem;
+    border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--ink);
+  }
+  .predict-row {
+    display: grid; grid-template-columns: 190px 1fr 40px; align-items: center;
+    gap: 14px; padding: 12px 0; border-top: 1px solid var(--border);
+  }
+  .predict-row .dname { font-weight: bold; }
+  .predict-row .dgloss { display: block; font-weight: normal; font-size: 0.85rem; color: var(--muted); }
+  .predict-row input[type="range"] { width: 100%; accent-color: var(--predict); }
+  .predict-row output { font-variant-numeric: tabular-nums; text-align: right; font-size: 0.95rem; }
+  .scalekey { font-size: 0.85rem; color: var(--muted); margin: 14px 0 0; }
+  .q { border-top: 1px solid var(--border); padding: 14px 0 12px; }
+  .q.unanswered { background: linear-gradient(90deg, var(--accent-dim), transparent 60%); }
+  .qtext { margin: 0 0 10px; }
+  .qnum { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 8px; }
+  .likert { display: flex; gap: 4px; flex-wrap: wrap; }
+  .likert label {
+    flex: 1; min-width: 92px; text-align: center; cursor: pointer;
+    border: 1px solid var(--border); border-radius: 6px; padding: 7px 4px;
+    font-size: 0.78rem; line-height: 1.25; color: var(--muted);
+  }
+  .likert label:hover { background: var(--panel); }
+  .likert input { display: block; margin: 0 auto 4px; accent-color: var(--accent); }
+  .likert input:checked + span { color: var(--ink); font-weight: bold; }
+  .likert .lnum { display: block; font-size: 0.95rem; }
+  .actions { margin: 30px 0 0; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  button {
+    font: inherit; font-size: 1rem; padding: 11px 20px; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: #fff;
+  }
+  button.ghost { background: transparent; color: var(--accent); }
+  button:hover { filter: brightness(1.08); }
+  .note { color: var(--warn); font-size: 0.92rem; margin: 14px 0 0; }
+  .progress { position: sticky; top: 0; background: var(--bg); padding: 10px 0 8px; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--muted); z-index: 5; }
+  .progress .track { height: 5px; background: var(--accent-dim); border-radius: 3px; margin-top: 6px; overflow: hidden; }
+  .progress .track > i { display: block; height: 100%; background: var(--accent); width: 0; transition: width 0.2s; }
+  .chart { margin: 8px 0 6px; }
+  .row { display: grid; grid-template-columns: 190px 1fr 46px; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .row .lab { font-size: 0.95rem; }
+  .row .lab small { display: block; color: var(--muted); font-size: 0.8rem; }
+  .bar { position: relative; height: 26px; background: var(--accent-dim); border-radius: 3px; }
+  .bar > i.actual { position: absolute; left: 0; top: 0; height: 100%; background: var(--accent-soft); border-radius: 3px; }
+  .bar > i.pred {
+    position: absolute; top: -3px; height: 32px; width: 3px; background: var(--predict);
+  }
+  .row .val { font-variant-numeric: tabular-nums; font-size: 0.95rem; text-align: right; }
+  .legend { font-size: 0.85rem; color: var(--muted); margin: 0 0 18px; }
+  .swatch { display: inline-block; width: 11px; height: 11px; border-radius: 2px; vertical-align: baseline; margin-right: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; margin: 6px 0 4px; }
+  th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--border); }
+  th { font-weight: bold; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .reflect { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin: 18px 0 0; }
+  .reflect ol { margin: 8px 0 0; padding-left: 22px; }
+  .reflect li { margin-bottom: 8px; }
+  #paste {
+    width: 100%; min-height: 170px; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 13px;
+    padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); color: var(--ink);
+  }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  footer p { margin: 0 0 8px; }
+  @media print {
+    .progress, button, .actions { display: none; }
+    .step { display: block !important; }
+    #print-name:not(:empty) { display: block; }
+    .q, .row, .predict-row, table { break-inside: avoid; page-break-inside: avoid; }
+    .likert label:not(:has(input:checked)) { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Kaufman Domains of Creativity Scale</h1>
+<p class="sub">K-DOCS &mdash; 50 items, about ten minutes</p>
+<p id="print-name"></p>
+
+<!-- STEP 1: predict ------------------------------------------------------ -->
+<div class="step active" id="step-predict">
+
+  <div class="intro">
+    <p>Creativity is not one thing. It shows up differently in solving a problem with a friend, in building an argument, in performing, in taking a machine apart, and in making a picture. The questions below ask you to rate yourself in five of those areas separately, so what you get back is a profile of how you see yourself rather than a verdict about you.</p>
+    <p>Before you answer anything, guess your own profile. The comparison between what you expect and what you report is the point of the exercise, and it only works if you commit to a guess first.</p>
+    <p>Your answers are scored in your browser. Nothing is uploaded or stored anywhere, and closing the page erases everything.</p>
+  </div>
+
+  <div class="namebox">
+    <label for="student-name">Your name (optional, used to label the results you turn in)</label>
+    <input type="text" id="student-name" autocomplete="name" placeholder="Optional">
+  </div>
+
+  <h2>Step 1 of 3: predict your profile</h2>
+  <p>Compared to people of about your age and life experience, where do you think you fall in each domain? Move each slider before continuing.</p>
+  <div id="predict-rows"></div>
+  <p class="scalekey">1 = much less creative &middot; 3 = neither more nor less creative &middot; 5 = much more creative</p>
+  <p class="scalekey">A 5 means you would put yourself at the very top on <em>every</em> activity in that area, and a 1 means the very bottom on all of them. Pinning a slider to either end forces the later comparison to come out one way, so use the extremes only when you mean them.</p>
+
+  <div class="actions">
+    <button type="button" id="to-items">Lock in my guesses and start</button>
+  </div>
+  <p class="note" id="predict-warning" hidden></p>
+</div>
+
+<!-- STEP 2: the items ----------------------------------------------------- -->
+<div class="step" id="step-items">
+
+  <div class="progress">
+    <span id="progress-text">0 of 50 answered</span>
+    <div class="track"><i id="progress-bar"></i></div>
+  </div>
+
+  <h2>Step 2 of 3: the scale</h2>
+  <p><strong>Instructions.</strong> Compared to people of approximately your age and life experience, how creative would you rate yourself for each of the following acts? For acts that you have not specifically done, estimate your creative potential based on your performance on similar tasks.</p>
+
+  <div id="questions"></div>
+
+  <div class="actions">
+    <button type="button" id="score-btn">See my profile</button>
+    <button type="button" class="ghost" id="reset-btn">Start over</button>
+  </div>
+  <p class="note" id="warning" hidden></p>
+</div>
+
+<!-- STEP 3: results ------------------------------------------------------- -->
+<div class="step" id="step-results">
+  <h2>Step 3 of 3: your profile</h2>
+
+  <p class="legend">
+    <span class="swatch" style="background: var(--accent-soft)"></span>your score &nbsp;&nbsp;
+    <span class="swatch" style="background: var(--predict); width: 3px; height: 13px;"></span>what you predicted
+  </p>
+  <div class="chart" id="profile-chart"></div>
+  <p class="scalekey">Each score is the average of that domain's items, on the same 1 to 5 scale as the questions. Domains are not directly comparable to each other in the sense of "higher is better"; the shape across domains is what carries the information.</p>
+
+  <h2>Where you were surprised</h2>
+  <div id="surprise"></div>
+
+  <div class="reflect">
+    <strong>Write a short response to these before class.</strong>
+    <ol>
+      <li>Which domain did you underestimate by the most? Why do you think you did?</li>
+      <li>Your lowest domain is not a report on your potential; it is a report on what you have practiced. Which low domain would you most want to move, and what would practising it actually look like this term?</li>
+      <li>Look at the Self/Everyday items. Many people who say "I'm not creative" score high there. Did you? What does that tell you about the definition of creativity you were carrying?</li>
+      <li>The scale asks you to compare yourself to others. Would your answers change if it asked you to compare yourself to yourself a year ago?</li>
+    </ol>
+  </div>
+
+  <h2>What you just measured</h2>
+  <p>Every item asked how creative you would rate <em>yourself</em>. So what came back is your own sense of what you can do, which is not the same thing as what you can make. The two come apart all the time, in both directions: people talk themselves out of domains they would be good at, and people overrate domains they have never tested. Treat the profile as a description of your beliefs about yourself, and treat the gap between it and your prediction as the interesting part.</p>
+
+  <h2>Turn in your results</h2>
+  <p>Copy the text below and paste it into the assignment on Canvas, along with your written responses.</p>
+  <textarea id="paste" readonly></textarea>
+  <div class="actions">
+    <button type="button" id="copy-btn">Copy to clipboard</button>
+    <button type="button" class="ghost" id="print-btn">Print / save as PDF</button>
+    <button type="button" class="ghost" id="back-btn">Back to my answers</button>
+  </div>
+</div>
+
+<footer>
+  <p>Items reproduced from the Kaufman Domains of Creativity Scale (K-DOCS). Kaufman, J. C. (2012). Counting the muses: Development of the Kaufman Domains of Creativity Scale (K-DOCS). <em>Psychology of Aesthetics, Creativity, and the Arts, 6</em>(4), 298&ndash;308. doi:10.1037/a0029751</p>
+  <p>Used with the author's permission. The K-DOCS is a research instrument, not a clinical or diagnostic one, and no score here says anything about your worth or your ceiling.</p>
+</footer>
+
+</div>
+
+<script>
+"use strict";
+
+// Five domains, with the item ranges established in Kaufman (2012).
+// Self/Everyday 1-11, Scholarly 12-22, Performance 23-32,
+// Mechanical/Scientific 33-41, Artistic 42-50.
+var DOMAINS = [
+  { key: "self",       name: "Self/Everyday",         first: 1,  last: 11,
+    gloss: "Solving the problems of ordinary life and of other people" },
+  { key: "scholarly",  name: "Scholarly",             first: 12, last: 22,
+    gloss: "Argument, research, analysis, and non-fiction writing" },
+  { key: "performance",name: "Performance",           first: 23, last: 32,
+    gloss: "Music, poetry, lyrics, and acting" },
+  { key: "mechanical", name: "Mechanical/Scientific", first: 33, last: 41,
+    gloss: "Building, fixing, computing, and experimenting" },
+  { key: "artistic",   name: "Artistic",              first: 42, last: 50,
+    gloss: "Drawing, sculpture, photography, and looking at art" }
+];
+
+// The 50 K-DOCS items, verbatim and in the published order.
+var ITEMS = [
+  "Finding something fun to do when I have no money",
+  "Helping other people cope with a difficult situation",
+  "Teaching someone how to do something",
+  "Maintaining a good balance between my work and my personal life",
+  "Understanding how to make myself happy",
+  "Being able to work through my personal problems in a healthy way",
+  "Thinking of new ways to help people",
+  "Choosing the best solution to a problem",
+  "Planning a trip or event with friends that meets everyone&rsquo;s needs",
+  "Mediating a dispute or argument between two friends",
+  "Getting people to feel relaxed and at ease",
+  "Writing a non-fiction article for a newspaper, newsletter, or magazine",
+  "Writing a letter to the editor",
+  "Researching a topic using many different types of sources that may not be readily apparent",
+  "Debating a controversial topic from my own perspective",
+  "Responding to an issue in a context-appropriate way",
+  "Gathering the best possible assortment of articles or papers to support a specific point of view",
+  "Arguing a side in a debate that I do not personally agree with",
+  "Analyzing the themes in a good book",
+  "Figuring out how to integrate critiques and suggestions while revising a work",
+  "Being able to offer constructive feedback based on my own reading of a paper",
+  "Coming up with a new way to think about an old debate",
+  "Writing a poem",
+  "Making up lyrics to a funny song",
+  "Making up rhymes",
+  "Composing an original song",
+  "Learning how to play a musical instrument",
+  "Shooting a fun video to air on YouTube",
+  "Singing in harmony",
+  "Spontaneously creating lyrics to a rap song",
+  "Playing music in public",
+  "Acting in a play",
+  "Carving something out of wood or similar material",
+  "Figuring out how to fix a frozen or buggy computer",
+  "Writing a computer program",
+  "Solving math puzzles",
+  "Taking apart machines and figuring out how they work",
+  "Building something mechanical (like a robot)",
+  "Helping to carry out or design a scientific experiment",
+  "Solving an algebraic or geometric proof",
+  "Constructing something out of metal, stone, or similar material",
+  "Drawing a picture of something I&rsquo;ve never actually seen (like an alien)",
+  "Sketching a person or object",
+  "Doodling/Drawing random or geometric designs",
+  "Making a scrapbook page out of my photographs",
+  "Taking a well-composed photograph using an interesting angle or approach",
+  "Making a sculpture or piece of pottery",
+  "Appreciating a beautiful painting",
+  "Coming up with my own interpretation of a classic work of art",
+  "Enjoying an art museum"
+];
+
+var ANCHORS = [
+  "Much less creative",
+  "Less creative",
+  "Neither more nor less creative",
+  "More creative",
+  "Much more creative"
+];
+
+function domain_of(item_number) {
+  return DOMAINS.filter(function (d) {
+    return item_number >= d.first && item_number <= d.last;
+  })[0];
+}
+
+// Step 1: prediction sliders ----
+
+var predict_rows = document.getElementById("predict-rows");
+
+predict_rows.innerHTML = DOMAINS.map(function (d) {
+  return '<div class="predict-row">' +
+           '<label class="dname" for="pred-' + d.key + '">' + d.name +
+             '<span class="dgloss">' + d.gloss + "</span></label>" +
+           '<input type="range" id="pred-' + d.key + '" min="1" max="5" step="0.1" value="3" ' +
+             'data-touched="no" aria-label="Predicted score for ' + d.name + '">' +
+           '<output for="pred-' + d.key + '" id="out-' + d.key + '">&mdash;</output>' +
+         "</div>";
+}).join("");
+
+DOMAINS.forEach(function (d) {
+  var slider = document.getElementById("pred-" + d.key);
+  var out = document.getElementById("out-" + d.key);
+  slider.addEventListener("input", function () {
+    slider.dataset.touched = "yes";
+    out.textContent = Number(slider.value).toFixed(1);
+  });
+});
+
+// Step 2: the 50 items ----
+
+var container = document.getElementById("questions");
+
+container.innerHTML = ITEMS.map(function (text, i) {
+  var n = i + 1;
+  var opts = ANCHORS.map(function (anchor, j) {
+    return '<label><input type="radio" name="i' + n + '" value="' + (j + 1) + '">' +
+             '<span><span class="lnum">' + (j + 1) + "</span>" + anchor + "</span></label>";
+  }).join("");
+  return '<div class="q" id="i' + n + '">' +
+           '<p class="qtext"><span class="qnum">' + n + ".</span>" + text + "</p>" +
+           '<div class="likert">' + opts + "</div>" +
+         "</div>";
+}).join("");
+
+function answered_count() {
+  return ITEMS.filter(function (_, i) {
+    return document.querySelector('input[name="i' + (i + 1) + '"]:checked') !== null;
+  }).length;
+}
+
+function update_progress() {
+  var n = answered_count();
+  document.getElementById("progress-text").textContent = n + " of " + ITEMS.length + " answered";
+  document.getElementById("progress-bar").style.width = (100 * n / ITEMS.length) + "%";
+}
+
+container.addEventListener("change", function (e) {
+  var q = e.target.closest(".q");
+  if (q) q.classList.remove("unanswered");
+  update_progress();
+});
+
+// The name input's value does not appear in a printout, so mirror it into an
+// element that does. Without this, a printed sheet is anonymous.
+var name_input = document.getElementById("student-name");
+var print_name = document.getElementById("print-name");
+
+function sync_print_name() {
+  var name = name_input.value.trim();
+  print_name.textContent = name ? "Name: " + name : "";
+}
+
+name_input.addEventListener("input", sync_print_name);
+
+// Navigation ----
+
+function show(step_id) {
+  ["step-predict", "step-items", "step-results"].forEach(function (id) {
+    document.getElementById(id).classList.toggle("active", id === step_id);
+  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.getElementById("to-items").addEventListener("click", function () {
+  var untouched = DOMAINS.filter(function (d) {
+    return document.getElementById("pred-" + d.key).dataset.touched !== "yes";
+  });
+  var warn = document.getElementById("predict-warning");
+  if (untouched.length > 0) {
+    warn.hidden = false;
+    warn.textContent = "Move every slider first, even if you land back on 3. Still to guess: " +
+      untouched.map(function (d) { return d.name; }).join(", ") + ".";
+    return;
+  }
+  warn.hidden = true;
+  show("step-items");
+});
+
+// Scoring ----
+
+function domain_means() {
+  return DOMAINS.map(function (d) {
+    var values = [];
+    for (var n = d.first; n <= d.last; n++) {
+      var picked = document.querySelector('input[name="i' + n + '"]:checked');
+      if (picked !== null) values.push(Number(picked.value));
+    }
+    var sum = values.reduce(function (a, b) { return a + b; }, 0);
+    var predicted = Number(document.getElementById("pred-" + d.key).value);
+    return {
+      key: d.key, name: d.name, gloss: d.gloss,
+      score: values.length > 0 ? sum / values.length : 0,
+      predicted: predicted,
+      gap: (values.length > 0 ? sum / values.length : 0) - predicted
+    };
+  });
+}
+
+function pct(v) {
+  // Map the 1-5 response scale onto bar width.
+  return ((v - 1) / 4) * 100;
+}
+
+function draw_profile(results) {
+  document.getElementById("profile-chart").innerHTML = results.map(function (d) {
+    return '<div class="row">' +
+             '<div class="lab">' + d.name + "<small>" + d.gloss + "</small></div>" +
+             '<div class="bar">' +
+               '<i class="actual" style="width:' + pct(d.score) + '%"></i>' +
+               '<i class="pred" style="left:calc(' + pct(d.predicted) + '% - 1px)" ' +
+                 'title="you predicted ' + d.predicted.toFixed(1) + '"></i>' +
+             "</div>" +
+             '<div class="val">' + d.score.toFixed(2) + "</div>" +
+           "</div>";
+  }).join("");
+}
+
+// A prediction pinned to an end of the scale forces the sign of the gap: guess 5
+// and the comparison can only come out zero or negative however you answer. Those
+// domains carry no information about surprise, so they are named and set aside
+// rather than reported as if you had overrated yourself.
+function pinned_end(d) {
+  if (d.predicted >= 4.95 && d.gap < 0) return "top";
+  if (d.predicted <= 1.05 && d.gap > 0) return "bottom";
+  return null;
+}
+
+function name_list(items) {
+  var names = items.map(function (d) { return d.name; });
+  if (names.length === 1) return names[0];
+  if (names.length === 2) return names[0] + " and " + names[1];
+  return names.slice(0, -1).join(", ") + ", and " + names[names.length - 1];
+}
+
+function draw_surprise(results) {
+  var pinned = results.filter(function (d) { return pinned_end(d) !== null; });
+  var free = results.filter(function (d) { return pinned_end(d) === null; });
+  var pool = free.length > 0 ? free : [];
+  var html = "";
+
+  if (pool.length > 0) {
+    var sorted = pool.slice().sort(function (a, b) { return b.gap - a.gap; });
+    var over = sorted[0];
+    var under = sorted[sorted.length - 1];
+
+    if (over.gap >= 0.25) {
+      html += "<p>You sold yourself short on <strong>" + over.name + "</strong>. You guessed " +
+              over.predicted.toFixed(1) + " and answered " + over.score.toFixed(2) + ".</p>";
+    }
+    if (under.gap <= -0.25 && under !== over) {
+      html += "<p>You rated yourself above where your answers landed on <strong>" + under.name +
+              "</strong>. You guessed " + under.predicted.toFixed(1) + " and answered " +
+              under.score.toFixed(2) + ".</p>";
+    }
+    if (html === "") {
+      html = "<p>Where the comparison is meaningful, your predictions came within a quarter of a " +
+             "point of your answers. Knowing your own profile that well is worth writing about: " +
+             "where did the knowledge come from?</p>";
+    }
+  }
+
+  if (pinned.length > 0) {
+    var tops = pinned.filter(function (d) { return pinned_end(d) === "top"; });
+    var bottoms = pinned.filter(function (d) { return pinned_end(d) === "bottom"; });
+    var parts = [];
+    if (tops.length > 0) {
+      parts.push("you put " + name_list(tops) + " at the top of the scale, so the comparison there " +
+                 "could only come out negative or zero no matter how you answered");
+    }
+    if (bottoms.length > 0) {
+      parts.push("you put " + name_list(bottoms) + " at the bottom, so the comparison there could " +
+                 "only come out positive or zero");
+    }
+    html += "<p>Set aside: " + parts.join(", and ") + ". " +
+            (pool.length > 0
+              ? "Those are left out of the comparison above."
+              : "Every one of your predictions was pinned to an end of the scale, so there is no " +
+                "surprise to report. Worth asking yourself why you reached for the extremes.") +
+            "</p>";
+  }
+
+  document.getElementById("surprise").innerHTML = html;
+}
+
+function build_paste_text(name, results) {
+  var lines = [];
+  lines.push("K-DOCS (Kaufman Domains of Creativity Scale) results");
+  if (name) lines.push("Name: " + name);
+  lines.push("");
+  lines.push("Domain                  predicted   actual   gap");
+  var any_pinned = false;
+  results.forEach(function (d) {
+    var pin = pinned_end(d) !== null;
+    if (pin) any_pinned = true;
+    lines.push("  " + (d.name + "                    ").slice(0, 22) +
+               d.predicted.toFixed(1).padStart(7) +
+               d.score.toFixed(2).padStart(9) +
+               ((d.gap >= 0 ? "+" : "") + d.gap.toFixed(2)).padStart(7) +
+               (pin ? "  (prediction at the end of the scale, gap not meaningful)" : ""));
+  });
+  lines.push("");
+  lines.push("Scores are domain means on the 1-5 K-DOCS scale.");
+  lines.push("Gap is actual minus predicted; positive means you underestimated yourself.");
+  if (any_pinned) {
+    lines.push("A prediction of 1 or 5 forces the sign of the gap, so those rows are flagged.");
+  }
+  return lines.join("\n");
+}
+
+document.getElementById("score-btn").addEventListener("click", function () {
+  var missing = [];
+  ITEMS.forEach(function (_, i) {
+    var n = i + 1;
+    var q = document.getElementById("i" + n);
+    if (document.querySelector('input[name="i' + n + '"]:checked') === null) {
+      missing.push(n);
+      q.classList.add("unanswered");
+    } else {
+      q.classList.remove("unanswered");
+    }
+  });
+
+  var warning = document.getElementById("warning");
+  if (missing.length > 0) {
+    warning.hidden = false;
+    warning.textContent = missing.length === 1
+      ? "Item " + missing[0] + " is still unanswered."
+      : missing.length + " items are still unanswered, starting with " + missing[0] + ".";
+    document.getElementById("i" + missing[0]).scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+  warning.hidden = true;
+
+  var results = domain_means();
+  draw_profile(results);
+  draw_surprise(results);
+
+  var name = name_input.value.trim();
+  sync_print_name();
+  document.getElementById("paste").value = build_paste_text(name, results);
+
+  show("step-results");
+});
+
+document.getElementById("back-btn").addEventListener("click", function () { show("step-items"); });
+
+document.getElementById("reset-btn").addEventListener("click", function () {
+  document.querySelectorAll('#questions input[type="radio"]').forEach(function (el) { el.checked = false; });
+  document.querySelectorAll(".q").forEach(function (el) { el.classList.remove("unanswered"); });
+  DOMAINS.forEach(function (d) {
+    var slider = document.getElementById("pred-" + d.key);
+    slider.value = 3;
+    slider.dataset.touched = "no";
+    document.getElementById("out-" + d.key).innerHTML = "&mdash;";
+  });
+  name_input.value = "";
+  sync_print_name();
+  document.getElementById("warning").hidden = true;
+  document.getElementById("predict-warning").hidden = true;
+  update_progress();
+  show("step-predict");
+});
+
+document.getElementById("copy-btn").addEventListener("click", function () {
+  var box = document.getElementById("paste");
+  box.select();
+  box.setSelectionRange(0, box.value.length);
+  var done = function () {
+    var btn = document.getElementById("copy-btn");
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = "Copy to clipboard"; }, 1800);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(box.value).then(done, function () { document.execCommand("copy"); done(); });
+  } else {
+    document.execCommand("copy");
+    done();
+  }
+});
+
+document.getElementById("print-btn").addEventListener("click", function () { window.print(); });
+
+update_progress();
+</script>
+
+</body>
+</html>

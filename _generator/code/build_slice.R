@@ -320,8 +320,14 @@ publish_assets <- function(root = ".") {
   # a page whose only content is "this has moved" competes with the page it
   # moved to.
   moved <- str_c(harvest$supersedes$superseded, ".html")
+  # Unlisted pages: published so that a direct link resolves, but kept out of
+  # the sitemap so crawlers are not pointed at them. The course assessments are
+  # handed to students as a URL and belong to no gallery (Alex, 2026-08-27).
+  # Deliberately not a robots.txt Disallow: that file is public, so naming them
+  # there would advertise the very URLs it is meant to keep quiet.
+  unlisted <- c("creative_brain.html", "domains_of_creativity.html")
   pages <- list.files(out, pattern = "\\.html$") |>
-    setdiff(c(moved, "404.html")) |>
+    setdiff(c(moved, unlisted, "404.html")) |>
     sort()
   loc <- if_else(pages == "index.html", "", pages)
   write_lines(c(
