@@ -69,12 +69,21 @@ build_site <- function(root = ".", sync = TRUE) {
 
   ok <- assets$urls_present == assets$urls_expected &&
     nrow(links$problems) == 0 &&
-    nrow(catalog_errors) == 0
+    nrow(catalog_errors) == 0 &&
+    length(assets$leaked) == 0
   message(str_c("  published URLs: ", assets$urls_present, "/", assets$urls_expected))
+  message(str_c("  book PDFs in output: ", length(assets$leaked), " (must be 0)"))
   message(str_c("  links checked: ", links$checked, ", problems: ", nrow(links$problems)))
   message(str_c("  catalog: ", nrow(catalog_errors), " errors, ",
                 sum(catalog$severity == "report"), " reports"))
   message(str_c("  package versions: ", nrow(versions), " stale"))
+  # Loudest failure in the build, because it is the only one whose damage is
+  # not fully undoable: a book PDF that reaches the site is retrievable at a
+  # commit SHA long after it is deleted.
+  if (length(assets$leaked)) {
+    message("  ABOUT TO PUBLISH A FULL BOOK PDF: ", str_flatten(assets$leaked, ", "))
+    message("  a book's own <work_id>.pdf is never published; check its links: in work.yaml")
+  }
   if (nrow(links$problems)) print(links$problems, n = 20)
   if (nrow(catalog_errors)) print(catalog_errors, n = 20)
   if (nrow(versions)) {

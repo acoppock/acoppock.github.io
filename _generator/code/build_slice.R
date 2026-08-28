@@ -475,9 +475,20 @@ publish_assets <- function(root = ".") {
   mine <- snapshot
   present <- mine |> map_lgl(~ file.exists(file.path(out, .x)))
 
+  # Belt and braces on the book PDFs. check_works() refuses the CATALOG entry;
+  # this refuses the OUTPUT, and the two catch different things. The catalog
+  # check only sees what a work declares, so it cannot see a file dropped into
+  # site/notes/, copied into the build by hand, or left behind by an earlier
+  # build. This looks at what is actually about to be published, which is the
+  # only question that matters.
+  book_ids <- harvest$works |> filter(kind == "book") |> pull(work_id)
+  leaked <- str_c(book_ids, ".pdf") |>
+    keep(~ file.exists(file.path(out, .x)))
+
   list(
     documents = sum(copied_docs), bibtex = sum(copied_bib),
     urls_expected = length(mine), urls_present = sum(present),
-    missing = mine[!present]
+    missing = mine[!present],
+    leaked = leaked
   )
 }

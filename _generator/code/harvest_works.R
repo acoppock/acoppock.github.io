@@ -263,6 +263,45 @@ check_works <- function(harvest, root = ".") {
               detail = str_c("'", file, "' is recorded as published but is not on disk"))
 
   coauthor_file <- read_excel(file.path(root, "data", "coauthors_by_hand.xlsx"))
+  # A book's FULL PDF is never published. For `kind: book`, `<work_id>.pdf` is
+  # the whole book: coppock_2022.pdf is Persuasion in Parallel and
+  # blair_coppock_humphreys_2023.pdf is the reconstructed PUP first printing.
+  # Both are held in the catalog on purpose, as ground truth for their errata
+  # audits, and neither may reach the site.
+  #
+  # This is what `paper: null  # a book has no paper PDF` on coppock_2022 was
+  # doing on its own, and a comment does not survive an edit. On 2026-08-27
+  # blair_coppock_humphreys_2023's `paper:` was repointed from
+  # book.declaredesign.org to the local 40MB PDF, and the next build copied the
+  # whole book to the site root and pointed the home page at it. It was caught
+  # in `git status` before the commit, which is luck rather than a process.
+  #
+  # The precedent this prevents repeating is the 2026-07-30 leak of the
+  # watermarked Persuasion in Parallel: publicly retrievable, linked from
+  # nothing, and STILL reachable at an old commit SHA today, because purging it
+  # from the history needs a request to GitHub Support that only Alex can file.
+  # Publishing a book is not something this repo can fully undo, so the check
+  # belongs before publication rather than after.
+  #
+  # A book page publishes its cover, errata, sample chapters and press link, so
+  # the rule costs nothing a book page wants. To publish part of a book, name
+  # the file something other than `<work_id>.pdf`, which is what
+  # persuasion_in_parallel_chapter_1.pdf already does.
+  book_ids <- works_tbl |> filter(kind == "book") |> pull(work_id)
+  full_book <- set_names(str_c(book_ids, ".pdf"), book_ids)
+
+  linked_book <- harvest$links |>
+    filter(!is_url, work_id %in% book_ids, target == full_book[work_id]) |>
+    transmute(work_id, severity = "error", check = "book pdf",
+              detail = str_c(slot, ": '", target,
+                             "' is the full book and must never be published"))
+
+  published_book <- harvest$published_files |>
+    filter(work_id %in% book_ids, file == full_book[work_id]) |>
+    transmute(work_id, severity = "error", check = "book pdf",
+              detail = str_c("'", file,
+                             "' is the full book and must never be published"))
+
   bad_coauthors <- harvest$coauthors |>
     filter(!slug %in% coauthor_file$slug) |>
     transmute(work_id, severity = "error", check = "coauthor slug",
@@ -286,6 +325,7 @@ check_works <- function(harvest, root = ".") {
               detail = "no metadata/abstract.txt")
 
   bind_rows(missing_bib, bad_kind, bad_stage, asset_files, link_files, published_missing,
+            linked_book, published_book,
             bad_coauthors, missing_gloss, missing_abstract, orphan_bib) |>
     arrange(factor(severity, levels = c("error", "report")), work_id)
 }

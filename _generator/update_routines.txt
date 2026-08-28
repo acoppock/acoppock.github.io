@@ -149,6 +149,54 @@ correction boxes on coppock_2014, guess_coppock_2020 and
 peyton_huber_coppock_2022 are made.
 
 
+Books: the full PDF is never published
+--------------------------------------
+
+For a `kind: book` work, `<work_id>.pdf` IS the whole book, and it must never
+reach the site. Two are in the catalog on purpose, as ground truth for their
+errata audits, and neither is publishable:
+
+    catalog/coppock_2022/original_materials/coppock_2022.pdf
+      Persuasion in Parallel, University of Chicago Press.
+    catalog/blair_coppock_humphreys_2023/original_materials/blair_coppock_humphreys_2023.pdf
+      Research Design in the Social Sciences, the reconstructed PUP first
+      printing. See its _notes.txt for provenance.
+
+Two checks enforce it, and they catch different things. Neither can be
+satisfied by editing the other.
+
+  check_works() refuses the CATALOG entry: a book naming its own
+  `<work_id>.pdf` in `links` or `published_files` is an error, which blocks
+  the sync.
+
+  publish_assets() refuses the OUTPUT: it returns `leaked`, the book PDFs
+  actually present in the built site, and build_site.R will not sync while it
+  is non-empty. This is the one that catches a route the catalog does not own,
+  such as a file dropped into `site/notes/` or copied in by hand.
+
+To publish PART of a book, give the file a name that is not `<work_id>.pdf`.
+`persuasion_in_parallel_chapter_1.pdf` is the pattern: registered as an
+`extra:` link, published, and invisible to both checks.
+
+WHY THIS IS A CHECK RATHER THAN A CONVENTION. It was a convention until
+2026-08-27, and the convention was one comment: `paper: null  # a book has no
+paper PDF` on coppock_2022. That day blair_coppock_humphreys_2023's `paper:`
+was repointed from book.declaredesign.org to the local 40MB PDF, and the next
+build copied the whole book to the site root and pointed the home page title
+at it. It was caught in `git status` before the commit, which is luck.
+
+The precedent is the 2026-07-30 leak of the watermarked Persuasion in
+Parallel: live, publicly retrievable, linked from nothing, found by accident.
+It is STILL reachable at an old commit SHA today, because purging it from the
+history needs a request to GitHub Support that only Alex can file. Publishing
+a book is not something this repo can fully undo, so the check has to sit
+before publication rather than after.
+
+Note that `rights: public` in work.yaml is harvested and never read by any
+build code. It is a record, not a lever. The only things that decide what gets
+published are `links`, `published_files`, and `site/notes/`.
+
+
 work_id years
 -------------
 
@@ -216,6 +264,10 @@ Checks
          reason and are subtracted from the expected set, never dropped
          silently. The count falls as URLs are retired; it must never fall
          because a file went missing.
+
+    Rscript -e 'source("site/code/build_slice.R"); publish_assets(".")$leaked'
+      -> must be character(0). Any book PDF sitting in the built output.
+         See "Books: the full PDF is never published" above.
 
     Rscript -e 'source("site/code/check_links.R"); check_links()'
       -> every internal link resolves to a file that exists.
