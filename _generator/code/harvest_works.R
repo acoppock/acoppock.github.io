@@ -174,6 +174,128 @@ harvest_works <- function(root = ".") {
 
 # Every check returns rows rather than stopping, so one run reports everything
 # wrong instead of the first thing wrong.
+# Abstract typography ----
+#
+# An abstract reaches metadata/abstract.txt by being copied out of a PDF, a
+# publisher's HTML or a LaTeX source, and each of those leaves its own residue.
+# As of 2026-09-11 the 61 abstracts in the catalog carried raw JATS markup on
+# one page, LaTeX quotation marks on four, two words broken at a PDF line end,
+# a doubled space, a dropped letter ("used to easure discrimination") and a
+# missing space ("individuals holdpolitical views"). None of it had ever been
+# seen, because the only check on an abstract was whether the file exists.
+#
+# Two shapes look like defects and are not, so both are excluded by the pattern
+# rather than carried as exceptions: a suspended hyphen ("moderate- and
+# low-information") is not a line break, and a currency sign is not a LaTeX
+# dollar, so the LaTeX rule wants a control sequence rather than a bare $.
+abstract_marks <- tribble(
+  ~check,             ~pattern,                                     ~detail,
+  "abstract markup",  "</?[A-Za-z][^>]*>",                          "HTML or JATS markup",
+  "abstract markup",  "&[A-Za-z]+;|&#[0-9]+;",                      "an HTML entity",
+  "abstract latex",   "\\\\[A-Za-z]+",                              "a LaTeX control sequence",
+  "abstract latex",   "``|''",                                      "LaTeX quotation marks",
+  "abstract latex",   "[{}]",                                       "a brace",
+  "abstract glyph",   "[ﬀ-ﬆ]",                            "a ligature codepoint",
+  "abstract glyph",   "[­​-‍⁠﻿]",          "an invisible character",
+  "abstract glyph",   "[   ]",                       "a non-breaking space",
+  "abstract spacing", "\t",                                         "a tab",
+  "abstract spacing", "\\S  +\\S",                                  "a doubled space",
+  "abstract spacing", "[a-z]{2,}- (?!and |or |to |nor |but )[a-z]", "a word broken at a line end"
+)
+
+DICTIONARY <- "/usr/share/dict/words"
+
+abstract_tokens <- function(text) {
+  text |>
+    str_replace_all("’", "'") |>
+    str_remove_all("'s\\b") |>
+    str_remove_all("'") |>
+    str_extract_all("[A-Za-z][A-Za-z-]*") |>
+    unlist() |>
+    # A suspended hyphen is punctuation, not part of the word: "moderate- and
+    # low-information" gives the token "moderate", which is an ordinary word.
+    str_remove("-+$")
+}
+
+# The dictionary has no inflections, so a handful of endings are stripped
+# before the lookup. Without them "conducted", "studies" and "properties" are
+# all unknown words and the check reports 400 of them.
+in_dictionary <- function(word, words) {
+  stems <- c(word,
+             str_remove(word, "s$"), str_remove(word, "es$"),
+             # Both stems of a past tense: "analyzed" wants "analyze" and
+             # "conducted" wants "conduct", and dropping only "ed" reported
+             # every regular participle in the catalog as an unknown word.
+             str_remove(word, "d$"), str_remove(word, "ed$"),
+             str_remove(word, "ing$"), str_c(str_remove(word, "ing$"), "e"),
+             str_remove(word, "ly$"), str_remove(word, "er$"),
+             str_remove(word, "est$"), str_c(str_remove(word, "ies$"), "y"))
+  # A suspended hyphen leaves an empty part ("moderate-" from "moderate- and
+  # low-information"), and an empty string is in no dictionary.
+  parts <- str_split_1(word, "-")
+  any(stems %in% words) ||
+    (length(parts) > 1 && all(map_lgl(parts, in_dictionary, words = words)))
+}
+
+check_abstracts <- function(root = ".") {
+  abstracts <- tibble(path = list.files(works_dir(root), pattern = "^abstract[.]txt$",
+                                        recursive = TRUE, full.names = TRUE)) |>
+    mutate(work_id = basename(dirname(dirname(path))),
+           text = map_chr(path, read_file))
+
+  marks <- expand_grid(abstracts, abstract_marks) |>
+    mutate(found = str_extract(text, pattern)) |>
+    filter(!is.na(found)) |>
+    transmute(work_id, severity = "error", check,
+              detail = str_c(detail, ": ", str_squish(found)))
+
+  # A combining accent is a defect only where the letter HAS a precomposed
+  # form, which is the one a copy-paste out of a PDF loses. The D-circumflex in
+  # aggarwal_etal_2023's abstract has none, so it is the authors' own notation
+  # rather than residue, and comparing against NFC tells the two apart without
+  # an exception list.
+  decomposed <- abstracts |>
+    filter(stringi::stri_trans_nfc(text) != text) |>
+    transmute(work_id, severity = "error", check = "abstract glyph",
+              detail = "a letter is written as a base plus a combining accent")
+
+  # A dropped letter passes every pattern above, so the second tier is a word
+  # list: a token in no dictionary that appears in no other abstract either.
+  # Jargon and package names are hapaxes too, which is what
+  # data/abstract_words_by_hand.txt holds. Reported rather than fatal, because
+  # the judgment is a human's.
+  accepted <- read_lines(file.path(root, "data", "abstract_words_by_hand.txt")) |>
+    str_subset("^#", negate = TRUE) |>
+    str_subset("\\S")
+  if (!file.exists(DICTIONARY)) {
+    # Said out loud rather than skipped: a check that silently measures nothing
+    # reads exactly like a check that passed.
+    wording <- tibble(work_id = NA_character_, severity = "report",
+                      check = "abstract wording",
+                      detail = str_c("not run: no word list at ", DICTIONARY))
+  } else {
+    words <- str_to_lower(read_lines(DICTIONARY))
+    wording <- abstracts |>
+      transmute(work_id, word = map(text, abstract_tokens)) |>
+      unnest(word) |>
+      filter(!str_detect(word, "^[A-Z]")) |>
+      mutate(word = str_to_lower(word)) |>
+      add_count(word, name = "in_catalog") |>
+      # The dictionary test comes last and on its own, because filter() runs
+      # each expression over the whole column rather than short-circuiting:
+      # testing every token took a minute and a half, and testing only the
+      # words that survive the two cheap filters takes no measurable time.
+      filter(in_catalog == 1, !word %in% accepted) |>
+      filter(!map_lgl(word, in_dictionary, words = words)) |>
+      transmute(work_id, severity = "report", check = "abstract wording",
+                detail = str_c("'", word,
+                               "' is in no dictionary and in no other abstract"))
+  }
+
+  bind_rows(marks, decomposed, wording)
+}
+
+
 check_works <- function(harvest, root = ".") {
   issue <- function(work_id, severity, check, detail) {
     tibble(work_id = work_id, severity = severity, check = check, detail = detail)
@@ -326,7 +448,8 @@ check_works <- function(harvest, root = ".") {
 
   bind_rows(missing_bib, bad_kind, bad_stage, asset_files, link_files, published_missing,
             linked_book, published_book,
-            bad_coauthors, missing_gloss, missing_abstract, orphan_bib) |>
+            bad_coauthors, missing_gloss, missing_abstract, check_abstracts(root),
+            orphan_bib) |>
     arrange(factor(severity, levels = c("error", "report")), work_id)
 }
 
