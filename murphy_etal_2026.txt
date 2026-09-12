@@ -1,0 +1,7 @@
+@article{murphy_etal_2026,
+  author = {Murphy, John and Coppock, Alexander and Hill, Seth J. and Vavreck, Lynn},
+  title = {{Do Emotional Ads Persuade? Evidence from Real-Time Campaign Advertising Experiments}},
+  journal = {Political Communication},
+  year = {2026},
+  doi = {10.1080/10584609.2026.2726266}
+}
