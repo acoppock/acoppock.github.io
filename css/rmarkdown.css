@@ -505,6 +505,10 @@ p {
 #rStudioFooter .bandContent .footerLogo.gscholar {
   background-image: url(../images/gscholarLogo.svg);
 }
+
+#rStudioFooter .bandContent .footerLogo.openalex {
+  background-image: url(../images/openalexLogo.svg);
+}
 #rStudioFooter .bandContent .footerLogo.northwestern {
   background-image: url(../images/northwesternLogo.svg);
 }
