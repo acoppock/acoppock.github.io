@@ -50,14 +50,18 @@ build_galleries <- function(root = ".") {
     mutate(citation = map_chr(seq_len(n()), ~ format_citation(harvest$bib[.x, ]))) |>
     select(bibtex_key, citation)
 
-  published <- harvest$works |>
-    filter(stage == "published", kind != "software") |>
+  listed <- harvest$works |>
+    filter(stage %in% c("published", "working"), kind != "software") |>
     left_join(harvest$bib |> select(bibtex_key, title, year), by = "bibtex_key") |>
     left_join(citations, by = "bibtex_key") |>
     mutate(
       card_file = file.path(works_dir(root), work_id, "assets", str_c(work_id, "_card.png")),
       card_exists = file.exists(card_file)
     )
+  published <- listed |> filter(stage == "published")
+  working <- listed |>
+    filter(stage == "working") |>
+    arrange(desc(as.numeric(year)), work_id)
 
   # Reverse chronological within a section, which is what the hand-ordered list
   # encoded and what the site shows today.
@@ -79,7 +83,7 @@ build_galleries <- function(root = ".") {
   # the page references resolve only if they are copied out; without this every
   # one of the 43 images is broken and the page is nothing but captions.
   dir.create(file.path(slice_dir, "card_figures"), showWarnings = FALSE)
-  published |>
+  listed |>
     filter(card_exists) |>
     pull(card_file) |>
     walk(~ file.copy(.x, file.path(slice_dir, "card_figures", basename(.x)),
@@ -101,16 +105,23 @@ build_galleries <- function(root = ".") {
   # state is a property of the listing rather than an `if` in a generator, which
   # is the whole point. Alex directed on 2026-07-29 that no working paper appear
   # on the site, so `staged` deliberately does NOT feed this page.
-  working <- harvest$works |> filter(stage == "working")
-  notice <- if (!nrow(working)) {
+  body <- if (!nrow(working)) {
     "There are no working papers posted at the moment."
-  } else ""
+  } else {
+    str_c(
+      '<div class="band full">\n<div class="bandContent gallerySection">\n',
+      '<div class="gallerySectionTitle">Working papers</div>\n<div class="galleryItems">\n',
+      str_flatten(pmap_chr(list(working$work_id, working$citation, working$title, working$card_exists),
+                           gallery_item), "\n"),
+      '\n</div>\n</div>\n</div>'
+    )
+  }
   write_lines(
     str_c('---\ntitle: ""\npagetitle: "Working Papers"\n',
           og_front_matter("Working papers | Alexander Coppock",
                           "Working papers and papers under review by Alexander Coppock, Associate Professor of Political Science at Northwestern University.",
                           "images/front_page.png", "working_papers.html"),
-          '---\n\n', notice, "\n"),
+          '---\n\n', body, "\n"),
     file.path(slice_dir, "working_papers.qmd")
   )
 

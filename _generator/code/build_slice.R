@@ -57,7 +57,9 @@ format_citation <- function(entry, with_title = TRUE) {
   # The author list already ends in a period when the last name is an initial;
   # appending ". " unconditionally produced "Green.. 2016".
   bits <- if (with_title) {
-    str_c(str_remove(authors, "\\.$"), ". ", entry$year, ". <b>", entry$title, "</b>.")
+    # A title ending in its own ? or ! takes no period after it.
+    str_c(str_remove(authors, "\\.$"), ". ", entry$year, ". <b>", entry$title, "</b>",
+          if_else(str_detect(entry$title, "[?!]$"), "", "."))
   } else {
     str_c(str_remove(authors, "\\.$"), ". ", entry$year, ".")
   }
@@ -160,7 +162,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
   # gets no page by decision. Both are now fields on the work rather than
   # membership in a list kept somewhere else.
   page_works <- harvest$works |>
-    filter(kind != "software", stage == "published")
+    filter(kind != "software", stage %in% c("published", "working"))
 
   for (i in seq_len(nrow(page_works))) {
     id <- page_works$work_id[i]

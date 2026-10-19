@@ -309,7 +309,7 @@ check_works <- function(harvest, root = ".") {
   # day it has a submission row. `bibtex_key: ~` says so explicitly. It stays
   # FATAL for anything that renders a page, because a page with no bib entry
   # has no citation, no title and no venue.
-  renders_page <- works_tbl$stage == "published" & works_tbl$kind != "software"
+  renders_page <- works_tbl$stage %in% c("published", "working") & works_tbl$kind != "software"
 
   missing_bib <- works_tbl |>
     mutate(renders_page = renders_page) |>
