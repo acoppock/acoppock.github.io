@@ -32,6 +32,10 @@ harvest_works <- function(root = ".") {
       bibtex_key = m$bibtex_key %||% NA_character_,
       kind = m$kind %||% NA_character_,
       stage = m$stage %||% NA_character_,
+      # Software only: `cran` or `github`, which splits the Software listing
+      # (Alex, 2026-10-26). Hand-owned; check_package_versions() reports a
+      # package whose CRAN status has moved out from under it.
+      distribution = m$distribution %||% NA_character_,
       # Four hand-written labels, all optional, all migrated out of
       # projects_by_hand.xlsx on 2026-08-01. Consumers fall back to something
       # built from the bib, so a new work needs none of them to appear.
@@ -349,6 +353,11 @@ check_works <- function(harvest, root = ".") {
     filter(!stage %in% c("published", "working", "staged", "dormant")) |>
     transmute(work_id, severity = "error", check = "stage", detail = str_c("unknown stage '", stage, "'"))
 
+  bad_distribution <- works_tbl |>
+    filter(kind == "software", !distribution %in% c("cran", "github")) |>
+    transmute(work_id, severity = "error", check = "distribution",
+              detail = str_c("software needs distribution: cran or github, not '", distribution, "'"))
+
   # A work's files live in its own folder. The flat directories remain as a
   # fallback for what has not moved (site content with no work, such as the
   # syllabi and the notes PDFs), so this resolves during and after the
@@ -446,7 +455,7 @@ check_works <- function(harvest, root = ".") {
     transmute(work_id, severity = "report", check = "abstract",
               detail = "no metadata/abstract.txt")
 
-  bind_rows(missing_bib, bad_kind, bad_stage, asset_files, link_files, published_missing,
+  bind_rows(missing_bib, bad_kind, bad_stage, bad_distribution, asset_files, link_files, published_missing,
             linked_book, published_book,
             bad_coauthors, missing_gloss, missing_abstract, check_abstracts(root),
             orphan_bib) |>

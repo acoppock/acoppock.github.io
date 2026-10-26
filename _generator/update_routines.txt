@@ -136,6 +136,11 @@ exists and set the key then.
 `kind` is one of: article, book, chapter, review, crowdsourced, dissertation,
 software, note.
 
+A `kind: software` work also needs `distribution: cran` or `distribution:
+github`, which decides its section on the Software page. When a package is
+first accepted on CRAN, the build reports "package distribution" until the
+field is changed to `cran`.
+
 `stage` is one of:
   published  appears in the galleries and the home page bibliography
   working    appears on the Working Papers page

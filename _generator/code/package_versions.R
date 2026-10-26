@@ -71,7 +71,7 @@ resolve_package_version <- function(pkg) {
 resolve_package_versions <- function(harvest) {
   harvest$works |>
     filter(kind == "software") |>
-    select(work_id, bibtex_key) |>
+    select(work_id, bibtex_key, distribution) |>
     mutate(resolved = map(work_id, resolve_package_version)) |>
     unnest(resolved) |>
     left_join(harvest$bib |> select(bibtex_key, note, bib_year = year), by = "bibtex_key") |>
@@ -106,6 +106,14 @@ check_package_versions <- function(harvest) {
               detail = str_c("bib says ", bib_year, "; ", source, " published ", version,
                              " in ", year))
 
-  bind_rows(unresolved, no_note, stale_version, stale_year) |>
+  # The listing's CRAN/GitHub split is hand-owned, so a first acceptance (or an
+  # archiving) leaves a package in the wrong section until someone moves it.
+  # Only a resolved answer counts: offline, every package is "unresolved".
+  stale_distribution <- resolved |>
+    filter(source != "unresolved", distribution != str_to_lower(source)) |>
+    transmute(work_id, severity = "report", check = "package distribution",
+              detail = str_c("work.yaml says ", distribution, "; resolved on ", source))
+
+  bind_rows(unresolved, no_note, stale_version, stale_year, stale_distribution) |>
     arrange(work_id, check)
 }

@@ -248,15 +248,31 @@ build_slice <- function(root = ".", show_figure = TRUE) {
         )
       )
 
+    # Two sections, CRAN first (Alex, 2026-10-26): what a reader can
+    # install.packages() is separated from what needs install_github().
+    sections <- tribble(
+      ~title, ~distribution,
+      "On CRAN", "cran",
+      "On GitHub", "github"
+    )
+    blocks <- sections |>
+      pmap_chr(function(title, distribution) {
+        items <- tiles |> filter(.data$distribution == .env$distribution)
+        if (!nrow(items)) return("")
+        str_c('<div class="gallerySectionTitle">', title, '</div>\n<div class="galleryItems">\n',
+              str_flatten(items$item, "\n"), '\n</div>')
+      })
+
     write_lines(str_c(
       '---\ntitle: ""\npagetitle: "Software"\n',
       og_front_matter("Software | Alexander Coppock",
-                      "R packages by Alexander Coppock: randomizr, ri2, estimatr, fabricatr, DeclareDesign, vayr, metaprep, excheckr, estimatrTools, conjointmatchups and attrition.",
+                      str_c("R packages by Alexander Coppock: ",
+                            str_flatten_comma(tiles$work_id, last = ", and "), "."),
                       "images/front_page.png", "software.html"),
       '---\n\n',
-      '<div class="softwareGallery">\n<div class="galleryItems">\n',
-      str_flatten(tiles$item, "\n"),
-      '\n</div>\n</div>\n'
+      '<div class="softwareGallery">\n',
+      str_flatten(blocks[nzchar(blocks)], "\n\n"),
+      '\n</div>\n'
     ), file.path(slice_dir, "software.qmd"))
 
     dir.create(file.path(slice_dir, "card_figures"), showWarnings = FALSE)

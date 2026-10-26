@@ -430,6 +430,18 @@ main.content {
   max-width: 1360px;
 }
 
+/* CRAN and GitHub sections, 2026-10-26. The same title as the papers gallery,
+   which keys its rule on .gallerySection; the software page has no band. */
+.softwareGallery .gallerySectionTitle {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.softwareGallery .galleryItems + .gallerySectionTitle {
+  margin-top: 2.5rem;
+}
+
 @media (max-width: 800px) {
   .galleryItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
