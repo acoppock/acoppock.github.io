@@ -40,3 +40,13 @@ g <-
   theme(legend.position = "none", plot.background = element_rect(fill = NA, color = NA))
 
 ggsave(here::here("images", "front_page.png"), plot = g, width = 6.5, height = 4, dpi = 300, bg = "transparent")
+
+# Gallery card ----
+
+# The build syncs cards from the catalog, so the card is written there as well as into the site.
+card_paths <- c(
+  "~/Library/CloudStorage/Dropbox/works/catalog/galos_coppock_2023/assets/galos_coppock_2023_card.png",
+  here::here("card_figures", "galos_coppock_2023_card.png")
+)
+
+walk(card_paths, \(path) ggsave(path, plot = g, width = 5, height = 5, dpi = 200, bg = "white"))
