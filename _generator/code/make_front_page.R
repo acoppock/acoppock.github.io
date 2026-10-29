@@ -1,5 +1,7 @@
 # Front-page art: galos_coppock_2023 figure 4 (maintained edition) without axes.
 # Occupations for which the original authors made no prediction are gray.
+# Lives in works/site/code and writes into works, like every other generator;
+# moved from the site repo 2026-10-28, where the build's sync kept deleting it.
 
 library(tidyverse)
 
@@ -39,14 +41,10 @@ g <-
   theme_void() +
   theme(legend.position = "none", plot.background = element_rect(fill = NA, color = NA))
 
-ggsave(here::here("images", "front_page.png"), plot = g, width = 6.5, height = 4, dpi = 300, bg = "transparent")
+ggsave("~/Library/CloudStorage/Dropbox/works/site/images/front_page.png", plot = g, width = 6.5, height = 4, dpi = 300, bg = "transparent")
 
 # Gallery card ----
 
-# The build syncs cards from the catalog, so the card is written there as well as into the site.
-card_paths <- c(
-  "~/Library/CloudStorage/Dropbox/works/catalog/galos_coppock_2023/assets/galos_coppock_2023_card.png",
-  here::here("card_figures", "galos_coppock_2023_card.png")
-)
-
-walk(card_paths, \(path) ggsave(path, plot = g, width = 5, height = 5, dpi = 200, bg = "white"))
+# Written to the catalog only; the build syncs cards from there into the site.
+ggsave("~/Library/CloudStorage/Dropbox/works/catalog/galos_coppock_2023/assets/galos_coppock_2023_card.png",
+       plot = g, width = 5, height = 5, dpi = 200, bg = "white")

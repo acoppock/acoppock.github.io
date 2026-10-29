@@ -319,7 +319,7 @@ publish_assets <- function(root = ".") {
                         "build_site_chrome.R", "check_links.R",
                         "package_versions.R", "update_package_versions.R",
                         "make_bib_files.R", "make_card_images.R",
-                        "make_page1_thumbnails.R")
+                        "make_page1_thumbnails.R", "make_front_page.R")
   file.copy(file.path(root, "site", "code", pipeline_scripts), file.path(gen, "code"),
             overwrite = TRUE)
   file.copy("/Users/alexandercoppock/Dropbox/claude_control/tools/brand.scss", gen,
