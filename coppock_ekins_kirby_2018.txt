@@ -1,6 +1,6 @@
 @article{coppock_ekins_kirby_2018,
   author = {Coppock, Alexander and Emily Ekins and David Kirby},
-  title = {{The Long-lasting Effects of Newspaper Op-Eds on Public Opinion}},
+  title = {{The Long-Lasting Effects of Newspaper Op-Eds on Public Opinion}},
   journal = {Quarterly Journal of Political Science},
   year = {2018},
   volume = {13},

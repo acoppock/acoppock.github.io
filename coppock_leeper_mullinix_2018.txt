@@ -1,6 +1,6 @@
 @article{coppock_leeper_mullinix_2018,
   author = {Coppock, Alexander and Leeper, Thomas J. and Mullinix, Kevin J.},
-  title = {{Generalizability of Heterogeneous Treatment Effect Estimates Across Samples}},
+  title = {{Generalizability of Heterogeneous Treatment Effect Estimates across Samples}},
   journal = {Proceedings of the National Academy of Sciences},
   year = {2018},
   volume = {115},

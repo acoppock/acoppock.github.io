@@ -1,6 +1,6 @@
 @article{coppock_2019b,
   author = {Coppock, Alexander},
-  title = {{Avoiding Post-Treatment Bias in Audit Experiments}},
+  title = {{Avoiding Post-treatment Bias in Audit Experiments}},
   journal = {Journal of Experimental Political Science},
   year = {2019},
   volume = {6},

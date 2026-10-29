@@ -1,6 +1,6 @@
 @article{coppock_hill_vavreck_2020,
   author = {Coppock, Alexander and Hill, Seth J. and Vavreck, Lynn},
-  title = {{The Small Effects of Political Advertising are Small Regardless of Context, Message, Sender, or Receiver: Evidence from 59 Real-time Randomized Experiments}},
+  title = {{The Small Effects of Political Advertising Are Small Regardless of Context, Message, Sender, or Receiver: Evidence from 59 Real-Time Randomized Experiments}},
   journal = {Science Advances},
   year = {2020},
   volume = {6},

@@ -1,6 +1,6 @@
 @article{coppock_2017a,
   author = {Coppock, Alexander},
-  title = {{Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-representative List Experiment}},
+  title = {{Did Shy Trump Supporters Bias the 2016 Polls? Evidence from a Nationally-Representative List Experiment}},
   journal = {Statistics, Politics and Policy},
   year = {2017},
   volume = {8},

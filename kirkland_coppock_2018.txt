@@ -1,6 +1,6 @@
 @article{kirkland_coppock_2018,
   author = {Kirkland, Patricia A. and Alexander Coppock},
-  title = {{Candidate Choice Without Party Labels: New Insights from Conjoint Survey Experiments}},
+  title = {{Candidate Choice without Party Labels: New Insights from Conjoint Survey Experiments}},
   journal = {Political Behavior},
   year = {2018},
   volume = {40},

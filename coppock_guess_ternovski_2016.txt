@@ -1,6 +1,6 @@
 @article{coppock_guess_ternovski_2016,
   author = {Coppock, Alexander and Andrew Guess and John Ternovski},
-  title = {{When Treatments are Tweets: A Network Mobilization Experiment over Twitter}},
+  title = {{When Treatments Are Tweets: A Network Mobilization Experiment over Twitter}},
   journal = {Political Behavior},
   year = {2016},
   volume = {38},
