@@ -197,3 +197,12 @@ display_figures/coppock_2022_display.jpg
 display_figures/coppock_green_porter_2021_display.png
 display_figures/keys_without_figs.txt
 display_figures/replication_comparison_plot.png
+
+# 2026-11-12 (Alex): peer_orr_coppock_2020.pdf was the PS preprint under its
+# pre-publication key. Alex renamed the catalog copy to
+# peer_orr_coppock_2021_preprint.pdf on 2026-11-09 (md5
+# bac66d53923b3731c758222ca9ea871a, unchanged), and it is now served at that
+# name. The old address is retired rather than kept as an alias; the version of
+# record stays at peer_orr_coppock_2021.pdf. All were 200 before this build;
+# this is a deliberate removal, not a verified-404 record.
+peer_orr_coppock_2020.pdf
