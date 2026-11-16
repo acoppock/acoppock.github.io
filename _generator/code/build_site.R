@@ -38,7 +38,15 @@ build_site <- function(root = ".", sync = TRUE) {
   file.copy(brand_source, file.path(slice_dir, "brand.scss"), overwrite = TRUE)
 
   message("4/6 quarto render")
-  render <- system2("quarto", c("render", shQuote(slice_dir)),
+  # A shell that did not source the login profile (Claude Code's, for one) has
+  # no quarto on its PATH, and system2 then fails with only "error in running
+  # command". RStudio bundles a copy, so fall back to it.
+  quarto <- c(Sys.which("quarto"),
+              "/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto") |>
+    keep(\(x) nzchar(x) && file.exists(x)) |>
+    head(1)
+  if (!length(quarto)) stop("quarto not found on PATH or in RStudio.app")
+  render <- system2(quarto, c("render", shQuote(slice_dir)),
                     stdout = TRUE, stderr = TRUE)
   errors <- render[str_detect(render, regex("^ERROR", ignore_case = TRUE))]
   if (length(errors)) {
