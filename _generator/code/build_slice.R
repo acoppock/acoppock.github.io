@@ -263,11 +263,29 @@ build_slice <- function(root = ".", show_figure = TRUE) {
               str_flatten(items$item, "\n"), '\n</div>')
       })
 
+    # Interactive apps, third (2026-11-16). The shinylive teaching apps are not
+    # works, so they come from a hand-edited table rather than the catalog; the
+    # cards are screenshots made by site/shiny_apps/make_shiny_app_cards.mjs.
+    apps_dir <- file.path(root, "site", "shiny_apps")
+    apps <- read_csv(file.path(apps_dir, "shiny_apps.csv"), show_col_types = FALSE) |>
+      mutate(
+        target = str_c("https://alexandercoppock.com/shiny-apps/", slug, "/"),
+        card_src = file.path(apps_dir, card),
+        item = str_c("<div class='galleryItem'>\n",
+                     "<a href='", target, "'> <img class='galleryItemImage' src='card_figures/", card, "'/> </a>\n",
+                     "<div class='galleryItemDescription'> <b><a href='", target, "'>", title, "</a></b>: ",
+                     description, " </div>\n</div>")
+      )
+    stopifnot(file.exists(apps$card_src))
+    blocks <- c(blocks, str_c('<div class="gallerySectionTitle">Interactive apps</div>\n<div class="galleryItems">\n',
+                              str_flatten(apps$item, "\n"), '\n</div>'))
+
     write_lines(str_c(
       '---\ntitle: ""\npagetitle: "Software"\n',
       og_front_matter("Software | Alexander Coppock",
-                      str_c("R packages by Alexander Coppock: ",
-                            str_flatten_comma(tiles$work_id, last = ", and "), "."),
+                      str_c("R packages by Alexander Coppock (",
+                            str_flatten_comma(tiles$work_id, last = ", and "),
+                            ") and interactive apps for teaching experimental design."),
                       "images/front_page.png", "software.html"),
       '---\n\n',
       '<div class="softwareGallery">\n',
@@ -276,7 +294,7 @@ build_slice <- function(root = ".", show_figure = TRUE) {
     ), file.path(slice_dir, "software.qmd"))
 
     dir.create(file.path(slice_dir, "card_figures"), showWarnings = FALSE)
-    walk2(tiles$card_src, tiles$card, function(src, f) {
+    walk2(c(tiles$card_src, apps$card_src), c(tiles$card, apps$card), function(src, f) {
       if (!is.na(src)) file.copy(src, file.path(slice_dir, "card_figures", f), overwrite = TRUE)
     })
   }
